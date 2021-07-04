@@ -24,7 +24,7 @@ var settings = {
 };
 
 const Blog = () => (
-    <section className="wedding blog">
+    <section className="wedding blog" id="testimonials">
         <Container>
             <Row>
                 <Col md="8" className="offset-md-2">
@@ -64,7 +64,6 @@ const Blog = () => (
                                                         <h6 className="blog-date">{item.date}</h6>
                                                         <h6 className="blog-place">{item.place}</h6>
                                                         <p className="blog-para">{item.desc}</p>
-                                                        <button className="btn btn-blog">read more</button>
                                                     </div>
                                                 </div>
                                             </Col>

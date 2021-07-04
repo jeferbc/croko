@@ -7,7 +7,7 @@ var settings = {
     infinite: true,
     speed: 500,
     arrows: false,
-    autoplay: true,
+    autoplay: false,
     swipeToSlide: true,
     slidesToShow: 3,
     slidesToScroll: 1,

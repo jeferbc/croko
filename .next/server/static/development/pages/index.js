@@ -88,7 +88,7 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 3);
+/******/ 	return __webpack_require__(__webpack_require__.s = 4);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -104,598 +104,17 @@ module.exports =
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "MENUITEMS", function() { return MENUITEMS; });
 const MENUITEMS = [{
-  title: 'Home',
-  type: 'sub',
-  children: [{
-    path: '/layouts/agency',
-    title: 'Agency',
-    type: 'link'
-  }, {
-    path: '/layouts/app1',
-    title: 'App Landing1',
-    type: 'link'
-  }, {
-    path: '/layouts/app2',
-    title: 'App Landing2',
-    type: 'link'
-  }, {
-    path: '/layouts/event',
-    title: 'Event',
-    type: 'link'
-  }, {
-    path: '/layouts/gym',
-    title: 'Gym',
-    type: 'link'
-  }, {
-    path: '/layouts/music',
-    title: 'Music',
-    type: 'link'
-  }, {
-    path: '/layouts/resume',
-    title: 'Resume',
-    type: 'link'
-  }, {
-    path: '/layouts/modern-sass',
-    title: 'Sass1',
-    type: 'link'
-  }, {
-    path: '/layouts/enterprice-sass',
-    title: 'Sass2',
-    type: 'link'
-  }, {
-    path: '/layouts/wedding',
-    title: 'Wedding',
-    type: 'link'
-  }, {
-    path: '/layouts/yoga',
-    title: 'Yoga',
-    type: 'link'
-  }, {
-    path: '/layouts/portfolioLayouts',
-    title: 'Portfolio',
-    type: 'link'
-  }]
+  title: 'Galería',
+  path: '#galery'
 }, {
-  title: 'Blog',
-  type: 'sub',
-  children: [{
-    title: 'Blog Grid View',
-    type: 'sub',
-    children: [{
-      path: '/blog/blog-grid/column-no-sidebar',
-      title: 'No Sidebar',
-      type: 'link'
-    }, {
-      path: '/blog/blog-grid/column-left-sidebar',
-      title: 'Left Sidebar',
-      type: 'link'
-    }, {
-      path: '/blog/blog-grid/column-right-sidebar',
-      title: 'Right Sidebar',
-      type: 'link'
-    }, {
-      path: '/blog/blog-grid/classic-no-sidebar',
-      title: 'Full Width No Sidebar',
-      type: 'link'
-    }, {
-      path: '/blog/blog-grid/classic-right-sidebar',
-      title: 'Full Width Right Sidebar',
-      type: 'link'
-    }, {
-      path: '/blog/blog-grid/classic-left-sidebar',
-      title: 'Full Width Left Sidebar',
-      type: 'link'
-    }]
-  }, {
-    title: 'Blog List',
-    type: 'sub',
-    children: [{
-      path: '/blog/blog-list/list-no-sidebar',
-      title: 'List No Sidebar',
-      type: 'link'
-    }, {
-      path: '/blog/blog-list/list-left-sidebar',
-      title: 'List Left Sidebar',
-      type: 'link'
-    }, {
-      path: '/blog/blog-list/list-right-sidebar',
-      title: 'List Right Sidebar',
-      type: 'link'
-    }]
-  }, {
-    title: 'Blog List Creative',
-    type: 'sub',
-    children: [{
-      path: '/blog/blog-list-creative/split-no-sidebar',
-      title: 'No Sidebar',
-      type: 'link'
-    }, {
-      path: '/blog/blog-list-creative/split-left-sidebar',
-      title: 'Left Sidebar',
-      type: 'link'
-    }, {
-      path: '/blog/blog-list-creative/split-right-sidebar',
-      title: 'Right Sidebar',
-      type: 'link'
-    }]
-  }, {
-    title: 'Blog Mix Layout',
-    type: 'sub',
-    children: [{
-      path: '/blog/blog-mix-layout/bigpost-list',
-      title: 'List Mix With Left Sidebar',
-      type: 'link'
-    }, {
-      path: '/blog/blog-mix-layout/bigpost-split',
-      title: 'List Mix With Right Sidebar',
-      type: 'link'
-    }, {
-      path: '/blog/blog-mix-layout/bigpost-split-no-sidebar',
-      title: 'List Mix With No Sidebar',
-      type: 'link'
-    }, {
-      path: '/blog/blog-mix-layout/bigpost-list-no-sidebar',
-      title: 'List Full Width No Sidebar',
-      type: 'link'
-    }, {
-      path: '/blog/blog-mix-layout/bigpost-column',
-      title: 'Grid Mix With Right Sidebar',
-      type: 'link'
-    }, {
-      path: '/blog/blog-mix-layout/bigpost-column-no-sidebar',
-      title: 'Grid Mix With No Sidebar',
-      type: 'link'
-    }]
-  }, {
-    title: 'Blog Details',
-    type: 'sub',
-    children: [{
-      path: '/blog/blog-detail/detail-left-sidebar',
-      title: 'Left Sidebar',
-      type: 'link'
-    }, {
-      path: '/blog/blog-detail/detail',
-      title: 'Right Sidebar',
-      type: 'link'
-    }, {
-      path: '/blog/blog-detail/detail-no-sidebar',
-      title: 'No Sidebar',
-      type: 'link'
-    }, {
-      path: '/blog/blog-detail/detail-gallery',
-      title: 'Detail Page With Gallery',
-      type: 'link'
-    }, {
-      path: '/blog/blog-detail/detail-video',
-      title: 'Detail Page With Video',
-      type: 'link'
-    }]
-  }, {
-    title: 'Blog Masonary',
-    type: 'sub',
-    children: [{
-      path: '/blog/blog-masonary/fullwidth-2',
-      title: 'Full Width 2',
-      type: 'link'
-    }, {
-      path: '/blog/blog-masonary/fullwidth-3',
-      title: 'Full Width 3',
-      type: 'link'
-    }, {
-      path: '/blog/blog-masonary/fullwidth-4',
-      title: 'Full Width 4',
-      type: 'link'
-    }, {
-      path: '/blog/blog-masonary/masonary-no-sidebar',
-      title: 'No Sidebar',
-      type: 'link'
-    }, {
-      path: '/blog/blog-masonary/masonary-right-sidebar',
-      title: 'Right Sidebar',
-      type: 'link'
-    }, {
-      path: '/blog/blog-masonary/masonary-left-sidebar',
-      title: 'Left Sidebar',
-      type: 'link'
-    }]
-  }]
+  title: 'Acerca de mí',
+  path: '#about'
 }, {
-  title: 'Pages',
-  type: 'sub',
-  children: [{
-    path: '/page/404',
-    title: '404',
-    type: 'link'
-  }, {
-    path: '/page/faq',
-    title: 'FAQ',
-    type: 'link'
-  }, {
-    path: '/page/typography',
-    title: 'Typography',
-    type: 'link'
-  }, {
-    path: '/page/maintenance',
-    title: 'Maintenance',
-    type: 'link'
-  }, {
-    path: '/page/about-us',
-    title: 'About us',
-    type: 'link'
-  }, {
-    title: 'Team',
-    type: 'sub',
-    children: [{
-      path: '/page/team',
-      title: 'Team',
-      type: 'link'
-    }, {
-      path: '/page/team-grid',
-      title: 'Team Grid',
-      type: 'link'
-    }, {
-      path: '/page/team-list',
-      title: 'Team List',
-      type: 'link'
-    }]
-  }, {
-    title: 'Comming Soon',
-    type: 'sub',
-    children: [{
-      path: '/page/commingsoon1',
-      title: 'Comming Soon1',
-      type: 'link'
-    }, {
-      path: '/page/commingsoon2',
-      title: 'Comming Soon2',
-      type: 'link'
-    }]
-  }]
+  title: 'Precios',
+  path: '#pricing'
 }, {
-  title: 'Elements',
-  megaMenu: true,
-  megaMenuType: 'small',
-  type: 'sub',
-  children: [{
-    title: 'Elements1',
-    type: 'sub',
-    children: [{
-      path: '/elements/alerts',
-      title: 'Alerts',
-      type: 'link',
-      icon: 'alert'
-    }, {
-      path: '/elements/accordion',
-      title: 'Accordion',
-      type: 'link',
-      icon: 'layout-accordion-merged'
-    }, {
-      path: '/elements/boxshadow',
-      title: 'Box Shadow',
-      type: 'link',
-      icon: 'layers'
-    }, {
-      path: '/elements/button',
-      title: 'Buttons',
-      type: 'link',
-      icon: 'write'
-    }, {
-      path: '/elements/contact',
-      title: 'Contact',
-      type: 'link',
-      icon: 'map-alt'
-    }]
-  }, {
-    title: 'Elements2',
-    type: 'sub',
-    children: [{
-      path: '/elements/event-schedule',
-      title: 'Event-Schedule',
-      type: 'link',
-      icon: 'list'
-    }, {
-      path: '/elements/gallery',
-      title: 'Gallery',
-      type: 'link',
-      icon: 'gallery'
-    }, {
-      path: '/elements/pricing',
-      title: 'Pricing',
-      type: 'link',
-      icon: 'money'
-    }, {
-      path: '/elements/counter',
-      title: 'Counter',
-      type: 'link',
-      icon: 'time'
-    }, {
-      path: '/elements/count-down',
-      title: 'Countdown',
-      type: 'link',
-      icon: 'alarm-clock'
-    }]
-  }, {
-    title: 'Elements3',
-    type: 'sub',
-    children: [{
-      path: '/elements/progressbar',
-      title: 'Progress Bar',
-      type: 'link',
-      icon: 'bar-chart'
-    }, {
-      path: '/elements/testimonial',
-      title: 'Testimonial',
-      type: 'link',
-      icon: 'thought'
-    }, {
-      path: '/elements/video',
-      title: 'Video',
-      type: 'link',
-      icon: 'video-camera'
-    }, {
-      path: '/elements/service',
-      title: 'Service',
-      type: 'link',
-      icon: 'headphone'
-    }, {
-      path: '/elements/subscribe',
-      title: 'Subscribe',
-      type: 'link',
-      icon: 'share-alt'
-    }]
-  }]
-}, {
-  title: 'Portfolio',
-  megaMenu: true,
-  megaMenuType: 'medium',
-  type: 'sub',
-  children: [{
-    title: 'Portfolio-Basic',
-    type: 'link',
-    children: [{
-      path: '/portfolio/basic-2-grid',
-      title: 'Basic – 2 Grid',
-      type: 'link'
-    }, {
-      path: '/portfolio/basic-3-grid',
-      title: 'Basic – 3 Grid',
-      type: 'link'
-    }, {
-      path: '/portfolio/basic-4-grid',
-      title: 'Basic – 4 Grid',
-      type: 'link'
-    }, {
-      path: '/portfolio/portfolio-title-2-col',
-      title: 'Basic W Tittle – 2 Grid',
-      type: 'link'
-    }, {
-      path: '/portfolio/portfolio-title-3-col',
-      title: 'Basic W Tittle – 3 Grid',
-      type: 'link'
-    }, {
-      path: '/portfolio/portfolio-title-4-col',
-      title: 'Basic W Tittle – 4 Grid',
-      type: 'link'
-    }, {
-      path: '/portfolio/portfolio-parallex',
-      title: 'Parallex',
-      type: 'link'
-    }, {
-      path: '/portfolio/centered-slide',
-      title: 'Centered Slides',
-      type: 'link'
-    }, {
-      path: '/portfolio/vertical-slide',
-      title: 'Vertical Slides',
-      type: 'link'
-    }, {
-      path: '/portfolio/multiple-carousel',
-      title: '4 Slide With Center Slider',
-      type: 'link'
-    }]
-  }, {
-    title: 'Portfolio-Details',
-    type: 'link',
-    children: [{
-      path: '/portfolio/portfolio-detail-1',
-      title: 'Container Layout',
-      type: 'link'
-    }, {
-      path: '/portfolio/portfolio-detail-2',
-      title: 'Full Width',
-      type: 'link'
-    }, {
-      path: '/portfolio/portfolio-detail-3',
-      title: 'With Bg Bredcrumb',
-      type: 'link'
-    }, {
-      path: '/portfolio/portfolio-detail-4',
-      title: 'Details With Slider',
-      type: 'link'
-    }, {
-      path: '/portfolio/portfolio-detail-5',
-      title: 'Video Portfolio',
-      type: 'link'
-    }, {
-      path: '/portfolio/portfolio-detail-6',
-      title: 'Two Image Portfolio',
-      type: 'link'
-    }, {
-      path: '/portfolio/portfolio-detail-7',
-      title: 'Left Side Image Portfolio',
-      type: 'link'
-    }]
-  }, {
-    title: 'Trending Layout',
-    type: 'link',
-    children: [{
-      path: '/portfolio/creative-1',
-      title: 'Trending Layout 1',
-      type: 'link'
-    }, {
-      path: '/portfolio/creative-2',
-      title: 'Trending Layout 2',
-      type: 'link'
-    }, {
-      path: '/portfolio/creative-3',
-      title: 'Trending Layout 3',
-      type: 'link'
-    }, {
-      path: '/portfolio/creative-4',
-      title: 'Trending Layout 4',
-      type: 'link'
-    }, {
-      path: '/portfolio/modern-4',
-      title: 'Trending Layout 5',
-      type: 'link'
-    }, {
-      path: '/portfolio/modern-3',
-      title: 'Trending Layout 6',
-      type: 'link'
-    }, {
-      path: '/portfolio/modern-2',
-      title: 'Trending Layout 7',
-      type: 'link'
-    }]
-  }, {
-    title: 'Portfolio-Masonary',
-    type: 'link',
-    children: [{
-      path: '/portfolio/full-width-2-grid',
-      title: 'Full-Width – 2 Grid',
-      type: 'link'
-    }, {
-      path: '/portfolio/full-width-3-grid',
-      title: 'Full-Width – 3 Grid',
-      type: 'link'
-    }, {
-      path: '/portfolio/full-width-4-grid',
-      title: 'Full-Width – 4 Grid',
-      type: 'link'
-    }]
-  }]
-}, {
-  title: 'Features',
-  megaMenu: true,
-  megaMenuType: 'medium',
-  type: 'sub',
-  children: [{
-    title: 'Header Style',
-    type: 'link',
-    children: [{
-      path: '/features/header-light',
-      title: 'Light Header',
-      type: 'link'
-    }, {
-      path: '/features/header-dark',
-      title: 'Dark Header',
-      type: 'link'
-    }, {
-      path: '/features/header-transparent',
-      title: 'Glass Header',
-      type: 'link'
-    }, {
-      path: '/features/header-right-navigation',
-      title: 'Header Right Navigation',
-      type: 'link'
-    }, {
-      path: '/features/header-center-logo',
-      title: 'Header Center Logo',
-      type: 'link'
-    }]
-  }, {
-    title: 'Breadcrumb Style',
-    type: 'link',
-    children: [{
-      path: '/features/breadcrumb-big-typography',
-      title: 'Classic Type',
-      type: 'link'
-    }, {
-      path: '/features/breadcrumb-left',
-      title: 'Breadcrumb Left',
-      type: 'link'
-    }, {
-      path: '/features/breadcrumb-right',
-      title: 'Breadcrumb Right',
-      type: 'link'
-    }, {
-      path: '/features/breadcrumb-center',
-      title: 'Breadcrumb Center',
-      type: 'link'
-    }, {
-      path: '/features/breadcrumb-dark',
-      title: 'Breadcrumb Dark',
-      type: 'link'
-    }, {
-      path: '/features/breadcrumb-parallex-bg',
-      title: 'Breadcrumb Parallex-Bg',
-      type: 'link'
-    }, {
-      path: '/features/breadcrumb-bg',
-      title: 'Breadcrumb Bg',
-      type: 'link'
-    }, {
-      path: '/features/breadcrumb-gallery',
-      title: 'Breadcrumb Gallery',
-      type: 'link'
-    }, {
-      path: '/features/breadcrumb-video',
-      title: 'Breadcrumb Video',
-      type: 'link'
-    }]
-  }, {
-    title: 'Footer Style',
-    type: 'link',
-    children: [{
-      path: '/features/footer-default',
-      title: 'Footer-Default',
-      type: 'link'
-    }, {
-      path: '/features/footer-light',
-      title: 'Footer-Light',
-      type: 'link'
-    }, {
-      path: '/features/footer-dark',
-      title: 'Footer-Dark',
-      type: 'link'
-    }, {
-      path: '/features/footer-light2',
-      title: 'Footer Dark Light',
-      type: 'link'
-    }, {
-      path: '/features/footer-dark2',
-      title: 'Footer Dark Gradient',
-      type: 'link'
-    }, {
-      path: '/features/footer-dark3',
-      title: 'Footer Creative',
-      type: 'link'
-    }]
-  }, {
-    title: 'Gallery',
-    type: 'link',
-    children: [{
-      path: '/features/zoom-gallery',
-      title: 'Zoom Gallery',
-      type: 'link'
-    }, {
-      path: '/features/form-popup',
-      title: 'Form Popup',
-      type: 'link'
-    }, {
-      path: '/features/modal-popup',
-      title: 'Modal Popup',
-      type: 'link'
-    }, {
-      path: '/features/youtube-popup',
-      title: 'Youtube Popup',
-      type: 'link'
-    }, {
-      path: '/features/map-popup',
-      title: 'Map Popup',
-      type: 'link'
-    }]
-  }]
+  title: 'Testimonios',
+  path: '#testimonials'
 }];
 
 /***/ }),
@@ -722,10 +141,6 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 const CenterLogoHeader = props => {
   const {
-    0: show,
-    1: setShow
-  } = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(false);
-  const {
     0: sidebar,
     1: setSidebar
   } = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(false);
@@ -740,7 +155,7 @@ const CenterLogoHeader = props => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 15,
+      lineNumber: 14,
       columnNumber: 9
     }
   }, __jsx("div", {
@@ -748,7 +163,7 @@ const CenterLogoHeader = props => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 16,
+      lineNumber: 15,
       columnNumber: 13
     }
   }, __jsx("div", {
@@ -756,7 +171,7 @@ const CenterLogoHeader = props => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 17,
+      lineNumber: 16,
       columnNumber: 17
     }
   }, __jsx("div", {
@@ -764,7 +179,7 @@ const CenterLogoHeader = props => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 18,
+      lineNumber: 17,
       columnNumber: 21
     }
   }, __jsx("nav", {
@@ -772,15 +187,15 @@ const CenterLogoHeader = props => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 19,
+      lineNumber: 18,
       columnNumber: 25
     }
   }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
-    href: "/",
+    href: "#",
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 20,
+      lineNumber: 19,
       columnNumber: 29
     }
   }, __jsx("a", {
@@ -788,7 +203,7 @@ const CenterLogoHeader = props => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 21,
+      lineNumber: 20,
       columnNumber: 33
     }
   }, __jsx("img", {
@@ -798,15 +213,15 @@ const CenterLogoHeader = props => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 22,
+      lineNumber: 21,
       columnNumber: 37
     }
   }))), __jsx(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
-    href: "/",
+    href: "#",
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 25,
+      lineNumber: 24,
       columnNumber: 29
     }
   }, __jsx("a", {
@@ -814,7 +229,7 @@ const CenterLogoHeader = props => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 26,
+      lineNumber: 25,
       columnNumber: 33
     }
   }, __jsx("img", {
@@ -823,7 +238,7 @@ const CenterLogoHeader = props => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 27,
+      lineNumber: 26,
       columnNumber: 37
     }
   }))), __jsx("div", {
@@ -831,16 +246,18 @@ const CenterLogoHeader = props => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 30,
+      lineNumber: 29,
       columnNumber: 29
     }
   }, __jsx("a", {
     className: "toggle-nav",
     onClick: clickSidebar,
+    "data-target": "#scroll-spy",
+    "aria-controls": "scroll-spy",
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 31,
+      lineNumber: 30,
       columnNumber: 33
     }
   }, __jsx("i", {
@@ -849,7 +266,7 @@ const CenterLogoHeader = props => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 32,
+      lineNumber: 31,
       columnNumber: 37
     }
   }))), __jsx(_nav__WEBPACK_IMPORTED_MODULE_1__["default"], {
@@ -857,130 +274,10 @@ const CenterLogoHeader = props => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 35,
+      lineNumber: 34,
       columnNumber: 29
     }
-  }), props.shop && __jsx("div", {
-    className: "top-header-right",
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 37,
-      columnNumber: 33
-    }
-  }, __jsx("ul", {
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 38,
-      columnNumber: 37
-    }
-  }, __jsx("li", {
-    className: "search",
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 39,
-      columnNumber: 41
-    }
-  }, __jsx("a", {
-    href: "javascript",
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 40,
-      columnNumber: 45
-    }
-  }, __jsx("i", {
-    className: "icon-search",
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 41,
-      columnNumber: 49
-    }
-  }))), __jsx("li", {
-    className: "account ",
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 44,
-      columnNumber: 41
-    }
-  }, __jsx("a", {
-    href: "javascript",
-    onClick: () => setShow(!show),
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 45,
-      columnNumber: 45
-    }
-  }, __jsx("i", {
-    className: "icon-user",
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 46,
-      columnNumber: 49
-    }
-  })), __jsx("div", {
-    className: `dropdown-menu ${show && `show`} dropdown-menu-right`,
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 48,
-      columnNumber: 45
-    }
-  }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
-    href: "/shop/auth/login",
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 49,
-      columnNumber: 49
-    }
-  }, __jsx("a", {
-    href: "#",
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 49,
-      columnNumber: 81
-    }
-  }, "Login")), __jsx("a", {
-    href: "#",
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 50,
-      columnNumber: 49
-    }
-  }, "Account"), __jsx(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
-    href: "/shop/wishlist",
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 51,
-      columnNumber: 49
-    }
-  }, __jsx("a", {
-    href: "#",
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 51,
-      columnNumber: 79
-    }
-  }, "Wishlist")), __jsx(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
-    href: "/shop/checkout",
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 52,
-      columnNumber: 49
-    }
-  }, "checkout"))))))))));
+  }))))));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (CenterLogoHeader);
@@ -998,15 +295,9 @@ const CenterLogoHeader = props => {
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
-/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _constant_menu__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../constant/menu */ "./constant/menu.js");
-/* harmony import */ var reactstrap__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! reactstrap */ "reactstrap");
-/* harmony import */ var reactstrap__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(reactstrap__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _constant_menu__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../constant/menu */ "./constant/menu.js");
 var _jsxFileName = "/home/jeffe/work/Barriguitas/unice_theme/containers/common/nav.js";
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
-
-
 
 
 
@@ -1014,7 +305,7 @@ const Nav = () => {
   const {
     0: mainmenu,
     1: setMainMenu
-  } = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(_constant_menu__WEBPACK_IMPORTED_MODULE_2__["MENUITEMS"]);
+  } = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(_constant_menu__WEBPACK_IMPORTED_MODULE_1__["MENUITEMS"]);
   const {
     0: sidebar,
     1: setSidebar
@@ -1041,7 +332,7 @@ const Nav = () => {
   }, []);
 
   const setNavActive = item => {
-    _constant_menu__WEBPACK_IMPORTED_MODULE_2__["MENUITEMS"].filter(menuItem => {
+    _constant_menu__WEBPACK_IMPORTED_MODULE_1__["MENUITEMS"].filter(menuItem => {
       if (menuItem != item) menuItem.active = false;
       if (menuItem.children && menuItem.children.includes(item)) menuItem.active = true;
 
@@ -1056,15 +347,15 @@ const Nav = () => {
     });
     item.active = !item.active;
     setMainMenu({
-      mainmenu: _constant_menu__WEBPACK_IMPORTED_MODULE_2__["MENUITEMS"]
+      mainmenu: _constant_menu__WEBPACK_IMPORTED_MODULE_1__["MENUITEMS"]
     });
   }; // Click Toggle menu
 
 
   const toggletNavActive = item => {
     if (!item.active) {
-      _constant_menu__WEBPACK_IMPORTED_MODULE_2__["MENUITEMS"].forEach(a => {
-        if (_constant_menu__WEBPACK_IMPORTED_MODULE_2__["MENUITEMS"].includes(item)) a.active = false;
+      _constant_menu__WEBPACK_IMPORTED_MODULE_1__["MENUITEMS"].forEach(a => {
+        if (_constant_menu__WEBPACK_IMPORTED_MODULE_1__["MENUITEMS"].includes(item)) a.active = false;
         if (!a.children) return false;
         a.children.forEach(b => {
           if (a.children.includes(item)) {
@@ -1083,17 +374,17 @@ const Nav = () => {
 
     item.active = !item.active;
     setMainMenu({
-      mainmenu: _constant_menu__WEBPACK_IMPORTED_MODULE_2__["MENUITEMS"]
+      mainmenu: _constant_menu__WEBPACK_IMPORTED_MODULE_1__["MENUITEMS"]
     });
   };
 
   return __jsx("div", {
     className: `navbar`,
-    id: "togglebtn",
+    id: "togglebtn scroll-spy",
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 79,
+      lineNumber: 77,
       columnNumber: 9
     }
   }, __jsx("div", {
@@ -1101,7 +392,7 @@ const Nav = () => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 80,
+      lineNumber: 78,
       columnNumber: 13
     }
   }, __jsx("a", {
@@ -1110,510 +401,84 @@ const Nav = () => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 81,
+      lineNumber: 79,
       columnNumber: 17
     }
   }, __jsx("h5", {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 82,
+      lineNumber: 80,
       columnNumber: 21
     }
-  }, "back"))), __jsx("ul", {
+  }, "atr\xE1s"))), __jsx("ul", {
     className: "main-menu",
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 85,
+      lineNumber: 83,
       columnNumber: 13
     }
-  }, _constant_menu__WEBPACK_IMPORTED_MODULE_2__["MENUITEMS"].slice(0, 3).map((menuItem, i) => {
+  }, _constant_menu__WEBPACK_IMPORTED_MODULE_1__["MENUITEMS"].slice(0, 2).map((menuItem, i) => {
     return __jsx("li", {
       key: i,
-      className: ` ${menuItem.megaMenu ? 'mega-menu' : ''}`,
+      __self: undefined,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 87,
+        columnNumber: 29
+      }
+    }, __jsx("a", {
+      href: `${menuItem.path}`,
+      onClick: () => toggletNavActive(menuItem),
+      __self: undefined,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 88,
+        columnNumber: 33
+      }
+    }, __jsx("span", {
       __self: undefined,
       __source: {
         fileName: _jsxFileName,
         lineNumber: 89,
-        columnNumber: 29
-      }
-    }, menuItem.sidebartitle ? __jsx("div", {
-      className: "dropdown",
-      __self: undefined,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 92,
         columnNumber: 37
       }
-    }, menuItem.sidebartitle) : '', menuItem.type === 'sub' ? __jsx("a", {
-      className: "dropdown",
-      href: "#javascript",
-      onClick: () => toggletNavActive(menuItem),
-      __self: undefined,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 95,
-        columnNumber: 37
-      }
-    }, __jsx("span", {
-      __self: undefined,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 96,
-        columnNumber: 41
-      }
-    }, menuItem.title)) : '', menuItem.type === 'link' ? __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
-      href: `${process.env.PUBLIC_URL}${menuItem.path}`,
-      className: `${menuItem.active ? 'active' : ''}`,
-      onClick: () => toggletNavActive(menuItem),
-      __self: undefined,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 100,
-        columnNumber: 37
-      }
-    }, __jsx("span", {
-      __self: undefined,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 106,
-        columnNumber: 41
-      }
-    }, menuItem.title), menuItem.children ? __jsx("i", {
-      className: "fa fa-angle-right pull-right",
-      __self: undefined,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 108,
-        columnNumber: 45
-      }
-    }) : '') : '', __jsx("div", {
-      className: `mega-menu-container resize ${menuItem.active ? 'opensubmenu' : ''}`,
-      __self: undefined,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 113,
-        columnNumber: 33
-      }
-    }, menuItem.megaMenu === true ? __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_3__["Container"], {
-      __self: undefined,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 117,
-        columnNumber: 45
-      }
-    }, __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_3__["Row"], {
-      __self: undefined,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 118,
-        columnNumber: 49
-      }
-    }, menuItem.children.map((megaMenuItem, i) => {
-      return __jsx("div", {
-        className: `${menuItem.megaMenuType == 'small' ? 'col-lg-4' : menuItem.megaMenuType == 'medium' ? 'col-lg-3' : menuItem.megaMenuType == 'large' ? 'col' : ''} `,
-        key: i,
-        __self: undefined,
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 122,
-          columnNumber: 65
-        }
-      }, __jsx("div", {
-        className: "menu-container",
-        __self: undefined,
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 123,
-          columnNumber: 69
-        }
-      }, __jsx("a", {
-        className: "menu-head",
-        __self: undefined,
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 124,
-          columnNumber: 73
-        }
-      }, megaMenuItem.title), __jsx("ul", {
-        className: `menu-icon ${megaMenuItem.title ? 'openSubChildMenu' : ''}`,
-        __self: undefined,
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 125,
-          columnNumber: 73
-        }
-      }, menuItem.title === 'Elements' ? megaMenuItem.children.map((subMegaMenuItem, i) => {
-        return __jsx("li", {
-          key: i,
-          __self: undefined,
-          __source: {
-            fileName: _jsxFileName,
-            lineNumber: 130,
-            columnNumber: 89
-          }
-        }, __jsx("a", {
-          href: subMegaMenuItem.path,
-          __self: undefined,
-          __source: {
-            fileName: _jsxFileName,
-            lineNumber: 131,
-            columnNumber: 93
-          }
-        }, __jsx("i", {
-          className: `icon-${subMegaMenuItem.icon}`,
-          __self: undefined,
-          __source: {
-            fileName: _jsxFileName,
-            lineNumber: 132,
-            columnNumber: 97
-          }
-        }), subMegaMenuItem.title));
-      }) : megaMenuItem.children.map((subMegaMenuItem, i) => {
-        return __jsx("li", {
-          key: i,
-          __self: undefined,
-          __source: {
-            fileName: _jsxFileName,
-            lineNumber: 138,
-            columnNumber: 89
-          }
-        }, __jsx("a", {
-          href: subMegaMenuItem.path,
-          __self: undefined,
-          __source: {
-            fileName: _jsxFileName,
-            lineNumber: 139,
-            columnNumber: 93
-          }
-        }, subMegaMenuItem.title));
-      }))));
-    }))) : ''), menuItem.children && !menuItem.megaMenu ? __jsx("ul", {
-      className: `${menuItem.active ? 'menu-open activeSubmenu' : ''}`,
-      style: menuItem.active ? {
-        opacity: 1,
-        transition: 'opacity 500ms ease-in'
-      } : {},
-      __self: undefined,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 157,
-        columnNumber: 37
-      }
-    }, menuItem.children.map((childrenItem, index) => __jsx("li", {
-      key: index,
-      className: `${childrenItem.children ? 'sub-menu ' : ''}`,
-      __self: undefined,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 162,
-        columnNumber: 45
-      }
-    }, childrenItem.type === 'sub' ? __jsx("a", {
-      href: "#javascript",
-      onClick: () => toggletNavActive(childrenItem),
-      __self: undefined,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 164,
-        columnNumber: 53
-      }
-    }, childrenItem.title) : '', childrenItem.type === 'link' ? __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
-      href: `${childrenItem.path}`,
-      __self: undefined,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 169,
-        columnNumber: 53
-      }
-    }, __jsx("a", {
-      __self: undefined,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 170,
-        columnNumber: 57
-      }
-    }, "    ", childrenItem.title, " ")) : '', childrenItem.children ? __jsx("ul", {
-      className: `${childrenItem.active ? 'menu-open' : 'active'}`,
-      __self: undefined,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 174,
-        columnNumber: 53
-      }
-    }, childrenItem.children.map((childrenSubItem, key) => __jsx("li", {
-      key: key,
-      __self: undefined,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 176,
-        columnNumber: 61
-      }
-    }, childrenSubItem.type === 'link' ? __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
-      href: `${childrenSubItem.path}`,
-      __self: undefined,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 178,
-        columnNumber: 69
-      }
-    }, __jsx("a", {
-      className: "sub-menu-title",
-      __self: undefined,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 179,
-        columnNumber: 73
-      }
-    }, childrenSubItem.title)) : ''))) : ''))) : '');
+    }, menuItem.title)));
   })), __jsx("ul", {
     className: "main-menu",
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 195,
+      lineNumber: 96,
       columnNumber: 13
     }
-  }, _constant_menu__WEBPACK_IMPORTED_MODULE_2__["MENUITEMS"].slice(3, 7).map((menuItem, i) => {
+  }, _constant_menu__WEBPACK_IMPORTED_MODULE_1__["MENUITEMS"].slice(2, 4).map((menuItem, i) => {
     return __jsx("li", {
       key: i,
-      className: ` ${menuItem.megaMenu ? 'mega-menu' : ''}`,
       __self: undefined,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 199,
+        lineNumber: 100,
         columnNumber: 29
       }
-    }, menuItem.sidebartitle ? __jsx("div", {
-      className: "dropdown",
-      __self: undefined,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 202,
-        columnNumber: 37
-      }
-    }, menuItem.sidebartitle) : '', menuItem.type === 'sub' ? __jsx("a", {
-      className: "dropdown",
-      href: "#javascript",
+    }, __jsx("a", {
+      href: `${menuItem.path}`,
       onClick: () => toggletNavActive(menuItem),
       __self: undefined,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 205,
-        columnNumber: 37
-      }
-    }, __jsx("span", {
-      __self: undefined,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 206,
-        columnNumber: 41
-      }
-    }, menuItem.title)) : '', menuItem.type === 'link' ? __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
-      href: `${process.env.PUBLIC_URL}${menuItem.path}`,
-      className: `${menuItem.active ? 'active' : ''}`,
-      onClick: () => toggletNavActive(menuItem),
-      __self: undefined,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 210,
-        columnNumber: 37
-      }
-    }, __jsx("span", {
-      __self: undefined,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 216,
-        columnNumber: 41
-      }
-    }, menuItem.title), menuItem.children ? __jsx("i", {
-      className: "fa fa-angle-right pull-right",
-      __self: undefined,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 218,
-        columnNumber: 45
-      }
-    }) : '') : '', __jsx("div", {
-      className: `mega-menu-container ${menuItem.title === 'Elements' ? 'resize' : ''} ${menuItem.active ? 'opensubmenu activeSubmenu' : ''}`,
-      __self: undefined,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 223,
+        lineNumber: 101,
         columnNumber: 33
       }
-    }, menuItem.megaMenu === true ? __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_3__["Container"], {
+    }, __jsx("span", {
       __self: undefined,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 227,
-        columnNumber: 45
-      }
-    }, __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_3__["Row"], {
-      __self: undefined,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 228,
-        columnNumber: 49
-      }
-    }, menuItem.children.map((megaMenuItem, i) => {
-      return __jsx("div", {
-        className: `${menuItem.megaMenuType == 'small' ? 'col-lg-4' : menuItem.megaMenuType == 'medium' ? 'col-lg-3' : menuItem.megaMenuType == 'large' ? 'col' : ''} `,
-        key: i,
-        __self: undefined,
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 232,
-          columnNumber: 65
-        }
-      }, __jsx("div", {
-        className: "menu-container",
-        __self: undefined,
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 233,
-          columnNumber: 69
-        }
-      }, __jsx("a", {
-        className: "menu-head",
-        __self: undefined,
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 234,
-          columnNumber: 73
-        }
-      }, megaMenuItem.title), __jsx("ul", {
-        className: `menu-icon ${megaMenuItem.title ? 'openSubChildMenu' : ''}`,
-        __self: undefined,
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 235,
-          columnNumber: 73
-        }
-      }, menuItem.title === 'Elements' ? megaMenuItem.children.map((subMegaMenuItem, i) => {
-        return __jsx("li", {
-          key: i,
-          __self: undefined,
-          __source: {
-            fileName: _jsxFileName,
-            lineNumber: 240,
-            columnNumber: 89
-          }
-        }, __jsx("a", {
-          href: subMegaMenuItem.path,
-          __self: undefined,
-          __source: {
-            fileName: _jsxFileName,
-            lineNumber: 241,
-            columnNumber: 93
-          }
-        }, __jsx("i", {
-          className: `icon-${subMegaMenuItem.icon}`,
-          __self: undefined,
-          __source: {
-            fileName: _jsxFileName,
-            lineNumber: 242,
-            columnNumber: 97
-          }
-        }), subMegaMenuItem.title));
-      }) : megaMenuItem.children.map((subMegaMenuItem, i) => {
-        return __jsx("li", {
-          key: i,
-          __self: undefined,
-          __source: {
-            fileName: _jsxFileName,
-            lineNumber: 248,
-            columnNumber: 89
-          }
-        }, __jsx("a", {
-          href: subMegaMenuItem.path,
-          __self: undefined,
-          __source: {
-            fileName: _jsxFileName,
-            lineNumber: 249,
-            columnNumber: 93
-          }
-        }, subMegaMenuItem.title));
-      }))));
-    }))) : ''), menuItem.children && !menuItem.megaMenu ? __jsx("ul", {
-      className: `${menuItem.active ? 'menu-open activeSubmenu' : ''}`,
-      style: menuItem.active ? {
-        opacity: 1,
-        transition: 'opacity 500ms ease-in'
-      } : {},
-      __self: undefined,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 267,
+        lineNumber: 102,
         columnNumber: 37
       }
-    }, menuItem.children.map((childrenItem, index) => __jsx("li", {
-      key: index,
-      className: `${childrenItem.children ? 'sub-menu ' : ''}`,
-      __self: undefined,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 272,
-        columnNumber: 45
-      }
-    }, childrenItem.type === 'sub' ? __jsx("a", {
-      href: "#javascript",
-      onClick: () => toggletNavActive(childrenItem),
-      __self: undefined,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 274,
-        columnNumber: 53
-      }
-    }, childrenItem.title) : '', childrenItem.type === 'link' ? __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
-      href: `${childrenItem.path}`,
-      __self: undefined,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 279,
-        columnNumber: 53
-      }
-    }, __jsx("a", {
-      __self: undefined,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 280,
-        columnNumber: 57
-      }
-    }, "    ", childrenItem.title, " ")) : '', childrenItem.children ? __jsx("ul", {
-      className: `${childrenItem.active ? 'menu-open activeSubmenu' : 'active'}`,
-      __self: undefined,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 284,
-        columnNumber: 53
-      }
-    }, childrenItem.children.map((childrenSubItem, key) => __jsx("li", {
-      key: key,
-      __self: undefined,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 286,
-        columnNumber: 61
-      }
-    }, childrenSubItem.type === 'link' ? __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
-      href: `${childrenSubItem.path}`,
-      __self: undefined,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 288,
-        columnNumber: 69
-      }
-    }, __jsx("a", {
-      className: "sub-menu-title",
-      __self: undefined,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 289,
-        columnNumber: 73
-      }
-    }, childrenSubItem.title)) : ''))) : ''))) : '');
+    }, menuItem.title)));
   })));
 };
 
@@ -1647,8 +512,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_7__);
 /* harmony import */ var _database__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./database */ "./containers/portfolio/database.js");
 /* harmony import */ var _database__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(_database__WEBPACK_IMPORTED_MODULE_8__);
-/* harmony import */ var react_image_lightbox_next__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! react-image-lightbox-next */ "./node_modules/react-image-lightbox-next/dist/main.js");
-/* harmony import */ var react_image_lightbox_next__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(react_image_lightbox_next__WEBPACK_IMPORTED_MODULE_9__);
+/* harmony import */ var reactstrap__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! reactstrap */ "reactstrap");
+/* harmony import */ var reactstrap__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(reactstrap__WEBPACK_IMPORTED_MODULE_9__);
+/* harmony import */ var react_image_lightbox_next__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! react-image-lightbox-next */ "./node_modules/react-image-lightbox-next/dist/main.js");
+/* harmony import */ var react_image_lightbox_next__WEBPACK_IMPORTED_MODULE_10___default = /*#__PURE__*/__webpack_require__.n(react_image_lightbox_next__WEBPACK_IMPORTED_MODULE_10__);
 
 
 
@@ -1662,6 +529,7 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement;
 function ownKeys(object, enumerableOnly) { var keys = _babel_runtime_corejs2_core_js_object_keys__WEBPACK_IMPORTED_MODULE_5___default()(object); if (_babel_runtime_corejs2_core_js_object_get_own_property_symbols__WEBPACK_IMPORTED_MODULE_4___default.a) { var symbols = _babel_runtime_corejs2_core_js_object_get_own_property_symbols__WEBPACK_IMPORTED_MODULE_4___default()(object); if (enumerableOnly) symbols = symbols.filter(function (sym) { return _babel_runtime_corejs2_core_js_object_get_own_property_descriptor__WEBPACK_IMPORTED_MODULE_3___default()(object, sym).enumerable; }); keys.push.apply(keys, symbols); } return keys; }
 
 function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { ownKeys(Object(source), true).forEach(function (key) { Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_6__["default"])(target, key, source[key]); }); } else if (_babel_runtime_corejs2_core_js_object_get_own_property_descriptors__WEBPACK_IMPORTED_MODULE_2___default.a) { _babel_runtime_corejs2_core_js_object_define_properties__WEBPACK_IMPORTED_MODULE_1___default()(target, _babel_runtime_corejs2_core_js_object_get_own_property_descriptors__WEBPACK_IMPORTED_MODULE_2___default()(source)); } else { ownKeys(Object(source)).forEach(function (key) { _babel_runtime_corejs2_core_js_object_define_property__WEBPACK_IMPORTED_MODULE_0___default()(target, key, _babel_runtime_corejs2_core_js_object_get_own_property_descriptor__WEBPACK_IMPORTED_MODULE_3___default()(source, key)); }); } } return target; }
+
 
 
 
@@ -1685,7 +553,7 @@ const Basic = ({
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 23,
+      lineNumber: 24,
       columnNumber: 9
     }
   }, __jsx("section", {
@@ -1693,15 +561,72 @@ const Basic = ({
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 24,
+      lineNumber: 25,
       columnNumber: 13
     }
+  }, __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_9__["Container"], {
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 26,
+      columnNumber: 13
+    }
+  }, __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_9__["Row"], {
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 27,
+      columnNumber: 17
+    }
+  }, __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_9__["Col"], {
+    md: "8",
+    className: "offset-md-2",
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 28,
+      columnNumber: 21
+    }
   }, __jsx("div", {
+    className: "title",
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 29,
+      columnNumber: 25
+    }
+  }, __jsx("img", {
+    alt: "",
+    className: "img-fluid title-img",
+    src: "/assets/images/wedding-img/bottom.png",
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 30,
+      columnNumber: 29
+    }
+  }), __jsx("div", {
+    className: "main-title",
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 32,
+      columnNumber: 29
+    }
+  }, __jsx("h2", {
+    className: "gradient-text",
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 33,
+      columnNumber: 33
+    }
+  }, "Galer\xEDa")))))), __jsx("div", {
     className: fluid || 'container',
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 25,
+      lineNumber: 39,
       columnNumber: 17
     }
   }, _database__WEBPACK_IMPORTED_MODULE_8__["AllImgData"].map((imgItem, i) => {
@@ -1711,7 +636,7 @@ const Basic = ({
       __self: undefined,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 28,
+        lineNumber: 42,
         columnNumber: 29
       }
     }, __jsx("div", {
@@ -1719,7 +644,7 @@ const Basic = ({
       __self: undefined,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 29,
+        lineNumber: 43,
         columnNumber: 33
       }
     }, __jsx("div", {
@@ -1727,7 +652,7 @@ const Basic = ({
       __self: undefined,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 30,
+        lineNumber: 44,
         columnNumber: 37
       }
     }, __jsx("div", {
@@ -1737,7 +662,7 @@ const Basic = ({
       __self: undefined,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 31,
+        lineNumber: 45,
         columnNumber: 41
       }
     }, __jsx("div", {
@@ -1749,7 +674,7 @@ const Basic = ({
       __self: undefined,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 33,
+        lineNumber: 47,
         columnNumber: 45
       }
     }, __jsx("i", {
@@ -1758,7 +683,7 @@ const Basic = ({
       __self: undefined,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 36,
+        lineNumber: 50,
         columnNumber: 49
       }
     })), __jsx("img", {
@@ -1768,10 +693,10 @@ const Basic = ({
       __self: undefined,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 38,
+        lineNumber: 52,
         columnNumber: 45
       }
-    }), photoIndex.isOpen && __jsx(react_image_lightbox_next__WEBPACK_IMPORTED_MODULE_9___default.a, {
+    }), photoIndex.isOpen && __jsx(react_image_lightbox_next__WEBPACK_IMPORTED_MODULE_10___default.a, {
       mainSrc: AllImg[photoIndex.index],
       nextSrc: AllImg[(photoIndex.index + 1) % AllImg.length],
       prevSrc: AllImg[(photoIndex.index + AllImg.length - 1) % AllImg.length],
@@ -1788,7 +713,7 @@ const Basic = ({
       __self: undefined,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 41,
+        lineNumber: 55,
         columnNumber: 49
       }
     })))), title && __jsx("div", {
@@ -1796,7 +721,7 @@ const Basic = ({
       __self: undefined,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 57,
+        lineNumber: 71,
         columnNumber: 37
       }
     }, __jsx("h3", {
@@ -1804,7 +729,7 @@ const Basic = ({
       __self: undefined,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 58,
+        lineNumber: 72,
         columnNumber: 41
       }
     }, title), __jsx("h6", {
@@ -1812,7 +737,7 @@ const Basic = ({
       __self: undefined,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 61,
+        lineNumber: 75,
         columnNumber: 41
       }
     }, subTitle)));
@@ -1831,42 +756,6 @@ const Basic = ({
 /***/ (function(module, exports) {
 
 module.exports = {
-  FeshionImgData: [{
-    img: '/assets/images/portfolio/1.jpg'
-  }, {
-    img: '/assets/images/portfolio/2.jpg'
-  }, {
-    img: '/assets/images/portfolio/3.jpg'
-  }, {
-    img: '/assets/images/portfolio/4.jpg'
-  }],
-  BagsImgData: [{
-    img: '/assets/images/portfolio/5.jpg'
-  }, {
-    img: '/assets/images/portfolio/6.jpg'
-  }, {
-    img: '/assets/images/portfolio/7.jpg'
-  }, {
-    img: '/assets/images/portfolio/8.png'
-  }],
-  ShoesImgData: [{
-    img: '/assets/images/portfolio/9.jpg'
-  }, {
-    img: '/assets/images/portfolio/10.jpg'
-  }, {
-    img: '/assets/images/portfolio/12.png'
-  }, {
-    img: '/assets/images/portfolio/8.png'
-  }],
-  WatchImgData: [{
-    img: '/assets/images/portfolio/13.jpg'
-  }, {
-    img: '/assets/images/portfolio/11.jpg'
-  }, {
-    img: '/assets/images/portfolio/10.jpg'
-  }, {
-    img: '/assets/images/portfolio/12.png'
-  }],
   AllImgData: [{
     img: '/assets/images/portfolio/Barriguita_1.png'
   }, {
@@ -1885,42 +774,6 @@ module.exports = {
     img: '/assets/images/portfolio/Barriguita_8.png'
   }, {
     img: '/assets/images/portfolio/Barriguita_9.png'
-  }],
-  PortfolioDetail1Data: [{
-    img: '/assets/images/portfolio/2.jpg'
-  }, {
-    img: '/assets/images/portfolio/3.jpg'
-  }, {
-    img: '/assets/images/portfolio/5.jpg'
-  }, {
-    img: '/assets/images/portfolio/4.jpg'
-  }, {
-    img: '/assets/images/portfolio/5.jpg'
-  }, {
-    img: '/assets/images/portfolio/2.jpg'
-  }, {
-    img: '/assets/images/portfolio/3.jpg'
-  }],
-  CreativeWrapperData: [{
-    img: '../assets/images/portfolio/1.jpg',
-    title: 'Lorem Ipsum',
-    desc: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry`s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.'
-  }, {
-    img: '../assets/images/portfolio/2.jpg',
-    title: 'Lorem Ipsum',
-    desc: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry`s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.'
-  }, {
-    img: '../assets/images/portfolio/3.jpg',
-    title: 'Lorem Ipsum',
-    desc: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry`s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.'
-  }, {
-    img: '../assets/images/portfolio/4.jpg',
-    title: 'Lorem Ipsum',
-    desc: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry`s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.'
-  }, {
-    img: '../assets/images/portfolio/5.jpg',
-    title: 'Lorem Ipsum',
-    desc: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry`s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.'
   }]
 };
 
@@ -2050,121 +903,24 @@ module.exports = {
 /***/ (function(module, exports) {
 
 module.exports = {
-  BrandData: [{
-    img: '/assets/images/wedding-img/brand/1.png'
-  }, {
-    img: '/assets/images/wedding-img/brand/2.png'
-  }, {
-    img: '/assets/images/wedding-img/brand/3.png'
-  }, {
-    img: '/assets/images/wedding-img/brand/4.png'
-  }, {
-    img: '/assets/images/wedding-img/brand/5.png'
-  }, {
-    img: '/assets/images/wedding-img/brand/1.png'
-  }],
-  CounterData: [{
-    img: '/assets/images/wedding-img/icon/1.png',
-    title: 'Total Event',
-    count: 14
-  }, {
-    img: '/assets/images/wedding-img/icon/2.png',
-    title: 'Total Guest',
-    count: 999
-  }, {
-    img: '/assets/images/wedding-img/icon/3.png',
-    title: 'Invitation Card',
-    count: 999
-  }, {
-    img: '/assets/images/wedding-img/icon/4.png',
-    title: 'Total car',
-    count: 1975
-  }],
-  DestinationData: [{
-    img: '/assets/images/wedding-img/when/1.png',
-    title: 'ceremony',
-    timing: '7 : 00 pm',
-    feature1: 'Hailey Jacson',
-    feature2: 'BLVD Menlo park',
-    feature3: 'CA'
-  }, {
-    img: '/assets/images/wedding-img/when/2.png',
-    title: 'ceremony',
-    timing: '6 : 00 pm',
-    feature1: 'Hailey Jacson',
-    feature2: 'BLVD Menlo park',
-    feature3: 'CA'
-  }, {
-    img: '/assets/images/wedding-img/when/1.png',
-    title: 'ceremony',
-    timing: '7 : 00 pm',
-    feature1: 'Hailey Jacson',
-    feature2: 'BLVD Menlo park',
-    feature3: 'CA'
-  }],
   BlogData: [{
-    img: '/assets/images/wedding-img/blog/1.jpg',
+    img: '/assets/images/wedding-img/blog/Yomaquillando_1.png',
     heading: 'The Proposal',
     date: '08/14/2015',
     place: 'Newyork',
     desc: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit,…'
   }, {
-    img: '/assets/images/wedding-img/blog/2.jpg',
+    img: '/assets/images/wedding-img/blog/Yomaquillando_2.png',
     heading: 'The Proposal',
     date: '08/14/2015',
     place: 'Newyork',
     desc: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit,…'
   }, {
-    img: '/assets/images/wedding-img/blog/3.jpg',
+    img: '/assets/images/wedding-img/blog/Yomaquillando_3.png',
     heading: 'The Proposal',
     date: '08/14/2015',
     place: 'Newyork',
     desc: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit,…'
-  }],
-  DesignImgData: [{
-    img: '/assets/images/wedding-img/photo-album/1.jpg'
-  }, {
-    img: '/assets/images/wedding-img/photo-album/2.jpg'
-  }, {
-    img: '/assets/images/wedding-img/photo-album/3.jpg'
-  }, {
-    img: '/assets/images/wedding-img/photo-album/4.jpg'
-  }],
-  GraphicsImgData: [{
-    img: '/assets/images/wedding-img/photo-album/4.jpg'
-  }, {
-    img: '/assets/images/wedding-img/photo-album/3.jpg'
-  }, {
-    img: '/assets/images/wedding-img/photo-album/2.jpg'
-  }, {
-    img: '/assets/images/wedding-img/photo-album/1.jpg'
-  }],
-  BrandingImgData: [{
-    img: '/assets/images/wedding-img/photo-album/1.jpg'
-  }, {
-    img: '/assets/images/wedding-img/photo-album/4.jpg'
-  }, {
-    img: '/assets/images/wedding-img/photo-album/2.jpg'
-  }, {
-    img: '/assets/images/wedding-img/photo-album/3.jpg'
-  }],
-  PhotoGraphyImgData: [{
-    img: '/assets/images/wedding-img/photo-album/4.jpg'
-  }, {
-    img: '/assets/images/wedding-img/photo-album/2.jpg'
-  }, {
-    img: '/assets/images/wedding-img/photo-album/1.jpg'
-  }],
-  AllImgData: [{
-    img: '/assets/images/wedding-img/photo-album/1.jpg'
-  }, {
-    img: '/assets/images/wedding-img/photo-album/2.jpg'
-  }, {
-    img: '/assets/images/wedding-img/photo-album/3.jpg'
-  }, {
-    img: '/assets/images/wedding-img/photo-album/2.jpg'
-  }, {
-    img: '/assets/images/wedding-img/photo-album/1.jpg'
   }]
 };
 
@@ -5970,7 +4726,7 @@ var settings = {
   infinite: true,
   speed: 500,
   arrows: false,
-  autoplay: true,
+  autoplay: false,
   swipeToSlide: true,
   slidesToShow: 3,
   slidesToScroll: 1,
@@ -6165,6 +4921,7 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 const ElementPriceThree = () => __jsx("section", {
   className: "agency pricing inner-pagetitle",
+  id: "pricing",
   __self: undefined,
   __source: {
     fileName: _jsxFileName,
@@ -6179,7 +4936,7 @@ const ElementPriceThree = () => __jsx("section", {
     columnNumber: 9
   }
 }, __jsx(_common_title__WEBPACK_IMPORTED_MODULE_1__["default"], {
-  heading: "Pricing 3",
+  heading: "Precios",
   __self: undefined,
   __source: {
     fileName: _jsxFileName,
@@ -6213,10 +4970,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! next/head */ "next/head");
 /* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(next_head__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var _containers_common_center_logo_header__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../containers/common/center-logo-header */ "./containers/common/center-logo-header.js");
-/* harmony import */ var _layouts_sections_wedding_header__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./layouts/sections/wedding/header */ "./pages/layouts/sections/wedding/header.js");
-/* harmony import */ var _layouts_sections_wedding_about__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./layouts/sections/wedding/about */ "./pages/layouts/sections/wedding/about.js");
-/* harmony import */ var _elements_price_elementPrice3__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./elements/price/elementPrice3 */ "./pages/elements/price/elementPrice3.js");
-/* harmony import */ var _portfolio_full_width_3_grid__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./portfolio/full-width-3-grid */ "./pages/portfolio/full-width-3-grid.js");
+/* harmony import */ var _layouts_sections_wedding_header__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./layouts/sections/wedding/header */ "./pages/layouts/sections/wedding/header.js");
+/* harmony import */ var _portfolio_full_width_3_grid__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./portfolio/full-width-3-grid */ "./pages/portfolio/full-width-3-grid.js");
+/* harmony import */ var _layouts_sections_wedding_about__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./layouts/sections/wedding/about */ "./pages/layouts/sections/wedding/about.js");
+/* harmony import */ var _elements_price_elementPrice3__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./elements/price/elementPrice3 */ "./pages/elements/price/elementPrice3.js");
 /* harmony import */ var _layouts_sections_wedding_blog__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./layouts/sections/wedding/blog */ "./pages/layouts/sections/wedding/blog.js");
 /* harmony import */ var _layouts_sections_wedding_footer__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./layouts/sections/wedding/footer */ "./pages/layouts/sections/wedding/footer.js");
 var _jsxFileName = "/home/jeffe/work/Barriguitas/unice_theme/pages/index.js";
@@ -6268,28 +5025,28 @@ const Home = () => {
       lineNumber: 29,
       columnNumber: 13
     }
-  }), __jsx(_layouts_sections_wedding_header__WEBPACK_IMPORTED_MODULE_3__["default"], {
+  }), __jsx(_layouts_sections_wedding_header__WEBPACK_IMPORTED_MODULE_9__["default"], {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 31,
       columnNumber: 13
     }
-  }), __jsx(_portfolio_full_width_3_grid__WEBPACK_IMPORTED_MODULE_6__["default"], {
+  }), __jsx(_portfolio_full_width_3_grid__WEBPACK_IMPORTED_MODULE_4__["default"], {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 33,
       columnNumber: 13
     }
-  }), __jsx(_layouts_sections_wedding_about__WEBPACK_IMPORTED_MODULE_4__["default"], {
+  }), __jsx(_layouts_sections_wedding_about__WEBPACK_IMPORTED_MODULE_5__["default"], {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 35,
       columnNumber: 13
     }
-  }), __jsx(_elements_price_elementPrice3__WEBPACK_IMPORTED_MODULE_5__["default"], {
+  }), __jsx(_elements_price_elementPrice3__WEBPACK_IMPORTED_MODULE_6__["default"], {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
@@ -6337,6 +5094,7 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 const About = () => __jsx("section", {
   className: "wedding format",
+  id: "about",
   __self: undefined,
   __source: {
     fileName: _jsxFileName,
@@ -6568,6 +5326,7 @@ var settings = {
 
 const Blog = () => __jsx("section", {
   className: "wedding blog",
+  id: "testimonials",
   __self: undefined,
   __source: {
     fileName: _jsxFileName,
@@ -6798,15 +5557,7 @@ const Blog = () => __jsx("section", {
       lineNumber: 66,
       columnNumber: 57
     }
-  }, item.desc), __jsx("button", {
-    className: "btn btn-blog",
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 67,
-      columnNumber: 57
-    }
-  }, "read more")))))));
+  }, item.desc)))))));
 }))))));
 
 /* harmony default export */ __webpack_exports__["default"] = (Blog);
@@ -6918,7 +5669,7 @@ const Footer = () => __jsx("footer", {
     columnNumber: 33
   }
 }, __jsx("a", {
-  className: "copyright-text",
+  className: "copyright-text ",
   href: "#",
   __self: undefined,
   __source: {
@@ -6928,7 +5679,7 @@ const Footer = () => __jsx("footer", {
   }
 }, __jsx("i", {
   "aria-hidden": "true",
-  className: "fa fa-twitter gradient-text",
+  className: "fa fa-instagram gradient-text",
   __self: undefined,
   __source: {
     fileName: _jsxFileName,
@@ -6953,36 +5704,11 @@ const Footer = () => __jsx("footer", {
   }
 }, __jsx("i", {
   "aria-hidden": "true",
-  className: "fa fa-google gradient-text",
+  className: "fa fa-whatsapp gradient-text",
   __self: undefined,
   __source: {
     fileName: _jsxFileName,
     lineNumber: 23,
-    columnNumber: 41
-  }
-}))), __jsx("li", {
-  __self: undefined,
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 26,
-    columnNumber: 33
-  }
-}, __jsx("a", {
-  className: "copyright-text ",
-  href: "#",
-  __self: undefined,
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 27,
-    columnNumber: 37
-  }
-}, __jsx("i", {
-  "aria-hidden": "true",
-  className: "fa fa-instagram gradient-text",
-  __self: undefined,
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 28,
     columnNumber: 41
   }
 }))))))), __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Col"], {
@@ -6991,129 +5717,7 @@ const Footer = () => __jsx("footer", {
   __self: undefined,
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 35,
-    columnNumber: 17
-  }
-}, __jsx("div", {
-  className: "link-horizontal",
-  __self: undefined,
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 36,
-    columnNumber: 21
-  }
-}, __jsx("ul", {
-  className: "link justify-content-center footer-contants",
-  __self: undefined,
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 37,
-    columnNumber: 25
-  }
-}, __jsx("li", {
-  __self: undefined,
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 38,
-    columnNumber: 29
-  }
-}, __jsx("a", {
-  className: "copyright-text",
-  href: "#",
-  __self: undefined,
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 39,
-    columnNumber: 33
-  }
-}, "home")), __jsx("li", {
-  __self: undefined,
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 41,
-    columnNumber: 29
-  }
-}, __jsx("a", {
-  className: "copyright-text",
-  href: "#",
-  __self: undefined,
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 42,
-    columnNumber: 33
-  }
-}, "couple")), __jsx("li", {
-  __self: undefined,
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 44,
-    columnNumber: 29
-  }
-}, __jsx("a", {
-  className: "copyright-text",
-  href: "#",
-  __self: undefined,
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 45,
-    columnNumber: 33
-  }
-}, "invitation")), __jsx("li", {
-  __self: undefined,
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 47,
-    columnNumber: 29
-  }
-}, __jsx("a", {
-  className: "copyright-text",
-  href: "#",
-  __self: undefined,
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 48,
-    columnNumber: 33
-  }
-}, "album ")), __jsx("li", {
-  __self: undefined,
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 50,
-    columnNumber: 29
-  }
-}, __jsx("a", {
-  className: "copyright-text",
-  href: "#",
-  __self: undefined,
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 51,
-    columnNumber: 33
-  }
-}, "friends say")), __jsx("li", {
-  __self: undefined,
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 53,
-    columnNumber: 29
-  }
-}, __jsx("a", {
-  className: "copyright-text",
-  href: "#",
-  __self: undefined,
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 54,
-    columnNumber: 33
-  }
-}, "gift"))))), __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Col"], {
-  xl: "3",
-  sm: "12",
-  className: "p-0",
-  __self: undefined,
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 59,
+    lineNumber: 30,
     columnNumber: 17
   }
 }, __jsx("div", {
@@ -7121,18 +5725,18 @@ const Footer = () => __jsx("footer", {
   __self: undefined,
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 60,
+    lineNumber: 31,
     columnNumber: 21
   }
 }, __jsx("h6", {
-  className: "copyright-text text-right",
+  className: "copyright-text text-center",
   __self: undefined,
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 61,
+    lineNumber: 32,
     columnNumber: 25
   }
-}, "\xA9 2020 Unice powered by Pixelstrap"))))));
+}, "2009 - 2021 Croko"))))));
 
 /* harmony default export */ __webpack_exports__["default"] = (Footer);
 
@@ -7332,6 +5936,7 @@ const FullWidth3Grid = () => __jsx(react__WEBPACK_IMPORTED_MODULE_0__["Fragment"
   }
 }, __jsx("div", {
   className: "masonry-filter",
+  id: "galery",
   __self: undefined,
   __source: {
     fileName: _jsxFileName,
@@ -7452,7 +6057,7 @@ module.exports = "data:image/png;base64,ZXhwb3J0IGRlZmF1bHQgX193ZWJwYWNrX3B1Ymxp
 
 /***/ }),
 
-/***/ 3:
+/***/ 4:
 /*!******************************!*\
   !*** multi ./pages/index.js ***!
   \******************************/

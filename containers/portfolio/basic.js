@@ -1,5 +1,6 @@
 import React, { useState, Fragment } from 'react';
 import { AllImgData } from './database';
+import {Container,Row,Col} from 'reactstrap'
 import Lightbox from 'react-image-lightbox-next';
 
 const AllImg = [
@@ -22,6 +23,19 @@ const Basic = ({ className, title, subTitle, fluid }) => {
     return (
         <Fragment>
             <section className="portfolio-section fullwidth-portfolio masonray-sec zoom-gallery titles">
+            <Container>
+                <Row>
+                    <Col md="8"  className="offset-md-2">
+                        <div className="title">
+                            <img alt="" className="img-fluid title-img"
+                                src="/assets/images/wedding-img/bottom.png" />
+                            <div className="main-title">
+                                <h2 className="gradient-text">Galería</h2>
+                            </div>
+                        </div>
+                    </Col>
+                </Row>
+            </Container>
                 <div className={fluid || 'container'}>           
                     {AllImgData.map((imgItem, i) => {
                         return (

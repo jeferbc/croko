@@ -26523,7 +26523,7 @@ var Error = function Error(_ref) {
       lineNumber: 24,
       columnNumber: 37
     }
-  }, "page not found"), __jsx("p", {
+  }, "P\xE1gina no encontrada"), __jsx("p", {
     className: "text-404 text-white text-center",
     __self: _this,
     __source: {
@@ -26532,7 +26532,7 @@ var Error = function Error(_ref) {
       columnNumber: 37
     }
   }, "The Page You Are Attempting To Reach Is Currently Not Available. This May Be Because The Page Does Not Exist Or Has Been Moved."), __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
-    href: "/layouts/app1",
+    href: "/",
     __self: _this,
     __source: {
       fileName: _jsxFileName,
@@ -26547,7 +26547,7 @@ var Error = function Error(_ref) {
       lineNumber: 28,
       columnNumber: 41
     }
-  }, "back to home"))))))), __jsx("div", {
+  }, "Inicio"))))))), __jsx("div", {
     className: "objects",
     __self: _this,
     __source: {
@@ -26675,7 +26675,7 @@ Error.getInitialProps = function (_ref2) {
 
 /***/ }),
 
-/***/ 8:
+/***/ 7:
 /*!*********************************************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2F_error&absolutePagePath=%2Fhome%2Fjeffe%2Fwork%2FBarriguitas%2Funice_theme%2Fpages%2F_error.js ***!
   \*********************************************************************************************************************************************/
@@ -26698,5 +26698,5 @@ module.exports = dll_e4329fd01811217614f8;
 
 /***/ })
 
-},[[8,"static/runtime/webpack.js"]]]);
+},[[7,"static/runtime/webpack.js"]]]);
 //# sourceMappingURL=_error.js.map

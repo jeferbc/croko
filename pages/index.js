@@ -4,9 +4,9 @@ import Head from 'next/head'
 // import Custom Components
 import CenterLogoHeader from '../containers/common/center-logo-header'
 import HeaderSection from './layouts/sections/wedding/header'
+import GallerySection from './portfolio/full-width-3-grid'
 import AboutSection from './layouts/sections/wedding/about'
 import PricingSection from './elements/price/elementPrice3'
-import GallerySection from './portfolio/full-width-3-grid'
 import BlogSection from './layouts/sections/wedding/blog'
 import FooterSection from './layouts/sections/wedding/footer'
 
@@ -36,7 +36,7 @@ const Home = () => {
 
             <PricingSection />
 
-            <BlogSection />      
+            <BlogSection />    
 
             <FooterSection />
 

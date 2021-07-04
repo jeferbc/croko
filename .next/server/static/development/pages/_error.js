@@ -88,7 +88,7 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 4);
+/******/ 	return __webpack_require__(__webpack_require__.s = 3);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -2187,7 +2187,7 @@ const Error = ({
       lineNumber: 24,
       columnNumber: 37
     }
-  }, "page not found"), __jsx("p", {
+  }, "P\xE1gina no encontrada"), __jsx("p", {
     className: "text-404 text-white text-center",
     __self: undefined,
     __source: {
@@ -2196,7 +2196,7 @@ const Error = ({
       columnNumber: 37
     }
   }, "The Page You Are Attempting To Reach Is Currently Not Available. This May Be Because The Page Does Not Exist Or Has Been Moved."), __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
-    href: "/layouts/app1",
+    href: "/",
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
@@ -2211,7 +2211,7 @@ const Error = ({
       lineNumber: 28,
       columnNumber: 41
     }
-  }, "back to home"))))))), __jsx("div", {
+  }, "Inicio"))))))), __jsx("div", {
     className: "objects",
     __self: undefined,
     __source: {
@@ -2340,7 +2340,7 @@ Error.getInitialProps = ({
 
 /***/ }),
 
-/***/ 4:
+/***/ 3:
 /*!*******************************!*\
   !*** multi ./pages/_error.js ***!
   \*******************************/

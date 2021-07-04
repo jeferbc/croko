@@ -21,11 +21,11 @@ const Error = ({ statusCode }) => {
                             <Col lg="8" xs="12" className="offset-lg-2">
                                 <div className="central-body">
                                     <h1 className="text-inner">{statusCode ? statusCode : '404'}</h1>
-                                    <h3 className="sub-text text-white">page not found</h3>
+                                    <h3 className="sub-text text-white">Página no encontrada</h3>
                                     <p className="text-404 text-white text-center">The Page You Are Attempting To Reach Is Currently Not
                                         Available. This May Be Because The Page Does Not Exist Or Has Been Moved.</p>
-                                    <Link href="/layouts/app1" >
-                                        <a className="btn btn-default m-t-20">back to home</a>
+                                    <Link href="/" >
+                                        <a className="btn btn-default m-t-20">Inicio</a>
                                     </Link>
 
                                 </div>
