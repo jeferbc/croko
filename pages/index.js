@@ -23,7 +23,7 @@ const Home = () => {
     return (
         <div>
             <Head>
-                <title>Wedding Layout </title>
+                <title>Maquillajes embarazadas</title>
             </Head>
 
             <CenterLogoHeader themeClass="wedding" />

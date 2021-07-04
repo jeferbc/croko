@@ -1,5 +1,5 @@
 import React, { useState, Fragment } from 'react';
-import { AllImgData, BagsImgData, FeshionImgData, ShoesImgData, WatchImgData } from './database';
+import { AllImgData } from './database';
 import Lightbox from 'react-image-lightbox-next';
 
 const AllImg = [

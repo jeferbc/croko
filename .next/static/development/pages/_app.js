@@ -1,139 +1,5 @@
 (window["webpackJsonp"] = window["webpackJsonp"] || []).push([["static/development/pages/_app.js"],{
 
-/***/ "./containers/customizer.js":
-/*!**********************************!*\
-  !*** ./containers/customizer.js ***!
-  \**********************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-var _this = undefined,
-    _jsxFileName = "/home/jeffe/work/Barriguitas/unice_theme/containers/customizer.js";
-
-var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
-
-
-var Customizer = function Customizer() {
-  var _useState = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])('RTL'),
-      divName = _useState[0],
-      setDivName = _useState[1];
-
-  var _useState2 = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(false),
-      themeLayout = _useState2[0],
-      setThemeLayout = _useState2[1];
-
-  var ChangeRtl = function ChangeRtl(divName) {
-    if (divName === 'RTL') {
-      if (true) {
-        document.body.classList.add('rtl');
-      }
-
-      setDivName('LTR');
-    } else {
-      if (true) {
-        document.body.classList.remove('rtl');
-      }
-
-      setDivName('RTL');
-    }
-  };
-
-  var changeThemeLayout = function changeThemeLayout() {
-    setThemeLayout(!themeLayout);
-  };
-
-  if (themeLayout) {
-    if (true) {
-      document.body.classList.add('dark');
-    }
-  } else {
-    if (true) {
-      document.body.classList.remove('dark');
-    }
-  }
-
-  return __jsx("div", {
-    className: "theme-pannel-main",
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 37,
-      columnNumber: 9
-    }
-  }, __jsx("ul", {
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 38,
-      columnNumber: 13
-    }
-  }, __jsx("li", {
-    id: "rtl_btn",
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 39,
-      columnNumber: 17
-    }
-  }, __jsx("a", {
-    href: null,
-    className: "btn setting_btn",
-    onClick: function onClick() {
-      return ChangeRtl(divName);
-    },
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 40,
-      columnNumber: 21
-    }
-  }, __jsx("span", {
-    className: "rtl-txt",
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 41,
-      columnNumber: 25
-    }
-  }, divName))), __jsx("li", {
-    className: "sidebar-btn dark-light-btn",
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 44,
-      columnNumber: 17
-    }
-  }, __jsx("a", {
-    href: null,
-    className: "dark-light",
-    onClick: function onClick() {
-      return changeThemeLayout();
-    },
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 45,
-      columnNumber: 21
-    }
-  }, __jsx("span", {
-    className: "theme-layout-version",
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 46,
-      columnNumber: 25
-    }
-  }, themeLayout ? 'Light' : 'Dark')))));
-};
-
-/* harmony default export */ __webpack_exports__["default"] = (Customizer);
-
-/***/ }),
-
 /***/ "./node_modules/@babel/runtime-corejs2/core-js/array/from.js":
 /*!*******************************************************************!*\
   !*** ./node_modules/@babel/runtime-corejs2/core-js/array/from.js ***!
@@ -14343,11 +14209,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _public_assets_scss_slick_scss__WEBPACK_IMPORTED_MODULE_12___default = /*#__PURE__*/__webpack_require__.n(_public_assets_scss_slick_scss__WEBPACK_IMPORTED_MODULE_12__);
 /* harmony import */ var _public_assets_scss_slick_theme_scss__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ../public/assets/scss/slick-theme.scss */ "./public/assets/scss/slick-theme.scss");
 /* harmony import */ var _public_assets_scss_slick_theme_scss__WEBPACK_IMPORTED_MODULE_13___default = /*#__PURE__*/__webpack_require__.n(_public_assets_scss_slick_theme_scss__WEBPACK_IMPORTED_MODULE_13__);
-/* harmony import */ var _containers_customizer__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ../containers/customizer */ "./containers/customizer.js");
 
 var _jsxFileName = "/home/jeffe/work/Barriguitas/unice_theme/pages/_app.js";
 var __jsx = react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement;
-
 
 
 
@@ -14423,22 +14287,22 @@ function MyFunctionComponent(_ref2) {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 66,
+      lineNumber: 64,
       columnNumber: 7
     }
   }, __jsx("title", {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 67,
+      lineNumber: 65,
       columnNumber: 9
     }
-  }, "Unice")), loader && __jsx("div", {
+  }, "Maquillajes embarazadas")), loader && __jsx("div", {
     className: "loader-wrapper",
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 70,
+      lineNumber: 68,
       columnNumber: 9
     }
   }, __jsx("div", {
@@ -14446,10 +14310,24 @@ function MyFunctionComponent(_ref2) {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 71,
+      lineNumber: 69,
       columnNumber: 11
     }
   }, __jsx("div", {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 70,
+      columnNumber: 13
+    }
+  }), __jsx("div", {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 71,
+      columnNumber: 13
+    }
+  }), __jsx("div", {
     __self: this,
     __source: {
       fileName: _jsxFileName,
@@ -14498,20 +14376,6 @@ function MyFunctionComponent(_ref2) {
       lineNumber: 78,
       columnNumber: 13
     }
-  }), __jsx("div", {
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 79,
-      columnNumber: 13
-    }
-  }), __jsx("div", {
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 80,
-      columnNumber: 13
-    }
   }))), __jsx(react__WEBPACK_IMPORTED_MODULE_1___default.a.Fragment, null, children), __jsx("div", {
     className: "tap-top",
     style: goingUp ? {
@@ -14523,14 +14387,14 @@ function MyFunctionComponent(_ref2) {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 84,
+      lineNumber: 82,
       columnNumber: 7
     }
   }, __jsx("div", {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 85,
+      lineNumber: 83,
       columnNumber: 9
     }
   }, __jsx("i", {
@@ -14538,7 +14402,7 @@ function MyFunctionComponent(_ref2) {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 85,
+      lineNumber: 83,
       columnNumber: 14
     }
   }))));
@@ -14552,28 +14416,28 @@ function MyApp(_ref3) {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 93,
+      lineNumber: 91,
       columnNumber: 5
     }
   }, __jsx(MyFunctionComponent, {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 94,
+      lineNumber: 92,
       columnNumber: 7
     }
   }, __jsx(Component, Object(_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({}, pageProps, {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 95,
+      lineNumber: 93,
       columnNumber: 9
     }
   }))), __jsx(react_toastify__WEBPACK_IMPORTED_MODULE_6__["ToastContainer"], {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 97,
+      lineNumber: 95,
       columnNumber: 7
     }
   }));

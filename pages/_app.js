@@ -12,8 +12,6 @@ import "../public/assets/scss/color-1.scss"
 import '../public/assets/scss/themify.scss';
 import "../public/assets/scss/slick.scss";
 import "../public/assets/scss/slick-theme.scss";
-import Customizer from '../containers/customizer';
-
 
 const { publicRuntimeConfig = {} } = getConfig() || {};
 
@@ -64,7 +62,7 @@ function MyFunctionComponent({ children }) {
   return (
     <>
       <Head>
-        <title>Unice</title>
+        <title>Maquillajes embarazadas</title>
       </Head>
       {loader &&
         <div className="loader-wrapper">

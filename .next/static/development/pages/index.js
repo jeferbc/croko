@@ -37687,7 +37687,7 @@ var Home = function Home() {
       lineNumber: 26,
       columnNumber: 17
     }
-  }, "Wedding Layout ")), __jsx(_containers_common_center_logo_header__WEBPACK_IMPORTED_MODULE_2__["default"], {
+  }, "Maquillajes embarazadas")), __jsx(_containers_common_center_logo_header__WEBPACK_IMPORTED_MODULE_2__["default"], {
     themeClass: "wedding",
     __self: _this,
     __source: {
