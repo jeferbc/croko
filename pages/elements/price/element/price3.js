@@ -46,7 +46,7 @@ const PricingThree = () => (
                                         <div className="price-value">
                                             <h6 className="price text-center font-primary">$<span className="large font-primary">{item.price}</span>/month</h6>
                                         </div>
-                                        <a className="btn btn-default btn-white" href="#">purchase</a>
+                                        <a className="btn btn-default btn-white" href="#">Contáctanos</a>
                                     </div>
                                 </div>
                             </div>
