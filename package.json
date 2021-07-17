@@ -4,7 +4,8 @@
   "private": true,
   "scripts": {
     "dev": "next",
-    "prod:build": "next build"
+    "prod:build": "next build",
+    "export": "export"
   },
   "dependencies": {
     "@zeit/next-sass": "^1.0.1",
