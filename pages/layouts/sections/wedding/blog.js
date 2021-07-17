@@ -32,11 +32,7 @@ const Blog = () => (
                         <img alt="" className="img-fluid title-img"
                             src="/assets/images/wedding-img/bottom.png" />
                         <div className="main-title">
-                            <h2 className="gradient-text">Our Beautiful Story</h2>
-                        </div>
-                        <div className="sub-title">
-                            <p>A beautiful app for consectetur adipisicing elit, sed do eiusmod tempor incididunt ut mollit
-                            anim id est laborum. Sedut perspiciatis unde omnis.</p>
+                            <h2 className="gradient-text">Historias</h2>
                         </div>
                     </div>
                 </Col>

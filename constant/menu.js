@@ -11,4 +11,7 @@ export const MENUITEMS = [
    {
       title: 'Testimonios', path: '#testimonials'
    },
+   {
+      title: 'Preguntas', path: '#faq'
+   },
 ]

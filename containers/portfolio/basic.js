@@ -22,7 +22,7 @@ const Basic = ({ className, title, subTitle, fluid }) => {
 
     return (
         <Fragment>
-            <section className="portfolio-section fullwidth-portfolio masonray-sec zoom-gallery titles">
+            <section className="portfolio-section fullwidth-portfolio masonray-sec wedding zoom-gallery titles">
             <Container>
                 <Row>
                     <Col md="8"  className="offset-md-2">

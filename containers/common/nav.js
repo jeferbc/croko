@@ -95,7 +95,7 @@ const Nav = () => {
             </ul>
             <ul className="main-menu">
                 {
-                    MENUITEMS.slice(2, 4).map((menuItem, i) => {
+                    MENUITEMS.slice(2, 5).map((menuItem, i) => {
                         return (
                             <li key={i}>
                                 <a href={`${menuItem.path}`} onClick={() => toggletNavActive(menuItem)}>

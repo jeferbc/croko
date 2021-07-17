@@ -12,7 +12,7 @@ const About = () => (
                             <h2 className="gradient-text">Carolina Rincón</h2>
                         </div>
                         <div className="sub-title">
-                            <p>Maquillajes para embarazadas profesional y al mejor precio.</p>
+                            <p>Maquillaje artístico profesional para embarazadas.</p>
                         </div>
                     </div>
                 </Col>
@@ -22,22 +22,21 @@ const About = () => (
                 <Col xl="4" lg="6" md="6">
                     <div className="center-text">
                         <div>
-                            <div className="format-small-text">
-                                <h6># Love Bird</h6>
+                            <div className="format-small-text text-center">
+                                <h6>#Maquillajeparaembarazadas</h6>
                             </div>
                             <div className="format-head-text">
-                                <h3 className="about-font-header gradient-text">about</h3>
+                                {/* <h3 className="about-font-header gradient-text">about</h3> */}
                             </div>
                             <div className="format-sub-text">
-                                <p className="about-para">
-                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
-                            </p>
-                                <p className="about-para">
-                                    When an unknown printer took a galley of type and scrambled it to make a type specimen
-                                    book. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
-                                    Ipsum has been the industry.
-                            </p>
+                                <p className="about-para text-center">
+                                    Mi pasión por el maquillaje prenatal surgió en el 2016, gracias a una iniciativa promovida
+                                    por la Universidad de Antioquia, donde la piel de las embarazadas se convirtió en un lienzo
+                                    portentoso para realizar nuestras obras de arte. Allí pinté la primera barriguita y me enamoré
+                                    por completo de la experiencia, pues los bebés reaccionan al cosquilleo que produce el pincel e
+                                    inicia una pequeña danza entre sus “pataditas” y el movimiento del trazo. Esta conexión mágica
+                                    fue la que me motivó a iniciar este proyecto.
+                                </p>
                             </div>
                         </div>
                     </div>
