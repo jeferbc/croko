@@ -22,8 +22,3 @@ module.exports = withImages(withSass(withCss({
           url: false
         }
       })))
-
-.module.exports = {
-  basePath: '/',
-  assetPrefix: '/'
-}
