@@ -17,7 +17,7 @@ const About = () => (
                     </div>
                 </Col>
                 <Col xl="4" md="6" className="offset-xl-2">
-                    <img alt="" className="img-fluid about-img" src="/assets/images/wedding-img/MIA-1.png" />
+                    <img alt="" className="img-fluid about-img" src="https://ik.imagekit.io/ge17f66b4ma/MIA-1_gfnS344_D.png?updatedAt=1626907771292" />
                 </Col>
                 <Col xl="4" lg="6" md="6">
                     <div className="center-text">

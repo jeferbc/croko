@@ -20,7 +20,7 @@ const HeaderSection = () => (
         <div className="wedding-content">
             <div className="wedding bg slider-bg">
                 <div className="bottom-0 set-abs girl">
-                    <img alt="" className="img-fluid" id="girl" src="/assets/images/wedding-img/slider/Samy.png" />
+                    <img alt="" className="img-fluid" id="girl" src="https://ik.imagekit.io/ge17f66b4ma/Samy_QLzwZtT-Tg.png?updatedAt=1626907765924" />
                 </div>
                 <Container>
                     <Row>

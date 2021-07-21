@@ -1,31 +1,31 @@
 module.exports = {
     AllImgData: [
         {
-            img: '/assets/images/portfolio/Barriguita_1.png',
+            img: 'https://ik.imagekit.io/ge17f66b4ma/Barriguita_1_a73AVJNsNm.png?updatedAt=1626907768363',
         },
         {
-            img: '/assets/images/portfolio/Barriguita_2.png',
+            img: 'https://ik.imagekit.io/ge17f66b4ma/Barriguita_2_ZVL4uCUsy.png?updatedAt=1626907769236',
         },
         {
-            img: '/assets/images/portfolio/Barriguita_10.png',
+            img: 'https://ik.imagekit.io/ge17f66b4ma/Barriguita_10_ljttLG6nNXm.png?updatedAt=1626907770449',
         },
         {
-            img: '/assets/images/portfolio/Barriguita_4.png',
+            img: 'https://ik.imagekit.io/ge17f66b4ma/Barriguita_4_f2jnXxI7uf.png?updatedAt=1626907770006',
         },
         {
-            img: '/assets/images/portfolio/Barriguita_5.png',
+            img: 'https://ik.imagekit.io/ge17f66b4ma/Barriguita_5_qPbA8g_Sww.png?updatedAt=1626907769334',
         },
         {
-            img: '/assets/images/portfolio/Barriguita_6.png',
+            img: 'https://ik.imagekit.io/ge17f66b4ma/Barriguita_6_ncdCuSgdYtU.png?updatedAt=1626907770091',
         },
         {
-            img: '/assets/images/portfolio/Barriguita_7.png',
+            img: 'https://ik.imagekit.io/ge17f66b4ma/Barriguita_7_i0EGVHqIJS.png?updatedAt=1626907770304',
         },
         {
-            img: '/assets/images/portfolio/Barriguita_8.png',
+            img: 'https://ik.imagekit.io/ge17f66b4ma/Barriguita_8_m5K71KswITQ.png?updatedAt=1626907770750',
         },
         {
-            img: '/assets/images/portfolio/Barriguita_9.png',
+            img: 'https://ik.imagekit.io/ge17f66b4ma/Barriguita_9_gYtEzqEu3.png?updatedAt=1626907770164'
         },
     ],
 }
