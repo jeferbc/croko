@@ -6,6 +6,7 @@ import getConfig from 'next/config'
 import { ToastContainer } from 'react-toastify';
 
 import 'bootstrap-scss';
+import './base.css';
 import '../public/assets/scss/flaticon.scss';
 import '../public/assets/scss/font-awesome.scss';
 import "../public/assets/scss/color-1.scss"

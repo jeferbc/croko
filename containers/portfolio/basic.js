@@ -22,10 +22,10 @@ const Basic = ({ className, title, subTitle, fluid }) => {
 
     return (
         <Fragment>
-            <section className="portfolio-section fullwidth-portfolio masonray-sec wedding zoom-gallery titles">
+            <section className="portfolio-section fullwidth-portfolio masonray-sec zoom-gallery titles">
             <Container>
                 <Row>
-                    <Col md="8"  className="offset-md-2">
+                    <Col md="8"  className="offset-md-2 wedding">
                         <div className="title">
                             <img alt="" className="img-fluid title-img"
                                 src="/assets/images/wedding-img/bottom.png" />

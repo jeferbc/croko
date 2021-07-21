@@ -1,0 +1,14 @@
+h1, h2, h3, h4, h5, h6 {
+  text-transform: none !important;
+}
+
+.main-menu a .fa {
+  font-size: 19px;
+  width: 17px;
+}
+
+@media only screen and (max-width: 991px) {
+  .wedding .simple-text {
+      background-color: rgba(255, 255, 255, 0.7) !important;
+  }
+}

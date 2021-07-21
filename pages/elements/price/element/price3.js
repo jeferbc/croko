@@ -3,11 +3,10 @@ import Slider from "react-slick";
 import { PricingResume1 } from '../../../../database/elements/price/database'
 import {Col} from 'reactstrap'
 var settings = {
-    dots: false,
+    dots: true,
     infinite: true,
     speed: 500,
-    arrows: false,
-    autoplay: false,
+    autoplay: true,
     swipeToSlide: true,
     slidesToShow: 3,
     slidesToScroll: 1,
@@ -31,7 +30,7 @@ const PriceStyle = {
 const PricingThree = () => (
     <Fragment>
         <Col xs="12">
-            <Slider className="pricing-slider  price-margin" {...settings}>
+            <Slider className="pricing-slider  price-margin wedding" {...settings}>
                 {
                     PricingResume1.map((item, i) => {
                         return (

@@ -29,13 +29,12 @@ const HeaderSection = () => (
                                 <div className="simple-text">
                                     <div className="title">
                                         <div className="main-title">
-                                            <h2 className="gradient-text">Maquillaje corporal prenatal</h2>
+                                            <h2 className="gradient-text">Maquillaje corporal prenatal Medellín</h2>
                                         </div>
                                     </div>
                                     <p className="header-sub-text text-center" style={ContactButtonStyles.p}>
-                                        Celebra la magia de tu embarazo con
-                                        arte y disfruta de un momento de relajación, mientras tu bebé es estimulado por el
-                                        cosquilleo que producen los pinceles.
+                                        Celebra tu embarazo con arte y disfruta de un momento de relajación,
+                                        mientras tu bebé es estimulado por el cosquilleo que producen los pinceles.
                                     </p>
                                     <div style={ContactButtonStyles.a}>
                                         <a className="btn btn-default btn-white" target="_blank" href={"https://wa.me/573168161717?text=Hola, estoy interesado en maquillaje prenatal en Medellín."}>Contáctanos</a>

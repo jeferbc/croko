@@ -2,7 +2,7 @@ import React from 'react'
 import PricingThree from './element/price3'
 import { Container } from 'reactstrap'
 const ElementPriceThree = () => (
-    <section className="wedding agency pricing inner-pagetitle" id="pricing">
+    <section className="wedding blog agency pricing inner-pagetitle" id="pricing">
         <Container>
             <div className="title">
                 <img alt="" className="img-fluid title-img"
