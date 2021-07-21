@@ -53,7 +53,7 @@ const AccordionElementSection = () => {
     const DummyContent7 = () => (
         <div className="collapse show" data-parent="#accordionoc">
             <div className="card-body">
-            Claro que sí, pueden estar los que deseen acompañar a la futura y madre. Además tienen la posibilidad de participar en el proceso del maquillaje si así lo desean y pasar un momento inolvidable juntos.
+            Claro que sí, pueden estar los que deseen acompañar a la futura madre. Además tienen la posibilidad de participar en el proceso del maquillaje si así lo desean y pasar un momento inolvidable juntos.
             </div>
         </div>
     );

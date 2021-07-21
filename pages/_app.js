@@ -3,6 +3,7 @@ import Router from 'next/router';
 import Head from 'next/head';
 import NProgress from 'nprogress';
 import getConfig from 'next/config'
+import TagManager from 'react-gtm-module';
 import { ToastContainer } from 'react-toastify';
 
 import 'bootstrap-scss';
@@ -52,6 +53,10 @@ function MyFunctionComponent({ children }) {
 
     return () => window.removeEventListener("scroll", handleScroll);
   }, [goingUp]);
+
+  useEffect(() => {
+    TagManager.initialize({ gtmId: 'GTM-5H5LM4D' });
+  }, []);
 
   const tapToTop = () => {
     window.scrollTo({
