@@ -25,7 +25,15 @@ const Home = () => {
     return (
         <div>
             <Head>
-                <title>Maquillajes embarazadas</title>
+                <meta name="description" content="Maquillaje corporal para embarazadas. Disfruta de un momento agradable en familia en Medellín"/>
+                <meta name="keywords" content="Maquillaje embarazadas, maquillaje prenatal, maquillaje barriga, maquillaje estomago, pinta barrigas, pinta embarazadas, maquillaje corporal prenatal Medellín"/>
+                <meta property="og:title" content="Maquillajes embarazadas Medellín | Croko" />
+                <meta property="og:type" content="website" />
+                <meta property="og:description" content="Maquillaje corporal para embarazadas. Disfruta de un momento agradable en familia en Medellín" />
+                <meta property="og:image" content="<%= ../assets/images/logo/croko.png" />
+                <meta property="og:url" content="https://www.maquillajeembarazadas.com" />
+                <title>Maquillajes embarazadas Medellín | Croko</title>
+                <meta charSet="utf-8" />
             </Head>
 
             <CenterLogoHeader themeClass="wedding" />
