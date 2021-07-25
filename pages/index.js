@@ -25,11 +25,11 @@ const Home = () => {
     return (
         <div>
             <Head>
-                <meta name="description" content="Maquillaje corporal para embarazadas. Disfruta de un momento agradable en familia en Medellín"/>
-                <meta name="keywords" content="Maquillaje embarazadas, maquillaje prenatal, maquillaje barriga, maquillaje estomago, pinta barrigas, pinta embarazadas, maquillaje corporal prenatal Medellín"/>
+                <meta name="description" content="Maquilla tu barriguita profesionalmente y disfruta de un momento memorable en familia, además de estimular tu bebé. Domicilio en Medellín"/>
+                <meta name="keywords" content="Maquillaje embarazadas, maquillaje prenatal, maquillaje barriga, maquillaje barriguita, maquillaje estomago, pinta barrigas, pinta embarazadas, maquillaje corporal prenatal Medellín, maquillaje para embarazadas, maquillaje de embarazo, belly painting en Medellín"/>
                 <meta property="og:title" content="Maquillajes embarazadas Medellín | Croko" />
                 <meta property="og:type" content="website" />
-                <meta property="og:description" content="Maquillaje corporal para embarazadas. Disfruta de un momento agradable en familia en Medellín" />
+                <meta property="og:description" content="Maquilla tu barriguita profesionalmente y disfruta de un momento memorable en familia, además de estimular tu bebé. Domicilio en Medellín" />
                 <meta property="og:image" content="../assets/images/logo/croko.png" />
                 <meta property="og:url" content="https://www.maquillajeembarazadas.com" />
                 <title>Maquillajes embarazadas Medellín | Croko</title>
