@@ -29,7 +29,7 @@ const HeaderSection = () => (
                                 <div className="simple-text">
                                     <div className="title">
                                         <div className="main-title">
-                                            <h2 className="gradient-text">Maquillaje corporal prenatal Medellín</h2>
+                                            <h2 className="gradient-text">Maquillaje prenatal</h2>
                                         </div>
                                     </div>
                                     <p className="header-sub-text text-center" style={ContactButtonStyles.p}>

@@ -42,9 +42,9 @@ const Home = () => {
 
             <GallerySection />
 
-            <AboutSection />
-
             <PricingSection />
+            
+            <AboutSection />
 
             <BlogSection />
 

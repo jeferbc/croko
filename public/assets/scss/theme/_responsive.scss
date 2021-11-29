@@ -7969,7 +7969,8 @@
   }
   section,
   footer {
-    padding: 50px 0;
+    padding-top: 50px;
+    padding-bottom: 0;
   }
   .p-t-100 {
     padding-top: 50px !important;
@@ -9898,6 +9899,9 @@
         text-align: center;
       }
     }
+  }
+  .faq {
+    padding-bottom: 50px;
   }
   .faq-section {
     .theme-accordion {

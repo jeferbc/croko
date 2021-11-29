@@ -8,7 +8,7 @@ const ElementPriceThree = () => (
                 <img alt="" className="img-fluid title-img"
                     src="/assets/images/wedding-img/bottom.png" />
                 <div className="main-title">
-                    <h2 className="gradient-text">Precios</h2>
+                    <h2 className="gradient-text">Planes</h2>
                 </div>
             </div>
             <PricingThree />

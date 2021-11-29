@@ -1,19 +1,7 @@
 import React, { useState, Fragment } from 'react';
-import { AllImgData } from './database';
+import { AllImgData, AllImg } from './database';
 import {Container,Row,Col} from 'reactstrap'
 import Lightbox from 'react-image-lightbox-next';
-
-const AllImg = [
-    'https://ik.imagekit.io/ge17f66b4ma/Barriguita_1_a73AVJNsNm.png?updatedAt=1626907768363',
-    'https://ik.imagekit.io/ge17f66b4ma/Barriguita_2_ZVL4uCUsy.png?updatedAt=1626907769236',
-    'https://ik.imagekit.io/ge17f66b4ma/Barriguita_10_ljttLG6nNXm.png?updatedAt=1626907770449',
-    'https://ik.imagekit.io/ge17f66b4ma/Barriguita_4_f2jnXxI7uf.png?updatedAt=1626907770006',
-    'https://ik.imagekit.io/ge17f66b4ma/Barriguita_5_qPbA8g_Sww.png?updatedAt=1626907769334',
-    'https://ik.imagekit.io/ge17f66b4ma/Barriguita_6_ncdCuSgdYtU.png?updatedAt=1626907770091',
-    'https://ik.imagekit.io/ge17f66b4ma/Barriguita_7_i0EGVHqIJS.png?updatedAt=1626907770304',
-    'https://ik.imagekit.io/ge17f66b4ma/Barriguita_8_m5K71KswITQ.png?updatedAt=1626907770750',
-    'https://ik.imagekit.io/ge17f66b4ma/Barriguita_9_gYtEzqEu3.png?updatedAt=1626907770164'
-]
 
 const Basic = ({ className, title, subTitle, fluid }) => {
     
@@ -23,19 +11,19 @@ const Basic = ({ className, title, subTitle, fluid }) => {
     return (
         <Fragment>
             <section className="portfolio-section fullwidth-portfolio masonray-sec zoom-gallery titles">
-            <Container>
-                <Row>
-                    <Col md="8"  className="offset-md-2 wedding">
-                        <div className="title">
-                            <img alt="" className="img-fluid title-img"
-                                src="/assets/images/wedding-img/bottom.png" />
-                            <div className="main-title">
-                                <h2 className="gradient-text">Galería</h2>
+                <Container>
+                    <Row>
+                        <Col md="8"  className="offset-md-2 wedding">
+                            <div className="title">
+                                <img alt="" className="img-fluid title-img"
+                                    src="/assets/images/wedding-img/bottom.png" />
+                                <div className="main-title">
+                                    <h2 className="gradient-text">Galería</h2>
+                                </div>
                             </div>
-                        </div>
-                    </Col>
-                </Row>
-            </Container>
+                        </Col>
+                    </Row>
+                </Container>
                 <div className={fluid || 'container'}>           
                     {AllImgData.map((imgItem, i) => {
                         return (

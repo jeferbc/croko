@@ -78,7 +78,7 @@ const AccordionElementSection = () => {
                         </div>
                     </Col>
                     <Col md="12">
-                        <section className="saas1 faq mt-0">
+                        <div className="saas1 faq mt-0">
                             <div className="faq-block">
                                 <div>
                                     <Accordion atomic={true}>
@@ -109,7 +109,7 @@ const AccordionElementSection = () => {
                                     </Accordion>
                                 </div>
                             </div>
-                        </section>
+                        </div>
                     </Col>
                 </Row>
             </Container>
