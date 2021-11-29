@@ -1,7 +1,7 @@
 import React from 'react';
 import { Container, Row, Col } from 'reactstrap'
 const Footer = () => (
-    <footer className="wedding copyright copyright-bg">
+    <footer className="wedding copyright copyright-bg position-relative">
         <Container>
             <Row>
                 <Col xl="3" sm="12">
