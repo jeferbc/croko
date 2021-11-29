@@ -11300,7 +11300,7 @@ body.menu-on:before {
       background: #0c0c0c; }
   .copyright.event {
     background: rgba(0, 0, 0, 0.05);
-    position: absolute;
+    position: relative;
     width: 100%;
     bottom: 0;
     z-index: 5;
@@ -26417,8 +26417,6 @@ footer.saas1 h5 {
   .blog-detail-page .comment-section .media {
     display: inline-block;
     text-align: center; }
-  .faq {
-    padding-bottom: 50px; }
   .faq-section .theme-accordion .card .card-body p {
     line-height: 1.5 !important; }
   .faq-section .theme-accordion .card .card-header button {
