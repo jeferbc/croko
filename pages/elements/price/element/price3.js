@@ -9,8 +9,6 @@ const PriceStyle = {
     bottom: {
         paddingBottom: '20px'
     }
-
-
 }
 const PricingThree = () => (
     <Row className="wedding">
