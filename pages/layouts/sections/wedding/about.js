@@ -1,5 +1,16 @@
 import React from 'react';
 import {Container,Row,Col} from 'reactstrap'
+import Link from 'next/link'
+
+
+const ContactButtonStyles = {
+    a: {
+        display: "inline-flex",
+        width: "100%",
+        justifyContent: "center"
+    }
+}
+
 const About = () => (
     <section className="wedding format" id="about">
         <Container>
@@ -9,10 +20,10 @@ const About = () => (
                         <img alt="" className="img-fluid title-img"
                             src="/assets/images/wedding-img/bottom.png" />
                         <div className="main-title">
-                            <h2 className="gradient-text">Carolina Rincón</h2>
+                            <h2 className="gradient-text">Servicios</h2>
                         </div>
                         <div className="sub-title">
-                            <p>Maquillaje artístico profesional para embarazadas.</p>
+                            <p>Maquillaje artístico para embarazadas.</p>
                         </div>
                     </div>
                 </Col>
@@ -22,21 +33,18 @@ const About = () => (
                 <Col xl="4" lg="6" md="6">
                     <div className="center-text">
                         <div>
-                            <div className="format-small-text text-center">
-                                <h6>#Maquillajeparaembarazadas</h6>
-                            </div>
-                            <div className="format-head-text">
-                                {/* <h3 className="about-font-header gradient-text">about</h3> */}
-                            </div>
-                            <div className="format-sub-text">
-                                <p className="about-para text-center">
-                                    Mi pasión por el maquillaje prenatal surgió en el 2016, gracias a una iniciativa promovida
-                                    por la Universidad de Antioquia, donde la piel de las embarazadas se convirtió en un lienzo
-                                    portentoso para realizar nuestras obras de arte. Allí pinté la primera barriguita y me enamoré
-                                    por completo de la experiencia, pues los bebés reaccionan al cosquilleo que produce el pincel e
-                                    inicia una pequeña danza entre sus “pataditas” y el movimiento del trazo. Esta conexión mágica
-                                    fue la que me motivó a iniciar este proyecto.
-                                </p>
+                            <div className="format-sub-text pt-3">
+                                <p className="about-para" className="pt-3"><strong>Maquillaje a domicilio en Medellín</strong></p>
+                                <p className="about-para">Realizo personalmente la sesión de maquillaje de barriguitas a domicilio en Medellín.</p>
+                                <div style={ContactButtonStyles.a} className="pb-3 pt-2">
+                                    <a className="btn btn-default btn-white" target="_blank" href={"https://wa.me/573168161717?text=Hola, estoy interesado en maquillaje prenatal en Medellín."}>AGENDAR CITA</a>
+                                </div>
+                                
+                                <p className="about-para" className="pt-3"><strong>Kit de maquillaje prenatal</strong></p>
+                                <p className="about-para">Es ideal para pintar la barriguita en compañía de tus familiares y/o amigos en casa.</p>
+                                <div style={ContactButtonStyles.a} className="pb-3 pt-2">
+                                    <Link href='/kit'><a className="btn btn-default btn-white">MÁS INFORMACIÓN</a></Link>
+                                </div>
                             </div>
                         </div>
                     </div>

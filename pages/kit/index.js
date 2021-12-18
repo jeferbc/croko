@@ -2,16 +2,12 @@ import React, { useEffect } from 'react'
 import Head from 'next/head'
 
 // import Custom Components
-import CenterLogoHeader from '../containers/common/center-logo-header'
-import HeaderSection from './layouts/sections/wedding/header'
-import GallerySection from './portfolio/full-width-3-grid'
-import AboutSection from './layouts/sections/wedding/about'
-import PricingSection from './elements/price/elementPrice3'
-import AccordionElementSection from './elements/accordion'
-import BlogSection from './layouts/sections/wedding/blog'
-import FooterSection from './layouts/sections/wedding/footer'
-import WhatsappRibbon from './elements/common/whatsapp'
-
+import CenterLogoHeader from '../../containers/common/center-logo-header'
+import ProductSection from './../layouts/sections/wedding/product'
+import ProductVideos from '../layouts/sections/wedding/productVideos'
+import AccordionElementSection from './../elements/accordion'
+import FooterSection from './../layouts/sections/wedding/footer'
+import WhatsappRibbon from './../elements/common/whatsapp'
 
 const Home = () => {
 
@@ -32,28 +28,16 @@ const Home = () => {
                 <meta property="og:description" content="Maquilla tu barriguita profesionalmente y disfruta de un momento memorable en familia, además de estimular tu bebé. Domicilio en Medellín" />
                 <meta property="og:image" content="../assets/images/logo/croko.png" />
                 <meta property="og:url" content="https://www.maquillajeembarazadas.com" />
-                <title>Maquillajes embarazadas Medellín | Croko</title>
+                <title>Kit maquillaje prenatal en casa</title>
                 <meta charSet="utf-8" />
             </Head>
 
-            <CenterLogoHeader themeClass="wedding"/>
-
-            <HeaderSection />
-
-            <GallerySection />
-
-            <PricingSection />
-            
-            <AboutSection />
-
-            <BlogSection />
-
-            <AccordionElementSection />
-
+            <CenterLogoHeader themeClass="wedding" kit="true" />
+            <ProductSection />
+            <ProductVideos />
+            <AccordionElementSection kit="true" />
             <FooterSection />
-
             <WhatsappRibbon />
-
         </div>
     )
 }
