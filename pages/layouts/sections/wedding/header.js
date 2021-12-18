@@ -1,5 +1,6 @@
 import React from 'react';
 import {Container,Row,Col} from 'reactstrap'
+import Link from 'next/link'
 
 const ContactButtonStyles = {
     a: {
@@ -37,7 +38,7 @@ const HeaderSection = () => (
                                         mientras tu bebé es estimulado por el cosquilleo que producen los pinceles.
                                     </p>
                                     <div style={ContactButtonStyles.a}>
-                                        <a className="btn btn-default btn-white" target="_blank" href={"https://wa.me/573168161717?text=Hola, estoy interesado en maquillaje prenatal en Medellín."}>Contáctanos</a>
+                                        <a className="btn btn-default btn-white" target="_blank" href={"https://wa.me/573168161717?text=Hola, estoy interesado en maquillaje prenatal en Medellín."}>Maquillaje Medellín</a>
                                     </div>
                                 </div>
                             </div>

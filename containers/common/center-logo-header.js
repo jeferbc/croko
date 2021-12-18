@@ -2,6 +2,18 @@ import React, { useState } from 'react'
 import Nav from './nav'
 import Link from 'next/link'
 
+const ActionsStyles = {
+    buttons: {
+        display: "inline-flex",
+        width: "100%", 
+        alignItems: "center",
+        justifyContent: 'space-between'
+    },
+    navButton: {
+        padding: "10px 20px"
+    }
+}
+
 const CenterLogoHeader = (props) => {
     const [sidebar, setSidebar] = useState(false);
 
@@ -11,12 +23,12 @@ const CenterLogoHeader = (props) => {
     }
 
     return (
-        <header className={`loding-header nav-abs custom-scroll header-rel ${props.themeClass}`}>
+        <header className={`loding-header nav-abs custom-scroll header-rel ${props.themeClass} ${props.kit ? 'position-relative' : ''}`}>
             <div className="container">
                 <div className="row">
                     <div className="col-12">
                         <nav className="navbar-expand-lg theme-nav w-100">
-                            <Link href="#">
+                            <Link href="/">
                                 <a className="center-header d-none d-lg-block">
                                     <img alt="logo" className="logo-abs h-auto" src="../assets/images/logo/croko_logo.png" />
                                 </a>
@@ -26,12 +38,20 @@ const CenterLogoHeader = (props) => {
                                     <img alt="logo" src="../assets/images/logo/croko.png" />
                                 </a>
                             </Link>
-                            <div className="responsive-btn ml-auto">
-                                <a className="toggle-nav" onClick={clickSidebar} data-target="#scroll-spy" aria-controls="scroll-spy">
-                                    <i aria-hidden="true" className="fa fa-bars"></i>
-                                </a>
+                            <div className="responsive-btn w-100">
+                                <div className="actions" style={ActionsStyles.buttons}>
+                                    {
+                                        props.kit ?  
+                                            <Link href='/'><a className="btn btn-default btn-gradient text-white" style={ActionsStyles.navButton}>Maquillaje Medellín</a></Link> :
+                                            <Link href='/kit'><a className="btn btn-default btn-gradient text-white" style={ActionsStyles.navButton}>KIT Maquillaje</a></Link>
+                                    }
+                                    
+                                    <a className="toggle-nav" onClick={clickSidebar} data-target="#scroll-spy" aria-controls="scroll-spy">
+                                        <i aria-hidden="true" className="fa fa-bars"></i>
+                                    </a>
+                                </div>
                             </div>
-                            <Nav className="w-100" />
+                            <Nav className="w-100" kit={props.kit} />
                         </nav>
                     </div>
                 </div>

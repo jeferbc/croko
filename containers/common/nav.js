@@ -1,7 +1,10 @@
 import React, { useEffect, useState } from 'react'
 import { MENUITEMS } from '../../constant/menu';
-const Nav = () => {
-    const [mainmenu, setMainMenu] = useState(MENUITEMS);
+import { KITMENUITEMS } from '../../constant/kitMenu';
+
+const Nav = (props) => {
+    const navItems = props.kit === 'true' ? KITMENUITEMS : MENUITEMS
+    const [mainmenu, setMainMenu] = useState(navItems);
     const [sidebar, setSidebar] = useState(false);
 
     function closeSidebar() {
@@ -29,7 +32,7 @@ const Nav = () => {
     }, [])
 
     const setNavActive = (item) => {
-        MENUITEMS.filter(menuItem => {
+        navItems.filter(menuItem => {
             if (menuItem != item)
                 menuItem.active = false
             if (menuItem.children && menuItem.children.includes(item))
@@ -44,7 +47,7 @@ const Nav = () => {
             }
         })
         item.active = !item.active
-        setMainMenu({ mainmenu: MENUITEMS })
+        setMainMenu({ mainmenu: navItems })
 
     }
 
@@ -52,8 +55,8 @@ const Nav = () => {
     const toggletNavActive = (item) => {
 
         if (!item.active) {
-            MENUITEMS.forEach(a => {
-                if (MENUITEMS.includes(item))
+            navItems.forEach(a => {
+                if (navItems.includes(item))
                     a.active = false
                 if (!a.children) return false
                 a.children.forEach(b => {
@@ -70,7 +73,7 @@ const Nav = () => {
             });
         }
         item.active = !item.active
-        setMainMenu({ mainmenu: MENUITEMS })
+        setMainMenu({ mainmenu: navItems })
     }
 
     return (
@@ -97,7 +100,7 @@ const Nav = () => {
                     </a>
                 </li>
                 {
-                    MENUITEMS.slice(0, 2).map((menuItem, i) => {
+                    navItems.slice(0, 2).map((menuItem, i) => {
                         return (
                             <li key={i}>
                                 <a href={`${menuItem.path}`} onClick={() => toggletNavActive(menuItem)}>
@@ -110,7 +113,7 @@ const Nav = () => {
             </ul>
             <ul className="main-menu">
                 {
-                    MENUITEMS.slice(2, 5).map((menuItem, i) => {
+                    navItems.slice(2, 5).map((menuItem, i) => {
                         return (
                             <li key={i}>
                                 <a href={`${menuItem.path}`} onClick={() => toggletNavActive(menuItem)}>
