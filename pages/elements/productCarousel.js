@@ -23,7 +23,7 @@ const images = [
 
 const ProductCarousel = () => {
   return ( 
-    <Carousel>
+    <Carousel infiniteLoop={true} thumbWidth={110} showStatus={false}>
       { images.map((data, i) => {
           return (
             <div key={i}>

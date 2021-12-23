@@ -1,24 +1,25 @@
 import React from 'react';
-import "react-image-gallery/styles/css/image-gallery.css";
-import ImageGallery from 'react-image-gallery';
+import ReactPlayer from 'react-player';
+import { Carousel } from 'react-responsive-carousel';
+import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 
-const renderVideo = (item) => {
-  return (
-    <div>
-        <div className='video-responsive'>
-            <iframe
-              width="790"
-              height="444"
-              src={`https://www.youtube.com/embed/${item.embedUrl}?enablejsapi=1`}
-              frameBorder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowFullScreen
-              title="Embedded youtube"
-            >
-            </iframe>
-        </div>
-    </div>
-  );
+const videos = [
+  {
+    videoID: 'ndnpqwOGnvo',
+    videoURL: 'https://www.youtube.com/embed/ndnpqwOGnvo' 
+  },
+  {
+    videoID: 'pWW6-524FLs',
+    videoURL: 'https://www.youtube.com/embed/pWW6-524FLs' 
+  },
+  {
+    videoID: 'A1Rs_bHqmc8',
+    videoURL: 'https://www.youtube.com/embed/A1Rs_bHqmc8' 
+  }
+];
+
+const YoutubeSlide = (url) => {
+  return <ReactPlayer width="100%" url={url.videoURL} />
 }
 
 const onSlide = () => {
@@ -28,32 +29,24 @@ const onSlide = () => {
   })
 }
 
-const videos = [
-  {
-    thumbnail: 'https://ik.imagekit.io/ge17f66b4ma/Thumbnails/Copia_de_kit_tienda_pag_9HBZCo8JpE1.jpg?updatedAt=1639170480948',
-    embedUrl: 'ndnpqwOGnvo',
-    renderItem: renderVideo
-  },
-  {
-    thumbnail: 'https://ik.imagekit.io/ge17f66b4ma/Thumbnails/Copia_de_Bebemar_kit_JiMXF12PBZ3.jpg?updatedAt=1639170481156',
-    embedUrl: 'pWW6-524FLs',
-    renderItem: renderVideo
-  },
-  {
-    thumbnail: 'https://ik.imagekit.io/ge17f66b4ma/Thumbnails/Copia_de_Elefante_kit_aX-sINHXw.jpg?updatedAt=1639170480933',
-    embedUrl: 'A1Rs_bHqmc8',
-    renderItem: renderVideo
-  }
-];
+const customRenderItem = (item, props) =>{
+    return <item.type {...item.props} {...props} />;
+}
+
+const customRenderThumb = (children) =>
+  children.map((item, i) => {
+      return <img src={`https://img.youtube.com/vi/${item.props.videoID}/default.jpg`} key={i}/>;
+  });
 
 const CarouselVideos = () => {
   return ( 
-    <ImageGallery
-      items={videos}
-      showPlayButton={false}
-      showFullscreenButton={false}
-      onSlide={onSlide}
-    />
+    <Carousel renderItem={customRenderItem} renderThumbs={customRenderThumb} onChange={onSlide} showStatus={false} thumbWidth={110}>
+      { videos.map((data, i) => {
+        return (
+          <YoutubeSlide key={`youtube-${i}`} videoURL={data.videoURL} videoID={data.videoID} />
+        )
+      })}
+    </Carousel>
   );
 };
 

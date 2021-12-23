@@ -4,7 +4,7 @@ import Head from 'next/head'
 // import Custom Components
 import CenterLogoHeader from '../../containers/common/center-logo-header'
 import ProductSection from './../layouts/sections/wedding/product'
-// import ProductVideos from '../layouts/sections/wedding/productVideos'
+import ProductVideos from '../layouts/sections/wedding/productVideos'
 import AccordionElementSection from './../elements/accordion'
 import FooterSection from './../layouts/sections/wedding/footer'
 import WhatsappRibbon from './../elements/common/whatsapp'
@@ -34,7 +34,7 @@ const Kit = () => {
 
             <CenterLogoHeader themeClass="wedding" kit="true" />
             <ProductSection />
-            {/* <ProductVideos /> */}
+            <ProductVideos />
             <AccordionElementSection kit="true" />
             <FooterSection />
             <WhatsappRibbon />
