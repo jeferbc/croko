@@ -1,6 +1,6 @@
 import React from 'react';
-import "react-image-gallery/styles/css/image-gallery.css";
-import ImageGallery from 'react-image-gallery';
+import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
+import { Carousel } from 'react-responsive-carousel';
 
 const images = [
   {
@@ -23,10 +23,15 @@ const images = [
 
 const ProductCarousel = () => {
   return ( 
-    <ImageGallery
-      items={images}
-      showPlayButton={false}
-    />
+    <Carousel>
+      { images.map((data, i) => {
+          return (
+            <div key={i}>
+                <img src={data.original}/>
+            </div>
+          )
+      })}
+    </Carousel>
   );
 };
 
