@@ -7,7 +7,8 @@ import TagManager from 'react-gtm-module';
 import { ToastContainer } from 'react-toastify';
 
 import 'bootstrap-scss';
-import './base.css';
+import "react-image-gallery/styles/css/image-gallery.css";
+import '../public/assets/scss/base.scss';
 import '../public/assets/scss/flaticon.scss';
 import '../public/assets/scss/font-awesome.scss';
 import "../public/assets/scss/color-1.scss"

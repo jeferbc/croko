@@ -2,7 +2,6 @@ import React from 'react';
 import { Accordion, AccordionItem } from 'react-light-accordion';
 import 'react-light-accordion/demo/css/index.css';
 import { Container, Row, Col } from 'reactstrap'
-import './accordion.css'
 import { AccordionData, KitAccordionData } from '../../database/accordion_database'
 
 const AccordionElementSection = (props) => {

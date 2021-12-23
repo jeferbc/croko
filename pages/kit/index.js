@@ -3,13 +3,13 @@ import Head from 'next/head'
 
 // import Custom Components
 import CenterLogoHeader from '../../containers/common/center-logo-header'
-import ProductSection from './../layouts/sections/wedding/product'
-import ProductVideos from '../layouts/sections/wedding/productVideos'
+// import ProductSection from './../layouts/sections/wedding/product'
+// import ProductVideos from '../layouts/sections/wedding/productVideos'
 import AccordionElementSection from './../elements/accordion'
 import FooterSection from './../layouts/sections/wedding/footer'
 import WhatsappRibbon from './../elements/common/whatsapp'
 
-const Home = () => {
+const Kit = () => {
 
     useEffect(() => {
         document.body.style.setProperty('--primary', '#c0882f')
@@ -33,8 +33,8 @@ const Home = () => {
             </Head>
 
             <CenterLogoHeader themeClass="wedding" kit="true" />
-            <ProductSection />
-            <ProductVideos />
+            {/* <ProductSection />
+            <ProductVideos /> */}
             <AccordionElementSection kit="true" />
             <FooterSection />
             <WhatsappRibbon />
@@ -42,4 +42,4 @@ const Home = () => {
     )
 }
 
-export default Home
+export default Kit
