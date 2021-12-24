@@ -19,7 +19,7 @@ const Footer = () => (
                                     </a>
                                 </li>
                                 <li>
-                                    <a className="copyright-text" href="https://wa.me/573168161717?text=Hola, estoy interesado en maquillaje prenatal en Medellín." target='_blank'>
+                                    <a className="copyright-text" href="https://wa.me/573168161717?text=Hola, estoy interesado en maquillaje prenatal." target='_blank'>
                                         <i aria-hidden="true" className="fa fa-whatsapp gradient-text"></i>
                                     </a>
                                 </li>

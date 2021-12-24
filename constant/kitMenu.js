@@ -1,9 +1,9 @@
 export const KITMENUITEMS = [
    {
-      // title: '', path: '#kit'
+      title: '', path: '#'
    },
    {
-      // title: '', path: '#kit'
+      title: '', path: '#'
    },
    {
       title: 'Videos', path: '#productVideos'
