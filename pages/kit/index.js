@@ -26,9 +26,9 @@ const Kit = () => {
                 <meta name="description" content="Celebra el embarazo en familia maquillando tu barriguita. Este ejercicio familiar relaja a la embarazada, estimula al bebé, y a su vez ayuda a crear y fortalecer vínculos afectivos desde el vientre"/>
                 <meta name="keywords" content="Maquillaje embarazadas,Maquillaje embarazadas en familia, Maquillaje embarazadas en casa, automaquillaje embarazadas, Maquillaje embarazadas en pareja, maquillaje prenatal en familia, Maquillaje estimulante para embarazadas, estimulación prenatal, maquillaje barriga con amigos, maquillaje barriguita, maquillaje estomago, Body art para embarazadas en casa, pinta barrigas, pinta embarazadas, maquillaje corporal prenatal, maquillaje para embarazadas, maquillaje de embarazo, belly painting"/>
 
-                <meta itemprop="name" content="Kit maquillaje de embarazadas | Croko"/>
-                <meta itemprop="description" content="Celebra el embarazo en familia maquillando tu barriguita. Este ejercicio familiar relaja a la embarazada, estimula al bebé, y a su vez ayuda a crear y fortalecer vínculos afectivos desde el vientre"/>
-                <meta itemprop="image" content="https://ik.imagekit.io/ge17f66b4ma/download__2__wAfXfpmcS.jpeg"/>
+                <meta itemProp="name" content="Kit maquillaje de embarazadas | Croko"/>
+                <meta itemProp="description" content="Celebra el embarazo en familia maquillando tu barriguita. Este ejercicio familiar relaja a la embarazada, estimula al bebé, y a su vez ayuda a crear y fortalecer vínculos afectivos desde el vientre"/>
+                <meta itemProp="image" content="https://ik.imagekit.io/ge17f66b4ma/download__2__wAfXfpmcS.jpeg"/>
 
                 <meta property="og:url" content="https://www.maquillajeembarazadas.com/kit"/>
                 <meta property="og:type" content="website"/>

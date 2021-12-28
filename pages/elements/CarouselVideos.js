@@ -19,7 +19,7 @@ const videos = [
 ];
 
 const YoutubeSlide = (url) => {
-  return <ReactPlayer width="100%" url={url.videoURL} />
+  return <ReactPlayer width="100%" height={window.innerWidth > 768 ? '600px' : '360px'} url={url.videoURL} controls={true}/>
 }
 
 const onSlide = () => {
@@ -30,7 +30,7 @@ const onSlide = () => {
 }
 
 const customRenderItem = (item, props) => {
-  <item.type {...item.props} {...props} />;
+  return(<item.type {...item.props} {...props} />);
 }
 
 const customRenderThumb = (children) =>
