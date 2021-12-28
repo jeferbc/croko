@@ -29,13 +29,13 @@ const onSlide = () => {
   })
 }
 
-const customRenderItem = (item, props) =>{
-    return <item.type {...item.props} {...props} />;
+const customRenderItem = (item, props) => {
+  <item.type {...item.props} {...props} />;
 }
 
 const customRenderThumb = (children) =>
   children.map((item, i) => {
-      return <img src={`https://img.youtube.com/vi/${item.props.videoID}/default.jpg`} key={i}/>;
+    return <img src={`https://img.youtube.com/vi/${item.props.videoID}/default.jpg`} key={i}/>;
   });
 
 const CarouselVideos = () => {

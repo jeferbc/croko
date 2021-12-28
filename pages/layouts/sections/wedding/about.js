@@ -20,10 +20,7 @@ const About = () => (
                         <img alt="" className="img-fluid title-img"
                             src="/assets/images/wedding-img/bottom.png" />
                         <div className="main-title">
-                            <h2 className="gradient-text">Servicios</h2>
-                        </div>
-                        <div className="sub-title">
-                            <p>Maquillaje artístico para embarazadas.</p>
+                            <h2 className="gradient-text">Body paint para embarazadas</h2>
                         </div>
                     </div>
                 </Col>
@@ -34,13 +31,13 @@ const About = () => (
                     <div className="center-text">
                         <div>
                             <div className="format-sub-text pt-3">
-                                <p className="about-para" className="pt-3"><strong>Maquillaje a domicilio en Medellín</strong></p>
+                                <h3 className="about-para" className="pt-3"><strong>Pinta barrigas a domicilio en Medellín</strong></h3>
                                 <p className="about-para">Realizo personalmente la sesión de maquillaje de barriguitas a domicilio en Medellín.</p>
                                 <div style={ContactButtonStyles.a} className="pb-3 pt-2">
                                     <a className="btn btn-default btn-white" target="_blank" href={"https://wa.me/573168161717?text=Hola, estoy interesado en maquillaje prenatal en Medellín."}>AGENDAR CITA</a>
                                 </div>
                                 
-                                <p className="about-para" className="pt-3"><strong>Kit de maquillaje prenatal</strong></p>
+                                <h3 className="about-para" className="pt-3"><strong>Kit de maquillaje prenatal</strong></h3>
                                 <p className="about-para">Es ideal para pintar la barriguita en compañía de tus familiares y/o amigos en casa.</p>
                                 <div style={ContactButtonStyles.a} className="pb-3 pt-2">
                                     <Link href='/kit'><a className="btn btn-default btn-white">MÁS INFORMACIÓN</a></Link>

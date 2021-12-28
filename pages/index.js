@@ -12,7 +12,6 @@ import BlogSection from './layouts/sections/wedding/blog'
 import FooterSection from './layouts/sections/wedding/footer'
 import WhatsappRibbon from './elements/common/whatsapp'
 
-
 const Home = () => {
 
     useEffect(() => {
@@ -25,15 +24,25 @@ const Home = () => {
     return (
         <div>
             <Head>
-                <meta name="description" content="Maquilla tu barriguita profesionalmente y disfruta de un momento memorable en familia, además de estimular tu bebé. Domicilio en Medellín"/>
-                <meta name="keywords" content="Maquillaje embarazadas, maquillaje prenatal, maquillaje barriga, maquillaje barriguita, maquillaje estomago, pinta barrigas, pinta embarazadas, maquillaje corporal prenatal Medellín, maquillaje para embarazadas, maquillaje de embarazo, belly painting en Medellín"/>
-                <meta property="og:title" content="Maquillajes embarazadas Medellín | Croko" />
-                <meta property="og:type" content="website" />
-                <meta property="og:description" content="Maquilla tu barriguita profesionalmente y disfruta de un momento memorable en familia, además de estimular tu bebé. Domicilio en Medellín" />
-                <meta property="og:image" content="../assets/images/logo/croko.png" />
-                <meta property="og:url" content="https://www.maquillajeembarazadas.com" />
                 <title>Maquillajes embarazadas Medellín | Croko</title>
                 <meta charSet="utf-8" />
+                <meta name="description" content="Maquilla tu barriguita profesionalmente y disfruta de un momento memorable en familia, además de estimular tu bebé. Domicilio en Medellín"/>
+                <meta name="keywords" content="Maquillaje embarazadas, maquillaje prenatal, maquillaje barriga, maquillaje barriguita, maquillaje estomago, pinta barrigas, pinta embarazadas, maquillaje corporal prenatal Medellín, maquillaje para embarazadas, maquillaje de embarazo, belly painting en Medellín"/>
+
+                <meta itemprop="name" content="Maquillajes embarazadas Medellín | Croko"/>
+                <meta itemprop="description" content="Maquilla tu barriguita profesionalmente y disfruta de un momento memorable en familia, además de estimular tu bebé. Domicilio en Medellín"/>
+                <meta itemprop="image" content="https://ik.imagekit.io/ge17f66b4ma/download__2__wAfXfpmcS.jpeg?updatedAt=1640711126163"/>
+
+                <meta property="og:url" content="https://www.maquillajeembarazadas.com"/>
+                <meta property="og:type" content="website"/>
+                <meta property="og:title" content="Maquillajes embarazadas Medellín | Croko"/>
+                <meta property="og:description" content="Maquilla tu barriguita profesionalmente y disfruta de un momento memorable en familia, además de estimular tu bebé. Domicilio en Medellín"/>
+                <meta property="og:image" content="https://ik.imagekit.io/ge17f66b4ma/download__2__wAfXfpmcS.jpeg"/>
+
+                <meta name="twitter:card" content="summary_large_image"/>
+                <meta name="twitter:title" content="Maquillajes embarazadas Medellín | Croko"/>
+                <meta name="twitter:description" content="Maquilla tu barriguita profesionalmente y disfruta de un momento memorable en familia, además de estimular tu bebé. Domicilio en Medellín"/>
+                <meta name="twitter:image" content="https://ik.imagekit.io/ge17f66b4ma/download__2__wAfXfpmcS.jpeg?updatedAt=1640711126163"/>
             </Head>
 
             <CenterLogoHeader themeClass="wedding"/>

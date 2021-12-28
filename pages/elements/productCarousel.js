@@ -27,7 +27,7 @@ const ProductCarousel = () => {
       { images.map((data, i) => {
           return (
             <div key={i}>
-                <img src={data.original}/>
+              <img src={data.original}/>
             </div>
           )
       })}
