@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import ReactPlayer from 'react-player';
 import { Carousel } from 'react-responsive-carousel';
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
@@ -19,7 +19,15 @@ const videos = [
 ];
 
 const YoutubeSlide = (url) => {
-  return <ReactPlayer width="100%" height={window.innerWidth > 768 ? '600px' : '360px'} url={url.videoURL} controls={true}/>
+  const [height, setHeight] = useState();
+
+  useEffect(() => {
+    if (!height) setHeight(window.innerHeight - 260);
+    window.addEventListener("resize", () => {
+        setHeight(window.innerHeight - 260);
+    });
+  }, []);
+  return<ReactPlayer width="100%" height={height + 260 > 768 ? height : '360px'} url={url.videoURL} controls={true}/>
 }
 
 const onSlide = () => {

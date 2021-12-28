@@ -2,10 +2,13 @@ import React from 'react';
 import {Container,Row,Col} from 'reactstrap'
 
 const ContactButtonStyles = {
-    a: {
+    div: {
         display: "inline-flex",
         width: "100%",
         justifyContent: "center"
+    },
+    a: {
+        padding: "16px 47px"
     },
     p: {
         animation: 'none'
@@ -36,8 +39,11 @@ const HeaderSection = () => (
                                         Celebra tu embarazo con arte y disfruta de un momento de relajación,
                                         mientras tu bebé es estimulado por el cosquilleo que producen los pinceles.
                                     </p>
-                                    <div style={ContactButtonStyles.a}>
+                                    <div style={ContactButtonStyles.div}>
                                         <a className="btn btn-default btn-white" target="_blank" href={"https://wa.me/573168161717?text=Hola, estoy interesado en maquillaje prenatal en Medellín."}>Maquillaje Medellín</a>
+                                    </div>
+                                    <div style={ContactButtonStyles.div} className='d-none d-lg-flex mt-2'>
+                                        <a className="btn btn-default btn-white" target="_blank" href={"https://wa.me/573168161717?text=Hola, estoy interesado en maquillaje prenatal en Medellín."} style={ContactButtonStyles.a}>Kit de Maquillaje</a>
                                     </div>
                                 </div>
                             </div>
