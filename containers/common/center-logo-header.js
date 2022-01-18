@@ -42,8 +42,8 @@ const CenterLogoHeader = (props) => {
                                 <div className="actions" style={ActionsStyles.buttons}>
                                     {
                                         props.kit ?  
-                                            <Link href='/'><a className="btn btn-default btn-gradient text-white" style={ActionsStyles.navButton}>Maquillaje Medellín</a></Link> :
-                                            <Link href='/kit'><a className="btn btn-default btn-gradient text-white" style={ActionsStyles.navButton}>KIT Maquillaje</a></Link>
+                                            <Link href='/'><a className={`btn btn-default btn-gradient text-white ${props.kit ? 'kit' : 'local'}`} style={ActionsStyles.navButton}>Maquillaje Medellín</a></Link> :
+                                            <Link href='/kit'><a className={`btn btn-default btn-gradient text-white ${props.kit ? 'kit' : 'local'}`} style={ActionsStyles.navButton}>KIT Maquillaje</a></Link>
                                     }
                                     
                                     <a className="toggle-nav" onClick={clickSidebar} data-target="#scroll-spy" aria-controls="scroll-spy">

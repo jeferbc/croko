@@ -49,8 +49,8 @@ const Kit = () => {
             <ProductSection />
             <ProductVideos />
             <AccordionElementSection kit="true" />
-            <FooterSection />
-            <WhatsappRibbon kit="true"/>
+            <FooterSection kit="true" />
+            <WhatsappRibbon kit="true" />
         </div>
     )
 }

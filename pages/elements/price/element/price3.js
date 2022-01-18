@@ -32,7 +32,7 @@ const PricingThree = () => (
                                 <div className="price-value">
                                     <h6 className="price text-center font-primary">$<span className="large font-primary">{item.price}</span></h6>
                                 </div>
-                                <a className="btn btn-default btn-white" target="_blank" href={"https://wa.me/573168161717?text=Hola, estoy interesado en el plan " + item.title + " en Medellín"}>Contáctanos</a>
+                                <a className="btn btn-default btn-white whatsapp-local" target="_blank" href={"https://wa.me/573168161717?text=Hola, estoy interesado en el plan " + item.title + " en Medellín"}>Contáctanos</a>
                             </div>
                         </div>
                     </Col>

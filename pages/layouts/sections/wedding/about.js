@@ -34,7 +34,7 @@ const About = () => (
                                 <h3 className="about-para" className="pt-3"><strong>Pinta barrigas a domicilio en Medellín</strong></h3>
                                 <p className="about-para">Realizo personalmente la sesión de maquillaje de barriguitas a domicilio en Medellín.</p>
                                 <div style={ContactButtonStyles.a} className="pb-3 pt-2">
-                                    <a className="btn btn-default btn-white" target="_blank" href={"https://wa.me/573168161717?text=Hola, estoy interesado en maquillaje prenatal en Medellín."}>AGENDAR CITA</a>
+                                    <a className="btn btn-default btn-white whatsapp-local" target="_blank" href={"https://wa.me/573168161717?text=Hola, estoy interesado en maquillaje prenatal en Medellín."}>AGENDAR CITA</a>
                                 </div>
                                 
                                 <h3 className="about-para" className="pt-3"><strong>Kit de maquillaje prenatal</strong></h3>

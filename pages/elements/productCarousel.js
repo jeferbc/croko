@@ -4,7 +4,7 @@ import { Carousel } from 'react-responsive-carousel';
 
 const images = [
   {
-    original: 'https://ik.imagekit.io/ge17f66b4ma/1639598501544__1__00XN5bWkf.jpg?updatedAt=1639778819162',
+    original: 'https://ik.imagekit.io/ge17f66b4ma/download__8___1___2__B1r-Fxbpk.jpeg?ik-sdk-version=javascript-1.4.3&updatedAt=1642474362194',
     thumbnail: 'https://ik.imagekit.io/ge17f66b4ma/Thumbnails/Copia_de_kit_tienda_pag_9HBZCo8JpE1.jpg?updatedAt=1639170480948',
   },
   {

@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react'
+import SocialMedia from '../../pages/elements/common/socialMedia';
 import { MENUITEMS } from '../../constant/menu';
 import { KITMENUITEMS } from '../../constant/kitMenu';
 
@@ -84,21 +85,7 @@ const Nav = (props) => {
                 </a>
             </div>
             <ul className="main-menu">
-                <li>
-                    <a className="copyright-text" href="https://www.facebook.com/crokolina" target='_blank'>
-                        <i aria-hidden="true" className="fa fa-facebook gradient-text"></i>
-                    </a>
-                </li>
-                <li>
-                    <a className="copyright-text " href="https://www.instagram.com/croko_maquillaje_embarazada/" target='_blank'>
-                        <i aria-hidden="true" className="fa fa-instagram gradient-text"></i>
-                    </a>
-                </li>
-                <li>
-                    <a className="copyright-text" href="https://wa.me/573168161717?text=Hola, estoy interesado en maquillaje prenatal en Medellín." target='_blank'>
-                        <i aria-hidden="true" className="fa fa-whatsapp gradient-text"></i>
-                    </a>
-                </li>
+                <SocialMedia kit={props.kit} />
                 {
                     navItems.slice(0, 2).map((menuItem, i) => {
                         return (

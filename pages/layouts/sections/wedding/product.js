@@ -25,10 +25,10 @@ const ProductSection = () => (
                         <div className="price-feature-container set-relative text-center text-lg-left">
                             <h2 className="feature-text-heading text-center text-lg-left bold text-uppercase pb-3">Kit maquillaje prenatal</h2>
                             <h4 className="feature-text-heading text-center text-lg-left pb-3">Envío incluido a todo Colombia</h4>
-                            <div className="price-value">
+                            <div className="price-value mb-3">
                                 <h6 className="price text-center text-lg-left">$<span className="large">150.000</span></h6>
                             </div>
-                            <a className="btn btn-default btn-white" target="_blank" href={"https://wa.me/573168161717?text=Hola, estoy interesado en el kit de maquillaje prenatal"}>Comprar</a>
+                            <a className="btn btn-default btn-white whatsapp-kit" target="_blank" href={"https://wa.me/573168161717?text=Hola, estoy interesado en el kit de maquillaje prenatal"}>Comprar</a>
                             <div className="font-primary pt-3">
                                 <h3 className="feature-text-heading text-center text-lg-left bold pb-2">Descripción</h3>
                                 <p className="price-feature text-justify">

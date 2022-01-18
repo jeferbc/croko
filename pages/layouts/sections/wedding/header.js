@@ -41,7 +41,7 @@ const HeaderSection = () => (
                                         mientras tu bebé es estimulado por el cosquilleo que producen los pinceles.
                                     </p>
                                     <div style={ContactButtonStyles.div}>
-                                        <a className="btn btn-default btn-white" target="_blank" href={"https://wa.me/573168161717?text=Hola, estoy interesado en maquillaje prenatal en Medellín."}>Maquillaje Medellín</a>
+                                        <a className="btn btn-default btn-white whatsapp-local" target="_blank" href={"https://wa.me/573168161717?text=Hola, estoy interesado en maquillaje prenatal en Medellín."}>Maquillaje Medellín</a>
                                     </div>
                                     <div style={ContactButtonStyles.div} className='d-none d-lg-flex mt-2'>
                                         <Link href='/kit'><a className="btn btn-default btn-white" style={ContactButtonStyles.a}>Kit de Maquillaje</a></Link>
