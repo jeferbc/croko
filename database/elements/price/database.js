@@ -19,7 +19,7 @@ module.exports = {
             feature1: "Diseño personalizado",
             feature2: 'Servicio a domicilio (Medellín)',
             feature3: 'Fotografía profesional(3 fotos impresas)',
-            price: '380.000',
+            price: '400.000',
         },
     ],
 }
