@@ -38,19 +38,16 @@ const CenterLogoHeader = (props) => {
                                     <img alt="logo" src="../assets/images/logo/croko.png" />
                                 </a>
                             </Link>
-                            <div className="responsive-btn w-100">
-                                <div className="actions" style={ActionsStyles.buttons}>
-                                    {
-                                        props.kit ?  
-                                            <Link href='/'><a className={`btn btn-default btn-gradient text-white ${props.kit ? 'kit' : 'local'}`} style={ActionsStyles.navButton}>Maquillaje Medellín</a></Link> :
+                                <div className="responsive-btn w-100">
+                                    <div className="actions" style={ActionsStyles.buttons}>
+                                        { !props.kit && (
                                             <Link href='/kit'><a className={`btn btn-default btn-gradient text-white ${props.kit ? 'kit' : 'local'}`} style={ActionsStyles.navButton}>KIT Maquillaje</a></Link>
-                                    }
-                                    
-                                    <a className="toggle-nav" onClick={clickSidebar} data-target="#scroll-spy" aria-controls="scroll-spy">
-                                        <i aria-hidden="true" className="fa fa-bars"></i>
-                                    </a>
+                                        )}
+                                        <a className="toggle-nav" onClick={clickSidebar} data-target="#scroll-spy" aria-controls="scroll-spy">
+                                            <i aria-hidden="true" className="fa fa-bars"></i>
+                                        </a>
+                                    </div>
                                 </div>
-                            </div>
                             <Nav className="w-100" kit={props.kit} />
                         </nav>
                     </div>
