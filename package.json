@@ -4,7 +4,8 @@
   "private": true,
   "scripts": {
     "dev": "NODE_OPTIONS=--openssl-legacy-provider next",
-    "prod:build": "next build"
+    "prod:build": "next vercel-build",
+    "vercel-build": "npm install --legacy-peer-deps && next build"
   },
   "dependencies": {
     "@zeit/next-sass": "^1.0.1",
