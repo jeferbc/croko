@@ -33,7 +33,7 @@ const ProductSection = () => (
                                 <h3 className="feature-text-heading text-center text-lg-left bold pb-2">Descripción</h3>
                                 <p className="price-feature text-justify">
                                     Incluye 2 plantillas personalizables: elige desde nuestro catálogo de 30 diseños o envíanos los tuyos,
-                                    teniendo en cuenta que debe ser siempre con un único personaje (no se aceptan escenas grupales).
+                                    teniendo en cuenta que debe ser siempre con un único personaje.
                                     4 pinceles, pinturas corporales seguras y videos guía para pintar la barriguita junto a familiares o amigos.
                                     Consulta las imágenes de referencia y elige tu diseño.</p>
                             </div>

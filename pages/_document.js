@@ -1,15 +1,11 @@
 import Document, { Head, Main, NextScript } from 'next/document'
 
-const BaseCSS = ({ css }) =>
+const BaseCSS = ({ css = '*{box-sizing:border-box}body{margin:0}'}) =>
   <style
     dangerouslySetInnerHTML={{
       __html: css
     }}
   />
-
-BaseCSS.defaultProps = {
-  css: '*{box-sizing:border-box}body{margin:0}'
-}
 
 export default class MyDocument extends Document {
   render() {
