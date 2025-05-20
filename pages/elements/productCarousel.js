@@ -18,7 +18,12 @@ const images = [
   {
     original: 'https://ik.imagekit.io/ge17f66b4ma/Dise%C3%B1os%20ni%C3%B1a%20foto%20690x551_uLrf2-Gqi.png?updatedAt=1747372670416',
     thumbnail: 'https://ik.imagekit.io/ge17f66b4ma/Dise%C3%B1os%20ni%C3%B1a%20foto%20chiki%20110x90_SUsViT0JF.png?updatedAt=1747372669866',
+  },
+  {
+    original: 'https://ik.imagekit.io/ge17f66b4ma/WhatsApp%20Image%202025-05-16%20at%204.05.01%20PM_2x5hn05jA.jpeg',
+    thumbnail: 'https://ik.imagekit.io/ge17f66b4ma/WhatsApp%20Image%202025-05-16%20at%204.05.02%20PM_An6bn4kSP.jpeg',
   }
+
 ];
 
 const ProductCarousel = () => {

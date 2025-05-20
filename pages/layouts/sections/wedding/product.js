@@ -28,7 +28,7 @@ const ProductSection = () => (
                             <div className="price-value mb-3">
                                 <h6 className="price text-center text-lg-left">$<span className="large">150.000</span></h6>
                             </div>
-                            <a className="btn btn-default btn-white whatsapp-kit" target="_blank" href={"https://wa.me/573168161717?text=Hola, estoy interesado en el kit de maquillaje prenatal"}>Comprar</a>
+                            <a className="btn btn-default btn-white whatsapp-kit" target="_blank" href="https://checkout.wompi.co/l/tIZLKf">Comprar</a>
                             <div className="font-primary pt-3">
                                 <h3 className="feature-text-heading text-center text-lg-left bold pb-2">Descripción</h3>
                                 <p className="price-feature text-justify">
