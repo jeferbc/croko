@@ -17,7 +17,7 @@ const Kit = () => {
         document.body.style.setProperty('--light', '#BF862D')
         document.body.style.setProperty('--dark', '#ECC878')
     })
-
+// TODO: check SEO, description size, setup google search console
     return (
         <div>
             <Head>
