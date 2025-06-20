@@ -8,6 +8,7 @@ import ProductVideos from '../layouts/sections/wedding/productVideos'
 import AccordionElementSection from './../elements/accordion'
 import FooterSection from './../layouts/sections/wedding/footer'
 import WhatsappRibbon from './../elements/common/whatsapp'
+import HeaderSection from './header/header'
 
 const Kit = () => {
 
@@ -44,8 +45,8 @@ const Kit = () => {
                 <title>Kit maquillaje prenatal en casa</title>
                 <meta charSet="utf-8" />
             </Head>
-
             <CenterLogoHeader themeClass="wedding" kit="true" />
+            <HeaderSection />
             <ProductSection />
             <ProductVideos />
             <AccordionElementSection kit="true" />

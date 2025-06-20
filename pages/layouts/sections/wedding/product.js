@@ -16,6 +16,9 @@ const ProductSection = () => (
   <section className="wedding" id="product">
     <Container>
         <Row>
+            <Col lg="6" className="d-block d-md-none">
+                <h2 className="feature-text-heading text-center text-lg-left bold text-uppercase py-3 mb-3">Seguro y fácil de usar</h2>
+            </Col>    
             <Col lg="6">
                 <ProductCarousel />
             </Col>
@@ -23,7 +26,7 @@ const ProductSection = () => (
                 <div className="blog agency pricing inner-pagetitle pt-4 pt-lg-0">
                     <div className="price-container price-margin shadows bg-white text-left mb-sm-0">
                         <div className="price-feature-container set-relative text-center text-lg-left">
-                            <h2 className="feature-text-heading text-center text-lg-left bold text-uppercase pb-3">Kit maquillaje prenatal</h2>
+                            <h2 className="feature-text-heading text-center text-lg-left bold text-uppercase pb-3">Pinturas seguras para embarazadas</h2>
                             <h4 className="feature-text-heading text-center text-lg-left pb-3">Envío incluido a todo Colombia</h4>
                             <div className="price-value mb-3">
                                 <h6 className="price text-center text-lg-left">$<span className="large">150.000</span></h6>

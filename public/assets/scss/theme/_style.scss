@@ -727,7 +727,7 @@ section {
 }
 .title {
   text-align: center;
-  margin-bottom: 50px;
+  margin-bottom: 20px;
   .title-img {
     margin-bottom: 30px;
   }
@@ -3024,9 +3024,6 @@ header {
     .logo-h1 {
       margin-left: -170px;
     }
-    .header-sub-text {
-      animation: rightFadeInOut 2.5s ease-in-out;
-    }
     .rightFadeInOut {
       animation: rightFadeInOut 1.5s ease-in-out;
     }
@@ -4877,6 +4874,16 @@ resume-theme css end
     margin-bottom: -35px;
     line-height: normal;
   }
+  h1.custom-title {
+    font-size: calc(20px + (35 - 20) * ((100vw - 300px) / (1920 - 300)));
+    margin-top: -10px;
+    margin-bottom: -7px;
+    font-weight: 600;
+    font-family: "Poppins", sans-serif;
+    line-height: 1.2;
+    letter-spacing: normal;
+    font-weight: 700;
+  }
   h2 {
     font-size: calc(20px + (35 - 20) * ((100vw - 300px) / (1920 - 300)));
     margin-top: -10px;
@@ -4929,6 +4936,11 @@ resume-theme css end
   .header-sub-text {
     margin-bottom: 25px;
     letter-spacing: 1px;
+
+    @media (max-width: 767px) {
+      margin-bottom: 0;
+      font-size: 1rem;
+    }
   }
   .rightfadediv {
     width: 160px;
