@@ -25,139 +25,78 @@ const PoliticaDePrivacidad = () => {
                                 
                                 <div className="content">
                                     <p>
-                                        <strong>Fecha de última actualización:</strong> {new Date().toLocaleDateString('es-CO')}
+                                        <strong>Última actualización:</strong> 3 de septiembre de 2025
                                     </p>
 
                                     <p>
-                                        Carolina Rincón, operador de www.maquillajeembarazadas.com, se compromete a proteger la privacidad de sus usuarios. 
-                                        Esta política describe cómo recopilamos, usamos y protegemos su información personal, cumpliendo con la Ley 1581 de 2012 
-                                        de Colombia (Ley de Protección de Datos Personales) y normas aplicables.
+                                        Carolina Rincón, operador de www.maquillajeembarazadas.com, se compromete a proteger la privacidad de sus usuarios conforme a la Ley 1581 de 2012 de Colombia y requisitos de Google y Meta. Este sitio ofrece servicios de arte decorativo para mujeres embarazadas (pintura artística en barrigas) y venta de kits de maquillaje decorativo para mujeres embarazadas, exclusivamente para fines recreativos y familiares, sin relación con servicios médicos, tratamientos de salud, enfermedades, datos de salud ni relaciones proveedor-paciente.
                                     </p>
 
                                     <h3 style={{ marginTop: '40px' }}>1. Información que recopilamos</h3>
-                                    <p><strong>Información personal directa:</strong></p>
-                                    <ul>
-                                        <li>Nombre completo</li>
-                                        <li>Número de teléfono</li>
-                                        <li>Dirección de correo electrónico</li>
-                                        <li>Dirección de entrega</li>
-                                        <li>Información de contacto para servicios a domicilio</li>
-                                    </ul>
+                                    <p>
+                                        <strong>Personal:</strong> Nombre, correo, teléfono (+57 3168161717), dirección de envío.
+                                        <br />
+                                        <strong>Automática:</strong> IP, navegador, páginas visitadas (vía cookies/píxeles).
+                                        <br />
+                                        <strong>No recolectamos:</strong> Datos médicos, de salud o sensibles, incluyendo información sobre condiciones de embarazo como estado médico.
+                                    </p>
 
-                                    <p><strong>Información automática:</strong></p>
-                                    <ul>
-                                        <li>Dirección IP</li>
-                                        <li>Tipo de navegador y dispositivo</li>
-                                        <li>Páginas visitadas y tiempo en el sitio</li>
-                                        <li>Cookies técnicas necesarias para el funcionamiento del sitio</li>
-                                    </ul>
+                                    <h3 style={{ marginTop: '40px' }}>2. Finalidad del tratamiento</h3>
+                                    <p>
+                                        Procesar pedidos, programar sesiones, comunicar soporte, gestionar pagos/devoluciones, coordinar envíos, mejorar el sitio.
+                                        <br />
+                                        No usamos datos para fines médicos ni terapéuticos.
+                                    </p>
 
-                                    <p><strong>Importante:</strong> NO recopilamos información médica o relacionada con la salud.</p>
+                                    <h3 style={{ marginTop: '40px' }}>3. Uso del Meta Pixel y públicos</h3>
+                                    <p>
+                                        El Meta Pixel mide rendimiento de anuncios (visitas, compras), sin recolectar datos sensibles (salud, finanzas). Cumple con Condiciones de Herramientas Empresariales de Meta. Nuestros públicos personalizados y similares se generan solo con interacciones no sensibles (ej., clics, visitas), excluyendo datos de salud o financieros. Puede optar por no participar en configuraciones de Meta.
+                                    </p>
 
-                                    <h3 style={{ marginTop: '40px' }}>2. Finalidad del tratamiento de datos</h3>
-                                    <p>Utilizamos su información personal para:</p>
-                                    <ul>
-                                        <li>Procesar y gestionar pedidos de kits de maquillaje prenatal</li>
-                                        <li>Programar y realizar sesiones de arte prenatal</li>
-                                        <li>Comunicarnos sobre servicios, cambios en pedidos y soporte</li>
-                                        <li>Procesar pagos y gestionar devoluciones</li>
-                                        <li>Coordinar entregas con transportadoras</li>
-                                        <li>Mejorar nuestros servicios y sitio web</li>
-                                        <li>Cumplir obligaciones legales y comerciales</li>
-                                    </ul>
+                                    <h3 style={{ marginTop: '40px' }}>4. Compartir información</h3>
+                                    <p>
+                                        <strong>Con:</strong> Wompi (pagos), Interrapidisimo (envíos), autoridades (legalmente requerido).
+                                        <br />
+                                        No vendemos ni compartimos para marketing.
+                                    </p>
 
-                                    <h3 style={{ marginTop: '40px' }}>3. Base legal para el tratamiento</h3>
-                                    <p>Procesamos sus datos con base en:</p>
-                                    <ul>
-                                        <li><strong>Consentimiento:</strong> Al usar nuestro sitio y servicios</li>
-                                        <li><strong>Ejecución de contrato:</strong> Para cumplir pedidos y servicios</li>
-                                        <li><strong>Interés legítimo:</strong> Para mejorar servicios y comunicación</li>
-                                        <li><strong>Obligación legal:</strong> Para cumplir requisitos fiscales y comerciales</li>
-                                    </ul>
+                                    <h3 style={{ marginTop: '40px' }}>5. Cookies</h3>
+                                    <p>
+                                        Usamos cookies para funcionamiento y análisis. Puede desactivarlas en su navegador.
+                                    </p>
 
-                                    <h3 style={{ marginTop: '40px' }}>4. Compartir información con terceros</h3>
-                                    <p>Compartimos información limitada con:</p>
-                                    <ul>
-                                        <li><strong>Procesadores de pago:</strong> Wompi para transacciones</li>
-                                        <li><strong>Transportadoras:</strong> Interrapidisimo para entregas (solo datos de contacto y dirección)</li>
-                                        <li><strong>Autoridades:</strong> Cuando sea requerido legalmente</li>
-                                    </ul>
-                                    <p>NO vendemos, alquilamos o compartimos datos con terceros para marketing.</p>
+                                    <h3 style={{ marginTop: '40px' }}>6. Seguridad</h3>
+                                    <p>
+                                        Usamos HTTPS, acceso restringido, revisiones regulares.
+                                    </p>
 
-                                    <h3 style={{ marginTop: '40px' }}>5. Cookies y tecnologías similares</h3>
-                                    <p>Utilizamos cookies para:</p>
-                                    <ul>
-                                        <li>Funcionamiento técnico del sitio</li>
-                                        <li>Recordar preferencias del usuario</li>
-                                        <li>Análisis básico de uso del sitio</li>
-                                    </ul>
-                                    <p>Puede desactivar cookies en su navegador, aunque esto puede afectar la funcionalidad del sitio.</p>
+                                    <h3 style={{ marginTop: '40px' }}>7. Retención</h3>
+                                    <p>
+                                        Clientes: 5 años; fiscales: según ley; cookies: sesión.
+                                    </p>
 
-                                    <h3 style={{ marginTop: '40px' }}>6. Seguridad de los datos</h3>
-                                    <p>Implementamos medidas técnicas y organizativas para proteger sus datos:</p>
-                                    <ul>
-                                        <li>Conexiones seguras (HTTPS)</li>
-                                        <li>Acceso limitado a información personal</li>
-                                        <li>Revisiones regulares de seguridad</li>
-                                        <li>Eliminación segura de datos cuando ya no son necesarios</li>
-                                    </ul>
-
-                                    <h3 style={{ marginTop: '40px' }}>7. Retención de datos</h3>
-                                    <p>Conservamos sus datos personales:</p>
-                                    <ul>
-                                        <li><strong>Datos de clientes:</strong> 5 años desde la última transacción</li>
-                                        <li><strong>Datos fiscales:</strong> Según requisitos legales (5 años)</li>
-                                        <li><strong>Cookies técnicas:</strong> Durante la sesión o según configuración</li>
-                                    </ul>
-
-                                    <h3 style={{ marginTop: '40px' }}>8. Sus derechos</h3>
-                                    <p>Conforme a la Ley 1581 de 2012, usted tiene derecho a:</p>
-                                    <ul>
-                                        <li><strong>Acceso:</strong> Conocer qué datos tenemos sobre usted</li>
-                                        <li><strong>Rectificación:</strong> Corregir datos inexactos o incompletos</li>
-                                        <li><strong>Cancelación:</strong> Eliminar sus datos cuando no sean necesarios</li>
-                                        <li><strong>Oposición:</strong> Oponerse al uso de sus datos para fines específicos</li>
-                                    </ul>
-                                    <p>Para ejercer estos derechos, contacte: croko@maquillajeembarazadas.com o +57 3168161717</p>
+                                    <h3 style={{ marginTop: '40px' }}>8. Derechos</h3>
+                                    <p>
+                                        Acceso, rectificación, cancelación, oposición (Ley 1581 de 2012). Contacte a croko@maquillajeembarazadas.com.
+                                    </p>
 
                                     <h3 style={{ marginTop: '40px' }}>9. Transferencias internacionales</h3>
                                     <p>
-                                        Algunos servicios (como procesadores de pago) pueden implicar transferencias de datos fuera de Colombia. 
-                                        Nos aseguramos de que estos proveedores cumplan estándares adecuados de protección.
+                                        Solo con proveedores seguros (ej., Wompi).
                                     </p>
 
-                                    <h3 style={{ marginTop: '40px' }}>10. Menores de edad</h3>
+                                    <h3 style={{ marginTop: '40px' }}>10. Menores</h3>
                                     <p>
-                                        No recopilamos conscientemente datos de menores de 18 años sin supervisión parental. 
-                                        Si identifica que hemos recopilado datos de un menor inadecuadamente, contáctenos para eliminarlos.
+                                        No recolectamos datos de menores sin consentimiento.
                                     </p>
 
-                                    <h3 style={{ marginTop: '40px' }}>11. Cumplimiento con Google y Meta</h3>
+                                    <h3 style={{ marginTop: '40px' }}>11. Cambios</h3>
                                     <p>
-                                        Cumplimos con las políticas de Google Ads y Meta Ads. No recopilamos ni procesamos categorías sensibles 
-                                        de datos personales (salud, datos médicos, información sobre embarazo como condición médica).
+                                        Actualizaciones notificadas por email o sitio.
                                     </p>
 
-                                    <h3 style={{ marginTop: '40px' }}>12. Cambios a esta política</h3>
-                                    <p>
-                                        Podemos actualizar esta política ocasionalmente. Los cambios importantes se notificarán por email 
-                                        o mediante aviso en el sitio web. La fecha de última actualización se indica al inicio.
-                                    </p>
-
-                                    <h3 style={{ marginTop: '40px' }}>13. Contacto</h3>
-                                    <p>
-                                        Para preguntas sobre esta política de privacidad o el tratamiento de sus datos personales:
-                                    </p>
-                                    <ul>
-                                        <li><strong>Email:</strong> croko@maquillajeembarazadas.com</li>
-                                        <li><strong>Teléfono:</strong> +57 3168161717</li>
-                                        <li><strong>Responsable:</strong> Carolina Rincón</li>
-                                    </ul>
-
-                                    <h3 style={{ marginTop: '40px' }}>14. Autoridad de control</h3>
-                                    <p>
-                                        Si considera que el tratamiento de sus datos no es adecuado, puede presentar reclamación ante 
-                                        la Superintendencia de Industria y Comercio de Colombia.
+                                    <p className="mt-4">
+                                        <strong>Contacte a croko@maquillajeembarazadas.com o +57 3168161717.</strong>
                                     </p>
                                 </div>
                             </div>
