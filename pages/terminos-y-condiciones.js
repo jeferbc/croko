@@ -25,7 +25,7 @@ const TerminosYCondiciones = () => {
                                 
                                 <div className="content">
                                     <p>
-                                        <strong>Última actualización:</strong> 3 de septiembre de 2025
+                                        <strong>Última actualización:</strong> 5 de septiembre de 2025
                                     </p>
 
                                     <p>
@@ -106,7 +106,7 @@ const TerminosYCondiciones = () => {
                                     </p>
 
                                     <p className="mt-4">
-                                        <strong>Contacte a croko@maquillajeembarazadas.com o +57 3168161717.</strong>
+                                        <strong>Contacte a crokolina@gmail.com o +57 3168161717.</strong>
                                     </p>
                                 </div>
                             </div>

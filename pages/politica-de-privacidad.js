@@ -25,7 +25,7 @@ const PoliticaDePrivacidad = () => {
                                 
                                 <div className="content">
                                     <p>
-                                        <strong>Última actualización:</strong> 3 de septiembre de 2025
+                                        <strong>Última actualización:</strong> 5 de septiembre de 2025
                                     </p>
 
                                     <p>
@@ -77,7 +77,7 @@ const PoliticaDePrivacidad = () => {
 
                                     <h3 style={{ marginTop: '40px' }}>8. Derechos</h3>
                                     <p>
-                                        Acceso, rectificación, cancelación, oposición (Ley 1581 de 2012). Contacte a croko@maquillajeembarazadas.com.
+                                        Acceso, rectificación, cancelación, oposición (Ley 1581 de 2012). Contacte a crokolina@gmail.com.
                                     </p>
 
                                     <h3 style={{ marginTop: '40px' }}>9. Transferencias internacionales</h3>
@@ -96,7 +96,7 @@ const PoliticaDePrivacidad = () => {
                                     </p>
 
                                     <p className="mt-4">
-                                        <strong>Contacte a croko@maquillajeembarazadas.com o +57 3168161717.</strong>
+                                        <strong>Contacte a crokolina@gmail.com o +57 3168161717.</strong>
                                     </p>
                                 </div>
                             </div>
