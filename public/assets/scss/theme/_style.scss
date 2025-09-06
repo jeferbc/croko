@@ -7826,13 +7826,13 @@ tap to top css end
             font-weight: 500;
             position: relative;
             color: #071828;
-            padding: 12px 20px;
+            padding: 12px 20px 12px 35px;
             &:before {
               position: absolute;
               font: normal normal normal 10px/1 FontAwesome;
               content: "\F054";
               transition: all 0.5s linear;
-              left: 0;
+              left: 15px;
               top: 20px;
             }
             &:after {
@@ -7841,8 +7841,11 @@ tap to top css end
           }
           .panel {
             p {
-              padding: 20px;
+              padding: 20px 35px;
             }
+          }
+          .card-body {
+            padding: 20px 35px;
           }
           &.active {
             .title {
