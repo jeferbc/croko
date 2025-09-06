@@ -10951,8 +10951,53 @@ error css end
         margin-bottom: 0;
       }
     }
+    .gallery-item {
+      width: 33.33%;
+      @media (min-width: 1200px) {
+        width: 25%;
+      }
+    }
   }
 }
+
+/* Terms and Privacy Pages Styles */
+.terms-privacy-page {
+  padding: 200px 0 80px 0;
+  
+  @media (max-width: 768px) {
+    padding: 100px 0 60px 0;
+  }
+  
+  .page-main-title {
+    margin-bottom: 30px;
+    font-size: 2.5rem;
+    font-weight: 700;
+    
+    @media (max-width: 768px) {
+      margin-bottom: 25px;
+      font-size: 2rem;
+    }
+  }
+  
+  .section-title {
+    margin-top: 40px;
+    margin-bottom: 20px;
+    
+    @media (max-width: 768px) {
+      margin-top: 30px;
+      margin-bottom: 15px;
+    }
+  }
+  
+  .content p {
+    margin-bottom: 15px;
+    
+    @media (max-width: 768px) {
+      margin-bottom: 12px;
+    }
+  }
+}
+
 .masonary-portfolio {
   .border-portfolio {
     margin-top: 0 !important;

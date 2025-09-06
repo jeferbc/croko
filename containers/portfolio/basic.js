@@ -27,7 +27,7 @@ const Basic = ({ className, title, subTitle, fluid }) => {
                 <div className={fluid || 'container'} style={{ width: "100" }}>
                     {AllImgData.map((imgItem, i) => {
                         return (
-                            <div className={className} key={i} style={{ display: "inline-flex", flexWrap: "wrap", width: "33.33%"  }}>
+                            <div className={`${className} gallery-item`} key={i} style={{ display: "inline-flex", flexWrap: "wrap" }}>
                                 <div className="overlay">
                                     <div className="border-portfolio">
                                         <div className="zoom_gallery" data-source={AllImg[photoIndex.index]}

@@ -7,7 +7,8 @@ const ActionsStyles = {
         display: "inline-flex",
         width: "100%", 
         alignItems: "center",
-        justifyContent: 'space-between'
+        justifyContent: 'flex-end',
+        gap: '15px'
     },
     navButton: {
         padding: "10px 20px"
@@ -31,7 +32,7 @@ const CenterLogoHeader = (props) => {
                             <Link href="/" className="center-header d-none d-lg-block">
                                 <img alt="logo" className="logo-abs h-auto" src="../assets/images/logo/croko_logo.png" />
                             </Link>
-                            <Link href="#" className="logo-responsive navbar-brand d-md-block d-lg-none">
+                            <Link href="/" className="logo-responsive navbar-brand d-md-block d-lg-none">
                                 <img alt="logo" src="../assets/images/logo/croko.png" />
                             </Link>
                                 <div className="responsive-btn w-100">
