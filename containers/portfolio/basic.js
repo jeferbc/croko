@@ -1,4 +1,4 @@
-import React, { useState, Fragment } from 'react';
+import React, { useState, Fragment, useEffect } from 'react';
 import { AllImgData, AllImg } from './database';
 import {Container,Row,Col} from 'reactstrap'
 import Lightbox from 'react-image-lightbox-next';
@@ -24,10 +24,10 @@ const Basic = ({ className, title, subTitle, fluid }) => {
                         </Col>
                     </Row>
                 </Container>
-                <div className={fluid || 'container'}>           
+                <div className={fluid || 'container'} style={{ width: "100" }}>
                     {AllImgData.map((imgItem, i) => {
                         return (
-                            <div className={className} key={i}>
+                            <div className={className} key={i} style={{ display: "inline-flex", flexWrap: "wrap", width: "33.33%"  }}>
                                 <div className="overlay">
                                     <div className="border-portfolio">
                                         <div className="zoom_gallery" data-source={AllImg[photoIndex.index]}

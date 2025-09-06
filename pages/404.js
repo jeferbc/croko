@@ -1,9 +1,8 @@
 import React, { useEffect } from 'react'
 import Link from 'next/link'
 import { Container, Row, Col } from 'reactstrap'
-const Error = ({ statusCode }) => {
 
-    const isErrorPage = true
+const Custom404 = () => {
 
     useEffect(() => {
         document.body.style.setProperty('--primary', '#000000')
@@ -20,7 +19,7 @@ const Error = ({ statusCode }) => {
                         <Row>
                             <Col lg="8" xs="12" className="offset-lg-2">
                                 <div className="central-body">
-                                    <h1 className="text-inner">{statusCode ? statusCode : '404'}</h1>
+                                    <h1 className="text-inner">404</h1>
                                     <h3 className="sub-text text-white">Página no encontrada</h3>
                                     <p className="text-404 text-white text-center">The Page You Are Attempting To Reach Is Currently Not
                                         Available. This May Be Because The Page Does Not Exist Or Has Been Moved.</p>
@@ -55,9 +54,4 @@ const Error = ({ statusCode }) => {
     )
 }
 
-export default Error
-
-Error.getInitialProps = ({ res, err }) => {
-    const statusCode = res ? res.statusCode : err ? err.statusCode : null
-    return { statusCode }
-}
+export default Custom404

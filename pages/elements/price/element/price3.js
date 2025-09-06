@@ -56,7 +56,7 @@ const PricingThree = () => (
                     <div className="price-value">
                         <h6 className="price text-center">$<span className="large">150.000</span></h6>
                     </div>
-                    <Link href='/kit'><a className="btn btn-default btn-white text-white">Mas información</a></Link>
+                    <Link href='/kit' className="btn btn-default btn-white text-white">Mas información</Link>
                 </div>
             </div>
         </Col>
@@ -79,7 +79,7 @@ const PricingThree = () => (
                         <div className="price-value">
                             <h6 className="price text-center">$<span className="large">150.000</span></h6>
                         </div>
-                        <Link href='/kit'><a className="btn btn-default btn-white text-white">Mas información</a></Link>
+                        <Link href='/kit' className="btn btn-default btn-white text-white">Mas información</Link>
                     </div>
                 </div>
             </div>                          
