@@ -87,7 +87,7 @@ const CookieConsent = () => {
             Utilizamos cookies para mejorar tu experiencia en nuestro sitio web y analizar el tráfico. 
             Al continuar navegando, aceptas nuestro uso de cookies. 
             <a 
-              href="/privacy" 
+              href="/politica-cookies" 
               style={cookieConsentStyles.link}
               target="_blank"
               rel="noopener noreferrer"
