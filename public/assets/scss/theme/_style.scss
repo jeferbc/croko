@@ -73,6 +73,11 @@
   background-color: $primary;
   color: $white;
 }
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
 body {
   font-family: "Poppins", sans-serif;
   position: relative;
@@ -10958,6 +10963,108 @@ error css end
       width: 33.33%;
       @media (min-width: 1200px) {
         width: 25%;
+      }
+    }
+  }
+}
+
+/* Blog Post Pages Styles */
+.blog-post-page {
+  padding: 0 0 80px 0;
+
+  @media (max-width: 768px) {
+    padding: 0 0 60px 0;
+  }
+
+  .blog-post {
+    .post-header {
+      margin-bottom: 30px;
+      text-align: center;
+
+      .post-title {
+        font-size: 2.5rem;
+        font-weight: 700;
+        margin-bottom: 20px;
+        line-height: 1.3;
+
+        @media (max-width: 768px) {
+          font-size: 2rem;
+        }
+      }
+
+      .post-meta {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        font-size: 0.9rem;
+        color: var(--secondary);
+
+        @media (max-width: 768px) {
+          flex-direction: column;
+          gap: 5px;
+        }
+
+        .post-date, .post-author {
+          opacity: 0.8;
+        }
+      }
+    }
+
+    .post-image {
+      margin-bottom: 40px;
+      text-align: center;
+
+      img {
+        border-radius: 12px;
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+        max-height: 400px;
+        object-fit: cover;
+        width: 100%;
+      }
+    }
+
+    .post-description {
+      margin-bottom: 40px;
+
+      .lead {
+        font-size: 1.2rem;
+        line-height: 1.7;
+        color: var(--secondary);
+        font-style: italic;
+        text-align: center;
+        padding: 20px 0;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+
+        @media (max-width: 768px) {
+          font-size: 1.1rem;
+        }
+      }
+    }
+
+    .post-content {
+      line-height: 1.8;
+      font-size: 1.1rem;
+
+      p {
+        margin-bottom: 20px;
+        color: #333;
+
+        @media (max-width: 768px) {
+          margin-bottom: 16px;
+        }
+      }
+
+      h3 {
+        color: var(--primary);
+        margin-top: 40px;
+        margin-bottom: 20px;
+        font-size: 1.5rem;
+        font-weight: 600;
+
+        @media (max-width: 768px) {
+          margin-top: 30px;
+          font-size: 1.3rem;
+        }
       }
     }
   }

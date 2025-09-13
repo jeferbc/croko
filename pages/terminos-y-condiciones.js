@@ -5,11 +5,6 @@ import CenterLogoHeader from '../containers/common/center-logo-header'
 import FooterSection from './layouts/sections/wedding/footer'
 
 const TerminosYCondiciones = () => {
-    useEffect(() => {
-        document.body.style.setProperty('--primary', '#c0882f')
-        document.body.style.setProperty('--secondary', '#595959')
-        document.body.style.setProperty('--light', '#BF862D')
-    }, [])
     return (
         <div>
             <Head>

@@ -5,6 +5,7 @@ import NProgress from 'nprogress';
 import getConfig from 'next/config'
 import TagManager from 'react-gtm-module';
 import { ToastContainer } from 'react-toastify';
+import CookieConsent from './elements/common/cookieConsent';
 
 import 'bootstrap-scss';
 import '../public/assets/scss/flaticon.scss';
@@ -100,6 +101,7 @@ export default function MyApp({ Component, pageProps, graphql }) {
         <Component {...pageProps} />
       </MyFunctionComponent>
       <ToastContainer />
+      <CookieConsent />
     </div>
   )
 }

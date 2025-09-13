@@ -12,6 +12,7 @@ export default class MyDocument extends Document {
     return (
       <Html>
         <Head>
+          <meta charSet="utf-8" />
           <link rel="icon" href="/favicon.ico" />
           <meta name='generator' content='mdx-docs' />
           <link href="https://fonts.googleapis.com/css?family=Capriola&amp;subset=latin-ext" rel="stylesheet" />
