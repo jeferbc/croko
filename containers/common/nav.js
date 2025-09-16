@@ -49,7 +49,7 @@ const Nav = (props) => {
             }
         })
         item.active = !item.active
-        setMainMenu({ mainmenu: navItems })
+        setMainMenu([...navItems])
 
     }
 
@@ -75,7 +75,7 @@ const Nav = (props) => {
             });
         }
         item.active = !item.active
-        setMainMenu({ mainmenu: navItems })
+        setMainMenu([...navItems])
     }
 
     return (
@@ -92,7 +92,7 @@ const Nav = (props) => {
                         return (
                             <li key={i}>
                                 {(menuItem.type === 'sub') ?
-                                    <a className="dropdown" href="#javascript" onClick={() => toggletNavActive(menuItem)}>
+                                    <a className="dropdown" href="javascript:void(0)" onClick={() => toggletNavActive(menuItem)}>
                                         <span>{menuItem.title}</span>
                                     </a>
                                     : ''}
@@ -135,9 +135,9 @@ const Nav = (props) => {
                 {
                     navItems.slice(2, 6).map((menuItem, i) => {
                         return (
-                            <li key={i} className={menuItem.type === 'sub' ? 'dropdown' : ''}>
+                            <li key={i}>
                                 {(menuItem.type === 'sub') ?
-                                    <a className="dropdown" href="#javascript" onClick={() => toggletNavActive(menuItem)}>
+                                    <a className="dropdown" href="javascript:void(0)" onClick={() => toggletNavActive(menuItem)}>
                                         <span>{menuItem.title}</span>
                                     </a>
                                     : ''}
