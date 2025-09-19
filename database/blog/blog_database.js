@@ -6,7 +6,7 @@ module.exports = {
       slug: 'baby-showers-colombia-actividades-regalos-croko',
       image: 'https://ik.imagekit.io/ge17f66b4ma/Baby%20Shower_4d2F8xU7b.webp?updatedAt=1757785105715',
       description: 'Descubre cómo se viven los baby showers en Colombia con actividades llenas de amor, regalos especiales y productos Croko.',
-      date: '20 de octubre de 2024',
+      date: '18 de septiembre de 2025',
       author: 'Carolina Rincón',
       content: `
         <p>Un baby shower en Colombia es mucho más que una reunión; es un abrazo colectivo, un momento lleno de risas, sueños y amor por ese bebito que está por llegar. En Croko, sabemos lo especial que es esta celebración, y queremos compartir contigo cómo se vive un baby shower en nuestro país, qué juegos hacen que todos se conecten, qué regalos hacen suspirar a las futuras mamás, y cómo nosotros ponemos un pedacito de magia en cada instante. Si estás planeando una fiesta o simplemente quieres soñar con la tuya, ¡acompáñanos en este viaje lleno de emoción!</p>
@@ -65,7 +65,7 @@ module.exports = {
       slug: 'kit-maquillaje-prenatal-hermanitos',
       image: 'https://ik.imagekit.io/ge17f66b4ma/Hermanitos_pintando%20(1)_zSIvHSy0K.webp?updatedAt=1757785105897',
       description: 'Descubre cómo el Kit Maquillaje Prenatal fortalece vínculos familiares y prepara a los hermanitos para la llegada del nuevo bebé.',
-      date: '1 de octubre de 2024',
+      date: '18 de septiembre de 2025',
       author: 'Carolina Rincón',
       content: `
         <p>La dulce espera de un bebé es un viaje transformador, lleno de amor, anticipación y, a veces, una pizca de incertidumbre, especialmente para los más pequeños de la casa. En Croko Maquillaje Embarazadas, hemos sido testigos de la magia que ocurre cuando el arte prenatal se convierte en una experiencia compartida. Y por eso, hemos creado el Kit Maquillaje Prenatal en Casa, una herramienta innovadora diseñada no solo para embellecer tu barriguita, sino para fortalecer el vínculo familiar y preparar el corazón de tus hijos mayores para la llegada de su nuevo hermanito o hermanita.</p>
@@ -110,7 +110,7 @@ module.exports = {
       slug: 'salud-mental-embarazo-croko-tranquilamente',
       image: 'https://ik.imagekit.io/ge17f66b4ma/Salud_mental_embarazo_utI36TAF_d.webp?updatedAt=1757785105686',
       description: 'Un abrazo emocional para mamás: navegando la salud mental durante el embarazo y posparto con amor y apoyo profesional.',
-      date: '25 de octubre de 2024',
+      date: '18 de septiembre de 2025',
       author: 'Carolina Rincón',
       content: `
         <p>El embarazo es un viaje lleno de colores: momentos de ilusión, sueños que crecen con cada latido, pero también días de dudas, miedos y emociones que suben y bajan como una marea. En Croko, sabemos que ser mamá es abrazar todas esas emociones, y queremos hablar contigo sobre la salud mental en el embarazo, la depresión posparto, y por qué tus sentimientos son tan importantes en esta etapa. Desde nuestra experiencia celebrando la maternidad, y con el apoyo de Tranquilamente, plataforma de psicología en línea, nuestra misión es acompañarte para que este camino sea más ligero y lleno de amor.</p>

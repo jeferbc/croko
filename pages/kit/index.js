@@ -9,6 +9,7 @@ import AccordionElementSection from './../elements/accordion'
 import FooterSection from './../layouts/sections/wedding/footer'
 import WhatsappRibbon from './../elements/common/whatsapp'
 import HeaderSection from './header/header'
+import PopularPosts from '../../containers/blog/posts'
 
 const Kit = () => {
 
@@ -50,6 +51,7 @@ const Kit = () => {
             <ProductSection />
             <ProductVideos />
             <AccordionElementSection kit="true" />
+            <PopularPosts />
             <FooterSection kit="true" />
             <WhatsappRibbon kit="true" />
         </div>

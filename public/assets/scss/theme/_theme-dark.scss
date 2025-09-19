@@ -43,6 +43,40 @@ body {
         }
       }
     }
+    .music.format{
+      .link-horizontal{
+        ul{
+          li{
+            a.icon-btn{
+              i{
+                background-color: $dark-color;
+                border-color: rgba($white, 0.08);
+              }
+            }
+          }
+        }
+      }
+    }
+    .agency.blog{
+      .blog-agency{
+        .blog-contain{
+          .img-container{
+            .blog-info{
+              div{
+                a.text-uppercase{
+                  color: $white-5;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    .btn-default.btn-white{
+      &:hover, &:focus, &:active{
+        background-color: $primary;
+      }
+    }
     .nav-tabs {
       border-bottom: 1px solid $border-color;
       .nav-link {
@@ -65,6 +99,33 @@ body {
           color: $white-5;
           i {
             color: $white-5;
+          }
+        }
+      }
+    }
+    .agency{
+      .plus-container{
+        .plus{
+          &:before, &:after{
+            color: $white;
+          }
+        }
+      }
+    }
+    .modal-no-header{
+      &.close-right{
+        .btn-close{
+          background-color: $dark-color;
+        }
+      }
+    }
+    .breadcrumb-section-main.inner-2,.breadcrumb-section-main.inner-3,.breadcrumb-section-main.inner-4 {
+      .breadcrumb-contain {
+        ul {
+          li {
+            a {
+              color: $white-5;
+            }
           }
         }
       }
@@ -93,7 +154,7 @@ body {
               li {
                 .shopping-cart {
                   border: 1px solid $border-color;
-                  .media-body {
+                  .flex-grow-1 {
                     h4 {
                       color: $white-5;
                     }
@@ -136,6 +197,32 @@ body {
               img {
                 filter: brightness(0) invert(1);
               }
+            }
+          }
+        }
+      }
+    }
+    .copyright.event{
+      background-color: rgba($dark-color, 0.05);
+    }
+    .gym.format{
+      .gym-slider{
+        a.btn-default{
+          border: 2px solid $dark-color;
+        }
+      }
+    }
+    .gym.pricing{
+      .btn-default{
+        border: 2px solid $dark-color;
+      }
+    }
+    .agency.blog{
+      .blog-agency{
+        .blog-contain{
+          .btn-bottom{
+            a{
+              color: $white-5;
             }
           }
         }
@@ -225,8 +312,6 @@ body {
       &.dark {
         background-color: $light-color;
         nav {
-          img {
-          }
           ul {
             li {
               & > a {
@@ -260,7 +345,6 @@ body {
         &.header3,
         &.gym-header,
         &.saas1-header,
-        &.saas2-bg,
         &.yogas {
           background-image: unset !important;
           background-color: $dark-color;
@@ -310,6 +394,15 @@ body {
       &.pricing {
         .price-feature-container {
           background-color: transparent;
+        }
+      }
+    }
+    .single_blog_item{
+      .comment_form_sec{
+        .quote_form{
+          input, textarea{
+            background-color: $dark-color;
+          }
         }
       }
     }
@@ -395,7 +488,7 @@ body {
       border-color: $border-color;
     }
     .bg-black {
-      background-color: $light-color;
+      background-color: $light-color !important;
     }
     .music {
       .overlay-box {
@@ -469,6 +562,17 @@ body {
     }
     .font-secondary {
       color: $white-5 !important;
+    }
+    .saas2-services{
+      .price-container{
+        .service-feature{
+          background-color: $light-color;
+          background-image: unset !important;
+        }
+        .price-feature-container{
+          background-color: $light-color;
+        }
+      }
     }
     .agency {
       &.testimonial {
@@ -649,6 +753,24 @@ body {
         }
       }
     }
+    .alert-section{
+      .card{
+        .card-body{
+          .alert.outline{
+            color: $white-5;
+          }
+        }
+      }
+    }
+    .saas1.faq{
+      .faq-block{
+        .accordion{
+          .accordion-item{
+            background-color: $light-color;
+          }
+        }
+      }
+    }
     .bg-theme,
     .bg-pink {
       background: $dark-color;
@@ -694,7 +816,7 @@ body {
                     color: $white-5;
                   }
                 }
-                .text-left {
+                .text-start {
                   border-color: $border-color;
                   .comment-date,
                   .comment-user {
@@ -892,12 +1014,6 @@ body {
           background: none;
         }
       }
-      &.quick-sol {
-        background: unset !important;
-      }
-      &.bg-gradient {
-        background-image: linear-gradient(#1c2440, #1a203c) !important;
-      }
     }
     .yoga {
       .meter {
@@ -910,6 +1026,19 @@ body {
         &.bg {
           background: unset !important;
           background-color: $dark-color;
+        }
+      }
+    }
+    .music{
+      .form-footer{
+        .booking{
+          .btn{
+            background-color: $light-color !important;
+            &:hover{
+              background-color: $white-1 !important;
+              border: 2px solid $white-1 !important;
+            }
+          }
         }
       }
     }
@@ -1151,7 +1280,7 @@ body {
           }
           .feature-text {
             hr {
-              border-color: $border-color;
+              border-color: rgba($white, 0.1);
             }
           }
         }
@@ -1235,6 +1364,12 @@ body {
           a {
             color: $white-5;
             background: $dark-color;
+            &.active{
+              background-color: $primary;
+            }
+            &:hover{
+              background-color: $primary;
+            }
           }
         }
       }
@@ -1459,9 +1594,6 @@ body {
     .about-page {
       &.testimonial {
         background-color: $dark-color;
-        img {
-          // filter:brightness(0) invert(1);
-        }
       }
     }
     .faq {
@@ -1635,8 +1767,8 @@ body {
     }
     .theme-card {
       .offer-slider {
-        .media {
-          .media-body {
+        .d-flex {
+          .flex-grow-1 {
             h4 {
               color: $white-3;
             }
@@ -1746,7 +1878,7 @@ body {
       border-color: $border-color;
       background-color: $dark-color;
       .product-service {
-        .media {
+        .d-flex {
           border-bottom: 1px solid $border-color;
           svg {
             filter: brightness(0) invert(1);
@@ -2112,10 +2244,6 @@ body {
         background-image: linear-gradient(#14225a, #05060e) !important;
       }
       &.footer2 {
-        &.saas2 {
-          background: unset !important;
-          background-color: $dark-color;
-        }
         &.bg {
           background: unset !important;
           background-color: $dark-color;
@@ -2293,6 +2421,21 @@ body {
         background-color: $dark-color;
       }
     }
+    @media only screen and (max-width: 991px) and (min-width: 768px) {
+      .resume {
+        .counter-container {
+          & + .counter-container {
+            border-left: 1px solid $border-color;
+            & + .counter-container {
+              border-top: 1px solid $border-color;
+              & + .counter-container {
+                border-left: 1px solid $border-color;
+              }
+            }
+          }
+        }
+      }
+    }
     @media only screen and (max-width: 767px) {
       &.agency {
         header {
@@ -2305,21 +2448,30 @@ body {
           }
         }
       }
+      .gym{
+        .counter-container{
+          padding-bottom: 30px;
+        }
+      }
       .counter-container {
         & + .counter-container {
-          border-color: $border-color;
-
+          border-left: 1px solid $border-color;
           & + .counter-container {
-            border-color: $border-color;
+            border-top: 1px solid $border-color;
             border-left: unset;
             & + .counter-container {
-              border-color: $border-color;
+              border-left: 1px solid $border-color;
             }
           }
         }
       }
     }
     @media only screen and (max-width: 420px) {
+      .gym{
+        .counter-container{
+          padding-bottom: 18px;
+        }
+      }
       footer {
         &.wedding {
           .footer-titles {

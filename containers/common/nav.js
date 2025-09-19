@@ -92,7 +92,7 @@ const Nav = (props) => {
                         return (
                             <li key={i}>
                                 {(menuItem.type === 'sub') ?
-                                    <a className="dropdown" href="javascript:void(0)" onClick={() => toggletNavActive(menuItem)}>
+                                    <a className="dropdown" href="#" onClick={(e) => { e.preventDefault(); toggletNavActive(menuItem); }}>
                                         <span>{menuItem.title}</span>
                                     </a>
                                     : ''}
@@ -137,7 +137,7 @@ const Nav = (props) => {
                         return (
                             <li key={i}>
                                 {(menuItem.type === 'sub') ?
-                                    <a className="dropdown" href="javascript:void(0)" onClick={() => toggletNavActive(menuItem)}>
+                                    <a className="dropdown" href="#" onClick={(e) => { e.preventDefault(); toggletNavActive(menuItem); }}>
                                         <span>{menuItem.title}</span>
                                     </a>
                                     : ''}

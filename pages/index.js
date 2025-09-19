@@ -11,6 +11,7 @@ import AccordionElementSection from './elements/accordion'
 import BlogSection from './layouts/sections/wedding/blog'
 import FooterSection from './layouts/sections/wedding/footer'
 import WhatsappRibbon from './elements/common/whatsapp'
+import PopularPosts from '../containers/blog/posts'
 
 const Home = () => {
 
@@ -58,6 +59,8 @@ const Home = () => {
             <BlogSection />
 
             <AccordionElementSection />
+
+            <PopularPosts />
 
             <FooterSection />
 
