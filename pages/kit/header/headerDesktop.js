@@ -1,6 +1,7 @@
 import React from 'react';
 import {Container,Row,Col} from 'reactstrap'
 import Link from 'next/link'
+import LazyImage from '../../../components/LazyImage';
 
 const ContactButtonStyles = {
     div: {
@@ -18,13 +19,13 @@ const ContactButtonStyles = {
 const HeaderDesktop = () => (
     <section className="wedding header" id="header">
         <div className="decore">
-            <img alt="" className="img-fluid" src="/assets/images/wedding-img/backgrounds/top-pattern.png" />
-            <img alt="" className="img-fluid" src="/assets/images/wedding-img/backgrounds/bottom-pattern.png" />
+            <LazyImage alt="Top decoration pattern" className="img-fluid" src="/assets/images/wedding-img/backgrounds/top-pattern.png" />
+            <LazyImage alt="Bottom decoration pattern" className="img-fluid" src="/assets/images/wedding-img/backgrounds/bottom-pattern.png" />
         </div>
         <div className="wedding-content">
             <div className="wedding bg slider-bg">
                 <div className="bottom-0 set-abs girl">
-                    <img alt="" className="img-fluid" id="girl" src="https://ik.imagekit.io/ge17f66b4ma/Samy_QLzwZtT-Tg.png?updatedAt=1626907765924" />
+                    <LazyImage alt="Samy - Kit maquillaje prenatal" className="img-fluid" id="girl" src="https://ik.imagekit.io/ge17f66b4ma/Samy_QLzwZtT-Tg.png?updatedAt=1626907765924" />
                 </div>
                 <Container>
                     <Row>

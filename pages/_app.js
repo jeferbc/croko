@@ -15,6 +15,7 @@ import '../public/assets/scss/themify.scss';
 import "../public/assets/scss/slick.scss";
 import "../public/assets/scss/slick-theme.scss";
 import '../public/assets/scss/base.scss';
+import '../styles/lazyLoading.css';
 
 const { publicRuntimeConfig = {} } = getConfig() || {};
 

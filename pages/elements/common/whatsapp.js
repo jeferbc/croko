@@ -1,4 +1,5 @@
 import React, { Fragment } from 'react';
+import LazyImage from '../../../components/LazyImage';
 
 var whatsappRibbonStyles = {
   a: {
@@ -17,7 +18,7 @@ const WhatsappRibbon = (props) => {
   return (
     <Fragment>
       <a style={whatsappRibbonStyles.a} href={`https://wa.me/573168161717?text=${message}`} target="_blank" className={props.kit ? 'whatsapp-kit' : 'whatsapp-local'}>
-        <img alt="logo" style={whatsappRibbonStyles.img} src="https://ik.imagekit.io/ge17f66b4ma/whatsapp_logo_FzIZzUouZt6.png?updatedAt=1626907709548" />
+        <LazyImage alt="WhatsApp Contact" style={whatsappRibbonStyles.img} src="https://ik.imagekit.io/ge17f66b4ma/whatsapp_logo_FzIZzUouZt6.png?updatedAt=1626907709548" />
       </a>
     </Fragment>
   );

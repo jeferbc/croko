@@ -1,5 +1,6 @@
 import React from 'react';
 import Link from 'next/link'
+import LazyImage from '../../../components/LazyImage';
 
 const Instagram = ({}) => {
 
@@ -11,28 +12,28 @@ const Instagram = ({}) => {
                     <li>
                         <Link href="">
                             <a href="#javascript">
-                            <img alt="" className="img-fluid" src="/assets/images/agency/blog/2.jpg" />
+                            <LazyImage alt="Blog image 2" className="img-fluid" src="/assets/images/agency/blog/2.jpg" />
                             </a>
                         </Link>
                     </li>
                     <li>
                         <Link href="">
                             <a href="#javascript">
-                            <img alt="" className="img-fluid" src="/assets/images/agency/blog/3.png" />
+                            <LazyImage alt="Blog image 3" className="img-fluid" src="/assets/images/agency/blog/3.png" />
                             </a>
                         </Link>
                     </li>
                     <li>
                         <Link href="">
                             <a href="#javascript">
-                            <img alt="" className="img-fluid" src="/assets/images/agency/blog/4.jpg" />
+                            <LazyImage alt="Blog image 4" className="img-fluid" src="/assets/images/agency/blog/4.jpg" />
                             </a>
                         </Link>
                     </li>
                     <li>
                         <Link href="">
                             <a href="#javascript">
-                            <img alt="" className="img-fluid" src="/assets/images/agency/blog/6.jpg" />
+                            <LazyImage alt="Blog image 6" className="img-fluid" src="/assets/images/agency/blog/6.jpg" />
                             </a>
                         </Link>
                     </li>
@@ -41,28 +42,28 @@ const Instagram = ({}) => {
                     <li>
                         <Link href="">
                             <a href="#javascript">
-                            <img alt="" className="img-fluid" src="/assets/images/agency/blog/6.jpg" />
+                            <LazyImage alt="Blog image 6" className="img-fluid" src="/assets/images/agency/blog/6.jpg" />
                             </a>
                         </Link>
                     </li>
                     <li>
                         <Link href="">
                             <a href="#javascript">
-                            <img alt="" className="img-fluid" src="/assets/images/agency/blog/4.jpg" />
+                            <LazyImage alt="Blog image 4" className="img-fluid" src="/assets/images/agency/blog/4.jpg" />
                             </a>
                         </Link>
                     </li>
                     <li>
                         <Link href="">
                             <a href="#javascript">
-                            <img alt="" className="img-fluid" src="/assets/images/agency/blog/3.png" />
+                            <LazyImage alt="Blog image 3" className="img-fluid" src="/assets/images/agency/blog/3.png" />
                             </a>
                         </Link>
                     </li>
                     <li>
                         <Link href="">
                             <a href="#javascript">
-                            <img alt="" className="img-fluid" src="/assets/images/agency/blog/2.jpg" />
+                            <LazyImage alt="Blog image 2" className="img-fluid" src="/assets/images/agency/blog/2.jpg" />
                             </a>
                         </Link>
                     </li>

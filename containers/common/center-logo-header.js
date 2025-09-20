@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import Nav from './nav'
 import Link from 'next/link'
+import LazyImage from '../../components/LazyImage';
 
 const ActionsStyles = {
     buttons: {

@@ -1,6 +1,7 @@
 import React from 'react';
 import {Container,Row,Col} from 'reactstrap'
 import Link from 'next/link'
+import LazyImage from '../../../components/LazyImage';
 
 const HeaderMobile = () => (
     <section className="wedding header" id="header">
@@ -21,7 +22,7 @@ const HeaderMobile = () => (
                                     <a className="btn btn-default btn-white purchase-kit m-t-20" target="_blank" href="https://checkout.wompi.co/l/tIZLKf">Comprar</a>
                                 </div>
                                 <div className="bottom-0 girl m-t-25">
-                                    <img alt="" className="img-fluid" id="girl" src="https://ik.imagekit.io/ge17f66b4ma/Samy_QLzwZtT-Tg.png?updatedAt=1626907765924" />
+                                    <LazyImage alt="Samy - Kit pintabarriguitas" className="img-fluid" id="girl" src="https://ik.imagekit.io/ge17f66b4ma/Samy_QLzwZtT-Tg.png?updatedAt=1626907765924" />
                                 </div>
                             </div>
                         </Col>
