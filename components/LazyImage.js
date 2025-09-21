@@ -4,15 +4,23 @@ const LazyImage = ({
   src, 
   alt = '', 
   className = '', 
-  placeholder = '/assets/images/placeholder.png',
   autoWebP = true,
+  priority = false,
+  width,
+  height,
   ...props 
 }) => {
   const [isLoaded, setIsLoaded] = useState(false);
-  const [isInView, setIsInView] = useState(false);
+  const [isInView, setIsInView] = useState(priority); // If priority, load immediately
   const imgRef = useRef();
 
   useEffect(() => {
+    // Skip intersection observer for priority images
+    if (priority) {
+      setIsInView(true);
+      return;
+    }
+
     const observer = new IntersectionObserver(
       ([entry]) => {
         if (entry.isIntersecting) {
@@ -22,7 +30,7 @@ const LazyImage = ({
       },
       {
         threshold: 0.1,
-        rootMargin: '50px'
+        rootMargin: '100px' // Load earlier for better UX
       }
     );
 
@@ -31,14 +39,10 @@ const LazyImage = ({
     }
 
     return () => observer.disconnect();
-  }, []);
+  }, [priority]);
 
   const handleLoad = () => {
     setIsLoaded(true);
-  };
-
-  const handleError = () => {
-    console.error(`Failed to load image: ${src}`);
   };
 
   // Function to add WebP transformation parameter
@@ -51,36 +55,54 @@ const LazyImage = ({
       return `${originalSrc}${separator}tr=f-webp,q-80`;
     }
     
-    // For other URLs, just return as is
     return originalSrc;
   };
 
   const optimizedSrc = getOptimizedSrc(src);
 
+  // Create style object with dimensions to prevent layout shift
+  const imgStyle = {
+    transition: isLoaded ? 'opacity 0.3s ease-in-out' : 'none',
+    display: 'block'
+  };
+
+  // For priority images or when in view, render the actual image
+  if (isInView) {
+    return (
+      <img
+        ref={imgRef}
+        src={optimizedSrc}
+        alt={alt}
+        className={`${isLoaded ? 'loaded' : 'loading'} ${className}`}
+        onLoad={handleLoad}
+        loading={priority ? 'eager' : 'lazy'}
+        style={imgStyle}
+        {...props}
+      />
+    );
+  }
+
+  // Placeholder for non-priority images not yet in view
   return (
-    <div ref={imgRef} className={`lazy-image-container ${className}`} {...props}>
-      {/* Placeholder/Loading state */}
-      {!isLoaded && (
-        <div className="lazy-placeholder">
-          <div className="lazy-spinner"></div>
-        </div>
-      )}
-      
-      {/* Actual image - only load when in view */}
-      {isInView && (
-        <img
-          src={optimizedSrc}
-          alt={alt}
-          className={`lazy-image ${isLoaded ? 'loaded' : 'loading'} ${className}`}
-          onLoad={handleLoad}
-          onError={handleError}
-          loading="lazy" // Native lazy loading as fallback
-          style={{
-            opacity: isLoaded ? 1 : 0,
-            transition: 'opacity 0.3s ease-in-out'
-          }}
-        />
-      )}
+    <div 
+      ref={imgRef} 
+      className={`lazy-image-placeholder ${className}`}
+      style={{
+        backgroundColor: '#f0f0f0',
+        display: 'flex',
+        alignItems: 'center',
+        justifyContent: 'center'
+      }}
+      {...props}
+    >
+      <div style={{
+        width: '40px',
+        height: '40px',
+        border: '3px solid #ddd',
+        borderTop: '3px solid #333',
+        borderRadius: '50%',
+        animation: 'spin 1s linear infinite'
+      }}></div>
     </div>
   );
 };
