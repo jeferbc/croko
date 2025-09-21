@@ -34,7 +34,7 @@ const HeaderSection = () => (
                                 <div className="simple-text">
                                     <div className="title">
                                         <div className="main-title">
-                                            <h1 className="gradient-text">Maquillaje prenatal</h1>
+                                            <h2 className="gradient-text">Maquillaje prenatal</h2>
                                         </div>
                                     </div>
                                     <p className="header-sub-text text-center" style={ContactButtonStyles.p}>
@@ -42,15 +42,7 @@ const HeaderSection = () => (
                                         mientras tu bebé es estimulado por el cosquilleo que producen los pinceles.
                                     </p>
                                     <div style={ContactButtonStyles.div}>
-                                        <a 
-                                          className="btn btn-default btn-white whatsapp-local" 
-                                          target="_blank" 
-                                          rel="noopener noreferrer"
-                                          href={"https://wa.me/573168161717?text=Hola, estoy interesado en maquillaje prenatal en Medellín."}
-                                          aria-label="Contactar por WhatsApp para maquillaje prenatal en Medellín"
-                                        >
-                                          Maquillaje Medellín
-                                        </a>
+                                        <a className="btn btn-default btn-white whatsapp-local" target="_blank" href={"https://wa.me/573168161717?text=Hola, estoy interesado en maquillaje prenatal en Medellín."}>Maquillaje Medellín</a>
                                     </div>
                                     <div style={ContactButtonStyles.div} className='d-none d-lg-flex mt-2'>
                                         <Link href='/kit' className="btn btn-default btn-white" style={ContactButtonStyles.a}>Kit de Maquillaje</Link>
