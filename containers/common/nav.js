@@ -9,7 +9,8 @@ const Nav = (props) => {
     const [mainmenu, setMainMenu] = useState(navItems);
     const [sidebar, setSidebar] = useState(false);
 
-    function closeSidebar() {
+    function closeSidebar(e) {
+        e.preventDefault()
         setSidebar(!sidebar)
         document.querySelector('.navbar').classList.remove('openSidebar')
     }
@@ -81,7 +82,7 @@ const Nav = (props) => {
     return (
         <div className={`navbar scroll-spy`} id="togglebtn">
             <div className="responsive-btn">
-                <a href="javascript:void(0)" className="btn-back" onClick={closeSidebar}>
+                <a href="#" className="btn-back" onClick={closeSidebar}>
                     <h5>atrás</h5>
                 </a>
             </div>

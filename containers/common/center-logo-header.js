@@ -19,7 +19,8 @@ const ActionsStyles = {
 const CenterLogoHeader = (props) => {
     const [sidebar, setSidebar] = useState(false);
 
-    const clickSidebar = () => {
+    const clickSidebar = (e) => {
+        e.preventDefault()
         setSidebar(!sidebar)
         document.querySelector('.navbar').classList.add('openSidebar')
     }
@@ -41,7 +42,7 @@ const CenterLogoHeader = (props) => {
                                         { !props.kit && (
                                             <Link href='/kit' className={`btn btn-default btn-gradient text-white ${props.kit ? 'kit' : 'local'}`} style={ActionsStyles.navButton}>KIT Maquillaje</Link>
                                         )}
-                                        <a href="javascript:void(0)" className="toggle-nav" onClick={clickSidebar} data-target="#togglebtn" aria-controls="togglebtn">
+                                        <a href="#" className="toggle-nav" onClick={clickSidebar} data-target="#togglebtn" aria-controls="togglebtn" aria-label="Abrir menú de navegación">
                                             <i aria-hidden="true" className="fa fa-bars"></i>
                                         </a>
                                     </div>
