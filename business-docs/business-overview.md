@@ -27,9 +27,21 @@ To become the leading pregnancy experience brand in Colombia, helping families c
 - **Emotional Wellness**: Supporting maternal mental health
 
 ## Competitive Advantages
-1. First-mover advantage in pregnancy experience market
-2. Culturally relevant approach to Colombian families
-3. Complete family experience (not just mother-focused)
-4. Professional-quality products for home use
-5. Mental health support integration
-6. Bilingual content and support
+1. **Strong Social Media Presence**: 92,500+ total followers across platforms
+   - TikTok: 75,000 followers (massive reach for young mothers)
+   - Instagram: 14,100 followers (high engagement visual platform)
+   - Facebook: 1,600 followers (community building)
+   - YouTube: 1,800 subscribers (educational content)
+2. First-mover advantage in pregnancy experience market
+3. Culturally relevant approach to Colombian families
+4. Complete family experience (not just mother-focused)
+5. Professional-quality products for home use
+6. Mental health support integration
+7. Bilingual content and support
+
+## Social Media Assets
+Our established social media presence provides immediate access to engaged audiences:
+- **Total Reach**: 92,500+ followers across all platforms
+- **Primary Demographics**: Colombian mothers and families
+- **Content Engagement**: High interaction rates with pregnancy-related content
+- **Trust Building**: Established credibility through consistent, valuable content

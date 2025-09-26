@@ -50,29 +50,38 @@
 
 ## Social Media Strategy
 
-### Instagram (Primary Platform)
-- **Content Mix**: 70% educational, 20% behind-scenes, 10% promotional
-- **Posting Schedule**: Daily posts, 3-4 stories per day
-- **Content Types**: Before/after photos, time-lapse videos, family testimonials
-- **Hashtag Strategy**: Mix of popular and niche pregnancy hashtags
-- **Influencer Partnerships**: Pregnancy bloggers, family influencers
+**Current Assets**: 92,500+ followers (TikTok: 75k, Instagram: 14.1k, Facebook: 1.6k, YouTube: 1.8k)
 
-### Facebook (Community Building)
-- **Groups Strategy**: Join pregnancy groups, share valuable content
-- **Event Promotion**: Baby shower packages, workshops
-- **Video Content**: Live Q&A sessions, tutorial videos
-- **Customer Service**: Response to inquiries and support
+### TikTok (Primary Growth Engine) - 75,000 Followers
+**Massive Reach Advantage** - Our strongest platform with viral potential
+- **Content Strategy**: Leverage existing 75k audience for product launches
+- **Viral Tactics**: Pregnancy transformation trends, before/after reveals
+- **Cross-Promotion**: Drive TikTok traffic to Instagram and website
+- **Sales Funnel**: TikTok discovery → Instagram nurturing → Website conversion
+- **Content Mix**: 60% trending content, 30% educational, 10% promotional
+- **Posting**: 2-3 videos daily, trend participation within 24 hours
 
-### YouTube (Education & Trust)
-- **Channel Strategy**: Tutorial videos, customer stories
-- **Content Calendar**: Weekly uploads, seasonal specials
-- **SEO Optimization**: Keyword-rich titles, descriptions
-- **Collaboration**: Guest appearances on parenting channels
+### Instagram (Conversion Platform) - 14,100 Followers
+**High-Quality Engagement** - Premium audience for direct sales
+- **Content Mix**: 50% educational, 30% behind-scenes, 20% promotional
+- **Stories Strategy**: Daily tutorials, polls, product demonstrations
+- **Shopping Features**: Product tags, shop integration, swipe-up links
+- **Influencer Partnerships**: Leverage following for brand collaborations
+- **Live Sessions**: Weekly Q&A, product demonstrations
 
-### TikTok (Emerging Platform)
-- **Content Focus**: Quick tutorials, trend participation
-- **Target**: Younger pregnant women (22-28)
-- **Trend Integration**: Pregnancy reveals, belly progression
+### Facebook (Community & Sales) - 1,600 Followers
+**Mature Audience** - Higher purchasing power, local targeting
+- **Groups Strategy**: Create exclusive "Croko Family" community
+- **Event Promotion**: Local Medellín workshops, baby shower packages
+- **Facebook Shop**: Direct sales integration
+- **Targeted Ads**: Lookalike audiences based on existing followers
+
+### YouTube (Authority Building) - 1,800 Subscribers
+**Long-Form Content** - Educational authority and SEO benefits
+- **Tutorial Series**: Comprehensive belly painting courses
+- **Customer Stories**: Extended testimonials and case studies
+- **SEO Strategy**: Optimize for pregnancy-related searches
+- **Monetization**: Affiliate links, product placements, sponsored content
 
 ## Email Marketing Strategy
 
@@ -175,9 +184,10 @@
 
 ## Budget Allocation Recommendations
 
-### Digital Marketing Budget Distribution
-- **SEO & Content**: 25%
-- **Paid Advertising**: 40%
-- **Social Media Management**: 20%
+### Digital Marketing Budget Distribution (Optimized for Social Media Strength)
+- **Social Media Management & Growth**: 35% (increased due to 92.5k follower base)
+- **Paid Social Media Advertising**: 30% (leverage existing audiences)
+- **SEO & Content**: 15%
 - **Email Marketing Tools**: 5%
 - **Influencer Partnerships**: 10%
+- **TikTok Creator Fund**: 5% (maximize viral potential with 75k followers)

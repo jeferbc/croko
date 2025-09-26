@@ -7,7 +7,14 @@
 (We create the first family memories before birth)
 
 ### Brand Positioning Statement
-Croko es la marca líder en experiencias prenatales familiares en Colombia, transformando el embarazo en una celebración que fortalece vínculos familiares y crea recuerdos invaluables a través del arte corporal seguro y profesional.
+Croko es la marca líder en experiencias prenatales familiares en Colombia, con más de 92,500 seguidores comprometidos en redes sociales, transformando el embarazo en una celebración que fortalece vínculos familiares y crea recuerdos invaluables a través del arte corporal seguro y profesional.
+
+### Social Media Authority
+**92,500+ Followers Across Platforms**:
+- TikTok: 75,000 followers (viral content reach)
+- Instagram: 14,100 followers (visual storytelling)
+- YouTube: 1,800 subscribers (educational authority)
+- Facebook: 1,600 followers (local community)
 
 ### Brand Personality
 - **Cálida**: Warm and welcoming, like family
