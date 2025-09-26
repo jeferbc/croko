@@ -42,17 +42,10 @@ export default class MyDocument extends Document {
           <link rel="dns-prefetch" href="//ik.imagekit.io" />
           <link rel="preconnect" href="https://fonts.googleapis.com" crossOrigin="anonymous" />
           <link rel="preconnect" href="https://ik.imagekit.io" crossOrigin="anonymous" />
-          
+
           {/* Preload critical hero image */}
           <link rel="preload" as="image" href="https://ik.imagekit.io/ge17f66b4ma/Samy_QLzwZtT-Tg.png?updatedAt=1626907765924&tr=f-webp,q-80" />
-          
-          {/* Font optimization with display=swap */}
-          <link href="https://fonts.googleapis.com/css?family=Capriola&amp;subset=latin-ext&display=swap" rel="stylesheet" />
-          <link href="https://fonts.googleapis.com/css?family=Poppins:400,600,700&display=swap" rel="stylesheet" />
-          <link href="https://fonts.googleapis.com/css?family=Satisfy&display=swap" rel="stylesheet" />
-          <link href="https://fonts.googleapis.com/css?family=Alex+Brush&amp;subset=latin-ext&display=swap" rel="stylesheet"></link>
-          <link href="https://fonts.googleapis.com/css?family=Raleway:400,600,700,800,900&display=swap" rel="stylesheet"></link>
-          <link href="https://fonts.googleapis.com/css?family=Work+Sans:400,600,700&display=swap" rel="stylesheet" />
+
           
           <BaseCSS />
           <CriticalCSS />

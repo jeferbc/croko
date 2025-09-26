@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import Router from 'next/router';
 import Head from 'next/head';
+import Script from 'next/script';
 import NProgress from 'nprogress';
 import getConfig from 'next/config'
 import TagManager from 'react-gtm-module';
@@ -103,6 +104,80 @@ export default function MyApp({ Component, pageProps, graphql }) {
       </MyFunctionComponent>
       <ToastContainer />
       <CookieConsent />
+
+      {/* Load Google Fonts non-blocking */}
+      <Script
+        strategy="lazyOnload"
+        id="google-fonts-raleway"
+        dangerouslySetInnerHTML={{
+          __html: `
+            var link = document.createElement('link');
+            link.rel = 'stylesheet';
+            link.href = 'https://fonts.googleapis.com/css?family=Raleway:400,600,700,800,900&display=swap';
+            document.head.appendChild(link);
+          `
+        }}
+      />
+      <Script
+        strategy="lazyOnload"
+        id="google-fonts-satisfy"
+        dangerouslySetInnerHTML={{
+          __html: `
+            var link = document.createElement('link');
+            link.rel = 'stylesheet';
+            link.href = 'https://fonts.googleapis.com/css?family=Satisfy&display=swap';
+            document.head.appendChild(link);
+          `
+        }}
+      />
+      <Script
+        strategy="lazyOnload"
+        id="google-fonts-work-sans"
+        dangerouslySetInnerHTML={{
+          __html: `
+            var link = document.createElement('link');
+            link.rel = 'stylesheet';
+            link.href = 'https://fonts.googleapis.com/css?family=Work+Sans:400,600,700&display=swap';
+            document.head.appendChild(link);
+          `
+        }}
+      />
+      <Script
+        strategy="lazyOnload"
+        id="google-fonts-alex-brush"
+        dangerouslySetInnerHTML={{
+          __html: `
+            var link = document.createElement('link');
+            link.rel = 'stylesheet';
+            link.href = 'https://fonts.googleapis.com/css?family=Alex+Brush&subset=latin-ext&display=swap';
+            document.head.appendChild(link);
+          `
+        }}
+      />
+      <Script
+        strategy="lazyOnload"
+        id="google-fonts-capriola"
+        dangerouslySetInnerHTML={{
+          __html: `
+            var link = document.createElement('link');
+            link.rel = 'stylesheet';
+            link.href = 'https://fonts.googleapis.com/css?family=Capriola&subset=latin-ext&display=swap';
+            document.head.appendChild(link);
+          `
+        }}
+      />
+      <Script
+        strategy="lazyOnload"
+        id="google-fonts-poppins"
+        dangerouslySetInnerHTML={{
+          __html: `
+            var link = document.createElement('link');
+            link.rel = 'stylesheet';
+            link.href = 'https://fonts.googleapis.com/css?family=Poppins:400,600,700&display=swap';
+            document.head.appendChild(link);
+          `
+        }}
+      />
     </div>
   )
 }
