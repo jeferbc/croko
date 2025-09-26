@@ -79,9 +79,9 @@ const Nav = (props) => {
     }
 
     return (
-        <div className={`navbar`} id="togglebtn scroll-spy">
+        <div className={`navbar scroll-spy`} id="togglebtn">
             <div className="responsive-btn">
-                <a className="btn-back" onClick={closeSidebar}>
+                <a href="javascript:void(0)" className="btn-back" onClick={closeSidebar}>
                     <h5>atrás</h5>
                 </a>
             </div>

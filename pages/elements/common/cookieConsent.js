@@ -92,7 +92,7 @@ const CookieConsent = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              {' '}Más información
+              {' '}Ver política de cookies
             </a>
           </p>
         </div>
