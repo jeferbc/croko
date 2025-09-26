@@ -25,7 +25,7 @@ const HeaderSection = () => (
         <div className="wedding-content">
             <div className="wedding bg slider-bg">
                 <div className="bottom-0 set-abs girl">
-                    <LazyImage alt="Samy - Maquillaje prenatal specialist" className="img-fluid" id="girl" src="https://ik.imagekit.io/ge17f66b4ma/Samy_QLzwZtT-Tg.png?updatedAt=1626907765924" priority={true} />
+                    <LazyImage alt="Samy - Maquillaje prenatal specialist" className="img-fluid" id="girl" src="https://ik.imagekit.io/ge17f66b4ma/Samy_QLzwZtT-Tg.png?updatedAt=1626907765924" priority={true} width={300} height={300} />
                 </div>
                 <Container>
                     <Row>

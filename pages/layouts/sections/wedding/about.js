@@ -18,15 +18,15 @@ const About = () => (
             <Row>
                 <Col md="8"  className="offset-md-2">
                     <div className="title">
-                        <img alt="" className="img-fluid title-img"
-                            src="/assets/images/wedding-img/bottom.png" />
+                        <LazyImage alt="" className="img-fluid title-img"
+                            src="/assets/images/wedding-img/bottom.png" width={124} height={25} />
                         <div className="main-title">
                             <h2 className="gradient-text">Body paint para embarazadas</h2>
                         </div>
                     </div>
                 </Col>
                 <Col xl="4" md="6" className="offset-xl-2">
-                    <LazyImage alt="Body paint para embarazadas - Mia" className="img-fluid about-img" src="https://ik.imagekit.io/ge17f66b4ma/MIA-1_gfnS344_D.png?updatedAt=1626907771292" />
+                    <LazyImage alt="Body paint para embarazadas - Mia" className="img-fluid about-img" src="https://ik.imagekit.io/ge17f66b4ma/MIA-1_gfnS344_D.png?updatedAt=1626907771292" width={400} height={400} />
                 </Col>
                 <Col xl="4" lg="6" md="6">
                     <div className="center-text">

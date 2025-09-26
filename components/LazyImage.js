@@ -1,22 +1,30 @@
 import { useState, useRef, useEffect } from 'react';
 
-const LazyImage = ({ 
-  src, 
-  alt = '', 
-  className = '', 
+const LazyImage = ({
+  src,
+  alt = '',
+  className = '',
   autoWebP = true,
   priority = false,
   width,
   height,
-  ...props 
+  responsive = true,
+  quality = 80,
+  ...props
 }) => {
   const [isLoaded, setIsLoaded] = useState(false);
   const [isInView, setIsInView] = useState(priority); // If priority, load immediately
+  const [isHydrated, setIsHydrated] = useState(false);
   const imgRef = useRef();
 
+  // Handle hydration
   useEffect(() => {
-    // Skip intersection observer for priority images
-    if (priority) {
+    setIsHydrated(true);
+  }, []);
+
+  useEffect(() => {
+    // Skip intersection observer for priority images or during SSR
+    if (priority || !isHydrated) {
       setIsInView(true);
       return;
     }
@@ -39,22 +47,45 @@ const LazyImage = ({
     }
 
     return () => observer.disconnect();
-  }, [priority]);
+  }, [priority, isHydrated]);
 
   const handleLoad = () => {
     setIsLoaded(true);
   };
 
-  // Function to add WebP transformation parameter
+  // Function to add optimizations including WebP and responsive sizing
   const getOptimizedSrc = (originalSrc) => {
-    if (!autoWebP || !originalSrc) return originalSrc;
-    
+    if (!originalSrc) return originalSrc;
+
     // Check if it's an ImageKit URL
     if (originalSrc.includes('ik.imagekit.io')) {
       const separator = originalSrc.includes('?') ? '&' : '?';
-      return `${originalSrc}${separator}tr=f-webp,q-80`;
+      let transformations = [];
+
+      // Add WebP format transformation
+      if (autoWebP) {
+        transformations.push('f-webp');
+      }
+
+      // Add quality
+      transformations.push(`q-${quality}`);
+
+      // Add responsive sizing if width/height provided
+      if (responsive && (width || height)) {
+        if (width && height) {
+          transformations.push(`w-${width}`, `h-${height}`, 'c-maintain_ratio');
+        } else if (width) {
+          transformations.push(`w-${width}`);
+        } else if (height) {
+          transformations.push(`h-${height}`);
+        }
+      }
+
+      if (transformations.length > 0) {
+        return `${originalSrc}${separator}tr=${transformations.join(',')}`;
+      }
     }
-    
+
     return originalSrc;
   };
 

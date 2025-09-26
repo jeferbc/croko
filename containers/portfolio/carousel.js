@@ -2,6 +2,7 @@ import React, { Fragment } from 'react';
 import { AllImgData, } from './database';
 import {Container,Row,Col} from 'reactstrap'
 import Slider from "react-slick";
+import LazyImage from '../../components/LazyImage';
 
 
 var settings = {
@@ -31,8 +32,8 @@ const carousel = () => {
                     <Row>
                         <Col md="8"  className="offset-md-2 wedding">
                             <div className="title">
-                                <img alt="" className="img-fluid title-img"
-                                    src="/assets/images/wedding-img/bottom.png" />
+                                <LazyImage alt="" className="img-fluid title-img"
+                                    src="/assets/images/wedding-img/bottom.png" width={124} height={25} />
                                 <div className="main-title">
                                     <h2 className="gradient-text">Galería</h2>
                                 </div>
@@ -52,7 +53,7 @@ const carousel = () => {
                                               <Row>
                                                   <Col md="6" sm="8" xs="12"  className="offset-sm-2 offset-md-0">
                                                       <div className="set-skew">
-                                                          <img alt="" className="img-fluid" src={imgItem.img} />
+                                                          <LazyImage alt="" className="img-fluid" src={imgItem.img} width={400} height={400} />
                                                       </div>
                                                   </Col>
                                               </Row>

@@ -32,10 +32,10 @@ const CenterLogoHeader = (props) => {
                     <div className="col-12">
                         <nav className="navbar-expand-lg theme-nav w-100">
                             <Link href="/" className="center-header d-none d-lg-block">
-                                <img alt="logo" className="logo-abs h-auto" src="../assets/images/logo/croko_logo.png" />
+                                <LazyImage alt="logo" className="logo-abs h-auto" src="../assets/images/logo/croko_logo.png" width={150} height={50} priority={true} />
                             </Link>
                             <Link href="/" className="logo-responsive navbar-brand d-md-block d-lg-none">
-                                <img alt="logo" src="../assets/images/logo/croko.png" />
+                                <LazyImage alt="logo" src="../assets/images/logo/croko.png" width={120} height={40} priority={true} />
                             </Link>
                                 <div className="responsive-btn w-100">
                                     <div className="actions" style={ActionsStyles.buttons}>
