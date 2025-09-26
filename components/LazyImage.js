@@ -1,4 +1,5 @@
 import { useState, useRef, useEffect } from 'react';
+import Image from 'next/image';
 
 const LazyImage = ({
   src,
@@ -57,6 +58,12 @@ const LazyImage = ({
   const getOptimizedSrc = (originalSrc) => {
     if (!originalSrc) return originalSrc;
 
+    // Handle relative paths for Next.js Image component
+    if (originalSrc.startsWith('../') || originalSrc.startsWith('./')) {
+      // Convert relative path to absolute path
+      return originalSrc.replace(/^\.\.?\//, '/');
+    }
+
     // Check if it's an ImageKit URL
     if (originalSrc.includes('ik.imagekit.io')) {
       const separator = originalSrc.includes('?') ? '&' : '?';
@@ -100,13 +107,16 @@ const LazyImage = ({
   // For priority images or when in view, render the actual image
   if (isInView) {
     return (
-      <img
+      <Image
         ref={imgRef}
         src={optimizedSrc}
         alt={alt}
         className={`${isLoaded ? 'loaded' : 'loading'} ${className}`}
         onLoad={handleLoad}
-        loading={priority ? 'eager' : 'lazy'}
+        priority={priority}
+        width={width}
+        height={height}
+        quality={quality}
         style={imgStyle}
         {...props}
       />
