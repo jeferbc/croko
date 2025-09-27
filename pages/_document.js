@@ -14,6 +14,7 @@ const CriticalCSS = () =>
         .wedding.header{position:relative;overflow:hidden;min-height:100vh}
         .wedding-content{position:relative;z-index:2}
         .wedding.bg{background:linear-gradient(135deg,#667eea 0%,#764ba2 100%);min-height:100vh;display:flex;align-items:center}
+        .wedding.bg.slider-bg{background-image:url('/assets/images/wedding-img/slider/slider-bg.jpg');background-size:cover;background-position:center;background-repeat:no-repeat}
         .center-text{text-align:center}
         .main-title h2{font-size:2.5rem;font-weight:600;margin-bottom:1rem}
         .gradient-text{background:linear-gradient(45deg,#fff,#f8f9fa);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
@@ -45,7 +46,6 @@ export default class MyDocument extends Document {
 
           {/* Preload critical hero image */}
           <link rel="preload" as="image" href="https://ik.imagekit.io/ge17f66b4ma/Samy_QLzwZtT-Tg.png?updatedAt=1626907765924&tr=f-webp,q-80" />
-
           
           <BaseCSS />
           <CriticalCSS />

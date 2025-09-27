@@ -6,7 +6,9 @@ import LazyImage from '../../../components/LazyImage';
 const HeaderMobile = () => (
     <section className="wedding header" id="header">
         <div className="wedding-content">
-            <div className="wedding bg slider-bg">
+            <div className="wedding bg slider-bg" style={{
+                backgroundImage: "url('/assets/images/wedding-img/slider/slider-bg.jpg')"
+            }}>
                 <Container>
                     <Row>
                         <Col>

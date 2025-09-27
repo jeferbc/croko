@@ -23,7 +23,10 @@ const HeaderDesktop = () => (
             <LazyImage alt="Bottom decoration pattern" className="" src="/assets/images/wedding-img/backgrounds/bottom-pattern.png" />
         </div>
         <div className="wedding-content">
-            <div className="wedding bg slider-bg">
+            <div className="wedding bg slider-bg" style={{
+                backgroundImage: "url('/assets/images/wedding-img/slider/slider-bg.jpg')",
+                backgroundAttachment: 'fixed'
+            }}>
                 <div className="bottom-0 set-abs girl">
                     <LazyImage alt="Samy - Kit maquillaje prenatal" className="img-fluid" id="girl" src="https://ik.imagekit.io/ge17f66b4ma/Samy_QLzwZtT-Tg.png?updatedAt=1626907765924" priority={true} />
                 </div>
