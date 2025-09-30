@@ -55,7 +55,11 @@ export default function PoliticaDePrivacidad() {
 
                                     <h3 style={{ marginTop: '40px' }}>5. Cookies</h3>
                                     <p>
-                                        Usamos cookies para funcionamiento y análisis. Puede desactivarlas en su navegador.
+                                        Usamos cookies para funcionamiento y análisis. Puede desactivarlas en su navegador.{' '}
+                                        Para más información detallada sobre nuestro uso de cookies, consulte nuestra{' '}
+                                        <a href="/politica-cookies" style={{ color: 'var(--primary)', textDecoration: 'underline' }}>
+                                            Política de Cookies
+                                        </a>.
                                     </p>
 
                                     <h3 style={{ marginTop: '40px' }}>6. Seguridad</h3>
