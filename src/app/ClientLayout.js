@@ -4,6 +4,7 @@ import TagManager from 'react-gtm-module';
 import { ToastContainer } from 'react-toastify';
 import NProgress from 'nprogress';
 import { usePathname } from 'next/navigation';
+import CookieConsent from '@/containers/elements/common/cookieConsent';
 
 export default function ClientLayout({ children }) {
   const [loader, setLoader] = useState(true);
@@ -66,6 +67,7 @@ export default function ClientLayout({ children }) {
         <div><i className="fa fa-angle-double-up"></i></div>
       </div>
       <ToastContainer />
+      <CookieConsent />
     </>
   );
 }

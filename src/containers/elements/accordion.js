@@ -19,7 +19,7 @@ const AccordionElementSection = (props) => {
                             </div>
                         </div>
                     </Col>
-                    <Col md="12">
+                    <Col md="10" className="offset-md-1">
                         <div className="saas1 faq mt-0">
                             <div className="faq-block">
                                 <div>

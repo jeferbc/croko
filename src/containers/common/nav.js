@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react'
+import Link from 'next/link'
 import SocialMedia from '@/containers/elements/common/socialMedia';
 import { MENUITEMS } from '@/constant/menu';
 import { KITMENUITEMS } from '@/constant/kitMenu';
@@ -90,9 +91,41 @@ const Nav = (props) => {
                     navItems.slice(0, 2).map((menuItem, i) => {
                         return (
                             <li key={i}>
-                                <a href={`${menuItem.path}`} onClick={() => toggletNavActive(menuItem)}>
-                                    <span>{menuItem.title}</span>
-                                </a>
+                                {(menuItem.type === 'sub') ?
+                                    <a className="dropdown" href="#javascript" onClick={() => toggletNavActive(menuItem)}>
+                                        <span>{menuItem.title}</span>
+                                    </a>
+                                    : ''}
+                                {(menuItem.type === 'link') ?
+                                    menuItem.path.startsWith('#') ? (
+                                        <a href={menuItem.path} onClick={() => toggletNavActive(menuItem)}>
+                                            <span>{menuItem.title}</span>
+                                        </a>
+                                    ) : (
+                                        <Link href={menuItem.path} onClick={() => toggletNavActive(menuItem)}>
+                                            <span>{menuItem.title}</span>
+                                        </Link>
+                                    )
+                                    : ''}
+                                {menuItem.children && menuItem.type === 'sub' ?
+                                    <ul className={`sub-menu ${menuItem.active ? 'open' : ''}`}>
+                                        {menuItem.children.map((childrenItem, index) =>
+                                            <li key={index}>
+                                                {(childrenItem.type === 'link') ?
+                                                    childrenItem.path.startsWith('#') ? (
+                                                        <a href={childrenItem.path}>
+                                                            <span>{childrenItem.title}</span>
+                                                        </a>
+                                                    ) : (
+                                                        <Link href={childrenItem.path} onClick={() => toggletNavActive(childrenItem)}>
+                                                            <span>{childrenItem.title}</span>
+                                                        </Link>
+                                                    )
+                                                    : ''}
+                                            </li>
+                                        )}
+                                    </ul>
+                                    : ''}
                             </li>
                         )
                     })
@@ -100,12 +133,44 @@ const Nav = (props) => {
             </ul>
             <ul className="main-menu">
                 {
-                    navItems.slice(2, 5).map((menuItem, i) => {
+                    navItems.slice(2, 6).map((menuItem, i) => {
                         return (
-                            <li key={i}>
-                                <a href={`${menuItem.path}`} onClick={() => toggletNavActive(menuItem)}>
-                                    <span>{menuItem.title}</span>
-                                </a>
+                            <li key={i} className={menuItem.type === 'sub' ? 'dropdown' : ''}>
+                                {(menuItem.type === 'sub') ?
+                                    <a className="dropdown" href="#javascript" onClick={() => toggletNavActive(menuItem)}>
+                                        <span>{menuItem.title}</span>
+                                    </a>
+                                    : ''}
+                                {(menuItem.type === 'link') ?
+                                    menuItem.path.startsWith('#') ? (
+                                        <a href={menuItem.path} onClick={() => toggletNavActive(menuItem)}>
+                                            <span>{menuItem.title}</span>
+                                        </a>
+                                    ) : (
+                                        <Link href={menuItem.path} onClick={() => toggletNavActive(menuItem)}>
+                                            <span>{menuItem.title}</span>
+                                        </Link>
+                                    )
+                                    : ''}
+                                {menuItem.children && menuItem.type === 'sub' ?
+                                    <ul className={`sub-menu ${menuItem.active ? 'open' : ''}`}>
+                                        {menuItem.children.map((childrenItem, index) =>
+                                            <li key={index}>
+                                                {(childrenItem.type === 'link') ?
+                                                    childrenItem.path.startsWith('#') ? (
+                                                        <a href={childrenItem.path}>
+                                                            <span>{childrenItem.title}</span>
+                                                        </a>
+                                                    ) : (
+                                                        <Link href={childrenItem.path} onClick={() => toggletNavActive(childrenItem)}>
+                                                            <span>{childrenItem.title}</span>
+                                                        </Link>
+                                                    )
+                                                    : ''}
+                                            </li>
+                                        )}
+                                    </ul>
+                                    : ''}
                             </li>
                         )
                     })
