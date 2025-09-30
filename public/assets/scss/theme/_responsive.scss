@@ -2560,6 +2560,9 @@
             &.activeSubmenu {
               display: block;
             }
+            &.open {
+              display: block;
+            }
             // &.openSubChildMenu {
             //   display: none;
             // }
