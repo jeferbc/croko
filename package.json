@@ -3,29 +3,48 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "NODE_OPTIONS=--openssl-legacy-provider next",
-    "prod:build": "next build"
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
   },
   "dependencies": {
-    "@zeit/next-sass": "^1.0.1",
-    "bootstrap-scss": "4.4.1",
-    "next": "9.1.4",
-    "next-images": "^1.2.0",
+    "@babel/plugin-syntax-top-level-await": "^7.14.5",
+    "@tanstack/react-query": "^5.66.0",
+    "aos": "^2.3.4",
+    "axios": "^1.7.9",
+    "bootstrap": "^5.3.3",
+    "bootstrap-scss": "^5.3.3",
+    "next": "^15.1.7",
     "nprogress": "^0.2.0",
-    "react": "^18.3.1",
-    "react-dom": "^18.3.1",
+    "react": "^19.0.0",
+    "react-countdown": "^2.3.6",
+    "react-countup": "^6.5.3",
+    "react-dom": "^19.0.0",
     "react-gtm-module": "^2.0.11",
-    "react-image-lightbox-next": "^4.3.0",
     "react-light-accordion": "^0.1.4",
-    "react-player": "^2.16.0",
+    "react-masonry-css": "^1.0.16",
+    "react-parallax-tilt": "^1.7.282",
+    "react-photoswipe-gallery": "^3.0.2",
+    "react-player": "^3.3.2",
     "react-responsive-carousel": "^3.2.23",
+    "react-simple-typewriter": "^5.0.1",
     "react-slick": "^0.30.3",
-    "react-toastify": "^5.5.0",
-    "reactstrap": "^9.2.3"
+    "react-toastify": "^11.0.3",
+    "reactstrap": "^9.2.3",
+    "swiper": "^11.2.2"
   },
   "devDependencies": {
-    "file-loader": "^6.0.0",
-    "node-sass": "^9.0",
-    "url-loader": "^4.1.0"
+    "@types/react": "19.0.8",
+    "eslint": "^9",
+    "eslint-config-next": "^15.1.7",
+    "npm-run-all": "^4.1.5",
+    "sass": "1.77.6"
+  },
+  "overrides": {
+    "react-popper": {
+      "react": "^19.0.0",
+      "react-dom": "^19.0.0"
+    }
   }
 }

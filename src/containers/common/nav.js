@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
-import SocialMedia from '../../pages/elements/common/socialMedia';
-import { MENUITEMS } from '../../constant/menu';
-import { KITMENUITEMS } from '../../constant/kitMenu';
+import SocialMedia from '@/containers/elements/common/socialMedia';
+import { MENUITEMS } from '@/constant/menu';
+import { KITMENUITEMS } from '@/constant/kitMenu';
 
 const Nav = (props) => {
     const navItems = props.kit === 'true' ? KITMENUITEMS : MENUITEMS
