@@ -1,14 +1,38 @@
 export const KITMENUITEMS = [
    {
-      title: '', path: '#'
+      title: '',
+      type: 'link',
+      path: '#'
    },
    {
-      title: '', path: '#'
+      title: 'Blog',
+      type: 'sub',
+      children: [
+         {
+            title: 'Baby Showers en Colombia: El Toque Croko',
+            type: 'link',
+            path: '/blog/baby-showers-colombia-actividades-regalos-croko'
+         },
+         {
+            title: 'Kit Maquillaje Prenatal Une a Hermanitos',
+            type: 'link',
+            path: '/blog/kit-maquillaje-prenatal-hermanitos'
+         },
+         {
+            title: 'Salud Mental en el Embarazo',
+            type: 'link',
+            path: '/blog/salud-mental-embarazo-croko-tranquilamente'
+         }
+      ]
    },
    {
-      title: 'Videos', path: '#productVideos'
+      title: 'Videos',
+      type: 'link',
+      path: '#productVideos'
    },
   {
-     title: 'Preguntas', path: '#faq'
+     title: 'Preguntas',
+     type: 'link',
+     path: '#faq'
   },
 ]

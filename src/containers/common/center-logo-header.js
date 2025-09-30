@@ -31,19 +31,21 @@ const CenterLogoHeader = (props) => {
                             <Link href="/" className="center-header d-none d-lg-block">
                                 <img alt="logo" className="logo-abs h-auto" src="../assets/images/logo/croko_logo.png" />
                             </Link>
-                            <Link href="#" className="logo-responsive navbar-brand d-md-block d-lg-none">
-                                <img alt="logo" src="../assets/images/logo/croko.png" />
-                            </Link>
-                                <div className="responsive-btn w-100">
+                            <div className="d-flex justify-content-between align-items-center w-100 d-lg-none">
+                                <Link href="#" className="logo-responsive navbar-brand">
+                                    <img alt="logo" src="../assets/images/logo/croko.png" />
+                                </Link>
+                                <div className="responsive-btn">
                                     <div className="actions" style={ActionsStyles.buttons}>
                                         { !props.kit && (
                                             <Link href='/kit' className={`btn btn-default btn-gradient text-white ${props.kit ? 'kit' : 'local'}`} style={ActionsStyles.navButton}>KIT Maquillaje</Link>
                                         )}
-                                        <a className="toggle-nav" onClick={clickSidebar} data-target="#scroll-spy" aria-controls="scroll-spy">
+                                        <a className="toggle-nav" onClick={clickSidebar} data-target="#scroll-spy" aria-controls="scroll-spy" style={!props.kit ? { marginLeft: '15px' } : {}}>
                                             <i aria-hidden="true" className="fa fa-bars"></i>
                                         </a>
                                     </div>
                                 </div>
+                            </div>
                             <Nav className="w-100" kit={props.kit} />
                         </nav>
                     </div>

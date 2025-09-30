@@ -9,6 +9,7 @@ import AboutSection from '@/containers/wedding/about'
 import PricingSection from '@/containers/elements/price/elementPrice3'
 import AccordionElementSection from '@/containers/elements/accordion'
 import BlogSection from '@/containers/wedding/blog'
+import PopularPosts from '@/containers/blog/posts'
 import FooterSection from '@/containers/wedding/footer'
 import WhatsappRibbon from '@/containers/elements/common/whatsapp'
 
@@ -29,6 +30,7 @@ export default function Home() {
       <AboutSection />
       <BlogSection />
       <AccordionElementSection />
+      <PopularPosts />
       <FooterSection />
       <WhatsappRibbon />
     </div>

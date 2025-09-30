@@ -6,6 +6,7 @@ import CenterLogoHeader from '@/containers/common/center-logo-header'
 import ProductSection from '@/containers/wedding/product'
 import ProductVideos from '@/containers/wedding/productVideos'
 import AccordionElementSection from '@/containers/elements/accordion'
+import PopularPosts from '@/containers/blog/posts'
 import FooterSection from '@/containers/wedding/footer'
 import WhatsappRibbon from '@/containers/elements/common/whatsapp'
 import HeaderSection from '@/containers/kit/header/header'
@@ -26,6 +27,7 @@ export default function Kit() {
             <ProductSection />
             <ProductVideos />
             <AccordionElementSection kit="true" />
+            <PopularPosts />
             <FooterSection kit="true" />
             <WhatsappRibbon kit="true" />
         </div>
