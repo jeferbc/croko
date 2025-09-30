@@ -1,5 +1,49 @@
 import "../index.scss";
 import ClientLayout from "./ClientLayout";
+import { Poppins, Capriola, Satisfy, Alex_Brush, Raleway, Work_Sans } from 'next/font/google';
+
+// Optimize Google Fonts with next/font
+const poppins = Poppins({
+  weight: ['400', '600', '700'],
+  subsets: ['latin'],
+  display: 'swap',
+  variable: '--font-poppins'
+});
+
+const capriola = Capriola({
+  weight: '400',
+  subsets: ['latin', 'latin-ext'],
+  display: 'swap',
+  variable: '--font-capriola'
+});
+
+const satisfy = Satisfy({
+  weight: '400',
+  subsets: ['latin'],
+  display: 'swap',
+  variable: '--font-satisfy'
+});
+
+const alexBrush = Alex_Brush({
+  weight: '400',
+  subsets: ['latin', 'latin-ext'],
+  display: 'swap',
+  variable: '--font-alex-brush'
+});
+
+const raleway = Raleway({
+  weight: ['400', '600', '700', '800', '900'],
+  subsets: ['latin'],
+  display: 'swap',
+  variable: '--font-raleway'
+});
+
+const workSans = Work_Sans({
+  weight: ['400', '600', '700'],
+  subsets: ['latin'],
+  display: 'swap',
+  variable: '--font-work-sans'
+});
 
 const BaseCSS = ({ css = "*{box-sizing:border-box}body{margin:0}" }) => (
   <style
@@ -30,21 +74,21 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html>
+    <html className={`${poppins.variable} ${capriola.variable} ${satisfy.variable} ${alexBrush.variable} ${raleway.variable} ${workSans.variable}`}>
       <head>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="generator" content="mdx-docs" />
         <link rel="icon" href="/assets/images/logo/favicon.png" type="image/x-icon" />
         <link rel="shortcut icon" href="/assets/images/logo/favicon.png" type="image/x-icon" />
-        <link href="https://fonts.googleapis.com/css?family=Capriola&amp;subset=latin-ext" rel="stylesheet" />
-        <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet" />
-        <link href="https://fonts.googleapis.com/css?family=Satisfy" rel="stylesheet" />
-        <link href="https://fonts.googleapis.com/css?family=Alex+Brush&amp;subset=latin-ext" rel="stylesheet"></link>
-        <link href="https://fonts.googleapis.com/css?family=Raleway:400,600,700,800,900&display=swap" rel="stylesheet"></link>
-        <link href="https://fonts.googleapis.com/css?family=Work+Sans:100,200,300,400,500,600,700,800" rel="stylesheet" />
+
+        {/* Preconnect to external domains for better performance */}
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        <link rel="dns-prefetch" href="https://ik.imagekit.io" />
+
         <BaseCSS />
       </head>
-      <body className="try">
+      <body className={`try ${poppins.className}`}>
         <ClientLayout>{children}</ClientLayout>
       </body>
     </html>
