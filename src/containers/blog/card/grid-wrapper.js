@@ -1,15 +1,36 @@
 import React from "react";
 import PropTypes from "prop-types";
 import Link from "next/link";
+import IKImage from "@/components/IKImage";
 
 const CardGridWrapper = ({ className, image, blogDate, place, title, description, readUrl }) => {
   const MAX_LENGTH = 130;
+
+  // Extract path from full ImageKit URL
+  const extractPath = (url) => {
+    if (!url) return '';
+    const urlEndpoint = 'https://ik.imagekit.io/ge17f66b4ma';
+    return url.replace(urlEndpoint, '');
+  };
 
   return (
     <div className={className}>
       <div className="blog-agency">
         <div className="blog-contain">
-          <img alt="" className="img-fluid" src={image} />
+          <IKImage
+            src={extractPath(image)}
+            alt={title}
+            width={400}
+            height={290}
+            className="img-fluid"
+            loading="lazy"
+            transformation={[{
+              width: 400,
+              quality: 85,
+              format: 'auto'
+            }]}
+            style={{ width: '100%', height: 'auto' }}
+          />
           <div className="img-container">
             <div>
               <div className="blog-info">
