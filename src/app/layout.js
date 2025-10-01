@@ -81,6 +81,12 @@ export default function RootLayout({ children }) {
         <link rel="icon" href="/assets/images/logo/favicon.png" type="image/x-icon" />
         <link rel="shortcut icon" href="/assets/images/logo/favicon.png" type="image/x-icon" />
 
+        {/* Preload critical CSS files */}
+        <link rel="preload" href="/_next/static/css/5fbd7e61fcc58b24.css" as="style" />
+        <link rel="preload" href="/_next/static/css/ae4ed9c503fd1e33.css" as="style" />
+        <link rel="preload" href="/_next/static/css/33be1e8ecbbec124.css" as="style" />
+        <link rel="preload" href="/_next/static/css/bb0a329b8ee67cad.css" as="style" />
+
         {/* Preconnect to external domains for better performance */}
         <link rel="preconnect" href="https://ik.imagekit.io" />
         <link rel="dns-prefetch" href="https://ik.imagekit.io" />
