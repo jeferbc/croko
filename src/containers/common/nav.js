@@ -97,17 +97,17 @@ const Nav = (props) => {
                         return (
                             <li key={i}>
                                 {(menuItem.type === 'sub') ?
-                                    <a className="dropdown" href="javascript:void(0)" onClick={() => toggletNavActive(menuItem)}>
+                                    <a className="dropdown" href="#" onClick={(e) => { e.preventDefault(); toggletNavActive(menuItem); }} aria-label={`Menú ${menuItem.title}`}>
                                         <span>{menuItem.title}</span>
                                     </a>
                                     : ''}
                                 {(menuItem.type === 'link') ?
                                     menuItem.path.startsWith('#') ? (
-                                        <a href={menuItem.path} onClick={() => toggletNavActive(menuItem)}>
+                                        <a href={menuItem.path} onClick={() => toggletNavActive(menuItem)} aria-label={menuItem.title}>
                                             <span>{menuItem.title}</span>
                                         </a>
                                     ) : (
-                                        <Link href={menuItem.path} onClick={() => toggletNavActive(menuItem)}>
+                                        <Link href={menuItem.path} onClick={() => toggletNavActive(menuItem)} aria-label={menuItem.title}>
                                             <span>{menuItem.title}</span>
                                         </Link>
                                     )
@@ -118,11 +118,11 @@ const Nav = (props) => {
                                             <li key={index}>
                                                 {(childrenItem.type === 'link') ?
                                                     childrenItem.path.startsWith('#') ? (
-                                                        <a href={childrenItem.path}>
+                                                        <a href={childrenItem.path} aria-label={childrenItem.title}>
                                                             <span>{childrenItem.title}</span>
                                                         </a>
                                                     ) : (
-                                                        <Link href={childrenItem.path} onClick={() => toggletNavActive(childrenItem)}>
+                                                        <Link href={childrenItem.path} onClick={() => toggletNavActive(childrenItem)} aria-label={childrenItem.title}>
                                                             <span>{childrenItem.title}</span>
                                                         </Link>
                                                     )
@@ -142,17 +142,17 @@ const Nav = (props) => {
                         return (
                             <li key={i}>
                                 {(menuItem.type === 'sub') ?
-                                    <a className="dropdown" href="javascript:void(0)" onClick={() => toggletNavActive(menuItem)}>
+                                    <a className="dropdown" href="#" onClick={(e) => { e.preventDefault(); toggletNavActive(menuItem); }} aria-label={`Menú ${menuItem.title}`}>
                                         <span>{menuItem.title}</span>
                                     </a>
                                     : ''}
                                 {(menuItem.type === 'link') ?
                                     menuItem.path.startsWith('#') ? (
-                                        <a href={menuItem.path} onClick={() => toggletNavActive(menuItem)}>
+                                        <a href={menuItem.path} onClick={() => toggletNavActive(menuItem)} aria-label={menuItem.title}>
                                             <span>{menuItem.title}</span>
                                         </a>
                                     ) : (
-                                        <Link href={menuItem.path} onClick={() => toggletNavActive(menuItem)}>
+                                        <Link href={menuItem.path} onClick={() => toggletNavActive(menuItem)} aria-label={menuItem.title}>
                                             <span>{menuItem.title}</span>
                                         </Link>
                                     )
@@ -163,11 +163,11 @@ const Nav = (props) => {
                                             <li key={index}>
                                                 {(childrenItem.type === 'link') ?
                                                     childrenItem.path.startsWith('#') ? (
-                                                        <a href={childrenItem.path}>
+                                                        <a href={childrenItem.path} aria-label={childrenItem.title}>
                                                             <span>{childrenItem.title}</span>
                                                         </a>
                                                     ) : (
-                                                        <Link href={childrenItem.path} onClick={() => toggletNavActive(childrenItem)}>
+                                                        <Link href={childrenItem.path} onClick={() => toggletNavActive(childrenItem)} aria-label={childrenItem.title}>
                                                             <span>{childrenItem.title}</span>
                                                         </Link>
                                                     )
