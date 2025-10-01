@@ -45,7 +45,7 @@ const workSans = Work_Sans({
   variable: '--font-work-sans'
 });
 
-const BaseCSS = ({ css = "*{box-sizing:border-box}body{margin:0}" }) => (
+const BaseCSS = ({ css = "*{box-sizing:border-box}body{margin:0;font-family:var(--font-poppins),sans-serif}html{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}" }) => (
   <style
     dangerouslySetInnerHTML={{
       __html: css,
@@ -93,17 +93,24 @@ export default function RootLayout({ children }) {
           as="image"
           href="https://ik.imagekit.io/ge17f66b4ma/tr:q-60,f-webp,w-800/slider-bg_mKSrnghgQ.jpg?updatedAt=1758993734731"
           media="(max-width: 991px)"
-          fetchpriority="high"
+          fetchPriority="high"
         />
         <link
           rel="preload"
           as="image"
           href="https://ik.imagekit.io/ge17f66b4ma/tr:q-70,f-webp/countdown-bg_pgiKvb7Cv.png?updatedAt=1758993722284"
           media="(min-width: 992px)"
-          fetchpriority="high"
+          fetchPriority="high"
         />
 
         <BaseCSS />
+
+        {/* Inline critical CSS hint for faster rendering */}
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `(function(){var d=document;d.documentElement.classList.add('js')})();`,
+          }}
+        />
       </head>
       <body className={`try ${poppins.className}`}>
         <ClientLayout>{children}</ClientLayout>

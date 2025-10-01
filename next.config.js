@@ -20,5 +20,27 @@ module.exports = (phase) => {
 
   return {
     env,
+    // Optimize CSS loading
+    compiler: {
+      removeConsole: isProd,
+    },
+    // Enable CSS optimization
+    optimizeFonts: true,
+    // Compress output
+    compress: true,
+    // Production optimizations
+    productionBrowserSourceMaps: false,
+    // Optimize CSS chunking and inline critical CSS
+    experimental: {
+      optimizeCss: {
+        inlineFontCss: true,
+        critters: {
+          preload: 'swap',
+          pruneSource: true,
+        },
+      },
+    },
+    // Enable SWC minification for faster builds
+    swcMinify: true,
   };
 };
