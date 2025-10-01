@@ -28,8 +28,32 @@ const images = [
 ];
 
 const ProductCarousel = () => {
+  const renderThumbs = () => {
+    return images.map((data, i) => (
+      <IKImage
+        key={i}
+        src={data.thumbnail}
+        alt={`Thumbnail ${i + 1}`}
+        width={110}
+        height={90}
+        transformation={[{
+          width: 110,
+          quality: 70,
+          format: 'auto'
+        }]}
+        loading="lazy"
+        style={{ width: '100%', height: 'auto' }}
+      />
+    ));
+  };
+
   return (
-    <Carousel infiniteLoop={true} thumbWidth={110} showStatus={false}>
+    <Carousel
+      infiniteLoop={true}
+      thumbWidth={110}
+      showStatus={false}
+      renderThumbs={renderThumbs}
+    >
       { images.map((data, i) => {
           return (
             <div key={i}>
@@ -40,9 +64,11 @@ const ProductCarousel = () => {
                 height={551}
                 transformation={[{
                   width: 690,
-                  quality: 85,
+                  quality: 80,
                   format: 'auto'
                 }]}
+                loading={i === 0 ? 'eager' : 'lazy'}
+                priority={i === 0}
                 style={{ width: '100%', height: 'auto' }}
               />
             </div>

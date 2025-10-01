@@ -1,15 +1,32 @@
 'use client'
 import React, { useEffect } from 'react'
+import dynamic from 'next/dynamic'
 
 // import Custom Components
 import CenterLogoHeader from '@/containers/common/center-logo-header'
 import ProductSection from '@/containers/wedding/product'
-import ProductVideos from '@/containers/wedding/productVideos'
-import AccordionElementSection from '@/containers/elements/accordion'
-import PopularPosts from '@/containers/blog/posts'
-import FooterSection from '@/containers/wedding/footer'
-import WhatsappRibbon from '@/containers/elements/common/whatsapp'
 import HeaderSection from '@/containers/kit/header/header'
+
+// Dynamic imports for below-the-fold components
+const ProductVideos = dynamic(() => import('@/containers/wedding/productVideos'), {
+    loading: () => <div style={{ minHeight: '400px' }} />
+})
+
+const AccordionElementSection = dynamic(() => import('@/containers/elements/accordion'), {
+    loading: () => <div style={{ minHeight: '300px' }} />
+})
+
+const PopularPosts = dynamic(() => import('@/containers/blog/posts'), {
+    loading: () => <div style={{ minHeight: '500px' }} />
+})
+
+const FooterSection = dynamic(() => import('@/containers/wedding/footer'), {
+    loading: () => <div style={{ minHeight: '200px' }} />
+})
+
+const WhatsappRibbon = dynamic(() => import('@/containers/elements/common/whatsapp'), {
+    ssr: false
+})
 
 export default function Kit() {
 

@@ -1,6 +1,10 @@
 import React from 'react';
-import ProductCarousel from '@/containers/elements/productCarousel';
+import dynamic from 'next/dynamic';
 import {Container,Row,Col} from 'reactstrap'
+
+const ProductCarousel = dynamic(() => import('@/containers/elements/productCarousel'), {
+    loading: () => <div style={{ minHeight: '551px', backgroundColor: '#f5f5f5' }} />
+});
 
 const ContactButtonStyles = {
     a: {

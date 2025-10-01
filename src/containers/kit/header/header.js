@@ -10,15 +10,20 @@ const Header = () => {
   const isKitPage = pathname === '/kit';
 
   useEffect(() => {
+    let resizeTimeout;
     const handleResize = () => {
-      setIsMobile(window.innerWidth <= 768);
+      clearTimeout(resizeTimeout);
+      resizeTimeout = setTimeout(() => {
+        setIsMobile(window.innerWidth <= 768);
+      }, 150);
     };
 
-    handleResize();
+    setIsMobile(window.innerWidth <= 768);
     window.addEventListener('resize', handleResize);
 
     return () => {
       window.removeEventListener('resize', handleResize);
+      clearTimeout(resizeTimeout);
     };
   }, []);
 
