@@ -45,7 +45,7 @@ const workSans = Work_Sans({
   variable: '--font-work-sans'
 });
 
-const BaseCSS = ({ css = `*{box-sizing:border-box}body{margin:0;font-family:var(--font-poppins),sans-serif;line-height:1.6;color:#333}html{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;font-size:16px}img{max-width:100%;height:auto;display:block}a{text-decoration:none}h1,h2,h3,h4,h5,h6{margin:0;font-weight:600;line-height:1.2}.btn{display:inline-block;padding:12px 24px;border-radius:4px;transition:all .3s ease}.container{width:100%;max-width:1200px;margin:0 auto;padding:0 15px}` }) => (
+const BaseCSS = ({ css = "*{box-sizing:border-box}body{margin:0;font-family:var(--font-poppins),sans-serif}html{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}" }) => (
   <style
     dangerouslySetInnerHTML={{
       __html: css,

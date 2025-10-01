@@ -18,7 +18,7 @@ module.exports = (phase) => {
     API_BASE_URL: "http://localhost:3000/api",
   };
 
-  const config = {
+  return {
     env,
     // Optimize CSS loading
     compiler: {
@@ -30,16 +30,17 @@ module.exports = (phase) => {
     compress: true,
     // Production optimizations
     productionBrowserSourceMaps: false,
+    // Optimize CSS chunking and inline critical CSS
+    experimental: {
+      optimizeCss: {
+        inlineFontCss: true,
+        critters: {
+          preload: 'swap',
+          pruneSource: true,
+        },
+      },
+    },
     // Enable SWC minification for faster builds
     swcMinify: true,
   };
-
-  // Only enable CSS optimization in production
-  if (isProd || isStaging) {
-    config.experimental = {
-      optimizeCss: true,
-    };
-  }
-
-  return config;
 };
