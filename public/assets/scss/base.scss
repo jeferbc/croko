@@ -81,17 +81,16 @@ h1, h2, h3, h4, h5, h6 {
     border: 3px solid var(--primary) !important;
   }
   .control-dots {
-    font-size: 10px;
-    width: 10px;
-    height: 10px;
-    color: linear-gradient(#ecc878, #bf862d);
-    border-radius: 100%;
-    opacity: 1;
-
+    list-style: none;
+    
     .dot {
+      font-size: 10px;
+      width: 10px;
+      height: 10px;
+      border-radius: 100%;
+      opacity: 1;
       background: linear-gradient(#ecc878, #bf862d) !important;
       box-shadow: unset !important;
-      opacity: unset !important;
     }
 
     .dot.selected {
@@ -99,5 +98,9 @@ h1, h2, h3, h4, h5, h6 {
       height: 10px;
       border-radius: 30px;
     }
+  }
+  
+  .thumbs {
+    list-style: none;
   }
 }
