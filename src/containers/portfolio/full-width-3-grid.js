@@ -5,12 +5,20 @@ import Masonry from 'react-masonry-css'
 import { Gallery, Item } from 'react-photoswipe-gallery'
 import 'photoswipe/dist/photoswipe.css'
 import { AllImgData } from './database';
+import IKImage from '@/components/IKImage';
 
 const FullWidth3Grid = () => {
     const breakpointColumnsObj = {
         default: 3,
         991: 2,
         767: 1
+    };
+
+    // Extract path from full ImageKit URL
+    const extractPath = (url) => {
+        // Remove the base URL and return just the path with query params
+        const urlEndpoint = 'https://ik.imagekit.io/ge17f66b4ma';
+        return url.replace(urlEndpoint, '');
     };
 
     return (
@@ -20,8 +28,15 @@ const FullWidth3Grid = () => {
                     <Row>
                         <Col md="8" className="offset-md-2">
                             <div className="title" style={{ marginBottom: '30px' }}>
-                                <img alt="" className="img-fluid title-img"
-                                    src="/assets/images/wedding-img/bottom.png" />
+                                <IKImage
+                                    src="/assets/images/wedding-img/bottom.png"
+                                    alt="Decoración"
+                                    width={200}
+                                    height={50}
+                                    className="img-fluid title-img"
+                                    loading="eager"
+                                    style={{ width: 'auto', height: 'auto' }}
+                                />
                                 <div className="main-title">
                                     <h2 className="gradient-text">Galería</h2>
                                 </div>
@@ -51,8 +66,16 @@ const FullWidth3Grid = () => {
                                                         <div className="overlay-background">
                                                             <i aria-hidden="true" className="fa fa-plus"></i>
                                                         </div>
-                                                        <img alt="" className="img-fluid blur-up lazyloaded"
-                                                            src={imgItem.img} />
+                                                        <IKImage
+                                                            src={extractPath(imgItem.img)}
+                                                            alt="Maquillaje prenatal"
+                                                            width={800}
+                                                            height={600}
+                                                            className="img-fluid blur-up lazyloaded"
+                                                            loading="lazy"
+                                                            transformation={[{ width: 800, quality: 80 }]}
+                                                            style={{ width: '100%', height: 'auto' }}
+                                                        />
                                                     </div>
                                                 )}
                                             </Item>

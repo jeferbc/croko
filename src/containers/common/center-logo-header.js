@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import Nav from './nav'
 import Link from 'next/link'
+import Image from 'next/image'
 
 const ActionsStyles = {
     buttons: {
@@ -29,11 +30,24 @@ const CenterLogoHeader = (props) => {
                     <div className="col-12">
                         <nav className="navbar-expand-lg theme-nav w-100">
                             <Link href="/" className="center-header d-none d-lg-block">
-                                <img alt="logo" className="logo-abs h-auto" src="../assets/images/logo/croko_logo.png" />
+                                <Image
+                                    src="/assets/images/logo/croko_logo.png"
+                                    alt="logo"
+                                    width={462}
+                                    height={255}
+                                    className="logo-abs h-auto"
+                                    priority
+                                />
                             </Link>
                             <div className="d-flex justify-content-between align-items-center w-100 d-lg-none">
                                 <Link href="#" className="logo-responsive navbar-brand">
-                                    <img alt="logo" src="../assets/images/logo/croko.png" />
+                                    <Image
+                                        src="/assets/images/logo/croko.png"
+                                        alt="logo"
+                                        width={93}
+                                        height={40}
+                                        priority
+                                    />
                                 </Link>
                                 <div className="responsive-btn">
                                     <div className="actions" style={ActionsStyles.buttons}>

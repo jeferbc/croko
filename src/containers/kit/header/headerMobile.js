@@ -2,11 +2,28 @@
 import React from 'react';
 import {Container,Row,Col} from 'reactstrap'
 import Link from 'next/link'
+import IKImage from '@/components/IKImage';
+import { buildSrc } from '@imagekit/next';
 
-const HeaderMobile = ({ isKitPage }) => (
-    <section className="wedding header" id="header">
-        <div className="wedding-content">
-            <div className="wedding bg slider-bg">
+const HeaderMobile = ({ isKitPage }) => {
+    const mobileBgUrl = buildSrc({
+        urlEndpoint: 'https://ik.imagekit.io/ge17f66b4ma',
+        src: '/slider-bg_mKSrnghgQ.jpg?updatedAt=1758993734731',
+        transformation: [{ quality: 80, format: 'webp' }]
+    });
+
+    return (
+        <section className="wedding header" id="header">
+            <div className="wedding-content">
+                <div
+                    className="wedding bg slider-bg"
+                    style={{
+                        backgroundImage: `url(${mobileBgUrl})`,
+                        backgroundSize: 'cover',
+                        backgroundPosition: 'center',
+                        backgroundRepeat: 'no-repeat'
+                    }}
+                >
                 <Container>
                     <Row>
                         <Col>
@@ -35,7 +52,17 @@ const HeaderMobile = ({ isKitPage }) => (
                                     )}
                                 </div>
                                 <div className="bottom-0 girl m-t-25">
-                                    <img alt="" className="img-fluid" id="girl" src="https://ik.imagekit.io/ge17f66b4ma/Samy_QLzwZtT-Tg.png?updatedAt=1626907765924" />
+                                    <IKImage
+                                        src="/Samy_QLzwZtT-Tg.png?updatedAt=1626907765924"
+                                        alt="Maquillaje prenatal"
+                                        width={714}
+                                        height={720}
+                                        className="img-fluid"
+                                        id="girl"
+                                        loading="eager"
+                                        transformation={[{ quality: 85, format: 'webp' }]}
+                                        style={{ width: '100%', height: 'auto' }}
+                                    />
                                 </div>
                             </div>
                         </Col>
@@ -44,6 +71,7 @@ const HeaderMobile = ({ isKitPage }) => (
             </div>
         </div>
     </section>
-)
+    );
+};
 
 export default HeaderMobile;

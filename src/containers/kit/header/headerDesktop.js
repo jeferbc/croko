@@ -2,6 +2,8 @@
 import React from 'react';
 import {Container,Row,Col} from 'reactstrap'
 import Link from 'next/link'
+import IKImage from '@/components/IKImage';
+import { buildSrc } from '@imagekit/next';
 
 const ContactButtonStyles = {
     div: {
@@ -16,16 +18,38 @@ const ContactButtonStyles = {
         animation: 'none'
     }
 }
-const HeaderDesktop = ({ isKitPage }) => (
-    <section className="wedding header" id="header">
-        <div className="decore">
-            <img alt="" className="img-fluid" src="/assets/images/wedding-img/backgrounds/top-pattern.png" />
-            <img alt="" className="img-fluid" src="/assets/images/wedding-img/backgrounds/bottom-pattern.png" />
-        </div>
-        <div className="wedding-content">
-            <div className="wedding bg slider-bg">
+
+const HeaderDesktop = ({ isKitPage }) => {
+    const desktopBgUrl = buildSrc({
+        urlEndpoint: 'https://ik.imagekit.io/ge17f66b4ma',
+        src: '/countdown-bg_pgiKvb7Cv.png?updatedAt=1758993722284',
+        transformation: [{ quality: 80, format: 'webp' }]
+    });
+
+    return (
+        <section className="wedding header" id="header">
+            <div className="wedding-content">
+                <div
+                    className="wedding bg slider-bg"
+                    style={{
+                        backgroundImage: `url(${desktopBgUrl})`,
+                        backgroundSize: 'cover',
+                        backgroundPosition: 'center',
+                        backgroundRepeat: 'no-repeat'
+                    }}
+                >
                 <div className="bottom-0 set-abs girl">
-                    <img alt="" className="img-fluid" id="girl" src="https://ik.imagekit.io/ge17f66b4ma/Samy_QLzwZtT-Tg.png?updatedAt=1626907765924" />
+                    <IKImage
+                        src="/Samy_QLzwZtT-Tg.png?updatedAt=1626907765924"
+                        alt="Maquillaje prenatal"
+                        width={714}
+                        height={720}
+                        className="img-fluid"
+                        id="girl"
+                        loading="eager"
+                        transformation={[{ quality: 85, format: 'webp' }]}
+                        style={{ maxWidth: '714px', height: 'auto' }}
+                    />
                 </div>
                 <Container>
                     <Row>
@@ -63,6 +87,7 @@ const HeaderDesktop = ({ isKitPage }) => (
             </div>
         </div>
     </section>
-)
+    );
+};
 
 export default HeaderDesktop;
