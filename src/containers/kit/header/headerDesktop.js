@@ -16,7 +16,7 @@ const ContactButtonStyles = {
         animation: 'none'
     }
 }
-const HeaderDesktop = () => (
+const HeaderDesktop = ({ isKitPage }) => (
     <section className="wedding header" id="header">
         <div className="decore">
             <img alt="" className="img-fluid" src="/assets/images/wedding-img/backgrounds/top-pattern.png" />
@@ -34,18 +34,26 @@ const HeaderDesktop = () => (
                                 <div className="simple-text">
                                     <div className="title">
                                         <div className="main-title">
-                                            <h2 className="gradient-text">Kit maquillaje para embarazadas</h2>
+                                            <h2 className="gradient-text">
+                                                {isKitPage ? 'Kit maquillaje para embarazadas' : 'Maquillaje prenatal'}
+                                            </h2>
                                         </div>
                                     </div>
                                     <p className="header-sub-text text-center" style={ContactButtonStyles.p}>
-                                        Incluye todo lo necesario para pintar tu barriguita en familia.
-                                        Ideal para regalar en baby shower.
+                                        {isKitPage
+                                            ? 'Incluye todo lo necesario para pintar tu barriguita en familia. Ideal para regalar en baby shower.'
+                                            : 'Celebra tu embarazo con arte y disfruta de un momento de relajación, mientras tu bebé es estimulado por el cosquilleo que producen los pinceles.'
+                                        }
                                     </p>
-                                    <div style={ContactButtonStyles.div}>
-                                        <a className="btn btn-default btn-white whatsapp-local" target="_blank" href={"https://wa.me/573168161717?text=Hola, estoy interesado en maquillaje prenatal en Medellín."}>Maquillaje Medellín</a>
-                                    </div>
+                                    {!isKitPage && (
+                                        <div style={ContactButtonStyles.div}>
+                                            <a className="btn btn-default btn-white whatsapp-local" target="_blank" href={"https://wa.me/573168161717?text=Hola, estoy interesado en maquillaje prenatal en Medellín."}>Maquillaje Medellín</a>
+                                        </div>
+                                    )}
                                     <div style={ContactButtonStyles.div} className='d-none d-lg-flex mt-2'>
-                                        <Link href='/kit' className="btn btn-default btn-white" style={ContactButtonStyles.a}>Comprar</Link>
+                                        <Link href='/kit' className="btn btn-default btn-white" style={ContactButtonStyles.a}>
+                                            {isKitPage ? 'Comprar' : 'Kit de Maquillaje'}
+                                        </Link>
                                     </div>
                                 </div>
                             </div>

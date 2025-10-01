@@ -19,7 +19,7 @@ const FullWidth3Grid = () => {
                 <Container>
                     <Row>
                         <Col md="8" className="offset-md-2">
-                            <div className="title">
+                            <div className="title" style={{ marginBottom: '30px' }}>
                                 <img alt="" className="img-fluid title-img"
                                     src="/assets/images/wedding-img/bottom.png" />
                                 <div className="main-title">
@@ -34,10 +34,10 @@ const FullWidth3Grid = () => {
                         <Masonry
                             breakpointCols={breakpointColumnsObj}
                             className="my-masonry-grid row m-0"
-                            columnClassName="my-masonry-grid_column col-lg-4 col-md-6 col-12 p-0"
+                            columnClassName="my-masonry-grid_column col-lg-3 col-md-4 col-12 p-0"
                         >
                             {AllImgData.map((imgItem, i) => (
-                                <div className="isotopeSelector" key={i}>
+                                <div className="isotopeSelector m-0 p-0" key={i}>
                                     <div className="overlay">
                                         <div className="border-portfolio">
                                             <Item
