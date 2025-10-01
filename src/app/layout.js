@@ -74,7 +74,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html className={`${poppins.variable} ${capriola.variable} ${satisfy.variable} ${alexBrush.variable} ${raleway.variable} ${workSans.variable}`}>
+    <html lang="es" className={`${poppins.variable} ${capriola.variable} ${satisfy.variable} ${alexBrush.variable} ${raleway.variable} ${workSans.variable}`}>
       <head>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="generator" content="mdx-docs" />
