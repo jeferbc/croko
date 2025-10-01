@@ -1,6 +1,7 @@
 import React from 'react';
 import {Container,Row,Col} from 'reactstrap'
 import Link from 'next/link'
+import IKImage from '@/components/IKImage'
 
 const ContactButtonStyles = {
     div: {
@@ -24,7 +25,21 @@ const HeaderSection = () => (
         <div className="wedding-content">
             <div className="wedding bg slider-bg">
                 <div className="bottom-0 set-abs girl">
-                    <img alt="" className="img-fluid" id="girl" src="https://ik.imagekit.io/ge17f66b4ma/Samy_QLzwZtT-Tg.png?updatedAt=1626907765924" />
+                    <IKImage
+                        src="/Samy_QLzwZtT-Tg.png"
+                        alt="Maquillaje prenatal"
+                        width={560}
+                        height={564}
+                        id="girl"
+                        className="img-fluid"
+                        priority
+                        transformation={[{
+                            width: 560,
+                            quality: 85,
+                            format: 'auto'
+                        }]}
+                        style={{ width: '100%', height: 'auto' }}
+                    />
                 </div>
                 <Container>
                     <Row>

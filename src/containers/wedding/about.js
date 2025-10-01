@@ -2,6 +2,7 @@ import React from 'react';
 import {Container,Row,Col} from 'reactstrap'
 import Link from 'next/link'
 import SectionTitle from '@/components/SectionTitle'
+import IKImage from '@/components/IKImage'
 
 
 const ContactButtonStyles = {
@@ -20,7 +21,20 @@ const About = () => (
                     <SectionTitle title="Body paint para embarazadas" />
                 </Col>
                 <Col xl="4" md="6" className="offset-xl-2">
-                    <img alt="" className="img-fluid about-img" src="https://ik.imagekit.io/ge17f66b4ma/MIA-1_gfnS344_D.png?updatedAt=1626907771292" />
+                    <IKImage
+                        src="/MIA-1_gfnS344_D.png"
+                        alt="Maquillaje prenatal Medellín"
+                        width={500}
+                        height={636}
+                        className="img-fluid about-img"
+                        loading="lazy"
+                        transformation={[{
+                            width: 500,
+                            quality: 85,
+                            format: 'auto'
+                        }]}
+                        style={{ width: '100%', height: 'auto' }}
+                    />
                 </Col>
                 <Col xl="4" lg="6" md="6">
                     <div className="center-text">
