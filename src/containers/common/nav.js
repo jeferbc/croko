@@ -81,9 +81,14 @@ const Nav = (props) => {
     return (
         <div className={`navbar`} id="togglebtn scroll-spy">
             <div className="responsive-btn">
-                <a className="btn-back" onClick={closeSidebar}>
+                <button
+                    className="btn-back"
+                    onClick={closeSidebar}
+                    aria-label="Cerrar menú de navegación"
+                    style={{ background: 'none', border: 'none', cursor: 'pointer', padding: 0 }}
+                >
                     <h5>atrás</h5>
-                </a>
+                </button>
             </div>
             <ul className="main-menu">
                 <SocialMedia kit={props.kit} />

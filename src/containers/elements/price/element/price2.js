@@ -1,5 +1,6 @@
 import React, { Fragment } from 'react'
 import { Col } from 'reactstrap'
+import Link from 'next/link'
 
 const PriceStyle = {
     div: {
@@ -28,7 +29,7 @@ const PricingTwo = () => (
                         <div className="price-value">
                             <h6 className="price text-center">$<span className="large">150.000</span>/month</h6>
                         </div>
-                        <a className="btn btn-default btn-white" href="#">Mas información</a>
+                        <Link href='/kit' className="btn btn-default btn-white">Ver kit de maquillaje</Link>
                     </div>
                 </div>
             </div>                          
