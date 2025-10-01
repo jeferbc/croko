@@ -1,8 +1,9 @@
 import React from 'react';
 import Slider from 'react-slick';
- 
+
 import { BlogData } from '@/database/layouts/wedding/database'
 import {Container,Row,Col} from 'reactstrap'
+import SectionTitle from '@/components/SectionTitle'
 
 var settings = {
     dots: true,
@@ -28,13 +29,7 @@ const Blog = () => (
         <Container>
             <Row>
                 <Col md="8" className="offset-md-2">
-                    <div className="title">
-                        <img alt="" className="img-fluid title-img"
-                            src="/assets/images/wedding-img/bottom.png" />
-                        <div className="main-title">
-                            <h2 className="gradient-text">Historias</h2>
-                        </div>
-                    </div>
+                    <SectionTitle title="Historias" />
                 </Col>
             </Row>
         </Container>

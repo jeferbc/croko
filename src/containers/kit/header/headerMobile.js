@@ -9,7 +9,7 @@ const HeaderMobile = ({ isKitPage }) => {
     const mobileBgUrl = buildSrc({
         urlEndpoint: 'https://ik.imagekit.io/ge17f66b4ma',
         src: '/slider-bg_mKSrnghgQ.jpg?updatedAt=1758993734731',
-        transformation: [{ quality: 80, format: 'webp' }]
+        transformation: [{ quality: 60, format: 'webp', width: 800 }]
     });
 
     return (

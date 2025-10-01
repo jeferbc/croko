@@ -84,7 +84,24 @@ export default function RootLayout({ children }) {
         {/* Preconnect to external domains for better performance */}
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        <link rel="preconnect" href="https://ik.imagekit.io" />
         <link rel="dns-prefetch" href="https://ik.imagekit.io" />
+
+        {/* Preload critical background images for LCP */}
+        <link
+          rel="preload"
+          as="image"
+          href="https://ik.imagekit.io/ge17f66b4ma/tr:q-60,f-webp,w-800/slider-bg_mKSrnghgQ.jpg?updatedAt=1758993734731"
+          media="(max-width: 991px)"
+          fetchpriority="high"
+        />
+        <link
+          rel="preload"
+          as="image"
+          href="https://ik.imagekit.io/ge17f66b4ma/tr:q-70,f-webp/countdown-bg_pgiKvb7Cv.png?updatedAt=1758993722284"
+          media="(min-width: 992px)"
+          fetchpriority="high"
+        />
 
         <BaseCSS />
       </head>

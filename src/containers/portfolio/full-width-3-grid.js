@@ -6,6 +6,7 @@ import { Gallery, Item } from 'react-photoswipe-gallery'
 import 'photoswipe/dist/photoswipe.css'
 import { AllImgData } from './database';
 import IKImage from '@/components/IKImage';
+import SectionTitle from '@/components/SectionTitle';
 
 const FullWidth3Grid = () => {
     const breakpointColumnsObj = {
@@ -27,20 +28,7 @@ const FullWidth3Grid = () => {
                 <Container>
                     <Row>
                         <Col md="8" className="offset-md-2">
-                            <div className="title" style={{ marginBottom: '30px' }}>
-                                <IKImage
-                                    src="/assets/images/wedding-img/bottom.png"
-                                    alt="Decoración"
-                                    width={200}
-                                    height={50}
-                                    className="img-fluid title-img"
-                                    loading="eager"
-                                    style={{ width: 'auto', height: 'auto' }}
-                                />
-                                <div className="main-title">
-                                    <h2 className="gradient-text">Galería</h2>
-                                </div>
-                            </div>
+                            <SectionTitle title="Galería" />
                         </Col>
                     </Row>
                 </Container>
@@ -49,7 +37,7 @@ const FullWidth3Grid = () => {
                         <Masonry
                             breakpointCols={breakpointColumnsObj}
                             className="my-masonry-grid row m-0"
-                            columnClassName="my-masonry-grid_column col-lg-3 col-md-4 col-12 p-0"
+                            columnClassName="my-masonry-grid_column col-lg-4 col-md-6 col-12 p-0"
                         >
                             {AllImgData.map((imgItem, i) => (
                                 <div className="isotopeSelector m-0 p-0" key={i}>

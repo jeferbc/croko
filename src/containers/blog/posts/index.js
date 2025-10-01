@@ -2,6 +2,7 @@ import React from 'react';
 import { Container, Row, Col } from 'reactstrap';
 import CardGridWrapper from '@/containers/blog/card/grid-wrapper';
 import { BlogsData } from '@/database/blog/database';
+import SectionTitle from '@/components/SectionTitle';
 
 const PopularPosts = () => {
     // Get the first 6 posts for grid layout
@@ -12,13 +13,7 @@ const PopularPosts = () => {
             <Container>
                 <Row>
                     <Col md="8" className="offset-md-2">
-                        <div className="title">
-                            <img alt="" className="img-fluid title-img"
-                                src="/assets/images/wedding-img/bottom.png" />
-                            <div className="main-title">
-                                <h2 className="gradient-text">Publicaciones Recientes</h2>
-                            </div>
-                        </div>
+                        <SectionTitle title="Publicaciones Recientes" />
                     </Col>
                 </Row>
             </Container>

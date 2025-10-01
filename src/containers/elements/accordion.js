@@ -3,6 +3,7 @@ import { Accordion, AccordionItem } from 'react-light-accordion';
 import 'react-light-accordion/demo/css/index.css';
 import { Container, Row, Col } from 'reactstrap'
 import { AccordionData, KitAccordionData } from '@/database/accordion_database'
+import SectionTitle from '@/components/SectionTitle'
 
 const AccordionElementSection = (props) => {
     let accordionItems = props.kit ? KitAccordionData : AccordionData
@@ -11,13 +12,7 @@ const AccordionElementSection = (props) => {
             <Container>
                 <Row>
                     <Col md="8"  className="offset-md-2">
-                        <div className="title">
-                            <img alt="" className="img-fluid title-img"
-                                src="/assets/images/wedding-img/bottom.png" />
-                            <div className="main-title">
-                                <h2 className="gradient-text">Preguntas frecuentes</h2>
-                            </div>
-                        </div>
+                        <SectionTitle title="Preguntas frecuentes" />
                     </Col>
                     <Col md="10" className="offset-md-1">
                         <div className="saas1 faq mt-0">
