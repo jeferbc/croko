@@ -7,6 +7,7 @@ const URL_ENDPOINT = 'https://ik.imagekit.io/ge17f66b4ma';
  * ImageKit Image Component
  *
  * A wrapper around ImageKit's Next.js Image component with pre-configured settings.
+ * Automatically optimizes images with proper compression and format conversion.
  *
  * @param {Object} props - Component props
  * @param {string} props.src - Image path (relative or absolute)
@@ -27,7 +28,7 @@ const URL_ENDPOINT = 'https://ik.imagekit.io/ge17f66b4ma';
  *   alt="Description"
  *   width={500}
  *   height={500}
- *   transformation={[{ width: 500, height: 500 }]}
+ *   transformation={[{ width: 500, quality: 85, format: 'auto' }]}
  * />
  */
 const IKImage = ({
@@ -44,6 +45,13 @@ const IKImage = ({
   className,
   ...rest
 }) => {
+  // Apply default optimizations if no transformation specified
+  const optimizedTransformation = transformation || [{
+    width,
+    quality: 85,
+    format: 'auto'
+  }];
+
   return (
     <Image
       urlEndpoint={URL_ENDPOINT}
@@ -51,7 +59,7 @@ const IKImage = ({
       alt={alt}
       width={width}
       height={height}
-      transformation={transformation}
+      transformation={optimizedTransformation}
       queryParameters={queryParameters}
       loading={loading}
       responsive={responsive}

@@ -57,11 +57,16 @@ const FullWidth3Grid = () => {
                                                         <IKImage
                                                             src={extractPath(imgItem.img)}
                                                             alt="Maquillaje prenatal"
-                                                            width={800}
-                                                            height={600}
+                                                            width={400}
+                                                            height={300}
                                                             className="img-fluid blur-up lazyloaded"
                                                             loading="lazy"
-                                                            transformation={[{ width: 800, quality: 80 }]}
+                                                            transformation={[{
+                                                                width: 400,
+                                                                height: 300,
+                                                                quality: 85,
+                                                                format: 'auto'
+                                                            }]}
                                                             style={{ width: '100%', height: 'auto' }}
                                                         />
                                                     </div>
