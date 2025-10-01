@@ -54,9 +54,16 @@ const CenterLogoHeader = (props) => {
                                         { !props.kit && (
                                             <Link href='/kit' className={`btn btn-default btn-gradient text-white ${props.kit ? 'kit' : 'local'}`} style={ActionsStyles.navButton}>KIT Maquillaje</Link>
                                         )}
-                                        <a className="toggle-nav" onClick={clickSidebar} data-target="#scroll-spy" aria-controls="scroll-spy" style={!props.kit ? { marginLeft: '15px' } : {}}>
+                                        <button
+                                            className="toggle-nav"
+                                            onClick={clickSidebar}
+                                            aria-controls="scroll-spy"
+                                            aria-expanded={sidebar}
+                                            aria-label="Toggle navigation menu"
+                                            style={!props.kit ? { marginLeft: '15px', background: 'none', border: 'none', cursor: 'pointer' } : { background: 'none', border: 'none', cursor: 'pointer' }}
+                                        >
                                             <i aria-hidden="true" className="fa fa-bars"></i>
-                                        </a>
+                                        </button>
                                     </div>
                                 </div>
                             </div>
