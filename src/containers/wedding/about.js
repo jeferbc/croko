@@ -49,7 +49,7 @@ const About = () => (
                                 <h3 className="about-para" className="pt-3"><strong>Kit de maquillaje prenatal</strong></h3>
                                 <p className="about-para">Es ideal para pintar la barriguita en compañía de tus familiares y/o amigos en casa.</p>
                                 <div style={ContactButtonStyles.a} className="pb-3 pt-2">
-                                    <Link href='/kit' className="btn btn-default btn-white">MÁS INFORMACIÓN</Link>
+                                    <Link href='/kit' className="btn btn-default btn-white">Ver kit de maquillaje</Link>
                                 </div>
                             </div>
                         </div>
