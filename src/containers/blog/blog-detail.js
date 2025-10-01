@@ -1,6 +1,7 @@
 'use client'
 import React, { useEffect, useState } from 'react'
 import { Container, Row, Col } from 'reactstrap'
+import IKImage from '@/components/IKImage'
 
 const BlogDetail = ({ post }) => {
     const [isDesktop, setIsDesktop] = useState(true)
@@ -18,6 +19,13 @@ const BlogDetail = ({ post }) => {
         window.addEventListener('resize', handleResize)
         return () => window.removeEventListener('resize', handleResize)
     }, [])
+
+    // Extract path from full ImageKit URL
+    const extractPath = (url) => {
+        if (!url) return ''
+        const urlEndpoint = 'https://ik.imagekit.io/ge17f66b4ma'
+        return url.replace(urlEndpoint, '')
+    }
 
     if (!post) {
         return (
@@ -60,10 +68,18 @@ const BlogDetail = ({ post }) => {
                             </header>
 
                             <div className="post-image mb-4">
-                                <img 
-                                    src={post.image} 
+                                <IKImage
+                                    src={extractPath(post.image)}
                                     alt={post.title}
+                                    width={1600}
+                                    height={1161}
                                     className="img-fluid rounded"
+                                    loading="eager"
+                                    transformation={[{
+                                        width: isDesktop ? 800 : 400,
+                                        quality: 85,
+                                        format: 'auto'
+                                    }]}
                                     style={{ width: '100%', height: 'auto', maxHeight: '400px', objectFit: 'cover' }}
                                 />
                             </div>
