@@ -82,8 +82,6 @@ export default function RootLayout({ children }) {
         <link rel="shortcut icon" href="/assets/images/logo/favicon.png" type="image/x-icon" />
 
         {/* Preconnect to external domains for better performance */}
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <link rel="preconnect" href="https://ik.imagekit.io" />
         <link rel="dns-prefetch" href="https://ik.imagekit.io" />
 

@@ -27,5 +27,10 @@ export const metadata = {
 };
 
 export default function KitLayout({ children }) {
-  return children;
+  return (
+    <>
+      <link rel="preload" href="/assets/fonts/fontawesome-webfont.woff2?v=4.7.0" as="font" type="font/woff2" crossOrigin="anonymous" />
+      {children}
+    </>
+  );
 }
