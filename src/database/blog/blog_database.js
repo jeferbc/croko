@@ -142,6 +142,245 @@ module.exports = {
         
         <p><em>#SaludMentalMaternal #EmbarazoColombia #CrokoMaquillaje #Tranquilamente</em></p>
       `
+    },
+    {
+      id: 'actividades-baby-shower-emotivas-inolvidables',
+      title: '5 Ideas para Actividades en Baby Shower que Todos Recordarán para Siempre',
+      slug: 'actividades-baby-shower-emotivas-inolvidables',
+      image: 'https://ik.imagekit.io/ge17f66b4ma/regalar%20a%20una%20embarazada_ZjRm7PCTc.png',
+      description: 'Descubre 5 actividades emotivas para baby shower que van más allá del entretenimiento y crean momentos inolvidables para toda la familia.',
+      date: '2 de octubre de 2025',
+      author: 'Carolina Rincón',
+      content: `
+        <p>Cuando pensamos en actividades para baby shower, es fácil quedarse en lo superficial: juegos que entretienen por un momento y se olvidan al día siguiente. Pero ¿qué tal si pudiéramos crear experiencias que realmente toquen el corazón y generen conexiones profundas entre la familia?</p>
+
+        <p>Como artista especializada en belly painting, he sido testigo de momentos increíbles cuando las familias se reúnen para crear algo hermoso juntas. A través de los años, he observado qué tipo de actividades generan risas que se transforman en lágrimas de emoción, qué momentos se quedan grabados en la memoria familiar para siempre.</p>
+
+        <p>Te voy a compartir 5 actividades que van mucho más allá del entretenimiento. Son experiencias que transforman un evento social en un momento sagrado de preparación familiar para recibir nueva vida. Actividades donde cada participante se va sintiendo que fue parte de algo realmente especial.</p>
+
+        <h3>✨ Las 5 Actividades Más Emotivas</h3>
+        <ul>
+          <li>5 actividades probadas que emocionan genuinamente</li>
+          <li>Para diferentes presupuestos</li>
+          <li>Incluyen a toda la familia (niños y abuelos)</li>
+          <li>Perfectas para crear recuerdos duraderos</li>
+          <li>Con materiales específicos que realmente funcionan</li>
+        </ul>
+
+        <h3>🏆 Actividad #1: Taller de Belly Painting Familiar - La Más Emotiva</h3>
+        <h4>La Actividad Que Garantiza Lágrimas de Felicidad</h4>
+
+        <p>Esta es la actividad que más impacto emocional genera. A través de los videos y testimonios que recibo, he visto reacciones increíbles cuando las familias participan juntas en pintar la barriguita de la futura mamá.</p>
+
+        <p><strong>Por qué es mi actividad favorita:</strong></p>
+
+        <p><strong>Es completamente única:</strong> Solo se puede hacer durante el embarazo, lo que la hace súper especial.</p>
+
+        <p><strong>Involucra a todas las generaciones:</strong> He recibido fotos de niños de 4 años pintando junto a bisabuelas. Es mágico ver cómo una actividad puede unir a toda la familia.</p>
+
+        <p><strong>El bebé participa desde el vientre:</strong> Me cuentan que sin excepción, el bebé se mueve durante la pintura. Las familias siempre se emocionan cuando sienten esos movimientos.</p>
+
+        <p><strong>Momento de conexión real:</strong> Las familias me escriben contándome cómo durante el belly painting se crean conversaciones hermosas y conexiones genuinas.</p>
+
+        <h4>Cómo organizarla paso a paso</h4>
+
+        <p><strong>Materiales necesarios:</strong></p>
+        <ul>
+          <li>Kit completo de belly painting con pinturas seguras para embarazadas</li>
+          <li>2 plantillas diferentes para dar opciones (incluidas en mi kit)</li>
+          <li>5 pinceles de varios tamaños</li>
+          <li>Toallitas húmedas para preparar la piel y limpiar pinceles durante el proceso</li>
+          <li>Música relajante de fondo</li>
+        </ul>
+
+        <p><strong>Tiempo real:</strong> Entre 1 a 2 horas de creación artística. Hay que considerar que la mayoría de personas hace mucho no pintan, la barriguita es una superficie curva, y coordinar varias personas lleva tiempo.</p>
+
+        <p><strong>Participantes ideales:</strong> Entre 3 y 8 personas de la familia cercana</p>
+
+        <h4>El momento mágico: Pintar con intención</h4>
+
+        <p>Lo que hace realmente especial esta actividad es el concepto de pintar con intención. Les enseño a las familias que imaginen que cada pincelada es como una varita de hada madrina diciéndole al bebé lo fuerte, valiente, saludable y amado que va a ser.</p>
+
+        <p>Es precisamente en este momento donde todo se vuelve más emotivo. Las familias me cuentan que es cuando comienzan a llorar de felicidad, porque sienten que realmente están bendiciendo a ese bebé que viene en camino.</p>
+
+        <p><em>Testimonio real: "Carolina, no puedo creer lo mágico que fue usar tu kit en mi baby shower. Cuando mi mamá, mi suegra y mi hermana empezaron a pintar con esa intención que nos enseñaste, y yo les decía que cada pincelada era una bendición para el bebé... todas terminamos llorando de emoción. Mi hija de 6 años dijo que el bebé se movía porque estaba feliz. Las fotos quedaron hermosas, pero el momento fue inolvidable." - Ana María, clienta de Medellín</em></p>
+
+        <h3>💌 Actividad #2: Estación de Cartas al Bebé</h3>
+        <h4>Creando un Tesoro Emocional para el Futuro</h4>
+
+        <p>Esta actividad la he visto implementar en varios baby showers donde se ha usado mi kit, y siempre funciona como complemento perfecto.</p>
+
+        <p><strong>Por qué funciona tan bien:</strong></p>
+
+        <p><strong>Alto valor emocional:</strong> Estas cartas se abren en el primer cumpleaños y se convierten en un tesoro familiar.</p>
+
+        <p><strong>Incluye a todas las invitadas:</strong> Todas pueden participar escribiendo algo especial.</p>
+
+        <p><strong>Económica pero impactante:</strong> Con materiales básicos, creas un recuerdo invaluable.</p>
+
+        <p><strong>Materiales básicos:</strong></p>
+        <ul>
+          <li>Tarjetas bonitas o papel especial</li>
+          <li>Sobres decorados</li>
+          <li>Marcadores de buena calidad</li>
+          <li>Caja hermosa para guardar las cartas</li>
+          <li>Instrucciones claras para las invitadas</li>
+        </ul>
+
+        <p><strong>Ideas para escribir:</strong></p>
+        <ul>
+          <li>Consejos de vida que quieren compartir</li>
+          <li>Predicciones sobre la personalidad del bebé</li>
+          <li>Deseos y bendiciones para el futuro</li>
+          <li>Recuerdos especiales con los papás</li>
+        </ul>
+
+        <h3>📸 Actividad #3: Sesión de Fotos Generacionales</h3>
+        <h4>Capturando la Historia Familiar</h4>
+
+        <p>He visto fotos increíbles que me envían después de usar esta idea en combinación con el belly painting.</p>
+
+        <p><strong>El concepto emotivo:</strong></p>
+
+        <p><strong>Una foto histórica:</strong> Bisabuela, abuela, mamá y bebé en camino. Se convierte en reliquia familiar.</p>
+
+        <p><strong>Fácil de organizar:</strong> Solo necesitas alguien con buena cámara y coordinación.</p>
+
+        <p><strong>Ideas de poses que funcionan:</strong></p>
+        <ul>
+          <li>Todas las manos sobre la barriguita pintada</li>
+          <li>Perfil de las diferentes generaciones</li>
+          <li>Círculo familiar alrededor de la futura mamá</li>
+        </ul>
+
+        <h3>🎨 Actividad #4: Libro de Predicciones Ilustrado</h3>
+        <h4>Adivinando Cómo Será el Nuevo Integrante</h4>
+
+        <p>Una versión más creativa de las predicciones tradicionales, donde cada invitada decora su página.</p>
+
+        <p><strong>Predicciones divertidas:</strong></p>
+        <ul>
+          <li>Fecha y hora de nacimiento</li>
+          <li>Peso y estatura estimados</li>
+          <li>Color de ojos y cabello</li>
+          <li>Personalidad (tranquilo/activo)</li>
+          <li>Primera palabra que dirá</li>
+          <li>A quién se parecerá más</li>
+        </ul>
+
+        <p><strong>Materiales:</strong></p>
+        <ul>
+          <li>Libro en blanco de buena calidad</li>
+          <li>Marcadores y colores</li>
+          <li>Stickers decorativos</li>
+          <li>Plantilla con preguntas</li>
+        </ul>
+
+        <h3>👶 Actividad #5: Taller "Futuros Hermanos Mayores"</h3>
+        <h4>Preparando Emocionalmente a los Niños</h4>
+
+        <p>Para familias que tienen hermanos mayores, esta actividad es fundamental. Los niños a menudo experimentan una mezcla de emociones cuando saben que llega un hermanito: emoción, pero también ansiedad, celos o confusión sobre cómo va a cambiar su vida familiar.</p>
+
+        <p><strong>Por qué es tan importante incluir a los hermanos:</strong></p>
+
+        <p>Esta actividad los ayuda a procesar estos sentimientos de manera positiva. Al darles un rol especial y prepararlos para su nueva responsabilidad como hermanos mayores, transformamos la ansiedad en emoción genuina. Los niños necesitan sentir que siguen siendo importantes y que su nuevo rol es valioso y especial.</p>
+
+        <p>Además, cuando participan activamente en el belly painting después de este taller, lo hacen con más conexión emocional. Entienden que están bendiciendo a su hermanito, no solo pintando.</p>
+
+        <p><strong>Actividades del taller:</strong></p>
+        <ul>
+          <li>Decoración de camiseta "Hermano/a Mayor": Les da identidad y orgullo en su nuevo rol</li>
+          <li>Creación de tarjeta de bienvenida: Los hace sentir que son los primeros en darle la bienvenida al bebé</li>
+          <li>Práctica básica con muñeco: Los tranquiliza sobre cómo interactuar cuando llegue el bebé real</li>
+        </ul>
+
+        <p><strong>Materiales:</strong></p>
+        <ul>
+          <li>Camisetas blancas en sus tallas</li>
+          <li>Marcadores de tela lavables</li>
+          <li>Materiales de manualidades</li>
+          <li>Muñeco realista para práctica</li>
+        </ul>
+
+        <h3>💰 Adaptando las Actividades a Tu Presupuesto</h3>
+
+        <p><strong>Presupuesto Básico:</strong></p>
+        <ul>
+          <li>Kit belly painting básico</li>
+          <li>Materiales DIY para otras actividades</li>
+          <li>Fotos familiares con celular de buena calidad</li>
+          <li>Coordinación familiar</li>
+        </ul>
+        <p><em>Resultado: Evento emotivo y memorable sin grandes gastos</em></p>
+
+        <p><strong>Presupuesto Medio:</strong></p>
+        <ul>
+          <li>Kit belly painting completo</li>
+          <li>Materiales de calidad premium</li>
+          <li>Fotógrafo amateur o familiar con experiencia</li>
+          <li>Algunos elementos profesionales</li>
+        </ul>
+        <p><em>Resultado: Evento muy completo con recuerdos de alta calidad</em></p>
+
+        <p><strong>Presupuesto Premium:</strong></p>
+        <ul>
+          <li>Sesión profesional con fotógrafo incluido</li>
+          <li>Materiales de lujo para todas las actividades</li>
+          <li>Coordinación completa especializada</li>
+        </ul>
+        <p><em>Resultado: Experiencia completamente premium e inolvidable</em></p>
+
+        <h3>❌ 3 Errores Comunes que Debes Evitar</h3>
+
+        <p><strong>Error #1: Demasiadas Actividades</strong></p>
+        <ul>
+          <li>El problema: Saturar el evento</li>
+          <li>Solución: Máximo 3-4 actividades bien organizadas</li>
+        </ul>
+
+        <p><strong>Error #2: No Considerar Todas las Edades</strong></p>
+        <ul>
+          <li>El problema: Excluir a niños o adultos mayores</li>
+          <li>Solución: Elegir actividades inclusivas para toda la familia</li>
+        </ul>
+
+        <p><strong>Error #3: No Documentar los Momentos</strong></p>
+        <ul>
+          <li>El problema: Perder recuerdos preciosos</li>
+          <li>Solución: Designar un fotógrafo oficial</li>
+        </ul>
+
+        <h3>💝 Lo que He Aprendido de Mis Clientas</h3>
+
+        <p>A través de los testimonios y fotos que recibo, he observado algunos patrones hermosos:</p>
+
+        <p><strong>Sobre la Participación Familiar:</strong></p>
+        <p>Las familias me cuentan que el belly painting se convierte en un momento donde las generaciones se conectan de manera única. Abuelas que normalmente son tímidas se animan a participar, niños que estaban celosos del bebé se emocionan genuinamente.</p>
+
+        <p><strong>El Poder de la Intención:</strong></p>
+        <p>El concepto de "pintar con intención" realmente transforma la actividad. Las familias pasan de ver esto como una simple decoración a entenderlo como un ritual de amor y bienvenida para el bebé.</p>
+
+        <p><strong>Impacto a Largo Plazo:</strong></p>
+        <p>Meses después del baby shower, las familias me escriben contándome que las fotos del belly painting son las que más miran, las que tienen enmarcadas, las que les recuerdan ese momento tan especial de espera y conexión familiar.</p>
+
+        <h3>🎁 Todo lo que Necesitas</h3>
+
+        <p><strong>Para Empezar:</strong></p>
+        <ul>
+          <li>Kit Completo Belly Painting: Incluye 2 plantillas, 5 pinceles, pinturas seguras, toallitas húmedas y tutorial paso a paso.</li>
+          <li>Consulta gratuita por WhatsApp: Te ayudo a elegir la mejor combinación de actividades para tu evento específico.</li>
+        </ul>
+
+        <p><strong>Contacto:</strong></p>
+        <ul>
+          <li>WhatsApp: +57 316 816 1717</li>
+          <li>Instagram: @croko_maquillaje_embarazada</li>
+        </ul>
+
+        <p>La diferencia entre un baby shower común y uno que marca vidas está en crear momentos de conexión real. El belly painting familiar, especialmente cuando se hace con intención y amor, se convierte en una experiencia que las familias recordarán para siempre.</p>
+
+        <p><strong>¿Lista para crear recuerdos que duren toda la vida?</strong></p>
+      `
     }
   ]
 }

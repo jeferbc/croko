@@ -92,15 +92,31 @@ const BlogDetail = ({ post }) => {
 
                             <div className="blog-divider" style={{ height: '2px', backgroundColor: '#c0882f', margin: '30px 0', width: '80px' }}></div>
 
-                            <div 
+                            <div
                                 className="post-content"
-                                style={{ 
-                                    fontSize: '16px', 
-                                    lineHeight: '1.7', 
+                                style={{
+                                    fontSize: '16px',
+                                    lineHeight: '1.7',
                                     color: '#333'
                                 }}
                                 dangerouslySetInnerHTML={{ __html: post.content }}
                             />
+                            <style jsx>{`
+                                .post-content :global(h3) {
+                                    margin-top: 25px;
+                                    margin-bottom: 12px;
+                                }
+                                .post-content :global(h4) {
+                                    margin-top: 20px;
+                                    margin-bottom: 10px;
+                                }
+                                .post-content :global(p) {
+                                    margin-bottom: 12px;
+                                }
+                                .post-content :global(ul) {
+                                    margin-bottom: 15px;
+                                }
+                            `}</style>
 
                             <div className="blog-divider" style={{ height: '1px', backgroundColor: '#e0e0e0', margin: '40px 0' }}></div>
                             

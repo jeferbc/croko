@@ -9,6 +9,11 @@ export const KITMENUITEMS = [
       type: 'sub',
       children: [
          {
+            title: '5 Actividades para Baby Shower Inolvidables',
+            type: 'link',
+            path: '/blog/actividades-baby-shower-emotivas-inolvidables'
+         },
+         {
             title: 'Baby Showers en Colombia: El Toque Croko',
             type: 'link',
             path: '/blog/baby-showers-colombia-actividades-regalos-croko'
