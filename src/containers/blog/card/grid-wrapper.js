@@ -31,10 +31,10 @@ const CardGridWrapper = ({ className, image, blogDate, place, title, description
             }]}
             style={{ width: '100%', height: 'auto' }}
           />
-          <div className="img-container" style={{ paddingTop: '10px' }}>
+          <div className="img-container" style={{ paddingTop: '5px' }}>
             <div>
               <div className="blog-info">
-                <div className="m-b-10">
+                <div className="m-b-5">
                   <div className="center-text">
                     {blogDate && (
                       <>
