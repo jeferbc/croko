@@ -12,6 +12,7 @@ export const MENUITEMS = [
    {
       title: 'Blog',
       type: 'sub',
+      path: '/blog',
       children: [
          {
             title: 'Qué Regalar en un Baby Shower',

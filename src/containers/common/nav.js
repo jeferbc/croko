@@ -97,9 +97,15 @@ const Nav = (props) => {
                         return (
                             <li key={i}>
                                 {(menuItem.type === 'sub') ?
-                                    <a className="dropdown" href="#" onClick={(e) => { e.preventDefault(); toggletNavActive(menuItem); }} aria-label={`Menú ${menuItem.title}`}>
-                                        <span>{menuItem.title}</span>
-                                    </a>
+                                    menuItem.path ? (
+                                        <Link href={menuItem.path} className="dropdown" aria-label={menuItem.title}>
+                                            <span>{menuItem.title}</span>
+                                        </Link>
+                                    ) : (
+                                        <a className="dropdown" href="#" onClick={(e) => { e.preventDefault(); toggletNavActive(menuItem); }} aria-label={`Menú ${menuItem.title}`}>
+                                            <span>{menuItem.title}</span>
+                                        </a>
+                                    )
                                     : ''}
                                 {(menuItem.type === 'link') ?
                                     menuItem.path.startsWith('#') ? (
@@ -142,9 +148,15 @@ const Nav = (props) => {
                         return (
                             <li key={i}>
                                 {(menuItem.type === 'sub') ?
-                                    <a className="dropdown" href="#" onClick={(e) => { e.preventDefault(); toggletNavActive(menuItem); }} aria-label={`Menú ${menuItem.title}`}>
-                                        <span>{menuItem.title}</span>
-                                    </a>
+                                    menuItem.path ? (
+                                        <Link href={menuItem.path} className="dropdown" aria-label={menuItem.title}>
+                                            <span>{menuItem.title}</span>
+                                        </Link>
+                                    ) : (
+                                        <a className="dropdown" href="#" onClick={(e) => { e.preventDefault(); toggletNavActive(menuItem); }} aria-label={`Menú ${menuItem.title}`}>
+                                            <span>{menuItem.title}</span>
+                                        </a>
+                                    )
                                     : ''}
                                 {(menuItem.type === 'link') ?
                                     menuItem.path.startsWith('#') ? (
