@@ -5,6 +5,9 @@ import { ToastContainer } from 'react-toastify';
 import NProgress from 'nprogress';
 import { usePathname } from 'next/navigation';
 import CookieConsent from '@/containers/elements/common/cookieConsent';
+import CenterLogoHeader from '@/containers/common/center-logo-header';
+import FooterSection from '@/containers/wedding/footer';
+import WhatsappRibbon from '@/containers/elements/common/whatsapp';
 
 export default function ClientLayout({ children }) {
   const [loader, setLoader] = useState(true);
@@ -62,7 +65,10 @@ export default function ClientLayout({ children }) {
           </div>
         </div>
       )}
+      <CenterLogoHeader />
       {children}
+      <FooterSection />
+      <WhatsappRibbon />
       <div className="tap-top" style={goingUp ? { display: 'block' } : { display: 'none' }} onClick={tapToTop}>
         <div><i className="fa fa-angle-double-up"></i></div>
       </div>

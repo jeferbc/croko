@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { usePathname } from 'next/navigation'
 import Nav from './nav'
 import Link from 'next/link'
 import Image from 'next/image'
@@ -6,7 +7,7 @@ import Image from 'next/image'
 const ActionsStyles = {
     buttons: {
         display: "inline-flex",
-        width: "100%", 
+        width: "100%",
         alignItems: "center",
         justifyContent: 'space-between'
     },
@@ -16,6 +17,8 @@ const ActionsStyles = {
 }
 
 const CenterLogoHeader = (props) => {
+    const pathname = usePathname()
+    const isKit = props.kit === 'true' || pathname === '/kit'
     const [sidebar, setSidebar] = useState(false);
 
     const clickSidebar = () => {
@@ -24,7 +27,7 @@ const CenterLogoHeader = (props) => {
     }
 
     return (
-        <header className={`loding-header nav-abs custom-scroll header-rel ${props.themeClass} ${props.kit ? 'position-relative' : ''}`}>
+        <header className={`loding-header nav-abs custom-scroll header-rel ${props.themeClass || 'wedding'} ${isKit ? 'position-relative' : ''}`}>
             <div className="container">
                 <div className="row">
                     <div className="col-12">
@@ -40,7 +43,7 @@ const CenterLogoHeader = (props) => {
                                 />
                             </Link>
                             <div className="d-flex justify-content-between align-items-center w-100 d-lg-none">
-                                <Link href="#" className="logo-responsive navbar-brand">
+                                <Link href="/" className="logo-responsive navbar-brand">
                                     <Image
                                         src="/assets/images/logo/croko.png"
                                         alt="logo"
@@ -51,8 +54,8 @@ const CenterLogoHeader = (props) => {
                                 </Link>
                                 <div className="responsive-btn">
                                     <div className="actions" style={ActionsStyles.buttons}>
-                                        { !props.kit && (
-                                            <Link href='/kit' className={`btn btn-default btn-gradient text-white ${props.kit ? 'kit' : 'local'}`} style={ActionsStyles.navButton}>KIT Maquillaje</Link>
+                                        { !isKit && (
+                                            <Link href='/kit' className={`btn btn-default btn-gradient text-white ${isKit ? 'kit' : 'local'}`} style={ActionsStyles.navButton}>KIT Maquillaje</Link>
                                         )}
                                         <button
                                             className="toggle-nav"
@@ -60,14 +63,14 @@ const CenterLogoHeader = (props) => {
                                             aria-controls="scroll-spy"
                                             aria-expanded={sidebar}
                                             aria-label="Toggle navigation menu"
-                                            style={!props.kit ? { marginLeft: '15px', background: 'none', border: 'none', cursor: 'pointer' } : { background: 'none', border: 'none', cursor: 'pointer' }}
+                                            style={!isKit ? { marginLeft: '15px', background: 'none', border: 'none', cursor: 'pointer' } : { background: 'none', border: 'none', cursor: 'pointer' }}
                                         >
                                             <i aria-hidden="true" className="fa fa-bars"></i>
                                         </button>
                                     </div>
                                 </div>
                             </div>
-                            <Nav className="w-100" kit={props.kit} />
+                            <Nav className="w-100" kit={isKit ? 'true' : 'false'} />
                         </nav>
                     </div>
                 </div>

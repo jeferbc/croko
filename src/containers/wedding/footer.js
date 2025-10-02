@@ -1,20 +1,26 @@
 import React from 'react';
 import Link from 'next/link';
+import { usePathname } from 'next/navigation';
 import SocialMedia from '@/containers/elements/common/socialMedia';
 import { Container, Row, Col } from 'reactstrap'
-const Footer = (props) => (
-    <footer className="wedding copyright copyright-bg position-relative">
-        <Container>
-            <Row>
-                <Col xl="3" sm="12">
-                    <div className="text-center">
-                        <div className="link-horizontal">
-                            <ul>
-                                <SocialMedia kit={props.kit} />
-                            </ul>
+
+const Footer = (props) => {
+    const pathname = usePathname();
+    const isKit = props.kit === 'true' || pathname === '/kit';
+
+    return (
+        <footer className="wedding copyright copyright-bg position-relative">
+            <Container>
+                <Row>
+                    <Col xl="3" sm="12">
+                        <div className="text-center">
+                            <div className="link-horizontal">
+                                <ul>
+                                    <SocialMedia kit={isKit ? 'true' : 'false'} />
+                                </ul>
+                            </div>
                         </div>
-                    </div>
-                </Col>
+                    </Col>
                 <Col xl="6" sm="12">
                     <div className="m-l-auto center-para">
                         <h6 className="copyright-text text-center">2016 - {new Date().getFullYear()} Croko</h6>
@@ -31,6 +37,7 @@ const Footer = (props) => (
             </Row>
         </Container>
     </footer>
-)
+    );
+};
 
 export default Footer;

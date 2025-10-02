@@ -1,11 +1,14 @@
 import React, { useEffect, useState } from 'react'
 import Link from 'next/link'
+import { usePathname } from 'next/navigation'
 import SocialMedia from '@/containers/elements/common/socialMedia';
 import { MENUITEMS } from '@/constant/menu';
 import { KITMENUITEMS } from '@/constant/kitMenu';
 
 const Nav = (props) => {
-    const navItems = props.kit === 'true' ? KITMENUITEMS : MENUITEMS
+    const pathname = usePathname()
+    const isKit = props.kit === 'true' || pathname === '/kit'
+    const navItems = isKit ? KITMENUITEMS : MENUITEMS
     const [mainmenu, setMainMenu] = useState(navItems);
     const [sidebar, setSidebar] = useState(false);
 
