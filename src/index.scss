@@ -1,3 +1,11 @@
 @import "bootstrap-scss";
 
 @import "../public/assets/scss/app.scss";
+
+// Global CSS Variables for Croko theme
+:root {
+  --primary: #c0882f;
+  --secondary: #595959;
+  --light: #BF862D;
+  --dark: #ECC878;
+}
