@@ -11,28 +11,33 @@ import Image from 'next/image';
  * @param {string} props.title - The title text to display
  * @param {string} props.className - Additional CSS classes (optional)
  * @param {Object} props.style - Additional inline styles (optional)
+ * @param {boolean} props.showImage - Show decorative image (default: true)
  */
-const SectionTitle = ({ title, className = '', style = {} }) => {
+const SectionTitle = ({ title, className = '', style = {}, showImage = true }) => {
     const defaultStyle = { marginBottom: '30px', ...style };
 
     return (
         <div className={`title d-flex align-items-center flex-column ${className}`} style={defaultStyle}>
-            <Image
-                src="/assets/images/wedding-img/bottom.png"
-                alt="Decoración"
-                width={243}
-                height={49}
-                className="img-fluid title-img d-none d-lg-block"
-                priority
-            />
-            <Image
-                src="/assets/images/wedding-img/bottom.png"
-                alt="Decoración"
-                width={124}
-                height={25}
-                className="img-fluid title-img d-block d-lg-none"
-                priority
-            />
+            {showImage && (
+                <>
+                    <Image
+                        src="/assets/images/wedding-img/bottom.png"
+                        alt="Decoración"
+                        width={243}
+                        height={49}
+                        className="img-fluid title-img d-none d-lg-block"
+                        priority
+                    />
+                    <Image
+                        src="/assets/images/wedding-img/bottom.png"
+                        alt="Decoración"
+                        width={124}
+                        height={25}
+                        className="img-fluid title-img d-block d-lg-none"
+                        priority
+                    />
+                </>
+            )}
             <div className="main-title">
                 <h2 className="gradient-text">{title}</h2>
             </div>

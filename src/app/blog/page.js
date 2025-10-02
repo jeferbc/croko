@@ -7,11 +7,11 @@ import SectionTitle from "@/components/SectionTitle";
 
 const BlogIndex = () => {
   return (
-    <section className="wedding blog blog-sec" style={{ marginTop: '150px' }}>
+    <section className="wedding blog blog-sec section-b-space">
       <Container>
         <Row>
           <Col md="8" className="offset-md-2">
-            <SectionTitle title="Blog" />
+            <SectionTitle title="Blog" showImage={false} />
           </Col>
         </Row>
       </Container>
