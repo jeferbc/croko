@@ -31,10 +31,10 @@ const CardGridWrapper = ({ className, image, blogDate, place, title, description
             }]}
             style={{ width: '100%', height: 'auto' }}
           />
-          <div className="img-container">
+          <div className="img-container" style={{ paddingTop: '10px' }}>
             <div>
               <div className="blog-info">
-                <div className="m-b-20">
+                <div className="m-b-10">
                   <div className="center-text">
                     {blogDate && (
                       <>
@@ -50,7 +50,7 @@ const CardGridWrapper = ({ className, image, blogDate, place, title, description
                     )}
                   </div>
                 </div>
-                <h5 className="blog-head font-600">{title}</h5>
+                <h5 className="blog-head" style={{ fontWeight: 'bold', marginBottom: '15px' }}>{title}</h5>
                 {description.length > MAX_LENGTH ? <p className="para2">{`${description.substring(0, MAX_LENGTH)} .....`}</p> : <p className="para2">{description}</p>}
 
                 <div className="btn-bottom m-t-20">
