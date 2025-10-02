@@ -29,8 +29,8 @@ export default function Home() {
       <PricingSection />
       <AboutSection />
       <BlogSection />
-      <AccordionElementSection />
       <PopularPosts />
+      <AccordionElementSection />
       <FooterSection />
       <WhatsappRibbon />
     </div>

@@ -43,8 +43,8 @@ export default function Kit() {
             <HeaderSection />
             <ProductSection />
             <ProductVideos />
-            <AccordionElementSection kit="true" />
             <PopularPosts />
+            <AccordionElementSection kit="true" />
             <FooterSection kit="true" />
             <WhatsappRibbon kit="true" />
         </div>
