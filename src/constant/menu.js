@@ -14,6 +14,11 @@ export const MENUITEMS = [
       type: 'sub',
       children: [
          {
+            title: 'Qué Regalar en un Baby Shower',
+            type: 'link',
+            path: '/blog/que-regalar-baby-shower-guia-definitiva'
+         },
+         {
             title: 'Qué Regalarle a una Embarazada',
             type: 'link',
             path: '/blog/que-regalar-embarazada-ideas-significativas'
