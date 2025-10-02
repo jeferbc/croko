@@ -26,10 +26,11 @@ const CardGridWrapper = ({ className, image, blogDate, place, title, description
             loading="lazy"
             transformation={[{
               width: 400,
+              height: 290,
               quality: 85,
               format: 'auto'
             }]}
-            style={{ width: '100%', height: 'auto' }}
+            style={{ width: '100%', height: '290px', objectFit: 'cover' }}
           />
           <div className="img-container" style={{ paddingTop: '5px' }}>
             <div>
