@@ -381,6 +381,219 @@ module.exports = {
 
         <p><strong>¿Lista para crear recuerdos que duren toda la vida?</strong></p>
       `
+    },
+    {
+      id: 'que-regalar-embarazada-ideas-significativas',
+      title: 'Qué Regalarle a una Embarazada: 5 Ideas Que Realmente Tocan el Corazón',
+      slug: 'que-regalar-embarazada-ideas-significativas',
+      image: 'https://ik.imagekit.io/ge17f66b4ma/download__8___1___2__B1r-Fxbpk.jpeg?updatedAt=1642474362194',
+      description: 'Descubre los mejores regalos para embarazadas que realmente crean recuerdos duraderos. Ideas probadas desde la experiencia de una artista de belly painting.',
+      date: '2 de octubre de 2025',
+      author: 'Carolina Rincón',
+      content: `
+        <p>Como artista especializada en belly painting, he tenido la oportunidad de acompañar a cientos de familias colombianas en uno de los momentos más especiales de sus vidas. Y créeme, he visto de todo: regalos que terminan olvidados en un cajón y otros que crean recuerdos que duran para siempre.</p>
+
+        <p>Si estás buscando qué regalarle a una embarazada y quieres que realmente sea significativo, déjame compartirte lo que he aprendido después de trabajar con más de 500 futuras mamás.</p>
+
+        <h3>El Belly Painting: El Regalo Que Cambia Toda la Perspectiva</h3>
+
+        <p>Cuando comencé con el belly painting hace varios años, pensaba que era solo una tendencia bonita para redes sociales. Pero después de ver las reacciones de las familias, entendí que es mucho más profundo que eso.</p>
+
+        <h4>Lo que he observado en mis sesiones</h4>
+
+        <p>La transformación que veo en las mujeres durante una sesión de belly painting es increíble. Llegan un poco tímidas, preguntándose si se van a ver bien, si el bebé va a cooperar. Pero cuando empiezo a pintar y toda la familia se involucra, algo mágico pasa.</p>
+
+        <p>He visto papás que al principio decían "yo solo voy a tomar fotos" y terminan con el pincel en la mano, completamente concentrados en crear algo hermoso para su bebé. He visto hermanos mayores que por primera vez entienden que hay alguien especial dentro de la barriguita de mamá.</p>
+
+        <h4>Por qué funciona tan bien como regalo</h4>
+
+        <p><strong>Es completamente único en el tiempo:</strong> Solo puedes hacer belly painting durante el embarazo. Una vez que nace el bebé, esa oportunidad se va para siempre. Eso lo hace súper especial.</p>
+
+        <p><strong>Conecta a toda la familia:</strong> En mis sesiones, rara vez es solo la mamá. Papá, hermanos, abuelos, todos quieren participar. Se convierte en la primera actividad familiar donde el bebé está "presente".</p>
+
+        <p><strong>Crea recuerdos tangibles:</strong> Las fotos están hermosas, pero el recuerdo del momento en sí es lo que más valoran. Me han escrito meses después contándome que aún hablan de ese día.</p>
+
+        <p><strong>Se adapta a todos los estilos:</strong> He trabajado con mamás súper artísticas que quieren diseños elaborados, y otras que prefieren algo simple y elegante. Siempre hay una opción perfecta.</p>
+
+        <h4>Opciones para diferentes presupuestos</h4>
+
+        <p><strong>Kit para hacer en casa:</strong> Si quieres dar la experiencia pero el presupuesto es limitado, un kit con materiales seguros, plantillas y tutoriales funciona perfecto. He visto resultados hermosos hechos por familias en sus casas.</p>
+
+        <p><strong>Sesión profesional:</strong> Cuando el presupuesto lo permite, una sesión profesional en casa es espectacular. Yo me encargo de todo: llevo los materiales, creo el diseño, tomo las fotos. La familia solo se dedica a disfrutar.</p>
+
+        <h3>El Diario del Embarazo: Documentar Cada Momento Especial</h3>
+
+        <p>Aunque mi especialidad es el arte visual, he aprendido que algunas de mis clientas más felices son las que documentan todo su proceso del embarazo de manera detallada.</p>
+
+        <h4>La importancia de registrar esta etapa única</h4>
+
+        <p>He visto a muchas mamás que después del parto me dicen "ojalá hubiera escrito más durante el embarazo". Los meses pasan volando y muchos detalles se olvidan: cuándo sintió la primera patadita, cómo reaccionó cuando supo el sexo del bebé, qué antojo la desvelaba cada noche.</p>
+
+        <p>Un diario del embarazo se convierte en una cápsula del tiempo. He visto diarios donde documentan desde el día que se hicieron la prueba de embarazo hasta la última ecografía. Escriben sobre sus miedos, sus emociones, sus cambios físicos, sus sueños para el bebé.</p>
+
+        <h4>Lo que he observado en las familias que documentan</h4>
+
+        <p>Las mamás que llevan diario tienden a vivir el embarazo de manera más consciente. Se toman el tiempo de reflexionar sobre lo que están sintiendo, de conectar con el proceso, de apreciar cada cambio.</p>
+
+        <p>También he notado que los papás se involucran más cuando hay un diario. Escriben cartas al bebé, documentan cómo se sienten al ver crecer la barriguita, registran sus propios miedos y emociones.</p>
+
+        <h4>Más allá de solo escribir</h4>
+
+        <p>Los mejores diarios que he visto incluyen de todo: fotos de la barriguita mes a mes, ecografías, listas de nombres posibles, planes para el cuarto del bebé, cartas de familiares al bebé, hasta tickets de las citas médicas.</p>
+
+        <p>Una clienta me mostró su diario donde había pegado las fotos de cada sesión de belly painting que hicieron en casa, pero también fotos de cuando armaron la cuna, de su baby shower, de cuando sintió las primeras pataditas. Era como una película de todo su embarazo.</p>
+
+        <h4>Por qué es un regalo perfecto</h4>
+
+        <p>Un diario bonito le da estructura a algo que muchas mamás quieren hacer pero no saben cómo empezar. Es como darles permiso y las herramientas para documentar esta etapa tan especial.</p>
+
+        <p>Además, se convierte en un tesoro familiar que el hijo valorará cuando sea mayor. Imagínate poder leer exactamente qué sentía tu mamá cuando estabas en su barriguita.</p>
+
+        <h3>El Kit de Seguridad: El Regalo que Agradecen Después</h3>
+
+        <p>Esto puede sonar súper práctico comparado con el arte, pero déjame contarte por qué lo incluyo en mis recomendaciones.</p>
+
+        <h4>La conexión con mi trabajo</h4>
+
+        <p>Cuando voy a hacer sesiones a domicilio, a menudo veo casas que claramente no están preparadas para un bebé que va a gatear. Enchufes descubiertos, esquinas puntiagudas, cajones sin seguro.</p>
+
+        <p>Las futuras mamás me han confesado que saben que tienen que hacer algo al respecto, pero entre todas las preparaciones del bebé, la seguridad de la casa queda para después.</p>
+
+        <h4>Por qué es un gran regalo</h4>
+
+        <p>Es algo que van a usar sí o sí, pero que probablemente está en el fondo de su lista de pendientes. Regalárselo es como quitarles una preocupación de encima.</p>
+
+        <p>Además, instalarlo cuando ya tienes al bebé es complicadísimo. Es mejor tenerlo listo antes.</p>
+
+        <h3>La Experiencia de Baby Shower Diferente</h3>
+
+        <p>En los últimos años, he desarrollado una idea que ha revolucionado los baby showers: convertir a las invitadas en artistas por un día.</p>
+
+        <h4>Cómo cambió mi perspectiva sobre las celebraciones</h4>
+
+        <p>Los baby showers tradicionales pueden ser repetitivos. Los mismos juegos, las mismas actividades. Pero cuando el belly painting se convierte en la actividad central donde las invitadas son las protagonistas, toda la dinámica cambia.</p>
+
+        <p>He creado kits especiales para baby showers donde las invitadas pueden pintar diseños pequeños en la barriguita de la futura mamá, o incluso practicar entre ellas. La idea es que todas participen en crear algo hermoso y único.</p>
+
+        <h4>Lo que incluyo en estos kits para fiestas</h4>
+
+        <p>Desarrollo kits que contienen suficientes materiales para que varias personas puedan participar: plantillas sencillas pero hermosas, pinceles de diferentes tamaños, pinturas seguras en varios colores, toallas húmedas para limpiar, y una guía paso a paso.</p>
+
+        <p>La gracia está en que no necesitas ser artista profesional para usarlo. Las plantillas están diseñadas para que cualquier persona pueda crear algo bonito, y al final todas se van con la satisfacción de haber contribuido a un recuerdo especial.</p>
+
+        <h4>Por qué funciona tan bien</h4>
+
+        <p>Las invitadas se involucran de una manera súper especial. En lugar de ser espectadoras pasivas, se convierten en parte activa de la celebración. He recibido mensajes de organizadoras contándome que sus invitadas no paraban de hablar de lo divertido que había sido.</p>
+
+        <p>Además, la futura mamá termina con una obra de arte colectiva en su barriguita, creada por todas sus seres queridos. Es algo que no se puede comprar en ninguna tienda.</p>
+
+        <h4>La ventaja de este enfoque</h4>
+
+        <p>Lo mejor de este sistema es que cualquier persona puede organizar un baby shower así, sin importar en qué ciudad esté. Solo necesita el kit adecuado y las ganas de hacer algo diferente.</p>
+
+        <p>He enviado estos kits a ciudades por toda Colombia, y siempre recibo fotos hermosas de las celebraciones. Cada fiesta es única porque cada grupo de amigas aporta su propia creatividad y energía.</p>
+
+        <h3>El Álbum de Fotos Especializado</h3>
+
+        <p>Esta es una idea que desarrollé después de ver que muchas familias no sabían qué hacer con todas las fotos hermosas de sus sesiones.</p>
+
+        <h4>Lo que he notado sobre las fotos del embarazo</h4>
+
+        <p>Las futuras mamás toman millones de fotos durante el embarazo, pero muchas veces quedan perdidas en el celular. Las fotos de belly painting, especialmente, merecen un lugar especial.</p>
+
+        <p>Un álbum diseñado específicamente para documentar el embarazo, con espacios para fotos de cada mes, de las sesiones de belly painting, de la barriguita creciendo, se vuelve un tesoro familiar.</p>
+
+        <h4>Mi recomendación</h4>
+
+        <p>Si vas a regalar una experiencia de belly painting, considera incluir un álbum bonito donde puedan organizar todas sus fotos del embarazo. Es el complemento perfecto.</p>
+
+        <h3>Consejos Desde mi Experiencia como Artista</h3>
+
+        <h4>Conoce sus gustos artísticos</h4>
+
+        <p>En mis consultas, siempre pregunto qué estilo le gusta a la mamá. ¿Prefiere cosas minimalistas y elegantes? ¿Le gustan los colores vibrantes? ¿Es fan de ciertos temas o personajes?</p>
+
+        <p>Esto aplica para cualquier regalo. Un diario súper colorido y decorado puede ser perfecto para una mamá, pero otra prefiere algo simple y elegante.</p>
+
+        <h4>Considera el trimestre del embarazo</h4>
+
+        <p>He trabajado con mamás desde las 20 semanas hasta las 39 semanas, y cada etapa tiene sus particularidades.</p>
+
+        <p>En el segundo trimestre, están llenas de energía y emocionadas por mostrar su barriguita. Es perfecto para sesiones largas y elaboradas.</p>
+
+        <p>En el tercer trimestre, se cansan más rápido, pero la barriguita está en su punto máximo de belleza. Sesiones más cortas pero súper significativas.</p>
+
+        <h4>Piensa en la familia completa</h4>
+
+        <p>Los mejores regalos para embarazadas son los que involucran a toda la familia. He visto cómo los hermanos mayores se emocionan participando en el belly painting, cómo los papás se conectan con el bebé a través del arte.</p>
+
+        <h3>Lo Que NO Recomiendo (Desde mi Experiencia)</h3>
+
+        <h4>Regalos que he visto acumularse</h4>
+
+        <p><strong>Ropa de bebé sin conocer el estilo:</strong> He estado en muchas casas donde hay pilas de ropa que nunca se usó porque no era el estilo de los papás.</p>
+
+        <p><strong>Productos básicos que ya tienen:</strong> Después de tantas visitas a hogares, he visto que la mayoría ya tiene muy claro qué pañales, qué biberones, qué marca de productos quieren usar.</p>
+
+        <p><strong>Decoración genérica:</strong> Los cuartos de bebé suelen tener un tema específico que los papás han planeado cuidadosamente.</p>
+
+        <h4>Lo que sí funciona siempre</h4>
+
+        <p><strong>Experiencias únicas:</strong> Algo que no pueden comprar ellos mismos fácilmente, como una sesión profesional de belly painting.</p>
+
+        <p><strong>Herramientas para crear recuerdos:</strong> Kits para hacer belly painting en casa, diarios bonitos, álbumes especiales.</p>
+
+        <p><strong>Soluciones a problemas reales:</strong> Como el kit de seguridad que van a necesitar pero que probablemente no han comprado.</p>
+
+        <h3>Mi Recomendación Final</h3>
+
+        <p>Si tuviera que elegir solo un regalo para una embarazada, sería definitivamente algo relacionado con belly painting. No porque sea mi especialidad, sino porque en todos estos años he visto el impacto real que tiene en las familias.</p>
+
+        <h4>Por qué el belly painting gana siempre</h4>
+
+        <p>He visto regalos caros que terminan guardados y olvidados. Pero nunca he visto una familia que no haya valorado profundamente su experiencia de belly painting.</p>
+
+        <p>Es arte, es conexión familiar, es celebración del cuerpo durante el embarazo, es preparación emocional para la llegada del bebé. Todo en uno.</p>
+
+        <h4>Las opciones que ofrezco</h4>
+
+        <p><strong>Kit completo para casa:</strong> Para familias que aman hacer cosas juntas y quieren la experiencia varias veces durante el embarazo.</p>
+
+        <p><strong>Sesión profesional:</strong> Para ocasiones súper especiales donde quieren resultados de galería.</p>
+
+        <p><strong>Kits para baby shower:</strong> Para celebraciones que quieren ser completamente diferentes y memorables.</p>
+
+        <h3>Cómo Elegir la Mejor Opción</h3>
+
+        <h4>Pregúntate esto antes de decidir</h4>
+
+        <ul>
+          <li>¿Es una familia que ama hacer actividades juntas? El kit para casa es perfecto.</li>
+          <li>¿Quieren algo súper especial sin complicaciones? La sesión profesional.</li>
+          <li>¿Van a tener baby shower? La experiencia grupal puede ser increíble.</li>
+          <li>¿Prefieren cosas íntimas y privadas? Un kit sencillo con un diario bonito.</li>
+        </ul>
+
+        <h4>Mi proceso de consulta</h4>
+
+        <p>Siempre ofrezco una consulta rápida por WhatsApp para ayudar a elegir la mejor opción. Pregunto sobre la personalidad de la mamá, en qué trimestre está, si es primer bebé o no, qué tipo de celebraciones les gustan.</p>
+
+        <p>Con esa información, puedo recomendar exactamente qué va a funcionar mejor para esa familia específica.</p>
+
+        <h3>Conclusión</h3>
+
+        <p>Después de años trabajando con futuras mamás, he aprendido que los mejores regalos no son necesariamente los más caros, sino los que crean momentos especiales y recuerdos duraderos.</p>
+
+        <p>El belly painting cambió mi vida porque me permitió ser parte de momentos súper íntimos y significativos de las familias. Y si puedo ayudar a más personas a vivir esas experiencias a través de mis kits, sesiones o consejos, me siento completamente realizada.</p>
+
+        <p><strong>¿Quieres saber más sobre alguna de estas opciones? Escríbeme y te ayudo a elegir el regalo perfecto para esa futura mamá especial.</strong></p>
+
+        <p><strong>Contacto:</strong></p>
+        <ul>
+          <li>WhatsApp: +57 316 816 1717</li>
+          <li>Instagram: @croko_maquillaje_embarazada</li>
+        </ul>
+      `
     }
   ]
 }

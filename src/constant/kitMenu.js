@@ -9,6 +9,11 @@ export const KITMENUITEMS = [
       type: 'sub',
       children: [
          {
+            title: 'Qué Regalarle a una Embarazada',
+            type: 'link',
+            path: '/blog/que-regalar-embarazada-ideas-significativas'
+         },
+         {
             title: '5 Actividades para Baby Shower Inolvidables',
             type: 'link',
             path: '/blog/actividades-baby-shower-emotivas-inolvidables'
