@@ -25,11 +25,11 @@ module.exports = {
           title: '¿CUÁNTO DURA LA SESIÓN?'
       },
       {
-          text: `Utilizo pinturas inocuas corporales especializadas, fabricadas con ingredientes
-                 vegetales, ceras y minerales de alta pureza, hipoalergénicas, sin perfume,
-                 con certificación Ecocert y que no son tóxicas para tu bebé. Al ser productos
-                 a base de agua son muy fáciles de remover, aplicando suavemente jabón y agua,
-                 mientras te duchas o también puedes utilizar toallitas húmedas.`,
+          text: `Utilizo pinturas de uso cosmético corporal especializadas, fabricadas con
+                 ingredientes vegetales, ceras y minerales de alta pureza, sin perfume,
+                 con certificación Ecocert. Al ser productos a base de agua son muy fáciles
+                 de remover, aplicando suavemente jabón y agua, mientras te duchas o también
+                 puedes utilizar toallitas húmedas.`,
           title: '¿QUÉ MATERIALES SE UTILIZAN PARA LA SESIÓN DE MAQUILLAJE PRENATAL?'
       },
       {
@@ -65,17 +65,16 @@ module.exports = {
   ],
   KitAccordionData:[
     {
-        text: `El maquillaje prenatal es considerado una terapia alternativa sensorial muy
-               positiva,tanto para la mamá como para el bebé, además de fortalecer y crear
-               vínculos afectivos, ya que al dibujar la barriguita la mamá siente mucho placer,
-               se relaja y su bebé comienza a moverse al compás de las caricias del pincel,
-               conectando directamente con su mamá y con las personas que participan
-               de la sesión.`,
+        text: `El belly painting es una actividad artística que permite a la familia conectar
+               de manera especial durante el embarazo. Al dibujar la barriguita se crean
+               momentos especiales y se fortalecen vínculos afectivos, ya que la mamá y las
+               personas que participan de la sesión pueden disfrutar juntos de este momento
+               único mientras el bebé se mueve al compás de las caricias del pincel.`,
         title: '¿El maquillaje prenatal estimula al bebé?'
     },
     {
-        text: `No, el kit incluye pinturas corporales especiales, totalmente inocuas,
-               hipoalergénicas, permiten que la piel respire y desaparecen con agua y
+        text: `No, el kit incluye pinturas de uso cosmético corporal, aptas para maquillaje
+               artístico en piel, permiten que la piel respire y desaparecen con agua y
                jabón fácilmente.`,
         title: '¿El maquillaje es tóxico para el bebé?'
     },
@@ -85,9 +84,9 @@ module.exports = {
                el embarazo, las mamás necesitan estar acompañadas por sus parejas y familiares,
                ademas de mas ser mimadas y cuidadas que nunca, por tal razón el kit de maquillaje
                prenatal es un regalo adecuado para baby shower, descubrimiento de género del
-               bebé o simplemente como una terapia de relajación para la embarazada, ya que tanto
-               la madre como el bebé reciben atención por parte de su familia mientras son
-               pintadas.`,
+               bebé o simplemente como una actividad especial para crear momentos únicos en familia,
+               ya que tanto la madre como el bebé reciben atención por parte de su familia mientras
+               son pintadas.`,
         title: '¿Qué regalar a las parejas embarazadas?'
     },
     {
