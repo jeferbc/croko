@@ -54,20 +54,20 @@ const BaseCSS = ({ css = "*{box-sizing:border-box}body{margin:0;font-family:var(
 );
 
 export const metadata = {
-  title: 'Maquillajes embarazadas Medellín | Croko',
-  description: 'Maquilla tu barriguita profesionalmente y disfruta de un momento memorable en familia, además de estimular tu bebé. Domicilio en Medellín',
-  keywords: 'Maquillaje embarazadas, maquillaje prenatal, maquillaje barriga, maquillaje barriguita, maquillaje estomago, pinta barrigas, pinta embarazadas, maquillaje corporal prenatal Medellín, maquillaje para embarazadas, maquillaje de embarazo, belly painting en Medellín',
+  title: 'Barriguitas Pintadas y Belly Painting Embarazadas Colombia | Croko 2025',
+  description: 'Pinta tu barriga de embarazada con Croko. Servicio profesional en Medellín o Kit DIY para toda Colombia. Plantillas, pinturas seguras y tutoriales. Crea recuerdos inolvidables en familia',
+  keywords: 'Barriguitas pintadas, belly painting Colombia, maquillaje embarazadas, kit maquillaje prenatal, pintar barriga embarazada, body paint embarazadas, plantillas barriga, maquillaje corporal prenatal, belly painting Medellín, maquillaje para embarazadas',
   openGraph: {
     url: 'https://www.maquillajeembarazadas.com',
     type: 'website',
-    title: 'Maquillajes embarazadas Medellín | Croko',
-    description: 'Maquilla tu barriguita profesionalmente y disfruta de un momento memorable en familia, además de estimular tu bebé. Domicilio en Medellín',
+    title: 'Barriguitas Pintadas y Belly Painting Embarazadas Colombia | Croko',
+    description: 'Pinta tu barriga de embarazada con Croko. Servicio profesional en Medellín o Kit DIY para toda Colombia. Plantillas, pinturas seguras y tutoriales.',
     images: ['https://ik.imagekit.io/ge17f66b4ma/download__2__wAfXfpmcS.jpeg'],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Maquillajes embarazadas Medellín | Croko',
-    description: 'Maquilla tu barriguita profesionalmente y disfruta de un momento memorable en familia, además de estimular tu bebé. Domicilio en Medellín',
+    title: 'Barriguitas Pintadas y Belly Painting Embarazadas Colombia | Croko',
+    description: 'Pinta tu barriga de embarazada con Croko. Servicio profesional en Medellín o Kit DIY para toda Colombia. Plantillas, pinturas seguras y tutoriales.',
     images: ['https://ik.imagekit.io/ge17f66b4ma/download__2__wAfXfpmcS.jpeg'],
   },
 };
@@ -80,6 +80,65 @@ export default function RootLayout({ children }) {
         <meta name="generator" content="mdx-docs" />
         <link rel="icon" href="/assets/images/logo/favicon.png" type="image/x-icon" />
         <link rel="shortcut icon" href="/assets/images/logo/favicon.png" type="image/x-icon" />
+
+        {/* Organization Schema with Both Services */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Organization",
+              "name": "Croko Maquillaje Embarazadas",
+              "url": "https://www.maquillajeembarazadas.com",
+              "logo": "https://ik.imagekit.io/ge17f66b4ma/download__2__wAfXfpmcS.jpeg",
+              "description": "Belly painting y maquillaje prenatal para embarazadas en Colombia. Servicio profesional en Medellín y Kit DIY para toda Colombia.",
+              "contactPoint": {
+                "@type": "ContactPoint",
+                "telephone": "+573168161717",
+                "contactType": "Customer Service",
+                "areaServed": "CO",
+                "availableLanguage": "Spanish"
+              },
+              "sameAs": [
+                "https://www.instagram.com/croko_maquillaje_embarazada"
+              ],
+              "hasOfferCatalog": {
+                "@type": "OfferCatalog",
+                "name": "Servicios Croko",
+                "itemListElement": [
+                  {
+                    "@type": "Offer",
+                    "itemOffered": {
+                      "@type": "Service",
+                      "name": "Belly Painting Profesional a Domicilio",
+                      "description": "Sesión profesional de maquillaje prenatal en tu casa con artista especializada en Medellín",
+                      "areaServed": {
+                        "@type": "City",
+                        "name": "Medellín"
+                      },
+                      "provider": {
+                        "@type": "Person",
+                        "name": "Carolina Rincón"
+                      }
+                    }
+                  },
+                  {
+                    "@type": "Offer",
+                    "itemOffered": {
+                      "@type": "Product",
+                      "name": "Kit Maquillaje Prenatal DIY",
+                      "description": "Kit completo para pintar barriga de embarazada en casa con familia. Incluye pinturas, plantillas y tutoriales",
+                      "areaServed": {
+                        "@type": "Country",
+                        "name": "Colombia"
+                      }
+                    }
+                  }
+                ]
+              }
+            })
+          }}
+        />
 
         {/* Preload critical CSS files */}
         <link rel="preload" href="/_next/static/css/5fbd7e61fcc58b24.css" as="style" />

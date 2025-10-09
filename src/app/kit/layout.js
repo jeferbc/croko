@@ -1,12 +1,12 @@
 export const metadata = {
-  title: 'Kit maquillaje de embarazadas | Croko',
-  description: 'Celebra el embarazo en familia maquillando tu barriguita. Esta actividad familiar permite crear momentos especiales y fortalecer vínculos afectivos mientras celebran el embarazo juntos',
-  keywords: 'Maquillaje embarazadas,Maquillaje embarazadas en familia, Maquillaje embarazadas en casa, automaquillaje embarazadas, Maquillaje embarazadas en pareja, maquillaje prenatal en familia, Maquillaje estimulante para embarazadas, estimulación prenatal, maquillaje barriga con amigos, maquillaje barriguita, maquillaje estomago, Body art para embarazadas en casa, pinta barrigas, pinta embarazadas, maquillaje corporal prenatal, maquillaje para embarazadas, maquillaje de embarazo, belly painting',
+  title: 'Kit Body Paint Para Embarazadas: Todo Para Pintar Tu Barriga en Casa | Croko',
+  description: '¿Quieres pintar tu panza de embarazada en familia? Kit completo con pinturas hipoalergénicas, 3 plantillas, pinceles y tutorial. Envío gratis Colombia',
+  keywords: 'Kit maquillaje embarazadas, body paint para embarazadas, kit pintar barriga, maquillaje para panza embarazada, pinturas para embarazadas, plantillas barriga embarazada, kit belly painting, maquillaje prenatal casa, pintar barriga embarazada, maquillaje corporal embarazadas',
   openGraph: {
     url: 'https://www.maquillajeembarazadas.com/kit',
-    type: 'website',
-    title: 'Kit maquillaje de embarazadas | Croko',
-    description: 'Celebra el embarazo en familia maquillando tu barriguita. Esta actividad familiar permite crear momentos especiales y fortalecer vínculos afectivos mientras celebran el embarazo juntos',
+    type: 'product',
+    title: 'Kit Body Paint Para Embarazadas: Todo Para Pintar Tu Barriga en Casa | Croko',
+    description: 'Kit completo con pinturas hipoalergénicas, 3 plantillas, pinceles y tutorial. Envío gratis Colombia',
     images: [
       {
         url: 'https://ik.imagekit.io/ge17f66b4ma/download__2__wAfXfpmcS.jpeg',
@@ -15,13 +15,13 @@ export const metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Kit maquillaje de embarazadas | Croko',
-    description: 'Celebra el embarazo en familia maquillando tu barriguita. Esta actividad familiar permite crear momentos especiales y fortalecer vínculos afectivos mientras celebran el embarazo juntos',
+    title: 'Kit Body Paint Para Embarazadas: Todo Para Pintar Tu Barriga en Casa | Croko',
+    description: 'Kit completo con pinturas hipoalergénicas, 3 plantillas, pinceles y tutorial. Envío gratis Colombia',
     images: ['https://ik.imagekit.io/ge17f66b4ma/download__2__wAfXfpmcS.jpeg'],
   },
   other: {
-    'itemProp:name': 'Kit maquillaje de embarazadas | Croko',
-    'itemProp:description': 'Celebra el embarazo en familia maquillando tu barriguita. Esta actividad familiar permite crear momentos especiales y fortalecer vínculos afectivos mientras celebran el embarazo juntos',
+    'itemProp:name': 'Kit Body Paint Para Embarazadas | Croko',
+    'itemProp:description': 'Kit completo para pintar barriga de embarazada en casa. Incluye pinturas hipoalergénicas, 3 plantillas, pinceles y tutoriales paso a paso',
     'itemProp:image': 'https://ik.imagekit.io/ge17f66b4ma/download__2__wAfXfpmcS.jpeg',
   },
 };

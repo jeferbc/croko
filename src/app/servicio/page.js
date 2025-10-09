@@ -1,17 +1,14 @@
-"use client"
+'use client'
 import React from 'react'
 import dynamic from 'next/dynamic'
 
 // import Custom Components
-import ServiceRouter from '@/containers/common/service-router'
+import HeaderSection from '@/containers/wedding/header'
 import GallerySection from '@/containers/portfolio/full-width-3-grid'
 import AboutSection from '@/containers/wedding/about'
+import PricingSection from '@/containers/elements/price/elementPrice2'
 
 // Dynamic imports for below-the-fold components
-const BlogSection = dynamic(() => import('@/containers/wedding/blog'), {
-    loading: () => <div style={{ minHeight: '400px' }} />
-})
-
 const PopularPosts = dynamic(() => import('@/containers/blog/posts'), {
     loading: () => <div style={{ minHeight: '500px' }} />
 })
@@ -20,15 +17,15 @@ const AccordionElementSection = dynamic(() => import('@/containers/elements/acco
     loading: () => <div style={{ minHeight: '300px' }} />
 })
 
-export default function Home() {
-  return (
-    <>
-      <ServiceRouter />
-      <GallerySection />
-      <AboutSection />
-      <BlogSection />
-      <PopularPosts />
-      <AccordionElementSection />
-    </>
-  )
+export default function Servicio() {
+    return (
+        <>
+            <HeaderSection />
+            <GallerySection />
+            <PricingSection />
+            <AboutSection />
+            <PopularPosts />
+            <AccordionElementSection />
+        </>
+    )
 }
