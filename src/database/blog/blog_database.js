@@ -6,7 +6,7 @@ module.exports = {
       slug: 'baby-showers-colombia-actividades-regalos-croko',
       image: 'https://ik.imagekit.io/ge17f66b4ma/Baby%20Shower_4d2F8xU7b.webp?updatedAt=1757785105715',
       description: 'Descubre cómo se viven los baby showers en Colombia con actividades llenas de amor, regalos especiales y productos Croko.',
-      date: '20 de octubre de 2024',
+      date: '02 de octubre de 2025',
       author: 'Carolina Rincón',
       content: `
         <p>Un baby shower en Colombia es mucho más que una reunión; es un abrazo colectivo, un momento lleno de risas, sueños y amor por ese bebito que está por llegar. En Croko, sabemos lo especial que es esta celebración, y queremos compartir contigo cómo se vive un baby shower en nuestro país, qué juegos hacen que todos se conecten, qué regalos hacen suspirar a las futuras mamás, y cómo nosotros ponemos un pedacito de magia en cada instante. Si estás planeando una fiesta o simplemente quieres soñar con la tuya, ¡acompáñanos en este viaje lleno de emoción!</p>

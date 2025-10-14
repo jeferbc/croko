@@ -54,20 +54,20 @@ const BaseCSS = ({ css = "*{box-sizing:border-box}body{margin:0;font-family:var(
 );
 
 export const metadata = {
-  title: 'Maquillajes embarazadas Medellín | Croko',
-  description: 'Maquilla tu barriguita profesionalmente y disfruta de un momento memorable en familia, además de estimular tu bebé. Domicilio en Medellín',
-  keywords: 'Maquillaje embarazadas, maquillaje prenatal, maquillaje barriga, maquillaje barriguita, maquillaje estomago, pinta barrigas, pinta embarazadas, maquillaje corporal prenatal Medellín, maquillaje para embarazadas, maquillaje de embarazo, belly painting en Medellín',
+  title: 'Belly Painting Embarazadas Medellín: Artista Profesional a Domicilio | Croko',
+  description: '¿Buscas pintar tu barriga de embarazada en Medellín? Artista profesional va a tu casa con pinturas hipoalergenicas seguras. Crea recuerdos inolvidables con tu familia. Domicilios disponibles',
+  keywords: 'Barriguitas pintadas, belly painting Colombia, maquillaje embarazadas, maquillaje prenatal Medellin, pintar barriga embarazada, body paint embarazadas, maquillaje corporal prenatal, belly painting Medellín, maquillaje para embarazadas, artista belly painting',
   openGraph: {
     url: 'https://www.maquillajeembarazadas.com',
     type: 'website',
-    title: 'Maquillajes embarazadas Medellín | Croko',
-    description: 'Maquilla tu barriguita profesionalmente y disfruta de un momento memorable en familia, además de estimular tu bebé. Domicilio en Medellín',
+    title: 'Belly Painting Embarazadas Medellín: Artista Profesional a Domicilio | Croko',
+    description: 'Artista profesional va a tu casa en Medellin para pintar tu barriga con pinturas hipoalergenicas seguras. Crea recuerdos inolvidables con tu familia',
     images: ['https://ik.imagekit.io/ge17f66b4ma/download__2__wAfXfpmcS.jpeg'],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Maquillajes embarazadas Medellín | Croko',
-    description: 'Maquilla tu barriguita profesionalmente y disfruta de un momento memorable en familia, además de estimular tu bebé. Domicilio en Medellín',
+    title: 'Belly Painting Embarazadas Medellín: Artista Profesional a Domicilio | Croko',
+    description: 'Artista profesional va a tu casa en Medellin para pintar tu barriga con pinturas seguras. Crea recuerdos inolvidables',
     images: ['https://ik.imagekit.io/ge17f66b4ma/download__2__wAfXfpmcS.jpeg'],
   },
 };

@@ -24,8 +24,6 @@ module.exports = (phase) => {
     compiler: {
       removeConsole: isProd,
     },
-    // Enable CSS optimization
-    optimizeFonts: true,
     // Compress output
     compress: true,
     // Production optimizations
@@ -40,7 +38,5 @@ module.exports = (phase) => {
         },
       },
     },
-    // Enable SWC minification for faster builds
-    swcMinify: true,
   };
 };
