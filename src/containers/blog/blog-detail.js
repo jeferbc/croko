@@ -2,6 +2,7 @@
 import React, { useEffect, useState } from 'react'
 import { Container, Row, Col } from 'reactstrap'
 import IKImage from '@/components/IKImage'
+import BellyPaintingCrossSell from '@/components/BellyPaintingCrossSell'
 
 const BlogDetail = ({ post }) => {
     const [isDesktop, setIsDesktop] = useState(true)
@@ -117,6 +118,11 @@ const BlogDetail = ({ post }) => {
                                     margin-bottom: 15px;
                                 }
                             `}</style>
+
+                            {/* Belly Painting Cross-Sell Component - Only for makeup article */}
+                            {post.slug === 'maquillaje-para-embarazadas' && (
+                                <BellyPaintingCrossSell />
+                            )}
 
                             <div className="blog-divider" style={{ height: '1px', backgroundColor: '#e0e0e0', margin: '40px 0' }}></div>
                             

@@ -759,6 +759,171 @@ module.exports = {
           <li>Instagram: @croko_maquillaje_embarazada</li>
         </ul>
       `
+    },
+    {
+      id: 'maquillaje-para-embarazadas',
+      title: 'Maquillaje Seguro Para Embarazadas: Guía Completa 2025',
+      slug: 'maquillaje-para-embarazadas',
+      image: 'https://ik.imagekit.io/ge17f66b4ma/maquillaje_seguro_JvfI7NhUL.jpeg?updatedAt=1762875465512',
+      description: 'Descubre qué productos de maquillaje son seguros durante el embarazo, ingredientes a evitar y alternativas hipoalergénicas. Guía completa para cuidar tu belleza prenatal.',
+      date: '15 de enero de 2025',
+      author: 'Carolina Rincón',
+      content: `
+        <p>Durante el embarazo, tu cuerpo experimenta muchos cambios, y es natural que quieras seguir cuidando tu apariencia y sintiéndote hermosa. La buena noticia es que usar maquillaje durante el embarazo es generalmente seguro, pero hay ciertos ingredientes que debes evitar.</p>
+
+        <p>En esta guía completa, te explicamos todo lo que necesitas saber sobre el maquillaje prenatal: ingredientes seguros, qué evitar, y las mejores alternativas hipoalergénicas para cada tipo de producto.</p>
+
+        <h3>Ingredientes de Maquillaje que Debes Evitar Durante el Embarazo</h3>
+
+        <h4>1. Retinol y Derivados de Vitamina A</h4>
+        <p><strong>Se encuentra en:</strong> Bases anti-edad, labiales, correctores</p>
+
+        <p>El retinol (también conocido como retinyl palmitate, retinyl acetate, retinoic acid y tretinoin) se usa comúnmente en productos anti-edad. Estudios han relacionado altas dosis de vitamina A con malformaciones fetales y abortos espontáneos en el primer trimestre.</p>
+
+        <p><strong>Recomendación:</strong> Evitar completamente</p>
+
+        <h4>2. Parabenos</h4>
+        <p><strong>Se encuentra en:</strong> Bases, labiales, máscaras</p>
+
+        <p>Los parabenos (propylparaben, butylparaben, isopropylparaben, methylparabens) se usan para preservar productos y evitar bacterias. Se han asociado con disrupciones endocrinas, problemas reproductivos y del desarrollo neurológico en bebés.</p>
+
+        <p><strong>Recomendación:</strong> Evitar siempre que sea posible</p>
+
+        <h4>3. Ácido Salicílico en Altas Concentraciones</h4>
+        <p><strong>Se encuentra en:</strong> Bases para piel grasa, correctores para acné</p>
+
+        <p>El ácido salicílico en dosis altas (como peelings) debe evitarse durante el embarazo. Sin embargo, el Colegio Americano de Obstetras y Ginecólogos (ACOG) indica que productos tópicos con menos del 2% de concentración son seguros.</p>
+
+        <p><strong>Recomendación:</strong> Usar solo productos con menos de 2%</p>
+
+        <h4>4. Filtros Químicos de Protección Solar</h4>
+        <p><strong>Se encuentra en:</strong> Bases con SPF, BB creams, CC creams</p>
+
+        <p>Ingredientes como oxibenzona, octinoxato, octisalato, homosalato y avobenzona son disruptores endocrinos y pueden afectar el desarrollo fetal. Prefiere filtros minerales como óxido de zinc y dióxido de titanio.</p>
+
+        <p><strong>Recomendación:</strong> Cambiar a filtros minerales</p>
+
+        <h4>5. Ftalatos y Formaldehído</h4>
+        <p><strong>Se encuentra en:</strong> Esmaltes de uñas, labiales de larga duración</p>
+
+        <p>Los ftalatos y el formaldehído se usan para aumentar la durabilidad de productos. Ambos se han relacionado con problemas del desarrollo, bajo peso al nacer y complicaciones en el embarazo.</p>
+
+        <p><strong>Recomendación:</strong> Evitar completamente</p>
+
+        <h3>Ingredientes Seguros Durante el Embarazo</h3>
+
+        <h4>Ingredientes naturales seguros:</h4>
+        <ul>
+          <li>Minerales naturales (micas, óxido de hierro, óxido de zinc)</li>
+          <li>Aceites naturales (jojoba, almendras, coco, argán)</li>
+          <li>Vitamina E - antioxidante natural seguro</li>
+          <li>Manteca de karité - hidratante y suavizante</li>
+          <li>Glicerina vegetal - humectante natural</li>
+          <li>Ácido hialurónico - hidratación profunda</li>
+        </ul>
+
+        <h4>Ingredientes aprobados por ACOG para tratar acné en el embarazo:</h4>
+        <ul>
+          <li>Ácido glicólico - Exfoliación suave</li>
+          <li>Ácido azelaico - Anti-inflamatorio</li>
+          <li>Peróxido de benzoilo tópico - Antibacterial (en bajas concentraciones)</li>
+          <li>Vitamina C (ácido ascórbico) - Antioxidante y luminosidad</li>
+        </ul>
+
+        <h3>Tipos de Maquillaje Seguro Para Embarazadas</h3>
+
+        <h4>Base de Maquillaje / BB Cream</h4>
+        <p><strong>Busca:</strong></p>
+        <ul>
+          <li>Fórmulas minerales (Bare Minerals es una excelente opción)</li>
+          <li>Hipoalergénicas y no comedogénicas</li>
+          <li>Con protección solar mineral (zinc oxide)</li>
+          <li>Libres de parabenos, retinol y fragancias artificiales</li>
+          <li>Con ingredientes como escualeno, vitamina E y aceite de coco</li>
+        </ul>
+
+        <p><strong>Tip:</strong> Durante el embarazo tu piel puede volverse más sensible. Las bases minerales son ideales porque contienen solo 5 ingredientes naturales y ofrecen SPF 15 de protección.</p>
+
+        <h4>Máscara de Pestañas</h4>
+        <p><strong>Busca:</strong></p>
+        <ul>
+          <li>Sin parabenos ni formaldehído</li>
+          <li>Hipoalergénica (importante si desarrollas sensibilidad ocular)</li>
+          <li>Fórmulas a base de agua o ceras naturales</li>
+          <li>Marcas como Almay o Physician's Formula</li>
+        </ul>
+
+        <h4>Labial / Lip Balm</h4>
+        <p><strong>Busca:</strong></p>
+        <ul>
+          <li>Sin parabenos, plomo ni retinol</li>
+          <li>Ingredientes naturales: manteca de karité, aceite de jojoba, vitamina E</li>
+          <li>Hipoalergénico y libre de fragancias</li>
+        </ul>
+
+        <p><strong>Importante:</strong> Evita labiales "anti-edad" que suelen contener retinol. Los labiales se ingieren parcialmente, por lo que los ingredientes naturales son especialmente importantes.</p>
+
+        <h3>Marcas de Maquillaje Hipoalergénico Recomendadas</h3>
+
+        <p>Estas marcas son conocidas por sus fórmulas limpias, hipoalergénicas y seguras para embarazadas:</p>
+
+        <ul>
+          <li><strong>Bare Minerals:</strong> Pionera en maquillaje mineral con solo 5 ingredientes naturales. SPF 15 incluido. Disponible en Amazon.</li>
+          <li><strong>Tower 28:</strong> Certificado por la National Eczema Association. Ideal para piel extra sensible.</li>
+          <li><strong>ILIA Beauty:</strong> Líder en belleza limpia con ingredientes orgánicos y multifuncionales. Disponible en Sephora.</li>
+          <li><strong>Saie:</strong> Ingredientes seguros: escualeno, vitamina E, aceite de coco.</li>
+          <li><strong>Physician's Formula:</strong> Hipoalergénico certificado, revisado por médicos. Opciones veganas. Disponible en Colombia.</li>
+          <li><strong>Almay:</strong> Hipoalergénico desde su fundación. Sin fragancias ni irritantes. Disponible en farmacias.</li>
+          <li><strong>Natura Una:</strong> Línea hipoalergénica con aceites vegetales, disponible en distribuidores Natura y tiendas locales.</li>
+        </ul>
+
+        <p><strong>Nota:</strong> Verifica disponibilidad en tiendas como Sephora Colombia, Falabella, Amazon o tiendas especializadas de belleza natural.</p>
+
+        <h3>Conecta con tu Bebé a Través del Maquillaje Artístico</h3>
+
+        <p>El entusiasmo del embarazo inspira a las futuras mamás a explorar formas únicas de conectar con su bebé. El belly painting (también conocido como "barriguitas pintadas") es una opción creativa y segura para celebrar esta etapa, siempre que se utilicen productos hipoalergénicos diseñados específicamente para piel sensible.</p>
+
+        <p>Con el <strong>Kit Maquillaje Prenatal en Casa de Croko</strong>, por solo 150,000 pesos con envío incluido en Colombia, puedes obtener los:</p>
+
+        <h4>Beneficios del Belly Painting:</h4>
+        <ul>
+          <li><strong>Usar pinturas seguras:</strong> Formuladas para proteger la piel de mamás y bebés.</li>
+          <li><strong>Personalizar diseños:</strong> Crea dibujos únicos con plantillas que reflejan a tu familia o mascotas.</li>
+          <li><strong>Disfrutar en familia:</strong> Comparte momentos significativos con tus seres queridos, fortaleciendo la conexión con tu bebé.</li>
+          <li><strong>Pintar sin experiencia:</strong> Incluye pinceles y tutoriales de video para resultados profesionales.</li>
+        </ul>
+
+        <p>Haz de tu embarazo un lienzo de recuerdos inolvidables. Descubre esta experiencia en <a href="https://www.maquillajeembarazadas.com">maquillajeembarazadas.com</a> o contáctanos por WhatsApp.</p>
+
+        <p><strong>Visita nuestro servicio profesional en Medellín o compra nuestro Kit DIY para toda Colombia.</strong></p>
+
+        <h3>Preguntas Frecuentes Sobre Maquillaje en el Embarazo</h3>
+
+        <h4>¿Es seguro usar maquillaje durante el embarazo?</h4>
+        <p>Sí, es completamente seguro usar maquillaje durante el embarazo siempre y cuando evites ciertos ingredientes específicos como retinol, altas concentraciones de ácido salicílico y parabenos. La mayoría de los productos de maquillaje son seguros cuando se usan tópicamente en cantidades normales.</p>
+
+        <h4>¿Qué ingredientes de maquillaje debo evitar durante el embarazo?</h4>
+        <p>Los principales ingredientes a evitar son: retinol y derivados de vitamina A, ácido salicílico en altas concentraciones (más del 2%), parabenos, ftalatos, formaldehído, y filtros químicos de protección solar (oxibenzona, octinoxato).</p>
+
+        <h4>¿Puedo usar labial durante el embarazo y la lactancia?</h4>
+        <p>Sí, puedes usar labial durante el embarazo y la lactancia sin problema. Solo asegúrate de elegir productos con ingredientes naturales, sin parabenos, sin plomo y preferiblemente hipoalergénicos. Como el labial puede ingerirse parcialmente, es especialmente importante que los ingredientes sean seguros.</p>
+
+        <h4>¿El maquillaje puede afectar al bebé durante el embarazo?</h4>
+        <p>El maquillaje facial usado de manera tópica y en cantidades normales generalmente no afecta al bebé. La piel actúa como una barrera protectora y la mayoría de los ingredientes cosméticos no penetran lo suficiente como para llegar al torrente sanguíneo en cantidades significativas. Sin embargo, ciertos ingredientes como retinoides en altas dosis sí pueden ser problemáticos.</p>
+
+        <h4>¿Por qué mi piel está más sensible durante el embarazo?</h4>
+        <p>Durante el embarazo, los cambios hormonales pueden hacer que tu piel sea más reactiva y sensible. Muchas embarazadas desarrollan acné hormonal, melasma o manchas oscuras, mayor sensibilidad a fragancias y químicos, o piel más seca o más grasa de lo habitual. Por eso es recomendable usar productos hipoalergénicos y formulados para piel sensible.</p>
+
+        <h3>Aviso Médico Importante</h3>
+
+        <p>Esta información es solo con fines educativos y no reemplaza el consejo médico profesional. Siempre consulta con tu médico, ginecólogo o dermatólogo antes de usar cualquier producto durante el embarazo, especialmente si tienes condiciones de piel preexistentes, alergias o embarazo de alto riesgo.</p>
+
+        <p>Cada embarazo es único y lo que funciona para una persona puede no ser adecuado para otra. Tu profesional de la salud puede darte recomendaciones personalizadas basadas en tu historial médico.</p>
+
+        <p><strong>Fuentes consultadas:</strong> American College of Obstetricians and Gynecologists (ACOG), National Eczema Association, estudios publicados en PubMed.</p>
+
+        <p><em>#MaquillajeEmbarazadas #BellezaPrenatal #MaquillajeSeguro #EmbarazoSaludable</em></p>
+      `
     }
   ]
 }
