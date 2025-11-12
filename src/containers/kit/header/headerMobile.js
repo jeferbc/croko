@@ -48,7 +48,7 @@ const HeaderMobile = ({ isKitPage }) => {
                                     {isKitPage ? (
                                         <a className="btn btn-default btn-white purchase-kit w-100" target="_blank" href="https://checkout.wompi.co/l/tIZLKf">Comprar</a>
                                     ) : (
-                                        <Link href='/kit' className="btn btn-default btn-white purchase-kit w-100">Kit de Maquillaje</Link>
+                                        <Link href='/kit-pinta-barriguitas' className="btn btn-default btn-white purchase-kit w-100">Kit de Maquillaje</Link>
                                     )}
                                 </div>
                                 <div className="bottom-0 girl m-t-25">

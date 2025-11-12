@@ -7,7 +7,7 @@ import { KITMENUITEMS } from '@/constant/kitMenu';
 
 const Nav = (props) => {
     const pathname = usePathname()
-    const isKit = props.kit === 'true' || pathname === '/kit'
+    const isKit = props.kit === 'true' || pathname === '/kit-pinta-barriguitas'
     const navItems = isKit ? KITMENUITEMS : MENUITEMS
     const [mainmenu, setMainMenu] = useState(navItems);
     const [sidebar, setSidebar] = useState(false);

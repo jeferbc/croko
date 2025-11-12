@@ -18,7 +18,7 @@ const ActionsStyles = {
 
 const CenterLogoHeader = (props) => {
     const pathname = usePathname()
-    const isKit = props.kit === 'true' || pathname === '/kit'
+    const isKit = props.kit === 'true' || pathname === '/kit-pinta-barriguitas'
     const [sidebar, setSidebar] = useState(false);
 
     const clickSidebar = () => {
@@ -55,7 +55,7 @@ const CenterLogoHeader = (props) => {
                                 <div className="responsive-btn">
                                     <div className="actions" style={ActionsStyles.buttons}>
                                         { !isKit && (
-                                            <Link href='/kit' className={`btn btn-default btn-gradient text-white ${isKit ? 'kit' : 'local'}`} style={ActionsStyles.navButton}>KIT Maquillaje</Link>
+                                            <Link href='/kit-pinta-barriguitas' className={`btn btn-default btn-gradient text-white ${isKit ? 'kit' : 'local'}`} style={ActionsStyles.navButton}>KIT Maquillaje</Link>
                                         )}
                                         <button
                                             className="toggle-nav"

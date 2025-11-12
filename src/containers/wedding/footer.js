@@ -6,7 +6,7 @@ import { Container, Row, Col } from 'reactstrap'
 
 const Footer = (props) => {
     const pathname = usePathname();
-    const isKit = props.kit === 'true' || pathname === '/kit';
+    const isKit = props.kit === 'true' || pathname === '/kit-pinta-barriguitas';
 
     return (
         <footer className="wedding copyright copyright-bg position-relative">

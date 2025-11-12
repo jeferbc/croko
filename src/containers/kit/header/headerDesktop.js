@@ -75,7 +75,7 @@ const HeaderDesktop = ({ isKitPage }) => {
                                         </div>
                                     )}
                                     <div style={ContactButtonStyles.div} className='d-none d-lg-flex mt-2'>
-                                        <Link href='/kit' className="btn btn-default btn-white" style={ContactButtonStyles.a}>
+                                        <Link href='/kit-pinta-barriguitas' className="btn btn-default btn-white" style={ContactButtonStyles.a}>
                                             {isKitPage ? 'Comprar' : 'Kit de Maquillaje'}
                                         </Link>
                                     </div>

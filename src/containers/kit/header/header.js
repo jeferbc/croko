@@ -7,7 +7,7 @@ import HeaderMobile from './headerMobile';
 const Header = () => {
   const [isMobile, setIsMobile] = useState(false);
   const pathname = usePathname();
-  const isKitPage = pathname === '/kit';
+  const isKitPage = pathname === '/kit-pinta-barriguitas';
 
   useEffect(() => {
     let resizeTimeout;

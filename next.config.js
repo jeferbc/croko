@@ -38,5 +38,15 @@ module.exports = (phase) => {
         },
       },
     },
+    // Redirects for SEO-friendly URL changes
+    async redirects() {
+      return [
+        {
+          source: '/kit',
+          destination: '/kit-pinta-barriguitas',
+          permanent: true, // 301 redirect
+        },
+      ];
+    },
   };
 };

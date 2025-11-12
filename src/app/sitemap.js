@@ -12,7 +12,7 @@ export default function sitemap() {
       priority: 1.0,
     },
     {
-      url: `${baseUrl}/kit`,
+      url: `${baseUrl}/kit-pinta-barriguitas`,
       lastModified: new Date(),
       changeFrequency: 'weekly',
       priority: 0.9,
