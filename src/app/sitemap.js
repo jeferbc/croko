@@ -48,7 +48,7 @@ export default function sitemap() {
 
     return {
       url: `${baseUrl}/blog/${post.slug}`,
-      lastModified: new Date(post.date || new Date()),
+      lastModified: new Date(post.date), // Now in ISO format: YYYY-MM-DD
       changeFrequency: 'monthly',
       priority: 0.7,
     }

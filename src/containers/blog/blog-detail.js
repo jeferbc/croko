@@ -58,7 +58,11 @@ const BlogDetail = ({ post }) => {
                                 <div className="post-meta d-flex justify-content-center align-items-center gap-3" style={{ color: '#666', fontSize: '14px' }}>
                                     <span className="post-date">
                                         <i className="fa fa-calendar me-2"></i>
-                                        {post.date}
+                                        {new Date(post.date).toLocaleDateString('es-CO', {
+                                            year: 'numeric',
+                                            month: 'long',
+                                            day: 'numeric'
+                                        })}
                                     </span>
                                     <span>•</span>
                                     <span className="post-author">

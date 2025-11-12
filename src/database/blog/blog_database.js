@@ -6,7 +6,7 @@ module.exports = {
       slug: 'baby-showers-colombia-actividades-regalos-croko',
       image: 'https://ik.imagekit.io/ge17f66b4ma/Baby%20Shower_4d2F8xU7b.webp?updatedAt=1757785105715',
       description: 'Descubre cómo se viven los baby showers en Colombia con actividades llenas de amor, regalos especiales y productos Croko.',
-      date: '02 de octubre de 2025',
+      date: '2025-10-02',
       author: 'Carolina Rincón',
       content: `
         <p>Un baby shower en Colombia es mucho más que una reunión; es un abrazo colectivo, un momento lleno de risas, sueños y amor por ese bebito que está por llegar. En Croko, sabemos lo especial que es esta celebración, y queremos compartir contigo cómo se vive un baby shower en nuestro país, qué juegos hacen que todos se conecten, qué regalos hacen suspirar a las futuras mamás, y cómo nosotros ponemos un pedacito de magia en cada instante. Si estás planeando una fiesta o simplemente quieres soñar con la tuya, ¡acompáñanos en este viaje lleno de emoción!</p>
@@ -65,7 +65,7 @@ module.exports = {
       slug: 'kit-maquillaje-prenatal-hermanitos',
       image: 'https://ik.imagekit.io/ge17f66b4ma/Hermanitos_pintando%20(1)_zSIvHSy0K.webp?updatedAt=1757785105897',
       description: 'Descubre cómo el Kit Maquillaje Prenatal fortalece vínculos familiares y prepara a los hermanitos para la llegada del nuevo bebé.',
-      date: '1 de octubre de 2024',
+      date: '2024-10-01',
       author: 'Carolina Rincón',
       content: `
         <p>La dulce espera de un bebé es un viaje transformador, lleno de amor, anticipación y, a veces, una pizca de incertidumbre, especialmente para los más pequeños de la casa. En Croko Maquillaje Embarazadas, hemos sido testigos de la magia que ocurre cuando el arte prenatal se convierte en una experiencia compartida. Y por eso, hemos creado el Kit Maquillaje Prenatal en Casa, una herramienta innovadora diseñada no solo para embellecer tu barriguita, sino para fortalecer el vínculo familiar y preparar el corazón de tus hijos mayores para la llegada de su nuevo hermanito o hermanita.</p>
@@ -110,7 +110,7 @@ module.exports = {
       slug: 'salud-mental-embarazo-croko-tranquilamente',
       image: 'https://ik.imagekit.io/ge17f66b4ma/Salud_mental_embarazo_utI36TAF_d.webp?updatedAt=1757785105686',
       description: 'Un abrazo emocional para mamás: navegando la salud mental durante el embarazo y posparto con amor y apoyo profesional.',
-      date: '25 de octubre de 2024',
+      date: '2024-10-25',
       author: 'Carolina Rincón',
       content: `
         <p>El embarazo es un viaje lleno de colores: momentos de ilusión, sueños que crecen con cada latido, pero también días de dudas, miedos y emociones que suben y bajan como una marea. En Croko, sabemos que ser mamá es abrazar todas esas emociones, y queremos hablar contigo sobre la salud mental en el embarazo, la depresión posparto, y por qué tus sentimientos son tan importantes en esta etapa. Desde nuestra experiencia celebrando la maternidad, y con el apoyo de Tranquilamente, plataforma de psicología en línea, nuestra misión es acompañarte para que este camino sea más ligero y lleno de amor.</p>
@@ -149,7 +149,7 @@ module.exports = {
       slug: 'actividades-baby-shower-emotivas-inolvidables',
       image: 'https://ik.imagekit.io/ge17f66b4ma/regalar%20a%20una%20embarazada_ZjRm7PCTc.png',
       description: 'Descubre 5 actividades emotivas para baby shower que van más allá del entretenimiento y crean momentos inolvidables para toda la familia.',
-      date: '2 de octubre de 2025',
+      date: '2025-10-02',
       author: 'Carolina Rincón',
       content: `
         <p>Cuando pensamos en actividades para baby shower, es fácil quedarse en lo superficial: juegos que entretienen por un momento y se olvidan al día siguiente. Pero ¿qué tal si pudiéramos crear experiencias que realmente toquen el corazón y generen conexiones profundas entre la familia?</p>
@@ -388,7 +388,7 @@ module.exports = {
       slug: 'que-regalar-embarazada-ideas-significativas',
       image: 'https://ik.imagekit.io/ge17f66b4ma/download__8___1___2__B1r-Fxbpk.jpeg?updatedAt=1642474362194',
       description: 'Descubre los mejores regalos para embarazadas que realmente crean recuerdos duraderos. Ideas probadas desde la experiencia de una artista de belly painting.',
-      date: '2 de octubre de 2025',
+      date: '2025-10-02',
       author: 'Carolina Rincón',
       content: `
         <p>Como artista especializada en belly painting, he tenido la oportunidad de acompañar a cientos de familias colombianas en uno de los momentos más especiales de sus vidas. Y créeme, he visto de todo: regalos que terminan olvidados en un cajón y otros que crean recuerdos que duran para siempre.</p>
@@ -601,7 +601,7 @@ module.exports = {
       slug: 'que-regalar-baby-shower-guia-definitiva',
       image: 'https://ik.imagekit.io/ge17f66b4ma/embarazo_WEJtKEmY6.jpg?updatedAt=1759435396906',
       description: 'Descubre cómo elegir el regalo perfecto para un baby shower que realmente marque la diferencia y cree momentos especiales.',
-      date: '2 de octubre de 2025',
+      date: '2025-10-02',
       author: 'Carolina Rincón',
       content: `
         <p>Llegar a un baby shower con el regalo perfecto no debería ser un dolor de cabeza. Sin embargo, muchas veces nos encontramos dando vueltas en centros comerciales sin saber qué elegir, o peor aún, llegando con el mismo regalo que otras tres personas.</p>
@@ -766,7 +766,7 @@ module.exports = {
       slug: 'maquillaje-para-embarazadas',
       image: 'https://ik.imagekit.io/ge17f66b4ma/maquillaje_seguro_JvfI7NhUL.jpeg?updatedAt=1762875465512',
       description: 'Descubre qué productos de maquillaje son seguros durante el embarazo, ingredientes a evitar y alternativas hipoalergénicas. Guía completa para cuidar tu belleza prenatal.',
-      date: '15 de enero de 2025',
+      date: '2025-01-15',
       author: 'Carolina Rincón',
       content: `
         <p>Durante el embarazo, tu cuerpo experimenta muchos cambios, y es natural que quieras seguir cuidando tu apariencia y sintiéndote hermosa. La buena noticia es que usar maquillaje durante el embarazo es generalmente seguro, pero hay ciertos ingredientes que debes evitar.</p>
