@@ -1,28 +1,28 @@
 export const metadata = {
-  title: 'Kit Body Paint Para Embarazadas: Todo Para Pintar Tu Barriga en Casa | Croko',
-  description: 'Kit completo con 15 colores, 3 plantillas, pinceles y tutorial. Pinturas seguras para tu bebe. Envio gratis Colombia',
-  keywords: 'Maquillaje embarazadas,Maquillaje embarazadas en familia, Maquillaje embarazadas en casa, automaquillaje embarazadas, Maquillaje embarazadas en pareja, maquillaje prenatal en familia, Maquillaje estimulante para embarazadas, estimulación prenatal, maquillaje barriga con amigos, maquillaje barriguita, maquillaje estomago, Body art para embarazadas en casa, pinta barrigas, pinta embarazadas, maquillaje corporal prenatal, maquillaje para embarazadas, maquillaje de embarazo, belly painting',
+  title: 'Kit Pintura Barriga Embarazada | Envío Gratis Colombia',
+  description: 'Kit completo para pintar tu barriguita en casa. Incluye plantillas, pinceles y pinturas seguras. Envío gratis a toda Colombia. Ideal para baby shower!',
+  keywords: 'pintura barriga embarazada, kit belly painting, pinturas embarazadas, body paint embarazo, pintar barriguita, envío gratis Colombia, donde comprar pintura para pintar barriga embarazada, pinturas para pintar la barriga, pintura para embarazadas, pinturas para belly painting, pinturas para tripa embarazada',
   openGraph: {
-    url: 'https://www.maquillajeembarazadas.com/kit',
+    url: 'https://www.maquillajeembarazadas.com/kit-pinta-barriguitas',
     type: 'website',
-    title: 'Kit Body Paint Para Embarazadas: Todo Para Pintar Tu Barriga en Casa | Croko',
-    description: 'Kit completo con 15 colores, 3 plantillas, pinceles y tutorial. Pinturas seguras para tu bebe. Envio gratis Colombia',
+    title: 'Kit Pintura Barriga Embarazada | Envío Gratis Colombia',
+    description: 'Kit completo para pintar tu barriguita en casa. Pinturas seguras + plantillas + tutorial. Envío gratis Colombia.',
     images: [
       {
-        url: 'https://ik.imagekit.io/ge17f66b4ma/download__2__wAfXfpmcS.jpeg',
+        url: 'https://ik.imagekit.io/ge17f66b4ma/Kit%20foto%20690x551_2rLNnbXrzh.png',
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Kit Body Paint Para Embarazadas: Todo Para Pintar Tu Barriga en Casa | Croko',
-    description: 'Kit completo con 15 colores, 3 plantillas, pinceles y tutorial. Pinturas seguras. Envio gratis Colombia',
-    images: ['https://ik.imagekit.io/ge17f66b4ma/download__2__wAfXfpmcS.jpeg'],
+    title: 'Kit Pintura Barriga Embarazada | Envío Gratis Colombia',
+    description: 'Kit completo para pintar tu barriguita. Pinturas seguras + plantillas. Envío gratis.',
+    images: ['https://ik.imagekit.io/ge17f66b4ma/Kit%20foto%20690x551_2rLNnbXrzh.png'],
   },
   other: {
-    'itemProp:name': 'Kit Body Paint Para Embarazadas | Croko',
+    'itemProp:name': 'Kit Pintura Barriga Embarazada | Croko',
     'itemProp:description': 'Kit completo para pintar barriga de embarazada en casa. Incluye 15 colores, 3 plantillas, pinceles y tutoriales paso a paso',
-    'itemProp:image': 'https://ik.imagekit.io/ge17f66b4ma/download__2__wAfXfpmcS.jpeg',
+    'itemProp:image': 'https://ik.imagekit.io/ge17f66b4ma/Kit%20foto%20690x551_2rLNnbXrzh.png',
   },
 };
 
