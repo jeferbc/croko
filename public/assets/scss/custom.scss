@@ -104,3 +104,23 @@ h1, h2, h3, h4, h5, h6 {
     list-style: none;
   }
 }
+
+// Fix H1 sizing in wedding/kit headers to match EXACT H2 styling from _style.scss line 4887
+// Copied exact H2 styles: font-size, margin-top, margin-bottom, font-weight, font-family
+.wedding.header {
+  .title {
+    .main-title {
+      h1.gradient-text {
+        font-family: "Poppins", sans-serif !important; // H2 uses Poppins, NOT Alex Brush
+        font-size: calc(20px + (35 - 20) * ((100vw - 300px) / (1920 - 300))) !important;
+        margin-top: -10px !important;
+        margin-bottom: -7px !important;
+        font-weight: 600 !important;
+        // NOT setting line-height to let it inherit from .gradient-text
+      }
+    }
+  }
+}
+
+// Mobile header H1 fix - already matches h1.custom-title from _style.scss line 4877
+// No changes needed, the default .wedding h1.custom-title styles are correct

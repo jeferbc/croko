@@ -30,7 +30,7 @@ const HeaderMobile = ({ isKitPage }) => {
                             <div className="d-flex flex-column justify-content-center align-items-center gap-2" style={{ marginTop: '100px' }}>
                                         <div className="m-t-20 text-center">
                                             <h1 className="custom-title bold text-uppercase">
-                                                {isKitPage ? 'Kit pintabarriguitas para embarazadas' : 'Maquillaje prenatal'}
+                                                {isKitPage ? 'Kit Pinta Barriguitas para Embarazadas' : 'Maquillaje Prenatal'}
                                             </h1>
                                         </div>
                                 <h4 className="header-sub-text text-center m-t-20">

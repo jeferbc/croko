@@ -58,9 +58,9 @@ const HeaderDesktop = ({ isKitPage }) => {
                                 <div className="simple-text">
                                     <div className="title">
                                         <div className="main-title">
-                                            <h2 className="gradient-text">
-                                                {isKitPage ? 'Kit maquillaje para embarazadas' : 'Maquillaje prenatal'}
-                                            </h2>
+                                            <h1 className="gradient-text">
+                                                {isKitPage ? 'Kit Pinta Barriguitas para Embarazadas' : 'Maquillaje Prenatal'}
+                                            </h1>
                                         </div>
                                     </div>
                                     <p className="header-sub-text text-center" style={ContactButtonStyles.p}>
@@ -75,9 +75,15 @@ const HeaderDesktop = ({ isKitPage }) => {
                                         </div>
                                     )}
                                     <div style={ContactButtonStyles.div} className='d-none d-lg-flex mt-2'>
-                                        <Link href='/kit-pinta-barriguitas' className="btn btn-default btn-white" style={ContactButtonStyles.a}>
-                                            {isKitPage ? 'Comprar' : 'Kit de Maquillaje'}
-                                        </Link>
+                                        {isKitPage ? (
+                                            <a className="btn btn-default btn-white purchase-kit" target="_blank" href="https://checkout.wompi.co/l/tIZLKf" style={ContactButtonStyles.a}>
+                                                Comprar
+                                            </a>
+                                        ) : (
+                                            <Link href='/kit-pinta-barriguitas' className="btn btn-default btn-white" style={ContactButtonStyles.a}>
+                                                Kit de Maquillaje
+                                            </Link>
+                                        )}
                                     </div>
                                 </div>
                             </div>
