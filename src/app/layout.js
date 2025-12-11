@@ -45,13 +45,6 @@ const workSans = Work_Sans({
   variable: '--font-work-sans'
 });
 
-const BaseCSS = ({ css = "*{box-sizing:border-box}body{margin:0;font-family:var(--font-poppins),sans-serif}html{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}" }) => (
-  <style
-    dangerouslySetInnerHTML={{
-      __html: css,
-    }}
-  />
-);
 
 export const metadata = {
   title: 'Belly Painting Embarazadas Medellín: Artista Profesional a Domicilio | Croko',
@@ -81,12 +74,6 @@ export default function RootLayout({ children }) {
         <link rel="icon" href="/assets/images/logo/favicon.png" type="image/x-icon" />
         <link rel="shortcut icon" href="/assets/images/logo/favicon.png" type="image/x-icon" />
 
-        {/* Preload critical CSS files */}
-        <link rel="preload" href="/_next/static/css/5fbd7e61fcc58b24.css" as="style" />
-        <link rel="preload" href="/_next/static/css/ae4ed9c503fd1e33.css" as="style" />
-        <link rel="preload" href="/_next/static/css/33be1e8ecbbec124.css" as="style" />
-        <link rel="preload" href="/_next/static/css/bb0a329b8ee67cad.css" as="style" />
-
         {/* Preconnect to external domains for better performance */}
         <link rel="preconnect" href="https://ik.imagekit.io" />
         <link rel="dns-prefetch" href="https://ik.imagekit.io" />
@@ -105,15 +92,6 @@ export default function RootLayout({ children }) {
           href="https://ik.imagekit.io/ge17f66b4ma/tr:q-70,f-webp/countdown-bg_pgiKvb7Cv.png?updatedAt=1758993722284"
           media="(min-width: 992px)"
           fetchPriority="high"
-        />
-
-        <BaseCSS />
-
-        {/* Inline critical CSS hint for faster rendering */}
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `(function(){var d=document;d.documentElement.classList.add('js')})();`,
-          }}
         />
       </head>
       <body className={`try ${poppins.className}`}>

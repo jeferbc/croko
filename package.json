@@ -49,6 +49,14 @@
     "react-popper": {
       "react": "^19.0.0",
       "react-dom": "^19.0.0"
+    },
+    "react-slick": {
+      "react": "^19.0.0",
+      "react-dom": "^19.0.0"
+    },
+    "react-responsive-carousel": {
+      "react": "^19.0.0",
+      "react-dom": "^19.0.0"
     }
   }
 }
