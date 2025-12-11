@@ -34,7 +34,7 @@ module.exports = (phase) => {
         inlineFontCss: true,
         critters: {
           preload: 'swap',
-          pruneSource: true,
+          pruneSource: false, // Changed to false to prevent removing Font Awesome and other icon CSS
         },
       },
     },
