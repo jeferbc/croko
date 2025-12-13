@@ -20,17 +20,6 @@ module.exports = (phase) => {
 
   return {
     env,
-    // Generate unique build ID based on git commit to bust cache on every deploy
-    generateBuildId: async () => {
-      // Use git commit hash as build ID
-      const { execSync } = require('child_process');
-      try {
-        return execSync('git rev-parse HEAD').toString().trim();
-      } catch (e) {
-        // Fallback to timestamp if not in git repo
-        return `${Date.now()}`;
-      }
-    },
     // Optimize CSS loading
     compiler: {
       removeConsole: isProd,
