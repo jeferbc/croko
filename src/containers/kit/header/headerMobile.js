@@ -71,13 +71,14 @@ const HeaderMobile = ({ isKitPage }) => {
                                 </div>
                                 <div className="bottom-0 girl m-t-25">
                                     <img
-                                        src="https://ik.imagekit.io/ge17f66b4ma/header?updatedAt=1765930997534&tr=w-800,q-85,f-webp,c-at_max"
+                                        src="https://ik.imagekit.io/ge17f66b4ma/header?updatedAt=1765930997534&tr=w-600,c-at_max,f-webp,q-85"
                                         alt="Crea recuerdos únicos en familia con belly painting"
-                                        width={800}
-                                        height={800}
+                                        width={600}
+                                        height={600}
                                         className="img-fluid"
                                         id="girl"
                                         loading="eager"
+                                        fetchPriority="high"
                                         style={{ width: '100%', height: 'auto' }}
                                     />
                                 </div>
