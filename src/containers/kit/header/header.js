@@ -14,11 +14,11 @@ const Header = () => {
     const handleResize = () => {
       clearTimeout(resizeTimeout);
       resizeTimeout = setTimeout(() => {
-        setIsMobile(window.innerWidth <= 768);
+        setIsMobile(window.innerWidth < 992);
       }, 150);
     };
 
-    setIsMobile(window.innerWidth <= 768);
+    setIsMobile(window.innerWidth < 992);
     window.addEventListener('resize', handleResize);
 
     return () => {

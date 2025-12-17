@@ -1,0 +1,75 @@
+// Trust Badges Styles
+// Using existing font variables: Montserrat ($font-2) and Roboto ($font-3)
+
+.trust-badges-container {
+    padding: 0;
+
+    &.full-width {
+        background: linear-gradient(90deg, #e6e6fa 0%, #e6f2ff 100%);
+        border-radius: 8px;
+        padding: 20px 15px;
+
+        @media (min-width: 768px) {
+            padding: 20px 30px;
+        }
+    }
+
+    .trust-badges-row {
+        margin: 0;
+    }
+
+    .trust-badge {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        gap: 10px;
+        padding: 0;
+
+        .badge-icon {
+            font-size: 2.5rem;
+            flex-shrink: 0;
+
+            @media (min-width: 992px) {
+                font-size: 3rem;
+            }
+        }
+
+        .badge-content {
+            text-align: left;
+
+            @media (max-width: 991px) {
+                text-align: center;
+            }
+
+            .badge-title {
+                font-family: Montserrat, sans-serif;
+                font-weight: 700;
+                font-size: 0.9rem;
+                color: #333;
+                line-height: 1.2;
+                margin-bottom: 2px;
+
+                @media (min-width: 992px) {
+                    font-size: 1rem;
+                }
+            }
+
+            .badge-subtitle {
+                font-family: Roboto, sans-serif;
+                font-size: 0.8rem;
+                color: #666;
+                line-height: 1.2;
+
+                @media (min-width: 992px) {
+                    font-size: 0.85rem;
+                }
+            }
+        }
+
+        @media (max-width: 991px) {
+            flex-direction: column;
+            gap: 5px;
+        }
+    }
+}

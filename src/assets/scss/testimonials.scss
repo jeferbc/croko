@@ -1,0 +1,132 @@
+// Testimonials Section Styles
+.testimonials-section {
+    background: linear-gradient(135deg, #fff8f0 0%, #ffe8d6 100%);
+
+    .testimonials-heading {
+        font-size: 2rem;
+        color: #333;
+        font-weight: 700;
+
+        @media (max-width: 768px) {
+            font-size: 1.5rem;
+        }
+    }
+
+    .testimonials-subtitle {
+        font-size: 1.1rem;
+        color: #666;
+
+        .trust-badge-inline {
+            background: linear-gradient(135deg, #c0882f 0%, #d4af37 100%);
+            color: white;
+            padding: 8px 20px;
+            border-radius: 25px;
+            display: inline-block;
+            font-weight: 600;
+            box-shadow: 0 4px 12px rgba(192, 136, 47, 0.3);
+        }
+    }
+}
+
+// Video Testimonial
+.video-testimonial-container {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+
+    .video-wrapper {
+        position: relative;
+        width: 100%;
+        padding-bottom: 56.25%; // 16:9 aspect ratio
+        height: 0;
+        overflow: hidden;
+        border-radius: 8px;
+
+        iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
+
+// Testimonial Cards
+.testimonial-card {
+    padding: 25px;
+    border-radius: 12px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+
+    &:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15) !important;
+    }
+
+    .testimonial-rating {
+        .star {
+            font-size: 1.2rem;
+            margin-right: 2px;
+        }
+    }
+
+    .testimonial-text {
+        font-size: 0.95rem;
+        line-height: 1.6;
+        color: #555;
+        font-style: italic;
+        margin: 15px 0;
+        flex-grow: 1;
+    }
+
+    .testimonial-author {
+        margin-top: auto;
+        padding-top: 15px;
+        border-top: 1px solid #eee;
+
+        .author-info {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+
+            .author-image {
+                width: 50px;
+                height: 50px;
+                border-radius: 50%;
+                object-fit: cover;
+            }
+
+            .author-name {
+                font-size: 0.95rem;
+                color: #333;
+
+                .verified-badge {
+                    font-size: 0.8rem;
+                    color: #28a745;
+                    font-weight: 600;
+                }
+            }
+
+            .author-location {
+                font-size: 0.85rem;
+            }
+        }
+    }
+}
+
+// Social Proof CTA
+.social-proof-cta {
+    font-size: 1.2rem;
+    color: #333;
+
+    @media (max-width: 768px) {
+        font-size: 1rem;
+    }
+}
+
+// Shadows utility (if not already defined globally)
+.shadows {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}

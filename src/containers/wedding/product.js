@@ -1,6 +1,8 @@
 import React from 'react';
 import dynamic from 'next/dynamic';
 import {Container,Row,Col} from 'reactstrap'
+import Counter from '@/components/Counter';
+import { TrustBadgesData } from '@/data/trustBadges';
 
 const ProductCarousel = dynamic(() => import('@/containers/elements/productCarousel'), {
     loading: () => <div style={{ minHeight: '551px', backgroundColor: '#f5f5f5' }} />
@@ -50,6 +52,7 @@ const ProductSection = () => (
             </Col>
         </Row>
     </Container>
+    <Counter data={TrustBadgesData} />
   </section>
 )
 

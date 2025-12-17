@@ -39,15 +39,14 @@ const HeaderDesktop = ({ isKitPage }) => {
                     }}
                 >
                 <div className="bottom-0 set-abs girl">
-                    <IKImage
-                        src="/Samy_QLzwZtT-Tg.png?updatedAt=1626907765924"
-                        alt="Maquillaje prenatal"
+                    <img
+                        src="https://ik.imagekit.io/ge17f66b4ma/header?updatedAt=1765930997534&tr=w-714,h-720,q-90,f-webp"
+                        alt="Crea recuerdos únicos en familia con belly painting"
                         width={714}
                         height={720}
                         className="img-fluid"
                         id="girl"
                         loading="eager"
-                        transformation={[{ quality: 85, format: 'webp' }]}
                         style={{ maxWidth: '714px', height: 'auto' }}
                     />
                 </div>
@@ -58,26 +57,35 @@ const HeaderDesktop = ({ isKitPage }) => {
                                 <div className="simple-text">
                                     <div className="title">
                                         <div className="main-title">
-                                            <h1 className="gradient-text">
-                                                {isKitPage ? 'Kit Pinta Barriguitas para Embarazadas' : 'Maquillaje Prenatal'}
+                                            <h1 className="gradient-text" style={isKitPage ? { letterSpacing: '0' } : {}}>
+                                                {isKitPage ? 'Crea recuerdos únicos en familia con tu bebé' : 'Maquillaje Prenatal'}
                                             </h1>
                                         </div>
                                     </div>
                                     <p className="header-sub-text text-center" style={ContactButtonStyles.p}>
                                         {isKitPage
-                                            ? 'Incluye todo lo necesario para pintar tu barriguita en familia. Ideal para regalar en baby shower.'
+                                            ? 'Pinturas seguras + plantillas fáciles + guías paso a paso'
                                             : 'Celebra tu embarazo con arte y disfruta de un momento de relajación, mientras tu bebé es estimulado por el cosquilleo que producen los pinceles.'
                                         }
                                     </p>
+                                    {isKitPage && (
+                                        <div className="header-trust-badges text-center mt-3 mb-3">
+                                            <small className="text-muted">
+                                                <span className="me-3"><i className="fa fa-heart ml-2" style={{ color: '#c0882f' }}></i> +300 familias satisfechas</span>
+                                                <span className="me-3"><i className="fa fa-shield ml-2" style={{ color: '#c0882f' }}></i> Seguro para embarazo</span>
+                                                <span className="me-3"><i className="fa fa-truck ml-2" style={{ color: '#c0882f' }}></i> Envío incluido</span>
+                                            </small>
+                                        </div>
+                                    )}
                                     {!isKitPage && (
                                         <div style={ContactButtonStyles.div}>
                                             <a className="btn btn-default btn-white whatsapp-local" target="_blank" href={"https://wa.me/573168161717?text=Hola, estoy interesado en maquillaje prenatal en Medellín."}>Maquillaje Medellín</a>
                                         </div>
                                     )}
-                                    <div style={ContactButtonStyles.div} className='d-none d-lg-flex mt-2'>
+                                    <div style={{...ContactButtonStyles.div, marginTop: '25px'}} className='d-none d-lg-flex'>
                                         {isKitPage ? (
                                             <a className="btn btn-default btn-white purchase-kit" target="_blank" href="https://checkout.wompi.co/l/tIZLKf" style={ContactButtonStyles.a}>
-                                                Comprar
+                                                Obtener Kit - $150.000
                                             </a>
                                         ) : (
                                             <Link href='/kit-pinta-barriguitas' className="btn btn-default btn-white" style={ContactButtonStyles.a}>

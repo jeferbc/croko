@@ -5,6 +5,8 @@ import dynamic from 'next/dynamic'
 // import Custom Components
 import ProductSection from '@/containers/wedding/product'
 import HeaderSection from '@/containers/kit/header/header'
+import Testimonials from '@/components/Testimonials'
+import StickyCTA from '@/components/StickyCTA'
 
 // Dynamic imports for below-the-fold components
 const ProductVideos = dynamic(() => import('@/containers/wedding/productVideos'), {
@@ -87,9 +89,11 @@ export default function Kit() {
             />
             <HeaderSection />
             <ProductSection />
+            <Testimonials />
             <ProductVideos />
             <PopularPosts />
             <AccordionElementSection kit="true" />
+            <StickyCTA />
         </>
     )
 }
