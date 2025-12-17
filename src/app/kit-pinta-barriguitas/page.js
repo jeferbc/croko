@@ -28,7 +28,7 @@ const productSchema = {
     "name": "Kit Pintura Barriga Embarazada",
     "description": "Kit completo para pintar barriguita de embarazada en casa. Incluye 15 colores, 3 plantillas personalizables, 4 pinceles profesionales y video tutorial.",
     "image": [
-        "https://ik.imagekit.io/ge17f66b4ma/Kit%20foto%20690x551_2rLNnbXrzh.png?tr=w-690,q-90,f-webp"
+        "https://ik.imagekit.io/ge17f66b4ma/Kit%20foto%20690x551_2rLNnbXrzh.png"
     ],
     "brand": {
         "@type": "Brand",

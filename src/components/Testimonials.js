@@ -99,7 +99,6 @@ const Testimonials = () => {
                                                 src={testimonial.image}
                                                 alt={testimonial.name}
                                                 className="author-image"
-                                                loading="lazy"
                                             />
                                         )}
                                         <div>
