@@ -71,9 +71,15 @@ const HeaderDesktop = ({ isKitPage }) => {
                                     {isKitPage && (
                                         <div className="header-trust-badges text-center mt-3 mb-3">
                                             <small className="text-muted">
-                                                <span className="me-3"><i className="fa fa-heart ml-2" style={{ color: '#c0882f' }}></i> +300 familias satisfechas</span>
-                                                <span className="me-3"><i className="fa fa-shield ml-2" style={{ color: '#c0882f' }}></i> Seguro para embarazo</span>
-                                                <span className="me-3"><i className="fa fa-truck ml-2" style={{ color: '#c0882f' }}></i> Envío incluido</span>
+                                                <span className="me-3">
+                                                    <i className="fa fa-clock-o ml-2" style={{ color: '#c0882f' }}></i> Momento ideal: 28-36 semanas
+                                                </span>
+                                                <span className="me-3">
+                                                    <i className="fa fa-heart ml-2" style={{ color: '#c0882f' }}></i> +300 familias felices
+                                                </span>
+                                                <span className="me-3">
+                                                    <i className="fa fa-truck ml-2" style={{ color: '#c0882f' }}></i> Envío gratis
+                                                </span>
                                             </small>
                                         </div>
                                     )}

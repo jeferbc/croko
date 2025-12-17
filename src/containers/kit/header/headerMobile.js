@@ -41,10 +41,16 @@ const HeaderMobile = ({ isKitPage }) => {
                                 </h4>
                                 {isKitPage && (
                                     <div className="header-trust-badges text-center mt-3">
-                                        <small style={{ lineHeight: '1.6', color: '#444', display: 'inline-flex', alignItems: 'center', gap: '16px', flexWrap: 'wrap', justifyContent: 'center' }}>
-                                            <span style={{ display: 'inline-flex', alignItems: 'center', gap: '4px' }}><i className="fa fa-heart" style={{ color: '#c0882f', fontSize: '1rem' }}></i> +300 familias satisfechas</span>
-                                            <span style={{ display: 'inline-flex', alignItems: 'center', gap: '4px' }}><i className="fa fa-shield" style={{ color: '#c0882f', fontSize: '1rem' }}></i> Seguro para embarazo</span>
-                                            <span style={{ display: 'inline-flex', alignItems: 'center', gap: '4px' }}><i className="fa fa-truck" style={{ color: '#c0882f', fontSize: '1rem' }}></i> Envío incluido</span>
+                                        <small style={{ lineHeight: '1.6', color: '#444', display: 'inline-flex', alignItems: 'center', gap: '12px', flexWrap: 'wrap', justifyContent: 'center', fontSize: '0.85rem' }}>
+                                            <span style={{ display: 'inline-flex', alignItems: 'center', gap: '4px' }}>
+                                                <i className="fa fa-clock-o" style={{ fontSize: '1rem', color: '#c0882f' }}></i> Momento ideal: 28-36 semanas
+                                            </span>
+                                            <span style={{ display: 'inline-flex', alignItems: 'center', gap: '4px' }}>
+                                                <i className="fa fa-heart" style={{ color: '#c0882f', fontSize: '1rem' }}></i> +300 familias felices
+                                            </span>
+                                            <span style={{ display: 'inline-flex', alignItems: 'center', gap: '4px' }}>
+                                                <i className="fa fa-truck" style={{ color: '#c0882f', fontSize: '1rem' }}></i> Envío gratis
+                                            </span>
                                         </small>
                                     </div>
                                 )}

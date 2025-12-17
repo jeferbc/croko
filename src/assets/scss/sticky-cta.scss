@@ -23,9 +23,37 @@
 
     .sticky-cta-content {
         display: flex;
-        gap: 10px;
+        flex-direction: column;
+        gap: 8px;
         max-width: 600px;
         margin: 0 auto;
+    }
+
+    .urgency-badge {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 6px;
+        font-size: 0.8rem;
+        color: #c0882f;
+        font-weight: 600;
+        background: rgba(192, 136, 47, 0.1);
+        padding: 4px 12px;
+        border-radius: 4px;
+        margin-bottom: 4px;
+
+        i {
+            font-size: 0.85rem;
+        }
+
+        span {
+            letter-spacing: 0.3px;
+        }
+    }
+
+    .buttons-row {
+        display: flex;
+        gap: 10px;
     }
 
     .sticky-btn {
