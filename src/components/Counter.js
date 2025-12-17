@@ -17,6 +17,7 @@ const Counter = ({ data }) => {
                                             alt={item.title}
                                             className="img-fluid counter-img"
                                             src={item.img}
+                                            loading="lazy"
                                         />
                                     )}
                                     {item.icon && (
