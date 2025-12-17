@@ -65,37 +65,24 @@ module.exports = {
   ],
   KitAccordionData:[
     {
-        text: `El belly painting es una actividad artística que permite a la familia conectar
-               de manera especial durante el embarazo. Al dibujar la barriguita se crean
-               momentos especiales y se fortalecen vínculos afectivos, ya que la mamá y las
-               personas que participan de la sesión pueden disfrutar juntos de este momento
-               único mientras el bebé se mueve al compás de las caricias del pincel.`,
-        title: '¿El maquillaje prenatal estimula al bebé?'
+        text: `¡Absolutamente! Nuestras pinturas hipoalergénicas son especialmente formuladas para pieles sensibles y 100% seguras durante el embarazo. Son dermatológicamente probadas, no tóxicas, de uso cosmético corporal, y se remueven fácilmente con agua y jabón. Están fabricadas con ingredientes vegetales, ceras y minerales de alta pureza, sin perfume. Más de 300 familias las han usado sin ningún problema.`,
+        title: '¿Son seguras las pinturas durante el embarazo?'
     },
     {
-        text: `No, el kit incluye pinturas de uso cosmético corporal, aptas para maquillaje
-               artístico en piel, permiten que la piel respire y desaparecen con agua y
-               jabón fácilmente.`,
-        title: '¿El maquillaje es tóxico para el bebé?'
+        text: `¡Para nada! El kit incluye 3 plantillas fáciles de seguir que se transfieren directamente a la piel, dejando el diseño listo para rellenar con colores. Además, viene con una guía paso a paso y videotutoriales que te acompañan en todo el proceso. Familias sin ninguna experiencia artística crean diseños hermosos. Se trata de la experiencia de conexión familiar, no de la perfección artística.`,
+        title: '¿Necesito habilidades artísticas para usarlo?'
     },
     {
-        text: `Normalmente, nos cuesta decidir qué regalar a una embarazada y acabamos
-               cayendo en el típico error, optando por productos para el bebé, pero durante
-               el embarazo, las mamás necesitan estar acompañadas por sus parejas y familiares,
-               ademas de mas ser mimadas y cuidadas que nunca, por tal razón el kit de maquillaje
-               prenatal es un regalo adecuado para baby shower, descubrimiento de género del
-               bebé o simplemente como una actividad especial para crear momentos únicos en familia,
-               ya que tanto la madre como el bebé reciben atención por parte de su familia mientras
-               son pintadas.`,
-        title: '¿Qué regalar a las parejas embarazadas?'
+        text: `El tercer trimestre (semanas 28-36) es ideal, cuando la barriga está más redonda y la mamá aún se siente cómoda. Es perfecto como actividad de baby shower o como momento especial antes de que llegue el bebé. Sin embargo, es algo muy personal y depende del momento en que cada mamá se sienta segura y con ganas de crear este recuerdo único en familia.`,
+        title: '¿Cuándo es el mejor momento para hacer belly painting?'
     },
     {
-        text: `El kit trae tres plantillas con diseños que se transfieren a la piel, dejando en la
-               barriguita el dibujo listo para ser rellenado con las pinturas. Incluye 4 diferentes
-               pinceles para lograr diversos acabados y una amplia gama de colores que se adaptan al
-               género de tu bebé. Además podrás encontrar videotutoriales con el paso a paso que guían
-               a la familia en el proceso.`,
-        title: '¿Cómo utilizar el kit de maquillaje prenatal?'
+        text: `¡Es uno de nuestros productos más regalados! A diferencia de ropa o artículos típicos que quedan olvidados, este kit crea una experiencia memorable para toda la familia. Las personas que lo regalan nos dicen que es "el regalo que ella realmente recuerda". Es perfecto para baby shower, revelación de género, o simplemente para celebrar el embarazo de una forma única y especial.`,
+        title: '¿Es un buen regalo para baby shower?'
+    },
+    {
+        text: `El kit incluye TODO lo necesario para una experiencia completa: 15 colores de pinturas hipoalergénicas de uso cosmético, 3 plantillas con diferentes diseños que se transfieren fácilmente a la piel, 4 pinceles profesionales de diferentes tamaños, y acceso a videotutoriales paso a paso. No necesitas comprar nada más—todo está listo para crear recuerdos únicos en familia.`,
+        title: '¿Qué incluye el kit?'
     },
   ]
 }
