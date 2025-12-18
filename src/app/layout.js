@@ -98,7 +98,7 @@ export default function RootLayout({ children }) {
         <link
           rel="preload"
           as="image"
-          href="https://ik.imagekit.io/ge17f66b4ma/tr:q-40,f-webp,w-1200/countdown-bg_pgiKvb7Cv.png?updatedAt=1758993722284"
+          href="https://ik.imagekit.io/ge17f66b4ma/tr:q-40,f-webp/countdown-bg_pgiKvb7Cv.png?updatedAt=1758993722284"
           media="(min-width: 992px)"
           fetchPriority="high"
         />

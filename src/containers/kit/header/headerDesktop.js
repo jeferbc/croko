@@ -23,7 +23,7 @@ const HeaderDesktop = ({ isKitPage }) => {
     const desktopBgUrl = buildSrc({
         urlEndpoint: 'https://ik.imagekit.io/ge17f66b4ma',
         src: '/countdown-bg_pgiKvb7Cv.png?updatedAt=1758993722284',
-        transformation: [{ quality: 40, format: 'webp', width: 1200 }]
+        transformation: [{ quality: 40, format: 'webp' }]
     });
 
     return (
