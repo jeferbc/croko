@@ -78,6 +78,15 @@ export default function RootLayout({ children }) {
         <link rel="preconnect" href="https://ik.imagekit.io" />
         <link rel="dns-prefetch" href="https://ik.imagekit.io" />
 
+        {/* Preload Font Awesome for faster icon rendering */}
+        <link
+          rel="preload"
+          as="font"
+          type="font/woff2"
+          href="/assets/fonts/fontawesome-webfont.woff2"
+          crossOrigin="anonymous"
+        />
+
         {/* Preload critical background images for LCP */}
         <link
           rel="preload"
