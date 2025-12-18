@@ -1,9 +1,11 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Container, Row, Col } from 'reactstrap';
 import SectionTitle from '@/components/SectionTitle';
 import '@/assets/scss/testimonials.scss';
 
 const Testimonials = () => {
+    const [isVideoLoaded, setIsVideoLoaded] = useState(false);
+
     const testimonials = [
         {
             id: 1,
@@ -35,8 +37,9 @@ const Testimonials = () => {
     ];
 
     const videoTestimonial = {
+        videoId: "z0VbSzVD9gA",
         url: "https://www.youtube.com/embed/z0VbSzVD9gA",
-        thumbnail: null,
+        thumbnail: "https://img.youtube.com/vi/z0VbSzVD9gA/maxresdefault.jpg",
         customerName: "Andrea & Familia",
         title: "Nuestra experiencia con el Kit Pinta Barriguitas"
     };
@@ -57,23 +60,69 @@ const Testimonials = () => {
                                 height: 0,
                                 overflow: 'hidden',
                                 maxWidth: '100%',
-                                borderRadius: '8px'
+                                borderRadius: '8px',
+                                cursor: isVideoLoaded ? 'default' : 'pointer'
                             }}>
-                                <iframe
-                                    src={videoTestimonial.url}
-                                    title={videoTestimonial.title}
-                                    frameBorder="0"
-                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                    allowFullScreen
-                                    style={{
-                                        position: 'absolute',
-                                        top: 0,
-                                        left: 0,
-                                        width: '100%',
-                                        height: '100%',
-                                        borderRadius: '8px'
-                                    }}
-                                ></iframe>
+                                {!isVideoLoaded ? (
+                                    // Video Facade - Thumbnail + Play Button
+                                    <div
+                                        className="video-facade"
+                                        onClick={() => setIsVideoLoaded(true)}
+                                        style={{
+                                            position: 'absolute',
+                                            top: 0,
+                                            left: 0,
+                                            width: '100%',
+                                            height: '100%',
+                                            backgroundImage: `url(${videoTestimonial.thumbnail})`,
+                                            backgroundSize: 'cover',
+                                            backgroundPosition: 'center',
+                                            borderRadius: '8px',
+                                            display: 'flex',
+                                            alignItems: 'center',
+                                            justifyContent: 'center'
+                                        }}
+                                    >
+                                        {/* Play Button Overlay */}
+                                        <div style={{
+                                            width: '80px',
+                                            height: '80px',
+                                            backgroundColor: 'rgba(192, 136, 47, 0.95)',
+                                            borderRadius: '50%',
+                                            display: 'flex',
+                                            alignItems: 'center',
+                                            justifyContent: 'center',
+                                            boxShadow: '0 4px 12px rgba(0,0,0,0.3)',
+                                            transition: 'transform 0.2s ease'
+                                        }}
+                                        onMouseOver={(e) => e.currentTarget.style.transform = 'scale(1.1)'}
+                                        onMouseOut={(e) => e.currentTarget.style.transform = 'scale(1)'}
+                                        >
+                                            <i className="fa fa-play" style={{
+                                                fontSize: '32px',
+                                                color: '#fff',
+                                                marginLeft: '4px' // Optical centering
+                                            }}></i>
+                                        </div>
+                                    </div>
+                                ) : (
+                                    // Actual YouTube iframe - only loaded after click
+                                    <iframe
+                                        src={`${videoTestimonial.url}?autoplay=1`}
+                                        title={videoTestimonial.title}
+                                        frameBorder="0"
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                        allowFullScreen
+                                        style={{
+                                            position: 'absolute',
+                                            top: 0,
+                                            left: 0,
+                                            width: '100%',
+                                            height: '100%',
+                                            borderRadius: '8px'
+                                        }}
+                                    ></iframe>
+                                )}
                             </div>
                         </div>
                     </Col>
