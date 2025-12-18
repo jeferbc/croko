@@ -40,15 +40,14 @@ const HeaderDesktop = ({ isKitPage }) => {
                 >
                 <div className="bottom-0 set-abs girl">
                     <img
-                        src="https://ik.imagekit.io/ge17f66b4ma/header?updatedAt=1765930997534&tr=w-800,c-at_max,f-webp,q-85"
+                        src="https://ik.imagekit.io/ge17f66b4ma/header?updatedAt=1765930997534&tr=w-714,h-720,q-90,f-webp"
                         alt="Crea recuerdos únicos en familia con belly painting"
-                        width={800}
-                        height={800}
+                        width={714}
+                        height={720}
                         className="img-fluid"
                         id="girl"
                         loading="eager"
-                        fetchPriority="high"
-                        style={{ maxWidth: '100%', height: 'auto' }}
+                        style={{ maxWidth: '714px', height: 'auto' }}
                     />
                 </div>
                 <Container>
