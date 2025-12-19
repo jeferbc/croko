@@ -94,8 +94,8 @@ export default function RootLayout({ children }) {
           href="https://ik.imagekit.io/ge17f66b4ma/family_header_cz4Hj1SWB.png?tr=w-400,q-75,f-webp"
           media="(max-width: 991px)"
           fetchPriority="high"
-          imagesrcset="https://ik.imagekit.io/ge17f66b4ma/family_header_cz4Hj1SWB.png?tr=w-320,q-75,f-webp 320w, https://ik.imagekit.io/ge17f66b4ma/family_header_cz4Hj1SWB.png?tr=w-400,q-75,f-webp 400w, https://ik.imagekit.io/ge17f66b4ma/family_header_cz4Hj1SWB.png?tr=w-600,q-75,f-webp 600w"
-          imagesizes="(max-width: 991px) 100vw, 600px"
+          imageSrcSet="https://ik.imagekit.io/ge17f66b4ma/family_header_cz4Hj1SWB.png?tr=w-320,q-75,f-webp 320w, https://ik.imagekit.io/ge17f66b4ma/family_header_cz4Hj1SWB.png?tr=w-400,q-75,f-webp 400w, https://ik.imagekit.io/ge17f66b4ma/family_header_cz4Hj1SWB.png?tr=w-600,q-75,f-webp 600w"
+          imageSizes="(max-width: 991px) 100vw, 600px"
         />
         <link
           rel="preload"

@@ -34,7 +34,14 @@ module.exports = (phase) => {
         inlineFontCss: true,
         critters: {
           preload: 'swap',
-          pruneSource: false, // Changed to false to prevent removing Font Awesome and other icon CSS
+          pruneSource: true, // Enable critical CSS extraction
+          compress: true, // Compress inlined CSS
+          fonts: true, // Inline critical font CSS
+          fontFallbacks: true, // Add font fallbacks
+          keyframes: 'critical', // Only inline critical keyframes
+          mergeStylesheets: true, // Merge critical stylesheets
+          additionalStylesheets: [], // Don't inline additional sheets
+          logLevel: 'warn',
         },
       },
     },
