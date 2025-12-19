@@ -83,7 +83,7 @@ export default function RootLayout({ children }) {
           rel="preload"
           as="font"
           type="font/woff2"
-          href="/assets/fonts/fontawesome-webfont.woff2"
+          href="/assets/fonts/fontawesome-webfont.woff2?v=4.7.0"
           crossOrigin="anonymous"
         />
 
