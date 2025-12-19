@@ -73,8 +73,8 @@ const Blog = () => {
                                                     <div className="center-text">
                                                         <div>
                                                             <h3 className="blog-text gradient-text"> {item.title}</h3>
-                                                            <h6 className="blog-date">{item.date}</h6>
-                                                            <h6 className="blog-place">{item.place}</h6>
+                                                            <div className="blog-date">{item.date}</div>
+                                                            <div className="blog-place">{item.place}</div>
                                                             <p className="blog-para">{item.desc}</p>
                                                         </div>
                                                     </div>

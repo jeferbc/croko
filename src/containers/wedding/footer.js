@@ -23,7 +23,7 @@ const Footer = (props) => {
                     </Col>
                 <Col xl="6" sm="12">
                     <div className="m-l-auto center-para">
-                        <h6 className="copyright-text text-center">2016 - {new Date().getFullYear()} Croko</h6>
+                        <p className="copyright-text text-center">2016 - {new Date().getFullYear()} Croko</p>
                         <div className="legal-links text-center mt-2">
                             <Link href="/terminos-y-condiciones" style={{color: '#888', fontSize: '12px', textDecoration: 'none', marginRight: '15px'}}>
                                 Términos y Condiciones
