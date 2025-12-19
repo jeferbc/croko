@@ -15,10 +15,10 @@ export default function ClientLayout({ children }) {
   const pathname = usePathname();
 
   useEffect(() => {
-    // Page Loader
+    // Page Loader - Reduced to 200ms for better performance
     setTimeout(() => {
       setLoader(false);
-    }, 1500);
+    }, 200);
 
     // Tap to Top Scroll
     const handleScroll = () => {
