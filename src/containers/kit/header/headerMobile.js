@@ -17,13 +17,27 @@ const HeaderMobile = ({ isKitPage }) => {
             <div className="wedding-content">
                 <div
                     className="wedding bg slider-bg"
-                    style={{
-                        backgroundImage: `url(${mobileBgUrl})`,
-                        backgroundSize: 'cover',
-                        backgroundPosition: 'center',
-                        backgroundRepeat: 'no-repeat'
-                    }}
+                    style={{ position: 'relative', backgroundImage: 'none' }}
                 >
+                {/* Background image as actual img element for LCP optimization */}
+                <img
+                    src={mobileBgUrl}
+                    alt=""
+                    width={800}
+                    height={1200}
+                    loading="eager"
+                    fetchPriority="high"
+                    style={{
+                        position: 'absolute',
+                        top: 0,
+                        left: 0,
+                        width: '100%',
+                        height: '100%',
+                        objectFit: 'cover',
+                        objectPosition: 'center',
+                        zIndex: -1
+                    }}
+                />
                 <Container>
                     <Row>
                         <Col>

@@ -31,13 +31,27 @@ const HeaderDesktop = ({ isKitPage }) => {
             <div className="wedding-content">
                 <div
                     className="wedding bg slider-bg"
-                    style={{
-                        backgroundImage: `url(${desktopBgUrl})`,
-                        backgroundSize: 'cover',
-                        backgroundPosition: 'center',
-                        backgroundRepeat: 'no-repeat'
-                    }}
+                    style={{ position: 'relative', backgroundImage: 'none' }}
                 >
+                {/* Background image as actual img element for LCP optimization */}
+                <img
+                    src={desktopBgUrl}
+                    alt=""
+                    width={1920}
+                    height={1080}
+                    loading="eager"
+                    fetchPriority="high"
+                    style={{
+                        position: 'absolute',
+                        top: 0,
+                        left: 0,
+                        width: '100%',
+                        height: '100%',
+                        objectFit: 'cover',
+                        objectPosition: 'center',
+                        zIndex: -1
+                    }}
+                />
                 <div className="bottom-0 set-abs girl">
                     <img
                         src="https://ik.imagekit.io/ge17f66b4ma/family_header_cz4Hj1SWB.png?tr=w-800,q-75,f-webp"
