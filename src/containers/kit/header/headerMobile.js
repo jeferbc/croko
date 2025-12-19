@@ -2,16 +2,8 @@
 import React from 'react';
 import {Container,Row,Col} from 'reactstrap'
 import Link from 'next/link'
-import IKImage from '@/components/IKImage';
-import { buildSrc } from '@imagekit/next';
 
 const HeaderMobile = ({ isKitPage }) => {
-    const mobileBgUrl = buildSrc({
-        urlEndpoint: 'https://ik.imagekit.io/ge17f66b4ma',
-        src: '/slider-bg_mKSrnghgQ.jpg?updatedAt=1758993734731',
-        transformation: [{ quality: 40, format: 'webp', width: 800 }]
-    });
-
     return (
         <section className="wedding header" id="header">
             <div className="wedding-content">
@@ -20,8 +12,9 @@ const HeaderMobile = ({ isKitPage }) => {
                     style={{ position: 'relative', backgroundImage: 'none' }}
                 >
                 {/* Background image as actual img element for LCP optimization */}
+                {/* URL must match preload in layout.js exactly */}
                 <img
-                    src={mobileBgUrl}
+                    src="https://ik.imagekit.io/ge17f66b4ma/tr:q-40,f-webp,w-800/slider-bg_mKSrnghgQ.jpg?updatedAt=1758993734731"
                     alt=""
                     width={800}
                     height={1200}

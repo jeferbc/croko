@@ -2,8 +2,6 @@
 import React from 'react';
 import {Container,Row,Col} from 'reactstrap'
 import Link from 'next/link'
-import IKImage from '@/components/IKImage';
-import { buildSrc } from '@imagekit/next';
 
 const ContactButtonStyles = {
     div: {
@@ -20,12 +18,6 @@ const ContactButtonStyles = {
 }
 
 const HeaderDesktop = ({ isKitPage }) => {
-    const desktopBgUrl = buildSrc({
-        urlEndpoint: 'https://ik.imagekit.io/ge17f66b4ma',
-        src: '/countdown-bg_pgiKvb7Cv.png?updatedAt=1758993722284',
-        transformation: [{ quality: 40, format: 'webp' }]
-    });
-
     return (
         <section className="wedding header" id="header">
             <div className="wedding-content">
@@ -34,8 +26,9 @@ const HeaderDesktop = ({ isKitPage }) => {
                     style={{ position: 'relative', backgroundImage: 'none' }}
                 >
                 {/* Background image as actual img element for LCP optimization */}
+                {/* URL must match preload in layout.js exactly */}
                 <img
-                    src={desktopBgUrl}
+                    src="https://ik.imagekit.io/ge17f66b4ma/tr:q-40,f-webp/countdown-bg_pgiKvb7Cv.png?updatedAt=1758993722284"
                     alt=""
                     width={1920}
                     height={1080}
