@@ -40,7 +40,7 @@ const HeaderDesktop = ({ isKitPage }) => {
                 >
                 <div className="bottom-0 set-abs girl">
                     <img
-                        src="https://ik.imagekit.io/ge17f66b4ma/family_header_cz4Hj1SWB.png?tr=w-800,q-60,f-webp"
+                        src="https://ik.imagekit.io/ge17f66b4ma/family_header_cz4Hj1SWB.png?tr=w-800,q-75,f-webp"
                         alt="Crea recuerdos únicos en familia con belly painting"
                         width={800}
                         height={800}
