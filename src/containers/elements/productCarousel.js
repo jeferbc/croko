@@ -60,15 +60,17 @@ const ProductCarousel = () => {
               <IKImage
                 src={data.original}
                 alt="Producto"
-                width={690}
-                height={551}
+                width={400}
+                height={320}
                 transformation={[{
-                  width: 690,
+                  width: 400,
                   quality: 80,
-                  format: 'auto'
+                  format: 'webp'
                 }]}
+                lqip={{ active: true, quality: 20 }}
                 loading={i === 0 ? 'eager' : 'lazy'}
                 priority={i === 0}
+                responsive={true}
                 style={{ width: '100%', height: 'auto' }}
               />
             </div>
