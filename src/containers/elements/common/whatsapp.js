@@ -17,7 +17,14 @@ const WhatsappRibbon = (props) => {
   let message = props.kit ? 'Hola! 👋 Estoy interesada en el Kit de Pintura de Barriguita. Me gustaría saber más sobre:' : 'Hola, estoy interesado en maquillaje prenatal en Medellín.'
   return (
     <Fragment>
-      <a style={whatsappRibbonStyles.a} href={`https://wa.me/573168161717?text=${message}`} target="_blank" className={props.kit ? 'whatsapp-kit' : 'whatsapp-local'}>
+      <a
+        style={whatsappRibbonStyles.a}
+        href={`https://wa.me/573168161717?text=${message}`}
+        target="_blank"
+        className={props.kit ? 'whatsapp-kit' : 'whatsapp-local'}
+        aria-label="Contáctanos por WhatsApp"
+        rel="noopener noreferrer"
+      >
         <IKImage
           src="/whatsapp_logo_FzIZzUouZt6.png"
           alt="WhatsApp"
