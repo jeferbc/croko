@@ -71,7 +71,7 @@ const HeaderMobile = ({ isKitPage }) => {
                                 </div>
                                 <div className="bottom-0 girl m-t-25">
                                     <img
-                                        src="https://ik.imagekit.io/ge17f66b4ma/family_header_cz4Hj1SWB.png?tr=w-600,q-75,f-webp"
+                                        src="https://ik.imagekit.io/ge17f66b4ma/family_header_cz4Hj1SWB.png?tr=w-600,q-60,f-webp"
                                         alt="Crea recuerdos únicos en familia con belly painting"
                                         width={600}
                                         height={600}
