@@ -1,5 +1,5 @@
-// Minimal Bootstrap - Only import what we actually use
-// This reduces bundle size from ~200KB to ~50KB
+// Minimal Bootstrap - Import only what we use to avoid forced reflows
+// Missing utilities can cause layout thrashing and massive performance hits
 
 // 1. Required Bootstrap functions and variables
 @import "bootstrap/scss/functions";
@@ -7,7 +7,6 @@
 @import "bootstrap/scss/variables-dark";
 @import "bootstrap/scss/maps";
 @import "bootstrap/scss/mixins";
-@import "bootstrap/scss/utilities";
 
 // 2. Layout & Grid (Container, Row, Col)
 @import "bootstrap/scss/root";
@@ -15,11 +14,18 @@
 @import "bootstrap/scss/containers";
 @import "bootstrap/scss/grid";
 
-// 3. Components we actually use
+// 3. Typography & Images (prevents layout shifts)
+@import "bootstrap/scss/type";
+@import "bootstrap/scss/images";
+
+// 4. Components we actually use
 @import "bootstrap/scss/buttons";
 @import "bootstrap/scss/nav";
 @import "bootstrap/scss/navbar";
 
-// 4. Utilities we need
+// 5. CRITICAL: All utilities to prevent forced reflows
+// Missing display/flexbox/spacing utilities cause carousel and components
+// to render with wrong sizes, triggering JavaScript reflows
+@import "bootstrap/scss/utilities";
 @import "bootstrap/scss/helpers";
 @import "bootstrap/scss/utilities/api";
