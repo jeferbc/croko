@@ -1,7 +1,6 @@
 "use client"
 import { useEffect, useState } from "react";
 import TagManager from 'react-gtm-module';
-import { ToastContainer } from 'react-toastify';
 import NProgress from 'nprogress';
 import { usePathname } from 'next/navigation';
 import CookieConsent from '@/containers/elements/common/cookieConsent';
@@ -72,7 +71,6 @@ export default function ClientLayout({ children }) {
       <div className="tap-top" style={goingUp ? { display: 'block' } : { display: 'none' }} onClick={tapToTop}>
         <div><i className="fa fa-angle-double-up"></i></div>
       </div>
-      <ToastContainer />
       <CookieConsent />
     </>
   );
