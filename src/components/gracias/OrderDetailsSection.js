@@ -12,12 +12,12 @@ const OrderDetailsSection = ({ orderData, onWhatsAppClick }) => {
         <Row>
           <Col lg="8" className="mx-auto">
             <OrderCard
-              className="mb-4"
+              className="mb-32"
               image="https://ik.imagekit.io/ge17f66b4ma/Kit%20foto%20690x551_2rLNnbXrzh.png"
               orderId={orderData.orderId}
               orderDate={orderData.date}
               status="Confirmado ✓"
-              title="Kit Maquillaje Prenatal"
+              title="Kit Pinta Barriguita – Todo Incluido"
               description="¡Felicitaciones por tu compra! El siguiente paso es coordinar los detalles de envío vía WhatsApp para que recibas tu kit lo antes posible."
             />
 

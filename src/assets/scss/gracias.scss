@@ -1,5 +1,10 @@
 // Thank You Page Styles
 
+// Custom spacing utility (32px)
+.mb-32 {
+  margin-bottom: 2rem !important;
+}
+
 // Brand colors
 $primary-gold: #c0882f;
 $secondary-gold: #d4af37;
@@ -60,8 +65,9 @@ $bg-section: #ffe8d6;
       img {
         width: 100%;
         height: auto;
-        object-fit: cover;
-        max-height: 300px;
+        object-fit: contain;
+        max-height: 400px;
+        background: #fff;
       }
 
       .img-container {
@@ -322,7 +328,7 @@ $bg-section: #ffe8d6;
   background: linear-gradient(135deg, #fff8f0 0%, #ffe8d6 100%);
   border-radius: 12px;
   padding: 1.5rem;
-  margin-top: 2rem;
+  margin-bottom: 2rem;
   border: 1px solid rgba(192, 136, 47, 0.2);
 
   h5 {
@@ -346,7 +352,6 @@ $bg-section: #ffe8d6;
 
 // CTA Buttons Section
 .cta-buttons {
-  margin-top: 2rem;
 
   .btn {
     padding: 0.75rem 1.5rem;

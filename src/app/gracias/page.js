@@ -16,8 +16,9 @@ function GraciasContent() {
   const { orderData } = useOrderTracking(searchParams);
   const handleWhatsAppRedirect = useWhatsAppRedirect(orderData?.orderId);
 
+  // Show loading state while initializing
   if (!orderData) {
-    return <LoadingState message="Cargando información de tu pedido..." />;
+    return <LoadingState message="Cargando..." />;
   }
 
   return (

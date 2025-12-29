@@ -6,16 +6,16 @@ const WhatsNextSection = () => {
       <h5 className="mb-3">¿Qué sigue?</h5>
       <ul className="list-unstyled">
         <li className="mb-2">
-          <i className="fa fa-check text-success me-2"></i>
-          Coordinaremos por WhatsApp los detalles de envío de tu pedido
+          <i className="fa fa-whatsapp text-success me-2"></i>
+          Te contactaremos por WhatsApp para ayudarte a elegir tus 3 diseños favoritos del catálogo
         </li>
         <li className="mb-2">
-          <i className="fa fa-check text-success me-2"></i>
+          <i className="fa fa-map-marker text-success me-2"></i>
+          Coordinaremos los detalles de envío a tu dirección
+        </li>
+        <li className="mb-2">
+          <i className="fa fa-truck text-success me-2"></i>
           Tu kit llegará en 3-5 días hábiles
-        </li>
-        <li className="mb-2">
-          <i className="fa fa-check text-success me-2"></i>
-          Te mantendremos informado del estado de tu pedido
         </li>
       </ul>
     </div>

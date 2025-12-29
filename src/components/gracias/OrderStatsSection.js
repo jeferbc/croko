@@ -3,7 +3,7 @@ import { Row, Col } from 'reactstrap';
 
 const OrderStatsSection = ({ formattedAmount }) => {
   return (
-    <Row className="text-center mb-5 order-stats">
+    <Row className="text-center mb-32 order-stats">
       <Col xs="12" className="mb-3">
         <div className="stat-box">
           <h3 className="text-gold mb-2">{formattedAmount}</h3>

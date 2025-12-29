@@ -11,7 +11,7 @@ const WhatsAppSection = ({ onComplete, onManualClick }) => {
             <div className="text-center p-4 whatsapp-section rounded mb-0">
               <h4 className="mb-4 text-gold">Continuemos por WhatsApp</h4>
               <p className="text-muted mb-4">
-                En unos segundos serás redirigido a WhatsApp para que nos compartas tus datos de envío y podamos coordinar la entrega de tu pedido.
+                En unos segundos serás redirigido a WhatsApp para ayudarte a elegir tus diseños favoritos, confirmar tu dirección de envío y coordinar la entrega de tu pedido.
               </p>
               <WhatsAppCountdown
                 onComplete={onComplete}

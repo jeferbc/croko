@@ -4,7 +4,7 @@ const WHATSAPP_PHONE = '573168161717';
 
 const useWhatsAppRedirect = (orderId) => {
   const handleWhatsAppRedirect = useCallback((fromAutoRedirect = false) => {
-    let message = 'Hola! Acabo de comprar el Kit Maquillaje Prenatal';
+    let message = 'Hola! Acabo de comprar el Kit Pinta Barriguita';
 
     if (orderId) {
       message += `\n\nMi numero de pedido es: ${orderId}`;
