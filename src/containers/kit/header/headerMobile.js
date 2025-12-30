@@ -68,7 +68,7 @@ const HeaderMobile = ({ isKitPage }) => {
                                 )}
                                 <div style={{ width: '100%', maxWidth: '280px', marginTop: isKitPage ? '25px' : '0' }}>
                                     {isKitPage ? (
-                                        <a className="btn btn-default btn-white purchase-kit w-100" target="_blank" href="https://checkout.wompi.co/l/tIZLKf">
+                                        <a className="btn btn-default btn-white purchase-kit w-100" target="_blank" href="https://checkout.wompi.co/l/YRIafg">
                                             Obtener Kit<br/>
                                             <small style={{ fontSize: '0.85rem' }}>$150.000</small>
                                         </a>
