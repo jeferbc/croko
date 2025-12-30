@@ -37,7 +37,7 @@ const ProductSection = () => (
                             <div className="price-value mb-3">
                                 <div className="price text-center text-lg-left">$<span className="large">150.000</span></div>
                             </div>
-                            <a className="btn btn-default btn-white purchase-kit" target="_blank" href="https://checkout.wompi.co/l/tIZLKf">Comprar</a>
+                            <a className="btn btn-default btn-white purchase-kit" target="_blank" href="https://checkout.wompi.co/l/YRIafg">Comprar</a>
                             <div className="font-primary pt-3">
                                 <h3 className="feature-text-heading text-center text-lg-left bold pb-2" style={{ marginTop: '1rem' }}>Descripción</h3>
                                 <p className="price-feature text-justify">
