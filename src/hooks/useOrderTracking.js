@@ -16,8 +16,10 @@ const useOrderTracking = (searchParams) => {
     const alreadyTracked = purchaseKey ? sessionStorage.getItem(purchaseKey) : false;
 
     // Fire GTM dataLayer event for purchase (only once per transaction)
+    // Use timeout to ensure GTM is fully loaded before pushing event
     if (!alreadyTracked) {
-      if (window.dataLayer) {
+      const firePurchaseEvent = () => {
+        window.dataLayer = window.dataLayer || [];
         window.dataLayer.push({
           event: 'purchase',
           ecommerce: {
@@ -33,12 +35,15 @@ const useOrderTracking = (searchParams) => {
           }
         });
         console.log('✓ GA4 Purchase event fired via GTM');
-      }
 
-      if (purchaseKey) {
-        sessionStorage.setItem(purchaseKey, 'true');
-      }
-      setTrackingFired(true);
+        if (purchaseKey) {
+          sessionStorage.setItem(purchaseKey, 'true');
+        }
+        setTrackingFired(true);
+      };
+
+      // Wait for GTM to be ready (500ms delay ensures gtm.load has fired)
+      setTimeout(firePurchaseEvent, 500);
     }
 
     // Set order data for display
