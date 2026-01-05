@@ -17,7 +17,7 @@ export default function PoliticaDePrivacidad() {
                                 </p>
 
                                 <p>
-                                    Carolina Rincón, operador de www.maquillajeembarazadas.com, se compromete a proteger la privacidad de sus usuarios conforme a la Ley 1581 de 2012 de Colombia y requisitos de Google y Meta. Este sitio ofrece servicios de arte decorativo para mujeres embarazadas (pintura artística en barrigas) y venta de kits de maquillaje decorativo para mujeres embarazadas, exclusivamente para fines recreativos y familiares, sin relación con servicios médicos, tratamientos de salud, enfermedades, datos de salud ni relaciones proveedor-paciente.
+                                    Carolina Rincón, operador de www.croko.co, se compromete a proteger la privacidad de sus usuarios conforme a la Ley 1581 de 2012 de Colombia y requisitos de Google y Meta. Este sitio ofrece servicios de arte decorativo para mujeres embarazadas (pintura artística en barrigas) y venta de kits de maquillaje decorativo para mujeres embarazadas, exclusivamente para fines recreativos y familiares, sin relación con servicios médicos, tratamientos de salud, enfermedades, datos de salud ni relaciones proveedor-paciente.
                                 </p>
 
                                 <h3 style={{ marginTop: '40px' }}>1. Información que recopilamos</h3>

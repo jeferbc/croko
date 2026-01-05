@@ -40,7 +40,7 @@ const productSchema = {
         "price": "150000",
         "priceCurrency": "COP",
         "availability": "https://schema.org/InStock",
-        "url": "https://www.maquillajeembarazadas.com/kit-pinta-barriguitas",
+        "url": "https://www.croko.co/kit-pinta-barriguitas",
         "seller": {
             "@type": "Organization",
             "name": "Croko"

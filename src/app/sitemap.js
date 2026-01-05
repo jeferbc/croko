@@ -1,7 +1,7 @@
 import { BlogData } from '@/database/blog/blog_database'
 
 export default function sitemap() {
-  const baseUrl = 'https://www.maquillajeembarazadas.com'
+  const baseUrl = 'https://www.croko.co'
 
   // Static pages
   const staticPages = [

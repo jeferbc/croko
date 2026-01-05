@@ -12,19 +12,19 @@ export const ArticleSchema = ({ post, url }) => {
         "author": {
             "@type": "Person",
             "name": post.author || "Carolina Rincón",
-            "url": "https://www.maquillajeembarazadas.com"
+            "url": "https://www.croko.co"
         },
         "publisher": {
             "@type": "Organization",
             "name": "Croko - Maquillaje Para Embarazadas",
             "logo": {
                 "@type": "ImageObject",
-                "url": "https://www.maquillajeembarazadas.com/logo.png"
+                "url": "https://www.croko.co/logo.png"
             }
         },
         "mainEntityOfPage": {
             "@type": "WebPage",
-            "@id": url || "https://www.maquillajeembarazadas.com/maquillaje-para-embarazadas"
+            "@id": url || "https://www.croko.co/maquillaje-para-embarazadas"
         },
         "articleSection": "Belleza y Embarazo",
         "keywords": ["maquillaje para embarazadas", "maquillaje seguro embarazo", "cosméticos embarazo", "productos belleza prenatal", "maquillaje hipoalergénico"]
@@ -103,13 +103,13 @@ export const BreadcrumbSchema = () => {
                 "@type": "ListItem",
                 "position": 1,
                 "name": "Inicio",
-                "item": "https://www.maquillajeembarazadas.com"
+                "item": "https://www.croko.co"
             },
             {
                 "@type": "ListItem",
                 "position": 2,
                 "name": "Maquillaje Para Embarazadas",
-                "item": "https://www.maquillajeembarazadas.com/maquillaje-para-embarazadas"
+                "item": "https://www.croko.co/maquillaje-para-embarazadas"
             }
         ]
     }
@@ -127,8 +127,8 @@ export const OrganizationSchema = () => {
         "@context": "https://schema.org",
         "@type": "Organization",
         "name": "Croko - Maquillaje Para Embarazadas",
-        "url": "https://www.maquillajeembarazadas.com",
-        "logo": "https://www.maquillajeembarazadas.com/logo.png",
+        "url": "https://www.croko.co",
+        "logo": "https://www.croko.co/logo.png",
         "description": "Especialistas en belly painting y maquillaje artístico para embarazadas en Colombia. Kits DIY y servicios profesionales.",
         "address": {
             "@type": "PostalAddress",

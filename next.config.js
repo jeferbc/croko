@@ -53,6 +53,19 @@ module.exports = (phase) => {
           destination: '/kit-pinta-barriguitas',
           permanent: true, // 301 redirect
         },
+        // Domain migration: redirect old domain to new domain
+        {
+          source: '/:path*',
+          has: [{ type: 'host', value: 'maquillajeembarazadas.com' }],
+          destination: 'https://www.croko.co/:path*',
+          permanent: true, // 301 redirect
+        },
+        {
+          source: '/:path*',
+          has: [{ type: 'host', value: 'www.maquillajeembarazadas.com' }],
+          destination: 'https://www.croko.co/:path*',
+          permanent: true, // 301 redirect
+        },
       ];
     },
   };

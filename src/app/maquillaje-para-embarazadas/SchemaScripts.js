@@ -23,7 +23,7 @@ export default function SchemaScripts({ post }) {
         <>
             <ArticleSchema
                 post={post}
-                url="https://www.maquillajeembarazadas.com/maquillaje-para-embarazadas"
+                url="https://www.croko.co/maquillaje-para-embarazadas"
             />
             <FAQPageSchema />
             <BreadcrumbSchema />

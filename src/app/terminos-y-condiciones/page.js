@@ -17,7 +17,7 @@ export default function TerminosYCondiciones() {
                                 </p>
 
                                 <p>
-                                    Bienvenido a www.maquillajeembarazadas.com, operado por Carolina Rincón (en adelante, "nosotros", "nuestro" o "la Empresa"). Este sitio ofrece servicios de arte decorativo para mujeres embarazadas como artista pintabarriguitas (sesiones de pintura artística en barrigas) y venta de kits de maquillaje decorativo para mujeres embarazadas, exclusivamente para fines recreativos y familiares. Estos productos y servicios no tienen ninguna relación con servicios médicos, tratamientos de salud, enfermedades, estados de salud concretos, datos de salud ni relaciones proveedor-paciente. Nuestros kits y sesiones son artísticos, no terapéuticos ni médicos, y utilizan pinturas seguras diseñadas solo para entretenimiento. Al usar este sitio, acepta estos términos, conforme a la Ley 1480 de 2011 (Estatuto del Consumidor) de Colombia.
+                                    Bienvenido a www.croko.co, operado por Carolina Rincón (en adelante, "nosotros", "nuestro" o "la Empresa"). Este sitio ofrece servicios de arte decorativo para mujeres embarazadas como artista pintabarriguitas (sesiones de pintura artística en barrigas) y venta de kits de maquillaje decorativo para mujeres embarazadas, exclusivamente para fines recreativos y familiares. Estos productos y servicios no tienen ninguna relación con servicios médicos, tratamientos de salud, enfermedades, estados de salud concretos, datos de salud ni relaciones proveedor-paciente. Nuestros kits y sesiones son artísticos, no terapéuticos ni médicos, y utilizan pinturas seguras diseñadas solo para entretenimiento. Al usar este sitio, acepta estos términos, conforme a la Ley 1480 de 2011 (Estatuto del Consumidor) de Colombia.
                                 </p>
 
                                 <h3 style={{ marginTop: '40px' }}>1. Uso del sitio</h3>
@@ -54,7 +54,7 @@ export default function TerminosYCondiciones() {
 
                                 <h3 style={{ marginTop: '40px' }}>5. Devoluciones y retracto</h3>
                                 <p>
-                                    <strong>Derecho de retracto:</strong> 5 días hábiles (Ley 1480 de 2011). Contacte a croko@maquillajeembarazadas.com.
+                                    <strong>Derecho de retracto:</strong> 5 días hábiles (Ley 1480 de 2011). Contacte a crokolina@gmail.com.
                                     <br />
                                     <strong>Tiempos de devolución:</strong> 5-10 días hábiles tras verificación.
                                     <br />

@@ -4,6 +4,6 @@ export default function robots() {
       userAgent: '*',
       allow: '/',
     },
-    sitemap: 'https://www.maquillajeembarazadas.com/sitemap.xml',
+    sitemap: 'https://www.croko.co/sitemap.xml',
   }
 }

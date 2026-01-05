@@ -3,7 +3,7 @@ export const metadata = {
   description: 'Kit completo para pintar tu barriguita en casa. Incluye plantillas, pinceles y pinturas seguras. Envío gratis a toda Colombia. Ideal para baby shower!',
   keywords: 'pintura barriga embarazada, kit belly painting, pinturas embarazadas, body paint embarazo, pintar barriguita, envío gratis Colombia, donde comprar pintura para pintar barriga embarazada, pinturas para pintar la barriga, pintura para embarazadas, pinturas para belly painting, pinturas para tripa embarazada',
   openGraph: {
-    url: 'https://www.maquillajeembarazadas.com/kit-pinta-barriguitas',
+    url: 'https://www.croko.co/kit-pinta-barriguitas',
     type: 'website',
     title: 'Kit Pintura Barriga Embarazada | Envío Gratis Colombia',
     description: 'Kit completo para pintar tu barriguita en casa. Pinturas seguras + plantillas + tutorial. Envío gratis Colombia.',

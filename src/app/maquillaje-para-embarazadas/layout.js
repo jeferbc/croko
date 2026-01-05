@@ -11,7 +11,7 @@ export const metadata = {
     follow: true,
   },
   openGraph: {
-    url: 'https://www.maquillajeembarazadas.com/maquillaje-para-embarazadas',
+    url: 'https://www.croko.co/maquillaje-para-embarazadas',
     type: 'article',
     title: 'Maquillaje Seguro Para Embarazadas: Guía Completa 2025',
     description: 'Guía completa sobre maquillaje seguro durante el embarazo. Descubre qué productos usar, ingredientes a evitar y opciones hipoalergénicas.',

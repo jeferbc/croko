@@ -54,7 +54,7 @@ module.exports = {
         
         <p><strong>Cinturón de Seguridad para Silla:</strong> Un cinturón práctico que asegura al bebé en la silla para comer o jugar con total tranquilidad, dando a los papás esa paz que tanto valoran.</p>
         
-        <p>¿Quieres hacer de tu baby shower un momento mágico? Visita www.maquillajeembarazadas.com, descubre nuestros productos y escríbenos al WhatsApp (+57 3168161717) para personalizar tu experiencia. Con Croko, cada detalle está lleno de amor. 🍼💕</p>
+        <p>¿Quieres hacer de tu baby shower un momento mágico? Visita www.croko.co, descubre nuestros productos y escríbenos al WhatsApp (+57 3168161717) para personalizar tu experiencia. Con Croko, cada detalle está lleno de amor. 🍼💕</p>
         
         <p><em>#BabyShowerColombia #CrokoMaquillaje #AmorDeMamá</em></p>
       `
@@ -101,7 +101,7 @@ module.exports = {
         
         <p>¡Te invito a transformar la espera de tu bebé en una obra de arte familiar y un lazo indestructible!</p>
         
-        <p>Ingresa en www.maquillajeembarazadas.com para adquirir tu Kit Maquillaje Prenatal en Casa y comienza a pintar el futuro con amor, color y mucha conexión.</p>
+        <p>Ingresa en www.croko.co para adquirir tu Kit Maquillaje Prenatal en Casa y comienza a pintar el futuro con amor, color y mucha conexión.</p>
       `
     },
     {
@@ -893,7 +893,7 @@ module.exports = {
           <li><strong>Pintar sin experiencia:</strong> Incluye pinceles y tutoriales de video para resultados profesionales.</li>
         </ul>
 
-        <p>Haz de tu embarazo un lienzo de recuerdos inolvidables. Descubre esta experiencia en <a href="https://www.maquillajeembarazadas.com">maquillajeembarazadas.com</a> o contáctanos por WhatsApp.</p>
+        <p>Haz de tu embarazo un lienzo de recuerdos inolvidables. Descubre esta experiencia en <a href="https://www.croko.co">croko.co</a> o contáctanos por WhatsApp.</p>
 
         <p><strong>Visita nuestro servicio profesional en Medellín o compra nuestro Kit DIY para toda Colombia.</strong></p>
 
