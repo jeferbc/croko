@@ -66,12 +66,12 @@ export default function ClientLayout({ children }) {
       )}
       <CenterLogoHeader />
       {children}
+      <CookieConsent />
       <FooterSection />
       <WhatsappRibbon />
       <div className="tap-top" style={goingUp ? { display: 'block' } : { display: 'none' }} onClick={tapToTop}>
         <div><i className="fa fa-angle-double-up"></i></div>
       </div>
-      <CookieConsent />
     </>
   );
 }
