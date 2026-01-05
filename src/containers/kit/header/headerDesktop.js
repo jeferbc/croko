@@ -73,7 +73,7 @@ const HeaderDesktop = ({ isKitPage }) => {
                                     <p className="header-sub-text text-center" style={ContactButtonStyles.p}>
                                         {isKitPage
                                             ? 'Pinturas seguras + plantillas fáciles + guías paso a paso'
-                                            : 'Celebra tu embarazo con arte y disfruta de un momento de relajación, mientras tu bebé es estimulado por el cosquilleo que producen los pinceles.'
+                                            : 'Celebra este momento especial con arte y disfruta de una experiencia creativa única, mientras creas recuerdos inolvidables en familia.'
                                         }
                                     </p>
                                     {isKitPage && (

@@ -43,7 +43,7 @@ const HeaderMobile = ({ isKitPage }) => {
                                 <h4 className="header-sub-text text-center mt-3">
                                     {isKitPage
                                         ? 'Pinturas seguras + plantillas fáciles + guías paso a paso'
-                                        : 'Celebra tu embarazo con arte y disfruta de un momento de relajación, mientras tu bebé es estimulado por el cosquilleo que producen los pinceles.'
+                                        : 'Celebra este momento especial con arte y disfruta de una experiencia creativa única, mientras creas recuerdos inolvidables en familia.'
                                     }
                                 </h4>
                                 {isKitPage && (

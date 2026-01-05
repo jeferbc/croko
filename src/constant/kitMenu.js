@@ -33,11 +33,6 @@ export const KITMENUITEMS = [
             title: 'Kit Maquillaje Prenatal Une a Hermanitos',
             type: 'link',
             path: '/blog/kit-maquillaje-prenatal-hermanitos'
-         },
-         {
-            title: 'Salud Mental en el Embarazo',
-            type: 'link',
-            path: '/blog/salud-mental-embarazo-croko-tranquilamente'
          }
       ]
    },
