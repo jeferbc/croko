@@ -4,7 +4,7 @@ import React, { useState, useEffect } from 'react';
 import '@/assets/scss/sticky-cta.scss';
 
 const StickyCTA = ({
-    checkoutUrl = "https://checkout.wompi.co/l/YRIafg",
+    checkoutUrl = "https://checkout.wompi.co/l/XyjluW",
     whatsappNumber = "573168161717",
     whatsappMessage = "Hola! 👋 Estoy interesada en el Kit de Pintura de Barriguita. Me gustaría saber más sobre:"
 }) => {

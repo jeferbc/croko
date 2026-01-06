@@ -98,7 +98,7 @@ const HeaderDesktop = ({ isKitPage }) => {
                                     )}
                                     <div style={{...ContactButtonStyles.div, marginTop: '25px'}} className='d-none d-lg-flex'>
                                         {isKitPage ? (
-                                            <a className="btn btn-default btn-white purchase-kit" target="_blank" href="https://checkout.wompi.co/l/YRIafg" style={ContactButtonStyles.a}>
+                                            <a className="btn btn-default btn-white purchase-kit" target="_blank" href="https://checkout.wompi.co/l/XyjluW" style={ContactButtonStyles.a}>
                                                 Obtener Kit - $150.000
                                             </a>
                                         ) : (
