@@ -218,10 +218,10 @@
 
 ## Migration Checklist
 
-- [ ] Add croko.co to GSC as new property
-- [ ] Verify ownership via DNS
-- [ ] Submit sitemap for croko.co
-- [ ] Use "Change of Address" tool after new domain is indexed
+- [x] Add croko.co to GSC as new property ✅ (January 6, 2026)
+- [x] Verify ownership via DNS ✅ (January 6, 2026)
+- [x] Submit sitemap for croko.co ✅ (January 6, 2026)
+- [ ] Use "Change of Address" tool after new domain is indexed (wait 2-4 weeks)
 - [ ] Monitor both properties for 90 days
 - [ ] Compare metrics week-over-week
 
