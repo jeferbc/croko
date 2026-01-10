@@ -78,13 +78,23 @@ const HeaderMobile = ({ isKitPage }) => {
                                 </div>
                                 <div className="bottom-0 girl m-t-25">
                                     <img
-                                        srcSet="
+                                        srcSet={isKitPage
+                                            ? `
+                                            https://ik.imagekit.io/ge17f66b4ma/family_header_cz4Hj1SWB.png?tr=w-320,q-75,f-webp 320w,
+                                            https://ik.imagekit.io/ge17f66b4ma/family_header_cz4Hj1SWB.png?tr=w-400,q-75,f-webp 400w,
+                                            https://ik.imagekit.io/ge17f66b4ma/family_header_cz4Hj1SWB.png?tr=w-600,q-75,f-webp 600w
+                                        `
+                                            : `
                                             https://ik.imagekit.io/ge17f66b4ma/Imagen%20header%20page%20(5)__uFybJDlQ.png?tr=w-320,q-75,f-webp 320w,
                                             https://ik.imagekit.io/ge17f66b4ma/Imagen%20header%20page%20(5)__uFybJDlQ.png?tr=w-400,q-75,f-webp 400w,
                                             https://ik.imagekit.io/ge17f66b4ma/Imagen%20header%20page%20(5)__uFybJDlQ.png?tr=w-600,q-75,f-webp 600w
-                                        "
+                                        `
+                                        }
                                         sizes="(max-width: 991px) 100vw, 600px"
-                                        src="https://ik.imagekit.io/ge17f66b4ma/Imagen%20header%20page%20(5)__uFybJDlQ.png?tr=w-400,q-75,f-webp"
+                                        src={isKitPage
+                                            ? "https://ik.imagekit.io/ge17f66b4ma/family_header_cz4Hj1SWB.png?tr=w-400,q-75,f-webp"
+                                            : "https://ik.imagekit.io/ge17f66b4ma/Imagen%20header%20page%20(5)__uFybJDlQ.png?tr=w-400,q-75,f-webp"
+                                        }
                                         alt="Crea recuerdos únicos en familia con belly painting"
                                         width={400}
                                         height={400}
