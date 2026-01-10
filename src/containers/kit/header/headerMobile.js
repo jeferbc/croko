@@ -66,7 +66,7 @@ const HeaderMobile = ({ isKitPage }) => {
                                         <a className="btn btn-default btn-white whatsapp-local w-100" target="_blank" href={"https://wa.me/573168161717?text=Hola, estoy interesado en maquillaje prenatal en Medellín."}>Maquillaje Medellín</a>
                                     </div>
                                 )}
-                                <div style={{ width: '100%', maxWidth: '280px', marginTop: isKitPage ? '25px' : '0' }}>
+                                <div style={{ width: '250px', maxWidth: '280px', marginTop: isKitPage ? '25px' : '0' }}>
                                     {isKitPage ? (
                                         <a className="btn btn-default btn-white purchase-kit w-100" target="_blank" href="https://checkout.wompi.co/l/XyjluW">
                                             Obtener Kit<br/>
@@ -79,12 +79,12 @@ const HeaderMobile = ({ isKitPage }) => {
                                 <div className="bottom-0 girl m-t-25">
                                     <img
                                         srcSet="
-                                            https://ik.imagekit.io/ge17f66b4ma/family_header_cz4Hj1SWB.png?tr=w-320,q-75,f-webp 320w,
-                                            https://ik.imagekit.io/ge17f66b4ma/family_header_cz4Hj1SWB.png?tr=w-400,q-75,f-webp 400w,
-                                            https://ik.imagekit.io/ge17f66b4ma/family_header_cz4Hj1SWB.png?tr=w-600,q-75,f-webp 600w
+                                            https://ik.imagekit.io/ge17f66b4ma/Imagen%20header%20page%20(5)__uFybJDlQ.png?tr=w-320,q-75,f-webp 320w,
+                                            https://ik.imagekit.io/ge17f66b4ma/Imagen%20header%20page%20(5)__uFybJDlQ.png?tr=w-400,q-75,f-webp 400w,
+                                            https://ik.imagekit.io/ge17f66b4ma/Imagen%20header%20page%20(5)__uFybJDlQ.png?tr=w-600,q-75,f-webp 600w
                                         "
                                         sizes="(max-width: 991px) 100vw, 600px"
-                                        src="https://ik.imagekit.io/ge17f66b4ma/family_header_cz4Hj1SWB.png?tr=w-400,q-75,f-webp"
+                                        src="https://ik.imagekit.io/ge17f66b4ma/Imagen%20header%20page%20(5)__uFybJDlQ.png?tr=w-400,q-75,f-webp"
                                         alt="Crea recuerdos únicos en familia con belly painting"
                                         width={400}
                                         height={400}
