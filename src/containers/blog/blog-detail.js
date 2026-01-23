@@ -50,7 +50,7 @@ const BlogDetail = ({ post }) => {
             <Container>
                 <Row>
                     <Col lg="10" className="offset-lg-1">
-                        <article className="blog-post" style={{marginTop: isDesktop ? '270px' : '80px'}}>
+                        <article className="blog-post" style={{marginTop: isDesktop ? '150px' : '80px'}}>
                             <header className="post-header text-center mb-4">
                                 <h1 className="post-title gradient-text" style={{ color: 'var(--primary)', fontSize: '2.5rem', fontWeight: 'bold', marginBottom: '20px' }}>
                                     {post.title}
