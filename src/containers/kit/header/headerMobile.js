@@ -2,6 +2,7 @@
 import React from 'react';
 import {Container,Row,Col} from 'reactstrap'
 import Link from 'next/link'
+import PurchaseButton from '@/components/PurchaseModal/PurchaseButton'
 
 const HeaderMobile = ({ isKitPage }) => {
     return (
@@ -68,10 +69,10 @@ const HeaderMobile = ({ isKitPage }) => {
                                 )}
                                 <div style={{ width: '250px', maxWidth: '280px', marginTop: isKitPage ? '25px' : '0' }}>
                                     {isKitPage ? (
-                                        <a className="btn btn-default btn-white purchase-kit w-100" target="_blank" href="https://checkout.wompi.co/l/XyjluW">
+                                        <PurchaseButton className="btn btn-default btn-white purchase-kit w-100">
                                             Obtener Kit<br/>
                                             <small style={{ fontSize: '0.85rem' }}>$150.000</small>
-                                        </a>
+                                        </PurchaseButton>
                                     ) : (
                                         <Link href='/kit-pinta-barriguitas' className="btn btn-default btn-white purchase-kit w-100">Kit de Maquillaje</Link>
                                     )}

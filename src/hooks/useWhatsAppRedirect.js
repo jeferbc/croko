@@ -1,4 +1,6 @@
 import { useCallback } from 'react';
+import { getPurchaseSelections } from './usePurchaseModal';
+import { getImageNames } from '@/data/designImages';
 
 const WHATSAPP_PHONE = '573168161717';
 
@@ -8,6 +10,25 @@ const useWhatsAppRedirect = (orderId) => {
 
     if (orderId) {
       message += `\n\nMi numero de pedido es: ${orderId}`;
+    }
+
+    // Include purchase selections if available
+    const selections = getPurchaseSelections();
+    if (selections) {
+      message += '\n\n*Mis selecciones:*';
+      if (selections.gender) {
+        message += `\n• Género: ${selections.gender === 'boy' ? 'Niño' : 'Niña'}`;
+      }
+      if (selections.selectedImages && selections.selectedImages.length > 0) {
+        const imageNames = getImageNames(selections.selectedImages);
+        message += `\n• Diseños: ${imageNames.join(', ')}`;
+      }
+      if (selections.babyName) {
+        message += `\n• Nombre del bebé: ${selections.babyName}`;
+      }
+      if (selections.email) {
+        message += `\n• Email: ${selections.email}`;
+      }
     }
 
     const whatsappUrl = `https://wa.me/${WHATSAPP_PHONE}?text=${encodeURIComponent(message)}`;

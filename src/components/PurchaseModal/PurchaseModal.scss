@@ -1,0 +1,432 @@
+$primary-gold: #c0882f;
+$secondary-gold: #d4af37;
+$bg-light: #fff8f0;
+$boy-blue: #4A90D9;
+$girl-pink: #E91E8C;
+
+.purchase-modal {
+  .modal-content {
+    border-radius: 16px;
+    overflow: hidden;
+    border: none;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+  }
+
+  .modal-header {
+    background: linear-gradient(135deg, $bg-light 0%, #ffe8d6 100%);
+    border-bottom: 1px solid rgba(192, 136, 47, 0.2);
+    padding: 1.25rem 1.5rem;
+
+    .modal-header-content {
+      width: 100%;
+      text-align: center;
+    }
+
+    .step-title {
+      margin: 0.75rem 0 0;
+      font-weight: 600;
+      color: #333;
+    }
+
+    .btn-close {
+      position: absolute;
+      right: 1rem;
+      top: 1rem;
+    }
+  }
+
+  .modal-body {
+    padding: 1.5rem;
+    min-height: 300px;
+
+    @media (max-width: 576px) {
+      padding: 1rem;
+    }
+  }
+
+  .modal-footer {
+    border-top: 1px solid rgba(192, 136, 47, 0.2);
+    padding: 1rem 1.5rem;
+    justify-content: flex-end;
+    gap: 0.75rem;
+
+    .btn-next {
+      background: $primary-gold;
+      border-color: $primary-gold;
+      padding: 0.5rem 2rem;
+      font-weight: 500;
+
+      &:hover:not(:disabled) {
+        background: darken($primary-gold, 10%);
+        border-color: darken($primary-gold, 10%);
+      }
+
+      &:disabled {
+        background: #ccc;
+        border-color: #ccc;
+        cursor: not-allowed;
+      }
+    }
+
+    .btn-secondary {
+      color: #666;
+      border-color: #ddd;
+
+      &:hover {
+        background: #f5f5f5;
+        border-color: #ccc;
+      }
+    }
+  }
+}
+
+// Step Indicator
+.step-indicator {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0;
+
+  .step-dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: #dbdbdb;
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+
+    &.active {
+      background: $primary-gold;
+      width: 14px;
+      height: 14px;
+      box-shadow: 0 0 0 3px rgba(192, 136, 47, 0.2);
+    }
+
+    &.completed {
+      background: $secondary-gold;
+    }
+  }
+
+  .step-line {
+    width: 40px;
+    height: 2px;
+    background: #dbdbdb;
+    margin: 0 4px;
+
+    &.completed {
+      background: $secondary-gold;
+    }
+  }
+}
+
+// Gender Step
+.gender-step {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 1rem;
+
+  .gender-subtitle {
+    color: #808080;
+    font-size: 0.95rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+  }
+
+  .gender-options {
+    display: flex;
+    gap: 1.5rem;
+    width: 100%;
+    max-width: 420px;
+
+    @media (max-width: 576px) {
+      gap: 1rem;
+    }
+  }
+
+  .gender-card {
+    flex: 1;
+    border: 2px solid #dbdbdb;
+    border-radius: 12px;
+    padding: 2rem 1.5rem;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    background: white;
+
+    &:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    &.boy {
+      &:hover {
+        border-color: lighten($boy-blue, 20%);
+        box-shadow: 0 4px 12px rgba(74, 144, 217, 0.2);
+      }
+      &.selected {
+        border-color: $boy-blue;
+        background: #f0f7ff;
+        box-shadow: 0 4px 16px rgba(74, 144, 217, 0.25);
+      }
+    }
+
+    &.girl {
+      &:hover {
+        border-color: lighten($girl-pink, 25%);
+        box-shadow: 0 4px 12px rgba(233, 30, 140, 0.15);
+      }
+      &.selected {
+        border-color: $girl-pink;
+        background: #fff0f7;
+        box-shadow: 0 4px 16px rgba(233, 30, 140, 0.2);
+      }
+    }
+
+    .gender-icon {
+      margin-bottom: 0.75rem;
+      display: flex;
+      justify-content: center;
+
+      svg {
+        width: 72px;
+        height: 72px;
+      }
+    }
+
+    .gender-label {
+      font-size: 1.1rem;
+      font-weight: 600;
+      color: #2d2d2d;
+    }
+
+    @media (max-width: 576px) {
+      padding: 1.5rem 1rem;
+
+      .gender-icon svg {
+        width: 56px;
+        height: 56px;
+      }
+
+      .gender-label {
+        font-size: 1rem;
+      }
+    }
+  }
+}
+
+// Image Selection Step
+.image-selection-step {
+  .selection-counter {
+    text-align: center;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    color: #666;
+
+    .count {
+      font-weight: 700;
+      color: $primary-gold;
+    }
+
+    &.complete .count {
+      color: #28a745;
+    }
+  }
+
+  .image-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+
+    @media (max-width: 768px) {
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    @media (max-width: 576px) {
+      grid-template-columns: repeat(3, 1fr);
+      gap: 8px;
+    }
+  }
+}
+
+// Image Grid Item
+.image-grid-item {
+  position: relative;
+  aspect-ratio: 1;
+  border: 3px solid transparent;
+  border-radius: 12px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  background: #f5f5f5;
+
+  &:hover:not(.disabled) {
+    border-color: #ccc;
+    transform: scale(1.02);
+  }
+
+  &.selected {
+    border-color: $primary-gold;
+
+    .selection-overlay {
+      opacity: 1;
+    }
+
+    .selection-number {
+      display: flex;
+    }
+  }
+
+  &.disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+
+    &:hover {
+      transform: none;
+    }
+  }
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .selection-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(192, 136, 47, 0.3);
+    opacity: 0;
+    transition: opacity 0.2s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .selection-number {
+    display: none;
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    background: $primary-gold;
+    color: white;
+    font-weight: 700;
+    font-size: 0.875rem;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  }
+
+  .image-name {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 0.5rem;
+    background: linear-gradient(transparent, rgba(0, 0, 0, 0.7));
+    color: white;
+    font-size: 0.75rem;
+    text-align: center;
+    font-weight: 500;
+  }
+}
+
+// Baby Name Step
+.baby-name-step {
+  max-width: 400px;
+  margin: 0 auto;
+
+  .selections-summary {
+    background: $bg-light;
+    border-radius: 12px;
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+
+    h6 {
+      font-weight: 600;
+      color: #333;
+      margin-bottom: 0.75rem;
+    }
+
+    .summary-item {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      margin-bottom: 0.5rem;
+      font-size: 0.9rem;
+      color: #555;
+
+      .label {
+        font-weight: 500;
+      }
+
+      .value {
+        color: $primary-gold;
+        font-weight: 600;
+      }
+    }
+
+    .summary-total {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-top: 1rem;
+      padding-top: 0.75rem;
+      border-top: 1px dashed rgba(192, 136, 47, 0.3);
+      font-size: 1rem;
+
+      .label {
+        font-weight: 600;
+        color: #333;
+      }
+
+      .total-value {
+        font-size: 1.25rem;
+        font-weight: 700;
+        color: $primary-gold;
+      }
+    }
+  }
+
+  .form-group {
+    margin-bottom: 1rem;
+
+    .form-label {
+      font-weight: 500;
+      color: #333;
+      margin-bottom: 0.5rem;
+    }
+
+    .form-control {
+      border-radius: 8px;
+      padding: 0.75rem 1rem;
+      font-size: 1rem;
+      border: 2px solid #ddd;
+
+      &:focus {
+        border-color: $primary-gold;
+        box-shadow: 0 0 0 3px rgba(192, 136, 47, 0.15);
+      }
+    }
+
+    .char-count {
+      text-align: right;
+      font-size: 0.8rem;
+      color: #999;
+      margin-top: 0.25rem;
+    }
+
+    .form-text {
+      color: #666;
+      font-size: 0.8rem;
+      white-space: nowrap;
+
+      @media (max-width: 576px) {
+        white-space: normal;
+      }
+    }
+  }
+}

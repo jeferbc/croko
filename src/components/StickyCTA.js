@@ -2,12 +2,13 @@
 
 import React, { useState, useEffect } from 'react';
 import '@/assets/scss/sticky-cta.scss';
+import { usePurchaseModalContext } from '@/components/PurchaseModal';
 
 const StickyCTA = ({
-    checkoutUrl = "https://checkout.wompi.co/l/XyjluW",
     whatsappNumber = "573168161717",
     whatsappMessage = "Hola! 👋 Estoy interesada en el Kit de Pintura de Barriguita. Me gustaría saber más sobre:"
 }) => {
+    const { openModal } = usePurchaseModalContext();
     const [isVisible, setIsVisible] = useState(false);
 
     useEffect(() => {
@@ -54,15 +55,14 @@ const StickyCTA = ({
                         </svg>
                         <span>Consultar</span>
                     </button>
-                    <a
-                        href={checkoutUrl}
+                    <button
                         className="sticky-btn sticky-btn-buy"
-                        target="_blank"
-                        rel="noopener noreferrer"
+                        onClick={openModal}
+                        type="button"
                     >
                         <span>Comprar Ahora</span>
                         <span className="price-tag">$150.000</span>
-                    </a>
+                    </button>
                 </div>
             </div>
         </div>

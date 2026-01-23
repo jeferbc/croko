@@ -2,6 +2,7 @@
 import React from 'react';
 import {Container,Row,Col} from 'reactstrap'
 import Link from 'next/link'
+import PurchaseButton from '@/components/PurchaseModal/PurchaseButton'
 
 const ContactButtonStyles = {
     div: {
@@ -101,9 +102,9 @@ const HeaderDesktop = ({ isKitPage }) => {
                                     )}
                                     <div style={{...ContactButtonStyles.div, marginTop: '25px'}} className='d-none d-lg-flex'>
                                         {isKitPage ? (
-                                            <a className="btn btn-default btn-white purchase-kit" target="_blank" href="https://checkout.wompi.co/l/XyjluW" style={ContactButtonStyles.a}>
+                                            <PurchaseButton className="btn btn-default btn-white purchase-kit" style={ContactButtonStyles.a}>
                                                 Obtener Kit - $150.000
-                                            </a>
+                                            </PurchaseButton>
                                         ) : (
                                             <Link href='/kit-pinta-barriguitas' className="btn btn-default btn-white" style={ContactButtonStyles.a}>
                                                 Kit de Maquillaje
