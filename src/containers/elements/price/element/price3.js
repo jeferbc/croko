@@ -13,7 +13,7 @@ const PriceStyle = {
         flexDirection: "column"
     },
     featureContainer: {
-        minHeight: "180px",
+        minHeight: "150px",
         display: "flex",
         flexDirection: "column",
         justifyContent: "flex-start",
@@ -30,14 +30,17 @@ const PriceStyle = {
     recommended: {
         border: '3px solid #c0882f',
         position: 'relative',
-        transform: 'scale(1.05)',
         zIndex: 1
     },
-    badge: {
+    badgeContainer: {
         position: 'absolute',
-        top: '-12px',
-        left: '50%',
-        transform: 'translateX(-50%)',
+        top: '10px',
+        width: '100%',
+
+    },
+    badge: {
+        width: '160px',
+        textAlign: 'center',
         backgroundColor: '#c0882f',
         color: '#fff',
         padding: '5px 20px',
@@ -45,7 +48,7 @@ const PriceStyle = {
         fontSize: '12px',
         fontWeight: 'bold',
         textTransform: 'uppercase',
-        whiteSpace: 'nowrap'
+        whiteSpace: 'nowrap',
     }
 }
 const PricingThree = () => (
@@ -53,7 +56,7 @@ const PricingThree = () => (
         {
             PricingResume1.map((item, i) => {
                 return (
-                    <Col xs="12" md="6" lg="4" key={i} className="d-flex">
+                    <Col xs="12" md="6" lg="4" key={i} className="d-flex mb-3">
                         <div className="price-container price-margin shadows bg-white text-center mb-sm-3 w-100" style={PriceStyle.cardContainer}>
                             <div className="price-feature-container set-relative" style={PriceStyle.innerContainer}>
                                 <div className="feature-text">
@@ -67,23 +70,27 @@ const PricingThree = () => (
                                     <h5 className="price-feature text-center">{item.feature3}</h5>
                                     {item.feature4 && <h5 className="price-feature text-center">{item.feature4}</h5>}
                                 </div>
-                                <div className="price-value mt-auto">
-                                    <h6 className="price text-center font-primary">$<span className="large font-primary">{item.price}</span></h6>
+                                <div className="card-footer">
+                                    <div className="price-value mt-auto">
+                                        <h6 className="price text-center font-primary">$<span className="large font-primary">{item.price}</span></h6>
+                                    </div>
+                                    <a className="btn btn-default btn-white whatsapp-local" target="_blank" href={"https://wa.me/573168161717?text=Hola, estoy interesado en el plan " + item.title + " en Medellín"}>Contáctanos</a>
                                 </div>
-                                <a className="btn btn-default btn-white whatsapp-local" target="_blank" href={"https://wa.me/573168161717?text=Hola, estoy interesado en el plan " + item.title + " en Medellín"}>Contáctanos</a>
                             </div>
                         </div>
                     </Col>
                 )
             })
         }
-        <Col xs="12" md="6" lg="4" key="4" className="d-none d-sm-flex">
+        <Col xs="12" md="6" lg="4" key="4" className="d-none d-md-flex">
             <div className="price-container price-margin shadows text-center mb-sm-3 w-100" style={{...PriceStyle.cardContainer, ...PriceStyle.recommended}}>
-                <span style={PriceStyle.badge}>Más Popular</span>
+                <div style={PriceStyle.badgeContainer}>
+                    <span style={PriceStyle.badge}>Más Popular</span>
+                </div>
                 <div className="price-feature-container set-relative" style={PriceStyle.innerContainer}>
                     <div className="feature-text">
                         <span className="flaticon-diamond feature-icon"></span>
-                        <h4 className="feature-text-heading text-center bold text-uppercase font-primary">KIT MAQUILLAJE</h4>
+                        <h4 className="feature-text-heading text-center bold text-uppercase font-primary">KIT PINTABARRIGUITAS</h4>
                         <hr className="set-border" />
                     </div>
                     <div className="price-features font-primary" style={PriceStyle.featureContainer}>
@@ -93,20 +100,21 @@ const PricingThree = () => (
                         <h5 className="price-feature text-center">Envío incluido a toda Colombia</h5>
                         <h5 className="price-feature text-center">Experiencia familiar</h5>
                     </div>
-                    <div className="price-value mt-auto">
-                        <h6 className="price text-center">$<span className="large">150.000</span></h6>
+                    <div className="card-footer">
+                        <div className="price-value mt-auto">
+                            <h6 className="price text-center">$<span className="large">150.000</span></h6>
+                        </div>
+                        <Link href='/kit-pinta-barriguitas' className="btn btn-default btn-white text-white">Ver kit de pintabarriguita</Link>
                     </div>
-                    <Link href='/kit-pinta-barriguitas' className="btn btn-default btn-white text-white">Ver kit de maquillaje</Link>
                 </div>
             </div>
         </Col>
-        <Col md="6" lg="4" className="d-sm-none">
+        <Col md="6" lg="4" className="d-md-none">
             <div className="price-container shadows text-center" style={{...PriceStyle.div, ...PriceStyle.recommended}}>
-                <span style={PriceStyle.badge}>Más Popular</span>
                 <div className="service-feature">
                     <div className="feature-text">
                     <span className="flaticon-diamond feature-icon" style={PriceStyle.color}></span>
-                        <h4 className="feature-text-heading text-center bold text-uppercase" style={PriceStyle.color}>KIT MAQUILLAJE</h4>
+                        <h4 className="feature-text-heading text-center bold text-uppercase" style={PriceStyle.color}>KIT PINTABARRIGUITAS</h4>
                     </div>
                 </div>
                 <div>
@@ -115,13 +123,13 @@ const PricingThree = () => (
                             <h5 className="price-feature text-center">4 diseños a elegir</h5>
                             <h5 className="price-feature text-center">Pinturas y pinceles</h5>
                             <h5 className="price-feature text-center">Videotutoriales</h5>
-                            <h5 className="price-feature text-center">Envío incluido a toda Colombia</h5>
-                            <h5 className="price-feature text-center">Experiencia familiar</h5>
+                            <h5 className="price-feature text-center">Envío gratis a toda Colombia</h5>
+                            <h5 className="price-feature text-center">Experiencia familiar única</h5>
                         </div>
                         <div className="price-value">
                             <h6 className="price text-center">$<span className="large">150.000</span></h6>
                         </div>
-                        <Link href='/kit-pinta-barriguitas' className="btn btn-default btn-white text-white">Ver kit de maquillaje</Link>
+                        <Link href='/kit-pinta-barriguitas' className="btn btn-default btn-white text-white">Ver kit de pintabarriguita</Link>
                     </div>
                 </div>
             </div>
