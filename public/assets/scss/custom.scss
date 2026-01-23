@@ -124,3 +124,21 @@ h1, h2, h3, h4, h5, h6 {
 
 // Mobile header H1 fix - already matches h1.custom-title from _style.scss line 4877
 // No changes needed, the default .wedding h1.custom-title styles are correct
+
+@media only screen and (min-width: 992px) {
+  .price-container {
+    height: 680px !important;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .card-footer {
+    position: absolute;
+    bottom: 32px;
+    width: 100%;
+  }
+
+  .price-value {
+    margin-bottom: 10px;
+  }
+}
