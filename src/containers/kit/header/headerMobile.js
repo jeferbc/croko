@@ -54,7 +54,7 @@ const HeaderMobile = ({ isKitPage }) => {
                                                 <i className="fa fa-clock-o" style={{ fontSize: '1rem', color: '#c0882f' }}></i> Momento ideal: 28-36 semanas
                                             </span>
                                             <span style={{ display: 'inline-flex', alignItems: 'center', gap: '4px' }}>
-                                                <i className="fa fa-heart" style={{ color: '#c0882f', fontSize: '1rem' }}></i> +300 familias felices
+                                                <i className="fa fa-heart" style={{ color: '#c0882f', fontSize: '1rem' }}></i> +500 familias felices
                                             </span>
                                             <span style={{ display: 'inline-flex', alignItems: 'center', gap: '4px' }}>
                                                 <i className="fa fa-truck" style={{ color: '#c0882f', fontSize: '1rem' }}></i> Envío gratis

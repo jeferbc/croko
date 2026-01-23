@@ -97,7 +97,7 @@ const PricingThree = () => (
                         <h5 className="price-feature text-center">4 diseños a elegir</h5>
                         <h5 className="price-feature text-center">Pinturas y pinceles</h5>
                         <h5 className="price-feature text-center">Videotutoriales</h5>
-                        <h5 className="price-feature text-center">Envío incluido a toda Colombia</h5>
+                        <h5 className="price-feature text-center">Envío gratis a toda Colombia</h5>
                         <h5 className="price-feature text-center">Experiencia familiar</h5>
                     </div>
                     <div className="card-footer">

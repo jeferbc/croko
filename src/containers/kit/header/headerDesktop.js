@@ -46,76 +46,78 @@ const HeaderDesktop = ({ isKitPage }) => {
                         zIndex: -1
                     }}
                 />
-                <div className="bottom-0 set-abs girl">
-                    <img
-                        src={isKitPage
-                            ? "https://ik.imagekit.io/ge17f66b4ma/family_header_cz4Hj1SWB.png?tr=w-800,q-75,f-webp"
-                            : "https://ik.imagekit.io/ge17f66b4ma/Imagen%20header%20page%20(5)__uFybJDlQ.png?tr=w-800,q-75,f-webp"
-                        }
-                        alt="Crea recuerdos únicos en familia con belly painting"
-                        width={800}
-                        height={800}
-                        className="img-fluid"
-                        id="girl"
-                        loading="eager"
-                        fetchPriority="high"
-                        style={{ maxWidth: '100%', height: 'auto' }}
-                    />
-                </div>
-                <Container>
-                    <Row>
-                        <Col lg="5" className="offset-lg-7">
-                            <div className="center-text m-t-50">
-                                <div className="simple-text">
-                                    <div className="title">
-                                        <div className="main-title">
-                                            <h1 className="gradient-text" style={isKitPage ? { letterSpacing: '0' } : {}}>
-                                                {isKitPage ? 'Crea recuerdos únicos en familia con tu bebé' : 'Maquillaje Prenatal'}
-                                            </h1>
+                <div className="d-inline-flex justify-content-center align-items-center w-100">
+                    <div className="set-abs girl">
+                        <img
+                            src={isKitPage
+                                ? "https://ik.imagekit.io/ge17f66b4ma/family_header_cz4Hj1SWB.png?tr=w-900,q-75,f-webp"
+                                : "https://ik.imagekit.io/ge17f66b4ma/Imagen%20header%20page%20(5)__uFybJDlQ.png?tr=w-900,q-75,f-webp"
+                            }
+                            alt="Crea recuerdos únicos en familia con belly painting"
+                            width={900}
+                            height={900}
+                            className="img-fluid"
+                            id="girl"
+                            loading="eager"
+                            fetchPriority="high"
+                            style={{ maxWidth: '100%', height: 'auto' }}
+                        />
+                    </div>
+                    <Container>
+                        <Row>
+                            <Col lg="5" className="offset-lg-7">
+                                <div className="center-text m-t-50">
+                                    <div className="simple-text">
+                                        <div className="title">
+                                            <div className="main-title">
+                                                <h1 className="gradient-text" style={isKitPage ? { letterSpacing: '0' } : {}}>
+                                                    {isKitPage ? 'Crea recuerdos únicos en familia con tu bebé' : 'Maquillaje Prenatal'}
+                                                </h1>
+                                            </div>
                                         </div>
-                                    </div>
-                                    <p className="header-sub-text text-center" style={ContactButtonStyles.p}>
-                                        {isKitPage
-                                            ? 'Pinturas seguras + plantillas fáciles + guías paso a paso'
-                                            : 'Celebra este momento especial con arte y disfruta de una experiencia creativa única, mientras creas recuerdos inolvidables en familia.'
-                                        }
-                                    </p>
-                                    {isKitPage && (
-                                        <div className="header-trust-badges text-center mt-3 mb-3">
-                                            <small className="text-muted">
-                                                <span className="me-3">
-                                                    <i className="fa fa-clock-o ml-2" style={{ color: '#c0882f' }}></i> Momento ideal: 28-36 semanas
-                                                </span>
-                                                <span className="me-3">
-                                                    <i className="fa fa-heart ml-2" style={{ color: '#c0882f' }}></i> +300 familias felices
-                                                </span>
-                                                <span className="me-3">
-                                                    <i className="fa fa-truck ml-2" style={{ color: '#c0882f' }}></i> Envío gratis
-                                                </span>
-                                            </small>
-                                        </div>
-                                    )}
-                                    {!isKitPage && (
-                                        <div style={ContactButtonStyles.div}>
-                                            <a className="btn btn-default btn-white whatsapp-local" target="_blank" href={"https://wa.me/573168161717?text=Hola, estoy interesado en maquillaje prenatal en Medellín."}>Maquillaje Medellín</a>
-                                        </div>
-                                    )}
-                                    <div style={{...ContactButtonStyles.div, marginTop: '25px'}} className='d-none d-lg-flex'>
-                                        {isKitPage ? (
-                                            <PurchaseButton className="btn btn-default btn-white purchase-kit" style={ContactButtonStyles.a}>
-                                                Obtener Kit - $150.000
-                                            </PurchaseButton>
-                                        ) : (
-                                            <Link href='/kit-pinta-barriguitas' className="btn btn-default btn-white" style={ContactButtonStyles.a}>
-                                                Kit de Maquillaje
-                                            </Link>
+                                        <p className="header-sub-text text-center" style={ContactButtonStyles.p}>
+                                            {isKitPage
+                                                ? 'Pinturas seguras + plantillas fáciles + guías paso a paso'
+                                                : 'Celebra este momento especial con arte y disfruta de una experiencia creativa única, mientras creas recuerdos inolvidables en familia.'
+                                            }
+                                        </p>
+                                        {isKitPage && (
+                                            <div className="header-trust-badges text-center mt-3 mb-3">
+                                                <small className="text-muted">
+                                                    <span className="me-3">
+                                                        <i className="fa fa-clock-o ml-2" style={{ color: '#c0882f' }}></i> Momento ideal: 28-36 semanas
+                                                    </span>
+                                                    <span className="me-3">
+                                                        <i className="fa fa-heart ml-2" style={{ color: '#c0882f' }}></i> +500 familias felices
+                                                    </span>
+                                                    <span className="me-3">
+                                                        <i className="fa fa-truck ml-2" style={{ color: '#c0882f' }}></i> Envío gratis
+                                                    </span>
+                                                </small>
+                                            </div>
                                         )}
+                                        {!isKitPage && (
+                                            <div style={ContactButtonStyles.div}>
+                                                <a className="btn btn-default btn-white whatsapp-local" target="_blank" href={"https://wa.me/573168161717?text=Hola, estoy interesado en maquillaje prenatal en Medellín."}>Maquillaje Medellín</a>
+                                            </div>
+                                        )}
+                                        <div style={{...ContactButtonStyles.div, marginTop: '25px'}} className='d-none d-lg-flex'>
+                                            {isKitPage ? (
+                                                <PurchaseButton className="btn btn-default btn-white purchase-kit" style={ContactButtonStyles.a}>
+                                                    Obtener Kit - $150.000
+                                                </PurchaseButton>
+                                            ) : (
+                                                <Link href='/kit-pinta-barriguitas' className="btn btn-default btn-white" style={ContactButtonStyles.a}>
+                                                    Kit de Maquillaje
+                                                </Link>
+                                            )}
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                        </Col>
-                    </Row>
-                </Container>
+                            </Col>
+                        </Row>
+                    </Container>
+                </div>
             </div>
         </div>
     </section>
