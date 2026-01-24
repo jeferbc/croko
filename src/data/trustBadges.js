@@ -17,6 +17,6 @@ export const TrustBadgesData = [
     {
         icon: 'fa fa-heart',
         suffix: '',
-        title: '+300 Familias Satisfechas'
+        title: '+500 Familias Satisfechas'
     }
 ];
