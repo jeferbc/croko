@@ -25,13 +25,14 @@ const ProductSection = () => (
     <Container>
         <Row>
             <Col lg="6">
+                <h2 className="d-lg-none text-center bold text-uppercase pb-3 mb-2" style={{ color: '#c0882f' }}>Pinturas seguras para embarazadas</h2>
                 <ProductCarousel />
             </Col>
             <Col lg="6">
                 <div className="blog agency pricing inner-pagetitle pt-4 pt-lg-0">
                     <div className="price-container price-margin shadows bg-white text-left mb-sm-0">
                         <div className="price-feature-container set-relative" style={{ textAlign: 'left' }}>
-                            <h2 className="feature-text-heading text-center bold text-uppercase pb-3" style={{ color: '#c0882f' }}>Pinturas seguras para embarazadas</h2>
+                            <h2 className="feature-text-heading text-center bold text-uppercase pb-3 d-none d-lg-block" style={{ color: '#c0882f' }}>Pinturas seguras para embarazadas</h2>
                             <h3 className="feature-text-heading bold pb-2">Descripción</h3>
                             <p className="price-feature"><strong>Imagina crear un recuerdo único de tu embarazo junto a tu familia.</strong></p>
                             <p className="price-feature" style={{ marginBottom: '0.5rem' }}>El Kit Pinta Barriguita incluye todo para una experiencia inolvidable:</p>

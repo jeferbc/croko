@@ -21,8 +21,8 @@ const images = [
     thumbnail: '/Catalogonuevoni%C3%B1a%20(1)_WTQEu2ZUn.png',
   },
   {
-    original: '/WhatsApp%20Image%202025-05-16%20at%204.05.01%20PM_2x5hn05jA.jpeg',
-    thumbnail: '/WhatsApp%20Image%202025-05-16%20at%204.05.02%20PM_An6bn4kSP.jpeg',
+    original: '/Dise%C3%B1o%20sin%20t%C3%ADtulo%20(11)_s8WFVKSKk.png',
+    thumbnail: '/Dise%C3%B1o%20sin%20t%C3%ADtulo%20(11)_s8WFVKSKk.png',
   }
 
 ];
