@@ -762,7 +762,7 @@ module.exports = {
     },
     {
       id: 'maquillaje-para-embarazadas',
-      title: 'Maquillaje Seguro Para Embarazadas: Guía Completa 2025',
+      title: 'Maquillaje Seguro Para Embarazadas: Guía Completa 2026',
       slug: 'maquillaje-para-embarazadas',
       image: 'https://ik.imagekit.io/ge17f66b4ma/maquillaje_seguro_JvfI7NhUL.jpeg?updatedAt=1762875465512',
       description: 'Descubre qué productos de maquillaje son seguros durante el embarazo, ingredientes a evitar y alternativas hipoalergénicas. Guía completa para cuidar tu belleza prenatal.',

@@ -28,8 +28,8 @@ export default function sitemap() {
   // Landing page - High priority for SEO
   const landingPage = {
     url: `${baseUrl}/maquillaje-para-embarazadas`,
-    lastModified: new Date('2025-01-15'),
-    changeFrequency: 'monthly',
+    lastModified: new Date(),
+    changeFrequency: 'weekly',
     priority: 1.0, // Highest priority - targeting #1 keyword
   }
 
@@ -42,8 +42,8 @@ export default function sitemap() {
 
     return {
       url: `${baseUrl}/blog/${post.slug}`,
-      lastModified: new Date(post.date), // Now in ISO format: YYYY-MM-DD
-      changeFrequency: 'monthly',
+      lastModified: new Date(),
+      changeFrequency: 'weekly',
       priority: 0.7,
     }
   }).filter(Boolean) // Remove null entries
