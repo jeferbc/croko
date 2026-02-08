@@ -1,14 +1,17 @@
 import React from 'react'
 
 export const ArticleSchema = ({ post, url }) => {
+    const datePublished = post.date ? new Date(post.date).toISOString() : "2025-01-15T00:00:00+00:00"
+    const dateModified = new Date().toISOString()
+
     const schema = {
         "@context": "https://schema.org",
         "@type": "Article",
         "headline": post.title,
         "description": post.description,
         "image": post.image,
-        "datePublished": "2025-01-15T00:00:00+00:00",
-        "dateModified": "2025-01-15T00:00:00+00:00",
+        "datePublished": datePublished,
+        "dateModified": dateModified,
         "author": {
             "@type": "Person",
             "name": post.author || "Carolina Rincón",

@@ -18,6 +18,12 @@ export const metadata = {
     description: post?.description || '',
     images: [post?.image || ''],
   },
+  twitter: {
+    card: 'summary_large_image',
+    title: post?.title || '',
+    description: post?.description || '',
+    images: [post?.image || ''],
+  },
 };
 
 export default function SaludMentalLayout({ children }) {

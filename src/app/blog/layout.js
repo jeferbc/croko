@@ -9,6 +9,12 @@ export const metadata = {
     follow: true,
   },
   openGraph: {
+    url: 'https://www.croko.co/blog',
+    title: 'Blog | Maquillajes Embarazadas',
+    description: 'Descubre nuestros artículos sobre belly painting, baby showers, embarazo y maternidad.',
+  },
+  twitter: {
+    card: 'summary_large_image',
     title: 'Blog | Maquillajes Embarazadas',
     description: 'Descubre nuestros artículos sobre belly painting, baby showers, embarazo y maternidad.',
   },

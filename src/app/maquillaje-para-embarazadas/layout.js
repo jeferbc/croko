@@ -20,6 +20,12 @@ export const metadata = {
     description: 'Guía completa sobre maquillaje seguro durante el embarazo. Descubre qué productos usar, ingredientes a evitar y opciones hipoalergénicas.',
     images: [post?.image || 'https://ik.imagekit.io/ge17f66b4ma/maquillaje_seguro_JvfI7NhUL.jpeg?updatedAt=1762875465512'],
   },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Maquillaje Seguro Para Embarazadas: Guía Completa 2026',
+    description: 'Guía completa sobre maquillaje seguro durante el embarazo. Descubre qué productos usar, ingredientes a evitar y opciones hipoalergénicas.',
+    images: [post?.image || 'https://ik.imagekit.io/ge17f66b4ma/maquillaje_seguro_JvfI7NhUL.jpeg?updatedAt=1762875465512'],
+  },
 };
 
 export default function MaquillajeParaEmbarazadasLayout({ children }) {
