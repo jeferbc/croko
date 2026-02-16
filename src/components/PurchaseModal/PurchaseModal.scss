@@ -10,12 +10,19 @@ $girl-pink: #E91E8C;
     overflow: hidden;
     border: none;
     box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+
+    @media (max-width: 576px) {
+      max-height: 90vh;
+      display: flex;
+      flex-direction: column;
+    }
   }
 
   .modal-header {
     background: linear-gradient(135deg, $bg-light 0%, #ffe8d6 100%);
     border-bottom: 1px solid rgba(192, 136, 47, 0.2);
     padding: 1.25rem 1.5rem;
+    flex-shrink: 0;
 
     .modal-header-content {
       width: 100%;
@@ -41,6 +48,8 @@ $girl-pink: #E91E8C;
 
     @media (max-width: 576px) {
       padding: 1rem;
+      overflow-y: auto;
+      flex: 1 1 auto;
     }
   }
 
@@ -49,6 +58,7 @@ $girl-pink: #E91E8C;
     padding: 1rem 1.5rem;
     justify-content: flex-end;
     gap: 0.75rem;
+    flex-shrink: 0;
 
     .btn-next {
       background: $primary-gold;
