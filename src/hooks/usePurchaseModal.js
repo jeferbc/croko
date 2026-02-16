@@ -4,7 +4,7 @@ import { getImageNames } from '@/data/designImages';
 
 const STORAGE_KEY = 'croko_purchase_selections';
 const WOMPI_CHECKOUT_URL = 'https://checkout.wompi.co/l/XyjluW';
-const SIMPLEFORM_ENDPOINT = 'https://getsimpleform.com/messages?form_api_token=033252d3f8a76751dbd11bedcfbd873e';
+const FORMSPREE_ENDPOINT = 'https://formspree.io/f/xbdarpay';
 
 const initialSelections = {
   gender: null,
@@ -124,7 +124,7 @@ export const usePurchaseModal = () => {
     }
   }, [currentStep]);
 
-  const submitToSimpleForm = useCallback(async (data) => {
+  const submitToFormspree = useCallback(async (data) => {
     try {
       const imageNames = getImageNames(data.selectedImages);
       const timestamp = new Date().toLocaleString('es-CO', { timeZone: 'America/Bogota' });
@@ -137,15 +137,15 @@ export const usePurchaseModal = () => {
       formData.append('fecha', timestamp);
       formData.append('ids_disenos', data.selectedImages.join(', '));
 
-      await fetch(SIMPLEFORM_ENDPOINT, {
+      await fetch(FORMSPREE_ENDPOINT, {
         method: 'POST',
         body: formData
       });
 
-      console.log('Selections submitted to SimpleForm');
+      console.log('Selections submitted to Formspree');
     } catch (error) {
-      console.error('Error submitting to SimpleForm:', error);
-      // Continue to checkout even if SimpleForm fails
+      console.error('Error submitting to Formspree:', error);
+      // Continue to checkout even if Formspree fails
     }
   }, []);
 
@@ -155,15 +155,15 @@ export const usePurchaseModal = () => {
     // Save final selections
     saveSelections(selections);
 
-    // Submit to SimpleForm (don't wait for response to avoid blocking)
-    submitToSimpleForm(selections);
+    // Submit to Formspree (don't wait for response to avoid blocking)
+    submitToFormspree(selections);
 
     // Redirect to Wompi checkout
     window.open(WOMPI_CHECKOUT_URL, '_blank');
 
     // Close modal
     closeModal();
-  }, [canProceed, selections, saveSelections, submitToSimpleForm, closeModal]);
+  }, [canProceed, selections, saveSelections, submitToFormspree, closeModal]);
 
   const resetSelections = useCallback(() => {
     setSelections(initialSelections);
