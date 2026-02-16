@@ -3,7 +3,7 @@ import { useState, useCallback, useEffect } from 'react';
 import { getImageNames } from '@/data/designImages';
 
 const STORAGE_KEY = 'croko_purchase_selections';
-const WOMPI_CHECKOUT_URL = 'https://checkout.wompi.co/l/XyjluW';
+const WOMPI_CHECKOUT_URL = 'https://checkout.wompi.co/l/XPTVqD';
 const FORMSPREE_ENDPOINT = 'https://formspree.io/f/xbdarpay';
 
 const initialSelections = {
