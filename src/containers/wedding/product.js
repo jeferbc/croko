@@ -4,6 +4,7 @@ import dynamic from 'next/dynamic';
 import {Container,Row,Col} from 'reactstrap'
 import Counter from '@/components/Counter';
 import { TrustBadgesData } from '@/data/trustBadges';
+import Link from 'next/link';
 import PurchaseButton from '@/components/PurchaseModal/PurchaseButton';
 
 const ProductCarousel = dynamic(() => import('@/containers/elements/productCarousel'), {
@@ -49,6 +50,11 @@ const ProductSection = () => (
                             </div>
                             <div className="text-center">
                                 <PurchaseButton className="btn btn-default btn-white purchase-kit">Comprar</PurchaseButton>
+                                <p style={{ marginTop: '12px', fontSize: '12px', color: '#888' }}>
+                                    <Link href="/politica-devoluciones" style={{ color: '#888', textDecoration: 'underline' }}>
+                                        Política de Devoluciones y Garantía
+                                    </Link>
+                                </p>
                             </div>
                         </div>
                     </div>
