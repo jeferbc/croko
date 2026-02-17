@@ -22,7 +22,7 @@ export default function PoliticaDevoluciones() {
                 <Row>
                     <Col lg="10" className="offset-lg-1">
                         <div className="policy-content">
-                            <h1 style={{ color: 'var(--primary)', fontSize: '2.5rem', fontWeight: 'bold', marginBottom: '16px', paddingTop: isXl ? '80px' : isDesktop ? '60px' : 0 }}>
+                            <h1 style={{ color: 'var(--primary)', fontSize: '2.5rem', fontWeight: 'bold', marginBottom: '16px', paddingTop: isXl ? '100px' : isDesktop ? '60px' : 0 }}>
                                 Política de Devoluciones, Cambios y Garantía
                             </h1>
 
