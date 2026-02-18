@@ -25,8 +25,8 @@ const PopularPosts = dynamic(() => import('@/containers/blog/posts'), {
 const productSchema = {
     "@context": "https://schema.org",
     "@type": "Product",
-    "name": "Kit Pintura Barriga Embarazada",
-    "description": "Kit completo para pintar barriguita de embarazada en casa. Incluye 15 colores, 3 plantillas personalizables, 4 pinceles profesionales y video tutorial.",
+    "name": "Kit Pinta Barriguita - Kit de Pintura para Barriga de Embarazada",
+    "description": "Kit completo de pintura corporal para barriga de embarazada. Incluye pinturas hipoalergénicas a base de agua, pinceles profesionales y guía de diseños. Ideal para sesiones fotográficas de maternidad y baby showers.",
     "image": [
         "https://ik.imagekit.io/ge17f66b4ma/Kit%20foto%20690x551_2rLNnbXrzh.png"
     ],
@@ -34,12 +34,13 @@ const productSchema = {
         "@type": "Brand",
         "name": "Croko"
     },
-    "sku": "KIT-PINTA-001",
+    "sku": "CROKO-KPB-001",
     "offers": {
         "@type": "Offer",
-        "price": "150000",
+        "price": 150000,
         "priceCurrency": "COP",
         "availability": "https://schema.org/InStock",
+        "itemCondition": "https://schema.org/NewCondition",
         "url": "https://www.croko.co/kit-pinta-barriguitas",
         "seller": {
             "@type": "Organization",
@@ -60,17 +61,24 @@ const productSchema = {
                 "@type": "ShippingDeliveryTime",
                 "handlingTime": {
                     "@type": "QuantitativeValue",
-                    "minValue": "1",
-                    "maxValue": "2",
+                    "minValue": 1,
+                    "maxValue": 2,
                     "unitCode": "DAY"
                 },
                 "transitTime": {
                     "@type": "QuantitativeValue",
-                    "minValue": "1",
-                    "maxValue": "3",
+                    "minValue": 3,
+                    "maxValue": 7,
                     "unitCode": "DAY"
                 }
             }
+        },
+        "hasMerchantReturnPolicy": {
+            "@type": "MerchantReturnPolicy",
+            "applicableCountry": "CO",
+            "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
+            "merchantReturnDays": 30,
+            "returnMethod": "https://schema.org/ReturnByMail"
         }
     },
     "aggregateRating": {
@@ -133,11 +141,11 @@ export default function Kit() {
         <>
             <script
                 type="application/ld+json"
-                dangerouslySetInnerHTML={{ __html: JSON.stringify(productSchema) }}
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(productSchema).replace(/</g, '\\u003c') }}
             />
             <script
                 type="application/ld+json"
-                dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema).replace(/</g, '\\u003c') }}
             />
             <HeaderSection />
             <ProductSection />

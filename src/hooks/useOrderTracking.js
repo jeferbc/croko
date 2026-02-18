@@ -36,6 +36,18 @@ const useOrderTracking = (searchParams) => {
         });
         console.log('✓ GA4 Purchase event fired via GTM');
 
+        // Google Ads Conversion Tag
+        // TODO: Replace AW-CONVERSION_ID/CONVERSION_LABEL with actual values from Google Ads
+        if (typeof window.gtag === 'function') {
+          window.gtag('event', 'conversion', {
+            'send_to': 'AW-CONVERSION_ID/CONVERSION_LABEL',
+            'value': FIXED_PRICE,
+            'currency': 'COP',
+            'transaction_id': transactionId || undefined
+          });
+          console.log('✓ Google Ads conversion event fired');
+        }
+
         if (purchaseKey) {
           sessionStorage.setItem(purchaseKey, 'true');
         }
