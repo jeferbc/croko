@@ -26,9 +26,9 @@ const productSchema = {
     "@context": "https://schema.org",
     "@type": "Product",
     "name": "Kit Pinta Barriguita - Kit de Pintura para Barriga de Embarazada",
-    "description": "Kit completo de pintura corporal para barriga de embarazada. Incluye pinturas hipoalergénicas a base de agua, pinceles profesionales y guía de diseños. Ideal para sesiones fotográficas de maternidad y baby showers.",
+    "description": "Crea un recuerdo inolvidable de tu embarazo junto a tu familia. Kit completo con 15 colores de pinturas hipoalergénicas, pinceles profesionales, plantillas y videotutoriales. +500 familias felices. Ideal para baby showers y sesiones fotográficas de maternidad.",
     "image": [
-        "https://ik.imagekit.io/ge17f66b4ma/Kit%20foto%20690x551_2rLNnbXrzh.png"
+        "https://ik.imagekit.io/ge17f66b4ma/Fotokitcarrusel%20(1)%20(1)_kduJxCzra.png"
     ],
     "brand": {
         "@type": "Brand",
