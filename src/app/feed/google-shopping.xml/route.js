@@ -16,6 +16,7 @@ export async function GET() {
       <g:link>${domain}/kit-pinta-barriguitas</g:link>
       <g:image_link>https://ik.imagekit.io/ge17f66b4ma/Fotokitcarrusel%20(1)%20(1)_kduJxCzra.png</g:image_link>
       <g:availability>in_stock</g:availability>
+      <g:quantity>50</g:quantity>
       <g:price>150000 COP</g:price>
       <g:condition>new</g:condition>
       <g:brand>Croko</g:brand>
