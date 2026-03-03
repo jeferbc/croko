@@ -1,6 +1,6 @@
 export const metadata = {
-  title: 'Política de Cookies | Maquillajes Embarazadas',
-  description: 'Política de cookies de Maquillajes Embarazadas. Información sobre el uso de cookies en nuestro sitio web.',
+  title: 'Política de Cookies | Pinta Barriguitas Croko',
+  description: 'Política de cookies de Pinta Barriguitas Croko. Información sobre el uso de cookies en nuestro sitio web.',
   robots: {
     index: true,
     follow: true,

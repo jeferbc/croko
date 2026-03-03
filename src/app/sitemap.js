@@ -29,12 +29,6 @@ export default function sitemap() {
       changeFrequency: 'monthly',
       priority: 0.3,
     },
-    {
-      url: `${baseUrl}/feed/google-shopping.xml`,
-      lastModified: new Date(),
-      changeFrequency: 'daily',
-      priority: 0.1,
-    },
   ]
 
   // Landing page - High priority for SEO

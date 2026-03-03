@@ -3,7 +3,7 @@ import { BlogData } from '@/database/blog/blog_database'
 const post = BlogData.find(p => p.slug === 'kit-maquillaje-prenatal-hermanitos')
 
 export const metadata = {
-  title: `${post?.title || 'Blog'} | Maquillajes Embarazadas`,
+  title: `${post?.title || 'Blog'} | Pinta Barriguitas Croko`,
   description: post?.description || '',
   alternates: {
     canonical: 'https://www.croko.co/blog/kit-maquillaje-prenatal-hermanitos',

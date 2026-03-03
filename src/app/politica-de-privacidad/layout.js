@@ -1,5 +1,5 @@
 export const metadata = {
-  title: 'Política de Privacidad | Maquillajes Embarazadas',
+  title: 'Política de Privacidad | Pinta Barriguitas Croko',
   description: 'Política de privacidad y tratamiento de datos personales para www.croko.co',
   robots: {
     index: false,

@@ -3,7 +3,7 @@ import { BlogData } from '@/database/blog/blog_database'
 const post = BlogData.find(p => p.slug === 'baby-showers-colombia-actividades-regalos-croko')
 
 export const metadata = {
-  title: `${post?.title || 'Blog'} | Maquillajes Embarazadas`,
+  title: `${post?.title || 'Blog'} | Pinta Barriguitas Croko`,
   description: post?.description || '',
   alternates: {
     canonical: 'https://www.croko.co/blog/baby-showers-colombia-actividades-regalos-croko',
