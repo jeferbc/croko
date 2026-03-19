@@ -4,13 +4,18 @@ import { getImageNames } from '@/data/designImages';
 
 const STORAGE_KEY = 'croko_purchase_selections';
 const WOMPI_CHECKOUT_URL = 'https://checkout.wompi.co/l/XPTVqD';
+const WOMPI_CHECKOUT_URL_CUSTOM = 'https://checkout.wompi.co/l/XPTVqD'; // TODO: replace with $190.000 Wompi link
 const FORMSPREE_ENDPOINT = 'https://formspree.io/f/xbdarpay';
+
+const BASE_PRICE = 150000;
+const CUSTOM_IMAGE_PRICE = 40000;
 
 const initialSelections = {
   gender: null,
   selectedImages: [],
   babyName: '',
-  email: ''
+  email: '',
+  wantsCustomImage: false
 };
 
 export const usePurchaseModal = () => {
@@ -31,7 +36,8 @@ export const usePurchaseModal = () => {
             gender: parsed.gender || null,
             selectedImages: parsed.selectedImages || [],
             babyName: parsed.babyName || '',
-            email: parsed.email || ''
+            email: parsed.email || '',
+            wantsCustomImage: parsed.wantsCustomImage || false
           });
         }
       }
@@ -94,6 +100,14 @@ export const usePurchaseModal = () => {
     saveSelections(newSelections);
   }, [selections, saveSelections]);
 
+  const toggleCustomImage = useCallback(() => {
+    const newSelections = { ...selections, wantsCustomImage: !selections.wantsCustomImage };
+    setSelections(newSelections);
+    saveSelections(newSelections);
+  }, [selections, saveSelections]);
+
+  const totalPrice = selections.wantsCustomImage ? BASE_PRICE + CUSTOM_IMAGE_PRICE : BASE_PRICE;
+
   const isValidEmail = (email) => {
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     return emailRegex.test(email);
@@ -136,6 +150,8 @@ export const usePurchaseModal = () => {
       formData.append('nombre_bebe', data.babyName);
       formData.append('fecha', timestamp);
       formData.append('ids_disenos', data.selectedImages.join(', '));
+      formData.append('imagen_personalizada', data.wantsCustomImage ? 'Sí' : 'No');
+      formData.append('total', data.wantsCustomImage ? '$190.000' : '$150.000');
 
       await fetch(FORMSPREE_ENDPOINT, {
         method: 'POST',
@@ -159,7 +175,8 @@ export const usePurchaseModal = () => {
     submitToFormspree(selections);
 
     // Redirect to Wompi checkout
-    window.open(WOMPI_CHECKOUT_URL, '_blank');
+    const checkoutUrl = selections.wantsCustomImage ? WOMPI_CHECKOUT_URL_CUSTOM : WOMPI_CHECKOUT_URL;
+    window.open(checkoutUrl, '_blank');
 
     // Close modal
     closeModal();
@@ -176,6 +193,7 @@ export const usePurchaseModal = () => {
     isOpen,
     currentStep,
     selections,
+    totalPrice,
 
     // Actions
     openModal,
@@ -184,6 +202,7 @@ export const usePurchaseModal = () => {
     toggleImage,
     setBabyName,
     setEmail,
+    toggleCustomImage,
     nextStep,
     prevStep,
     canProceed,

@@ -1,6 +1,10 @@
 import { getImageNames } from '@/data/designImages';
 
-const BabyNameStep = ({ babyName, onNameChange, email, onEmailChange, gender, selectedImages }) => {
+const formatPrice = (price) => {
+  return '$' + price.toLocaleString('es-CO');
+};
+
+const BabyNameStep = ({ babyName, onNameChange, email, onEmailChange, gender, selectedImages, wantsCustomImage, totalPrice }) => {
   const imageNames = getImageNames(selectedImages);
 
   return (
@@ -50,9 +54,15 @@ const BabyNameStep = ({ babyName, onNameChange, email, onEmailChange, gender, se
           <span className="label">Diseños:</span>
           <span className="value">{imageNames.join(', ')}</span>
         </div>
+        {wantsCustomImage && (
+          <div className="summary-item">
+            <span className="label">Imagen personalizada:</span>
+            <span className="value">Sí (+$40.000)</span>
+          </div>
+        )}
         <div className="summary-total">
           <span className="label">Total a pagar:</span>
-          <span className="total-value">$150.000</span>
+          <span className="total-value">{formatPrice(totalPrice)}</span>
         </div>
       </div>
     </div>

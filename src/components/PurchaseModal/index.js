@@ -35,11 +35,13 @@ const PurchaseModalInner = () => {
     isOpen,
     currentStep,
     selections,
+    totalPrice,
     closeModal,
     setGender,
     toggleImage,
     setBabyName,
     setEmail,
+    toggleCustomImage,
     nextStep,
     prevStep,
     canProceed,
@@ -102,6 +104,8 @@ const PurchaseModalInner = () => {
             gender={selections.gender}
             selectedImages={selections.selectedImages}
             onToggleImage={toggleImage}
+            wantsCustomImage={selections.wantsCustomImage}
+            onToggleCustomImage={toggleCustomImage}
           />
         )}
         {currentStep === 3 && (
@@ -112,6 +116,8 @@ const PurchaseModalInner = () => {
             onEmailChange={setEmail}
             gender={selections.gender}
             selectedImages={selections.selectedImages}
+            wantsCustomImage={selections.wantsCustomImage}
+            totalPrice={totalPrice}
           />
         )}
       </ModalBody>
