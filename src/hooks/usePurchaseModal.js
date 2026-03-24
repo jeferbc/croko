@@ -4,7 +4,8 @@ import { getImageNames } from '@/data/designImages';
 
 const STORAGE_KEY = 'croko_purchase_selections';
 const WOMPI_CHECKOUT_URL = 'https://checkout.wompi.co/l/XPTVqD';
-const FORMSPREE_ENDPOINT = 'https://formspree.io/f/xbdarpay';
+const N8N_WEBHOOK_URL = process.env.NEXT_PUBLIC_N8N_WEBHOOK_URL;
+const N8N_WEBHOOK_KEY = process.env.NEXT_PUBLIC_N8N_WEBHOOK_KEY;
 
 const initialSelections = {
   gender: null,
@@ -124,28 +125,33 @@ export const usePurchaseModal = () => {
     }
   }, [currentStep]);
 
-  const submitToFormspree = useCallback(async (data) => {
+  const submitToWebhook = useCallback(async (data) => {
     try {
       const imageNames = getImageNames(data.selectedImages);
       const timestamp = new Date().toLocaleString('es-CO', { timeZone: 'America/Bogota' });
 
-      const formData = new FormData();
-      formData.append('email', data.email);
-      formData.append('genero', data.gender === 'boy' ? 'Niño' : 'Niña');
-      formData.append('disenos', imageNames.join(', '));
-      formData.append('nombre_bebe', data.babyName);
-      formData.append('fecha', timestamp);
-      formData.append('ids_disenos', data.selectedImages.join(', '));
+      const payload = {
+        email: data.email,
+        genero: data.gender === 'boy' ? 'Niño' : 'Niña',
+        disenos: imageNames.join(', '),
+        nombre_bebe: data.babyName,
+        fecha: timestamp,
+        ids_disenos: data.selectedImages.join(', ')
+      };
 
-      await fetch(FORMSPREE_ENDPOINT, {
+      await fetch(N8N_WEBHOOK_URL, {
         method: 'POST',
-        body: formData
+        headers: {
+          'Content-Type': 'application/json',
+          'X-API-Key': N8N_WEBHOOK_KEY
+        },
+        body: JSON.stringify(payload)
       });
 
-      console.log('Selections submitted to Formspree');
+      console.log('Order submitted to n8n webhook');
     } catch (error) {
-      console.error('Error submitting to Formspree:', error);
-      // Continue to checkout even if Formspree fails
+      console.error('Error submitting to webhook:', error);
+      // Continue to checkout even if webhook fails
     }
   }, []);
 
@@ -155,15 +161,15 @@ export const usePurchaseModal = () => {
     // Save final selections
     saveSelections(selections);
 
-    // Submit to Formspree (don't wait for response to avoid blocking)
-    submitToFormspree(selections);
+    // Submit to n8n webhook (don't wait for response to avoid blocking)
+    submitToWebhook(selections);
 
     // Redirect to Wompi checkout
     window.open(WOMPI_CHECKOUT_URL, '_blank');
 
     // Close modal
     closeModal();
-  }, [canProceed, selections, saveSelections, submitToFormspree, closeModal]);
+  }, [canProceed, selections, saveSelections, submitToWebhook, closeModal]);
 
   const resetSelections = useCallback(() => {
     setSelections(initialSelections);
