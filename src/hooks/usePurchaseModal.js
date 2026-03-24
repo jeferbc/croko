@@ -143,7 +143,7 @@ export const usePurchaseModal = () => {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
-          'X-API-Key': N8N_WEBHOOK_KEY
+          'Authorization': 'Basic ' + btoa('croko:' + N8N_WEBHOOK_KEY)
         },
         body: JSON.stringify(payload)
       });
