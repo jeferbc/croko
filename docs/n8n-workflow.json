@@ -1,0 +1,102 @@
+{
+  "nodes": [
+    {
+      "parameters": {
+        "httpMethod": "POST",
+        "path": "croko-cart",
+        "authentication": "basicAuth",
+        "options": {
+          "ignoreBots": true
+        }
+      },
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 2.1,
+      "position": [-448, -144],
+      "id": "5711873c-24a5-4b9c-8511-b98a0d739e79",
+      "name": "Webhook",
+      "webhookId": "5bfcbb51-7aab-457c-855f-c2e8bae1e8fd",
+      "credentials": {
+        "httpBasicAuth": {
+          "id": "AfbbUvTd6TEFs68Z",
+          "name": "Croko credentials"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "fromEmail": "pedidos@croko.co",
+        "toEmail": "crokolina@gmail.com",
+        "subject": "=Nuevo Pedido Kit - {{ $json.body.nombre_bebe }}  ",
+        "html": "=<div style=\"font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto;\">\n  <h2 style=\"color: #2d6a4f;\">🐊 Nuevo Pedido de Kit Croko</h2>\n  <table style=\"border-collapse: collapse; width: 100%;\">\n    <tr>\n      <td style=\"padding: 10px; border: 1px solid #ddd; background: #f8f9fa;\"><strong>Email Cliente</strong></td>\n      <td style=\"padding: 10px; border: 1px solid #ddd;\">{{ $json.body.email }}</td>\n    </tr>\n    <tr>\n      <td style=\"padding: 10px; border: 1px solid #ddd; background: #f8f9fa;\"><strong>Nombre Bebé</strong></td>\n      <td style=\"padding: 10px; border: 1px solid #ddd;\">{{ $json.body.nombre_bebe }}</td>\n    </tr>\n    <tr>\n      <td style=\"padding: 10px; border: 1px solid #ddd; background: #f8f9fa;\"><strong>Género</strong></td>\n      <td style=\"padding: 10px; border: 1px solid #ddd;\">{{ $json.body.genero }}</td>\n    </tr>\n    <tr>\n      <td style=\"padding: 10px; border: 1px solid #ddd; background: #f8f9fa;\"><strong>Diseños</strong></td>\n      <td style=\"padding: 10px; border: 1px solid #ddd;\">{{ $json.body.disenos }}</td>\n    </tr>\n    <tr>\n      <td style=\"padding: 10px; border: 1px solid #ddd; background: #f8f9fa;\"><strong>IDs Diseños</strong></td>\n      <td style=\"padding: 10px; border: 1px solid #ddd;\">{{ $json.body.ids_disenos }}</td>\n    </tr>\n    <tr>\n      <td style=\"padding: 10px; border: 1px solid #ddd; background: #f8f9fa;\"><strong>Imagen Personalizada</strong></td>\n      <td style=\"padding: 10px; border: 1px solid #ddd;\">{{ $json.body.imagen_personalizada }}</td>\n    </tr>\n    <tr>\n      <td style=\"padding: 10px; border: 1px solid #ddd; background: #f8f9fa;\"><strong>Total</strong></td>\n      <td style=\"padding: 10px; border: 1px solid #ddd; font-weight: bold; color: #2d6a4f;\">{{ $json.body.total }}</td>\n    </tr>\n    <tr>\n      <td style=\"padding: 10px; border: 1px solid #ddd; background: #f8f9fa;\"><strong>Fecha</strong></td>\n      <td style=\"padding: 10px; border: 1px solid #ddd;\">{{ $json.body.fecha }}</td>\n    </tr>\n  </table>\n</div>",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.emailSend",
+      "typeVersion": 2.1,
+      "position": [-176, -144],
+      "id": "0bdb8198-b5f2-41de-8096-224ba9df3917",
+      "name": "Send email",
+      "credentials": {
+        "smtp": {
+          "id": "df6jLFDKNrE1jDXw",
+          "name": "SMTP account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "https://erp.automaticamente.co/api/resource/CRM%20Lead",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "Content-Type",
+              "value": "application/json"
+            },
+            {
+              "name": "Authorization",
+              "value": "token 31a50ccfaf30938:8cac0d51582624b"
+            }
+          ]
+        },
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "=  {\n    \"first_name\": \"{{ $('Webhook').item.json.body.email }}\",\n    \"email\": \"{{ $('Webhook').item.json.body.email }}\",\n    \"source\": \"Croko Website\",\n    \"custom_genero\": \"{{ $('Webhook').item.json.body.genero }}\",\n    \"custom_nombre_bebe\": \"{{ $('Webhook').item.json.body.nombre_bebe }}\",\n    \"custom_disenos\": \"{{ $('Webhook').item.json.body.disenos }}\"\n  }",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.3,
+      "position": [80, -144],
+      "id": "8b404f71-d47d-4f59-afef-ba26d0cceec4",
+      "name": "HTTP Request"
+    }
+  ],
+  "connections": {
+    "Webhook": {
+      "main": [
+        [
+          {
+            "node": "Send email",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Send email": {
+      "main": [
+        [
+          {
+            "node": "HTTP Request",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "meta": {
+    "templateCredsSetupCompleted": true,
+    "instanceId": "86ab09cef3d388c0907c9aa22d22e851fa6cb80ad14b61cdb9b72a80a4b15818"
+  }
+}
