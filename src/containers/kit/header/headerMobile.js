@@ -71,7 +71,7 @@ const HeaderMobile = ({ isKitPage }) => {
                                     {isKitPage ? (
                                         <PurchaseButton className="btn btn-default btn-white purchase-kit w-100">
                                             Obtener Kit<br/>
-                                            <small style={{ fontSize: '0.85rem' }}>$150.000</small>
+                                            <small style={{ fontSize: '0.85rem' }}>$190.000</small>
                                         </PurchaseButton>
                                     ) : (
                                         <Link href='/kit-pinta-barriguitas' className="btn btn-default btn-white purchase-kit w-100">Kit de Maquillaje</Link>

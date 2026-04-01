@@ -102,7 +102,7 @@ const PricingThree = () => (
                     </div>
                     <div className="card-footer">
                         <div className="price-value mt-auto">
-                            <h6 className="price text-center">$<span className="large">150.000</span></h6>
+                            <h6 className="price text-center">$<span className="large">190.000</span></h6>
                         </div>
                         <Link href='/kit-pinta-barriguitas' className="btn btn-default btn-white text-white">Ver kit de pintabarriguita</Link>
                     </div>
@@ -127,7 +127,7 @@ const PricingThree = () => (
                             <h5 className="price-feature text-center">Experiencia familiar única</h5>
                         </div>
                         <div className="price-value">
-                            <h6 className="price text-center">$<span className="large">150.000</span></h6>
+                            <h6 className="price text-center">$<span className="large">190.000</span></h6>
                         </div>
                         <Link href='/kit-pinta-barriguitas' className="btn btn-default btn-white text-white">Ver kit de pintabarriguita</Link>
                     </div>

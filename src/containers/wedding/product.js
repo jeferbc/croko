@@ -46,7 +46,7 @@ const ProductSection = () => (
                             </div>
                             <h3 className="feature-text-heading text-center pb-3">Envío incluido a todo Colombia</h3>
                             <div className="price-value mb-3">
-                                <div className="price text-center">$<span className="large">150.000</span></div>
+                                <div className="price text-center">$<span className="large">190.000</span></div>
                             </div>
                             <div className="text-center">
                                 <PurchaseButton className="btn btn-default btn-white purchase-kit">Comprar</PurchaseButton>

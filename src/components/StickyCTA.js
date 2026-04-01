@@ -61,7 +61,7 @@ const StickyCTA = ({
                         type="button"
                     >
                         <span>Comprar Ahora</span>
-                        <span className="price-tag">$150.000</span>
+                        <span className="price-tag">$190.000</span>
                     </button>
                 </div>
             </div>

@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 
 // Fixed product price
-const FIXED_PRICE = 150000; // $150,000 COP
+const FIXED_PRICE = 190000; // $190,000 COP
 
 const useOrderTracking = (searchParams) => {
   const [orderData, setOrderData] = useState(null);

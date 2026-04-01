@@ -3,7 +3,7 @@ import { useState, useCallback, useEffect } from 'react';
 import { getImageNames } from '@/data/designImages';
 
 const STORAGE_KEY = 'croko_purchase_selections';
-const WOMPI_CHECKOUT_URL = 'https://checkout.wompi.co/l/XPTVqD';
+const WOMPI_CHECKOUT_URL = 'https://checkout.wompi.co/l/BER6fQ';
 const N8N_WEBHOOK_URL = process.env.NEXT_PUBLIC_N8N_WEBHOOK_URL;
 const N8N_WEBHOOK_KEY = process.env.NEXT_PUBLIC_N8N_WEBHOOK_KEY;
 

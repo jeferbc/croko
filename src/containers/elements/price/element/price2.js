@@ -27,7 +27,7 @@ const PricingTwo = () => (
                             <h5 className="price-feature text-center">Envío incluido a toda Colombia</h5>
                         </div>
                         <div className="price-value">
-                            <h6 className="price text-center">$<span className="large">150.000</span>/month</h6>
+                            <h6 className="price text-center">$<span className="large">190.000</span>/month</h6>
                         </div>
                         <Link href='/kit-pinta-barriguitas' className="btn btn-default btn-white">Ver kit de maquillaje</Link>
                     </div>

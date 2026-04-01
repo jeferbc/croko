@@ -104,7 +104,7 @@ const HeaderDesktop = ({ isKitPage }) => {
                                         <div style={{...ContactButtonStyles.div, marginTop: '25px'}} className='d-none d-lg-flex'>
                                             {isKitPage ? (
                                                 <PurchaseButton className="btn btn-default btn-white purchase-kit" style={ContactButtonStyles.a}>
-                                                    Obtener Kit - $150.000
+                                                    Obtener Kit - $190.000
                                                 </PurchaseButton>
                                             ) : (
                                                 <Link href='/kit-pinta-barriguitas' className="btn btn-default btn-white" style={ContactButtonStyles.a}>

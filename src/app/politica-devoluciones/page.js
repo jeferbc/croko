@@ -197,7 +197,7 @@ export default function PoliticaDevoluciones() {
                                     Información Importante
                                 </h2>
                                 <p><strong>Envíos y entregas</strong></p>
-                                <p>Nuestro Kit Pinta Barriguita tiene un precio de <strong>$150.000 COP</strong> con <strong>envío incluido</strong> a todo Colombia. No hay costos ocultos ni cargos adicionales.</p>
+                                <p>Nuestro Kit Pinta Barriguita tiene un precio de <strong>$190.000 COP</strong> con <strong>envío incluido</strong> a todo Colombia. No hay costos ocultos ni cargos adicionales.</p>
 
                                 <p><strong>Medio de pago</strong></p>
                                 <p>Todos los pagos se procesan de forma segura a través de <strong>Wompi</strong>, respaldado por Bancolombia. Aceptamos tarjetas de crédito y débito, PSE, Nequi y otros medios electrónicos.</p>

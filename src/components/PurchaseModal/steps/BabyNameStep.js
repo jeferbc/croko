@@ -52,7 +52,7 @@ const BabyNameStep = ({ babyName, onNameChange, email, onEmailChange, gender, se
         </div>
         <div className="summary-total">
           <span className="label">Total a pagar:</span>
-          <span className="total-value">$150.000</span>
+          <span className="total-value">$190.000</span>
         </div>
       </div>
     </div>

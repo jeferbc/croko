@@ -8,7 +8,7 @@ All implementation tasks have been completed and verified with a real purchase.
 
 ## ✅ Final Live Configuration
 
-**Payment Link URL:** `https://checkout.wompi.co/l/YRIafg`
+**Payment Link URL:** `https://checkout.wompi.co/l/BER6fQ`
 
 ### Link Details
 
@@ -24,14 +24,19 @@ All implementation tasks have been completed and verified with a real purchase.
 | **Redirect URL** | https://www.maquillajeembarazadas.com/gracias |
 | **Created** | December 29 |
 
+### Title
+```
+Kit Pinta Barriguita – Todo Incluido
+```
+
 ### Description (Live)
 ```
-Crea un recuerdo inolvidable con tu bebé antes de que nazca. Incluye 3 plantillas personalizables, 5 brochas profesionales y pinturas 100% seguras para el embarazo. Fácil de usar, se retira con agua y jabón. Perfecto para semanas 24-38
+Crea un recuerdo inolvidable con tu bebé antes de que nazca. Incluye 4 plantillas personalizables, 4 brochas profesionales y pinturas 100% seguras para el embarazo. Fácil de usar, se retira con agua y jabón. Perfecto para semanas 24-38
 ```
 
 ### Additional Fields
 1. **Código de imagenes** - Required
-2. **Por donde nos conociste?** - Required
+2. **¿Cómo nos conociste?** - Required
 
 ---
 

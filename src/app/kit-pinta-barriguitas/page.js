@@ -37,7 +37,7 @@ const productSchema = {
     "sku": "CROKO-KPB-001",
     "offers": {
         "@type": "Offer",
-        "price": 150000,
+        "price": 190000,
         "priceCurrency": "COP",
         "availability": "https://schema.org/InStock",
         "itemCondition": "https://schema.org/NewCondition",
