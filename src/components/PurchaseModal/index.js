@@ -126,7 +126,7 @@ const PurchaseModalInner = () => {
           color="primary"
           onClick={handleNext}
           disabled={!canProceed()}
-          className="btn-next"
+          className={`btn-next ${currentStep === 3 ? 'btn-checkout-kit' : ''}`}
         >
           {getNextButtonText()}
         </Button>
