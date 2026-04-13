@@ -1,6 +1,7 @@
 'use client';
 import { useState, useCallback, useEffect } from 'react';
 import { getImageNames } from '@/data/designImages';
+import { getAttribution } from '@/lib/adsTracking';
 
 const STORAGE_KEY = 'croko_purchase_selections';
 const WOMPI_CHECKOUT_URL = 'https://checkout.wompi.co/l/BER6fQ';
@@ -129,6 +130,7 @@ export const usePurchaseModal = () => {
     try {
       const imageNames = getImageNames(data.selectedImages);
       const timestamp = new Date().toLocaleString('es-CO', { timeZone: 'America/Bogota' });
+      const attribution = getAttribution();
 
       const payload = {
         email: data.email,
@@ -136,7 +138,17 @@ export const usePurchaseModal = () => {
         disenos: imageNames.join(', '),
         nombre_bebe: data.babyName,
         fecha: timestamp,
-        ids_disenos: data.selectedImages.join(', ')
+        ids_disenos: data.selectedImages.join(', '),
+        gclid: attribution?.gclid || null,
+        gbraid: attribution?.gbraid || null,
+        wbraid: attribution?.wbraid || null,
+        utm_source: attribution?.utm_source || null,
+        utm_medium: attribution?.utm_medium || null,
+        utm_campaign: attribution?.utm_campaign || null,
+        utm_content: attribution?.utm_content || null,
+        utm_term: attribution?.utm_term || null,
+        landing_page: attribution?.landing_page || null,
+        first_seen_at: attribution?.first_seen_at || null
       };
 
       await fetch(N8N_WEBHOOK_URL, {

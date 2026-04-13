@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+import { getAttribution } from '@/lib/adsTracking';
 
 // Fixed product price
 const FIXED_PRICE = 190000; // $190,000 COP
@@ -19,7 +20,10 @@ const useOrderTracking = (searchParams) => {
     // Use timeout to ensure GTM is fully loaded before pushing event
     if (!alreadyTracked) {
       const firePurchaseEvent = () => {
+        const attribution = getAttribution();
+
         window.dataLayer = window.dataLayer || [];
+        window.dataLayer.push({ ecommerce: null });
         window.dataLayer.push({
           event: 'purchase',
           ecommerce: {
@@ -32,9 +36,10 @@ const useOrderTracking = (searchParams) => {
               price: FIXED_PRICE,
               quantity: 1
             }]
-          }
+          },
+          attribution: attribution || undefined
         });
-        console.log('✓ GA4 Purchase event fired via GTM');
+        console.log('✓ GA4 Purchase event fired via GTM', { attribution });
 
         // Google Ads Conversion Tag
         // TODO: Replace AW-CONVERSION_ID/CONVERSION_LABEL with actual values from Google Ads

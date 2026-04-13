@@ -8,11 +8,14 @@ import CenterLogoHeader from '@/containers/common/center-logo-header';
 import FooterSection from '@/containers/wedding/footer';
 import WhatsappRibbon from '@/containers/elements/common/whatsapp';
 import { PurchaseModalProvider } from '@/components/PurchaseModal';
+import useGclidCapture from '@/hooks/useGclidCapture';
 
 export default function ClientLayout({ children }) {
   const [loader, setLoader] = useState(true);
   const [goingUp, setGoingUp] = useState(false);
   const pathname = usePathname();
+
+  useGclidCapture();
 
   useEffect(() => {
     // Page Loader - Reduced to 200ms for better performance

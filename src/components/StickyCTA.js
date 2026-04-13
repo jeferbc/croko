@@ -3,6 +3,7 @@
 import React, { useState, useEffect } from 'react';
 import '@/assets/scss/sticky-cta.scss';
 import { usePurchaseModalContext } from '@/components/PurchaseModal';
+import { appendAttributionToMessage } from '@/lib/adsTracking';
 
 const StickyCTA = ({
     whatsappNumber = "573168161717",
@@ -26,8 +27,8 @@ const StickyCTA = ({
     }, []);
 
     const handleWhatsAppClick = () => {
-        const encodedMessage = encodeURIComponent(whatsappMessage);
-        const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodedMessage}`;
+        const messageWithRef = appendAttributionToMessage(whatsappMessage);
+        const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(messageWithRef)}`;
         window.open(whatsappUrl, '_blank');
     };
 

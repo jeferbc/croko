@@ -1,5 +1,7 @@
-import React, { Fragment } from 'react';
+'use client';
+import React, { Fragment, useState, useEffect } from 'react';
 import IKImage from '@/components/IKImage';
+import { appendAttributionToMessage } from '@/lib/adsTracking';
 
 var whatsappRibbonStyles = {
   a: {
@@ -14,12 +16,24 @@ var whatsappRibbonStyles = {
 }
 
 const WhatsappRibbon = (props) => {
-  let message = props.kit ? 'Hola! 👋 Estoy interesada en el Kit de Pintura de Barriguita. Me gustaría saber más sobre:' : 'Hola, estoy interesado en maquillaje prenatal en Medellín.'
+  const baseMessage = props.kit
+    ? 'Hola! 👋 Estoy interesada en el Kit de Pintura de Barriguita. Me gustaría saber más sobre:'
+    : 'Hola, estoy interesado en maquillaje prenatal en Medellín.';
+
+  const [href, setHref] = useState(
+    `https://wa.me/573168161717?text=${encodeURIComponent(baseMessage)}`
+  );
+
+  useEffect(() => {
+    const enriched = appendAttributionToMessage(baseMessage);
+    setHref(`https://wa.me/573168161717?text=${encodeURIComponent(enriched)}`);
+  }, [baseMessage]);
+
   return (
     <Fragment>
       <a
         style={whatsappRibbonStyles.a}
-        href={`https://wa.me/573168161717?text=${message}`}
+        href={href}
         target="_blank"
         className={props.kit ? 'whatsapp-kit' : 'whatsapp-local'}
         aria-label="Contáctanos por WhatsApp"
