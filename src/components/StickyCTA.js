@@ -1,6 +1,7 @@
 'use client';
 
 import React, { useState, useEffect } from 'react';
+import { usePathname } from 'next/navigation';
 import '@/assets/scss/sticky-cta.scss';
 import { usePurchaseModalContext } from '@/components/PurchaseModal';
 import { appendAttributionToMessage } from '@/lib/adsTracking';
@@ -11,6 +12,8 @@ const StickyCTA = ({
 }) => {
     const { openModal } = usePurchaseModalContext();
     const [isVisible, setIsVisible] = useState(false);
+    const pathname = usePathname();
+    const whatsappClass = pathname?.includes('kit-pinta-barriguitas') ? 'whatsapp-kit' : 'whatsapp-local';
 
     useEffect(() => {
         const handleScroll = () => {
@@ -41,7 +44,7 @@ const StickyCTA = ({
                 </div>
                 <div className="buttons-row">
                     <button
-                        className="sticky-btn sticky-btn-whatsapp"
+                        className={`sticky-btn sticky-btn-whatsapp ${whatsappClass}`}
                         onClick={handleWhatsAppClick}
                         aria-label="Contactar por WhatsApp"
                     >
