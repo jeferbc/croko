@@ -1,4 +1,3 @@
-"use client";
 import React from "react";
 import { Container, Row, Col } from "reactstrap";
 import CardWrapper from "@/containers/blog/card/grid-wrapper";

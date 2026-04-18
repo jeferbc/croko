@@ -1,4 +1,3 @@
-'use client'
 import React from 'react'
 import dynamic from 'next/dynamic'
 
@@ -8,18 +7,9 @@ import HeaderSection from '@/containers/kit/header/header'
 import Testimonials from '@/components/Testimonials'
 import StickyCTA from '@/components/StickyCTA'
 
-// Dynamic imports for below-the-fold components
-const ProductVideos = dynamic(() => import('@/containers/wedding/productVideos'), {
-    loading: () => <div style={{ minHeight: '400px' }} />
-})
-
-const AccordionElementSection = dynamic(() => import('@/containers/elements/accordion'), {
-    loading: () => <div style={{ minHeight: '300px' }} />
-})
-
-const PopularPosts = dynamic(() => import('@/containers/blog/posts'), {
-    loading: () => <div style={{ minHeight: '500px' }} />
-})
+const ProductVideos = dynamic(() => import('@/containers/wedding/productVideos'))
+const AccordionElementSection = dynamic(() => import('@/containers/elements/accordion'))
+const PopularPosts = dynamic(() => import('@/containers/blog/posts'))
 
 // Product Schema for Rich Snippets
 const productSchema = {
@@ -147,7 +137,7 @@ export default function Kit() {
                 type="application/ld+json"
                 dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema).replace(/</g, '\\u003c') }}
             />
-            <HeaderSection />
+            <HeaderSection isKitPage={true} />
             <ProductSection />
             <Testimonials />
             <ProductVideos />

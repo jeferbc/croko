@@ -1,3 +1,4 @@
+'use client';
 import React, { useState, useEffect } from 'react';
 import Slider from 'react-slick';
 import { Container, Row, Col } from 'reactstrap';

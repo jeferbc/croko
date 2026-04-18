@@ -1,3 +1,4 @@
+'use client';
 import React, { useState } from 'react';
 import { Container, Row, Col } from 'reactstrap';
 import SectionTitle from '@/components/SectionTitle';

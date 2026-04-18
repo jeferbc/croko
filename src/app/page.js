@@ -1,4 +1,3 @@
-"use client"
 import React from 'react'
 
 // import Custom Components
@@ -13,7 +12,7 @@ import PopularPosts from '@/containers/blog/posts'
 export default function Home() {
   return (
     <>
-      <HeaderSection />
+      <HeaderSection isKitPage={false} />
       <GallerySection />
       <PricingSection />
       <AboutSection />
