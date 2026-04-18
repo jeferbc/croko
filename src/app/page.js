@@ -10,6 +10,39 @@ const ProductVideos = dynamic(() => import('@/containers/wedding/productVideos')
 const AccordionElementSection = dynamic(() => import('@/containers/elements/accordion'))
 const PopularPosts = dynamic(() => import('@/containers/blog/posts'))
 
+const organizationSchema = {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "@id": "https://www.croko.co/#organization",
+    "name": "Croko",
+    "alternateName": "Kit Pinta Barriguitas",
+    "url": "https://www.croko.co",
+    "logo": {
+        "@type": "ImageObject",
+        "url": "https://www.croko.co/assets/images/logo/croko_logo.png",
+        "width": 462,
+        "height": 255
+    },
+    "image": "https://ik.imagekit.io/ge17f66b4ma/Fotokitcarrusel%20(1)%20(1)_kduJxCzra.png",
+    "description": "Croko es la marca colombiana de kits para pintar barrigas de embarazadas. Pinturas hipoalergénicas, plantillas y videotutoriales para crear recuerdos únicos en familia durante el embarazo.",
+    "foundingDate": "2016",
+    "areaServed": {
+        "@type": "Country",
+        "name": "Colombia"
+    },
+    "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+57-316-816-1717",
+        "contactType": "customer service",
+        "areaServed": "CO",
+        "availableLanguage": ["Spanish"]
+    },
+    "sameAs": [
+        "https://www.instagram.com/croko_maquillaje_embarazada",
+        "https://www.facebook.com/crokolina"
+    ]
+}
+
 const productSchema = {
     "@context": "https://schema.org",
     "@type": "Product",
@@ -19,8 +52,7 @@ const productSchema = {
         "https://ik.imagekit.io/ge17f66b4ma/Fotokitcarrusel%20(1)%20(1)_kduJxCzra.png"
     ],
     "brand": {
-        "@type": "Brand",
-        "name": "Croko"
+        "@id": "https://www.croko.co/#organization"
     },
     "sku": "CROKO-KPB-001",
     "offers": {
@@ -31,8 +63,7 @@ const productSchema = {
         "itemCondition": "https://schema.org/NewCondition",
         "url": "https://www.croko.co/",
         "seller": {
-            "@type": "Organization",
-            "name": "Croko"
+            "@id": "https://www.croko.co/#organization"
         },
         "shippingDetails": {
             "@type": "OfferShippingDetails",
@@ -127,6 +158,10 @@ const faqSchema = {
 export default function Home() {
     return (
         <>
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema).replace(/</g, '\\u003c') }}
+            />
             <script
                 type="application/ld+json"
                 dangerouslySetInnerHTML={{ __html: JSON.stringify(productSchema).replace(/</g, '\\u003c') }}
