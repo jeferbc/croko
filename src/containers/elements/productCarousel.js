@@ -63,7 +63,8 @@ const ProductCarousel = () => {
                 width={690}
                 height={551}
                 transformation={[{
-                  quality: 85,
+                  width: 700,
+                  quality: 80,
                   format: 'webp'
                 }]}
                 lqip={{ active: true, quality: 20 }}
