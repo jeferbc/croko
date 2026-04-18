@@ -104,7 +104,7 @@ const PricingThree = () => (
                         <div className="price-value mt-auto">
                             <h6 className="price text-center">$<span className="large">190.000</span></h6>
                         </div>
-                        <Link href='/kit-pinta-barriguitas' className="btn btn-default btn-white text-white">Ver kit de pintabarriguita</Link>
+                        <Link href='/' className="btn btn-default btn-white text-white">Ver kit de pintabarriguita</Link>
                     </div>
                 </div>
             </div>
@@ -129,7 +129,7 @@ const PricingThree = () => (
                         <div className="price-value">
                             <h6 className="price text-center">$<span className="large">190.000</span></h6>
                         </div>
-                        <Link href='/kit-pinta-barriguitas' className="btn btn-default btn-white text-white">Ver kit de pintabarriguita</Link>
+                        <Link href='/' className="btn btn-default btn-white text-white">Ver kit de pintabarriguita</Link>
                     </div>
                 </div>
             </div>

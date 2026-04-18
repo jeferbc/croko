@@ -3,56 +3,46 @@ import { BlogData } from '@/database/blog/blog_database'
 export default function sitemap() {
   const baseUrl = 'https://www.croko.co'
 
-  // Static pages
   const staticPages = [
     {
       url: baseUrl,
-      lastModified: new Date(),
-      changeFrequency: 'weekly',
+      lastModified: new Date('2026-04-18'),
       priority: 1.0,
     },
     {
-      url: `${baseUrl}/kit-pinta-barriguitas`,
-      lastModified: new Date(),
-      changeFrequency: 'weekly',
+      url: `${baseUrl}/belly-painting-medellin`,
+      lastModified: new Date('2026-04-18'),
       priority: 0.9,
     },
     {
       url: `${baseUrl}/blog`,
-      lastModified: new Date(),
-      changeFrequency: 'daily',
-      priority: 0.8,
+      lastModified: new Date('2026-04-18'),
+      priority: 0.7,
     },
     {
       url: `${baseUrl}/politica-devoluciones`,
-      lastModified: new Date(),
-      changeFrequency: 'monthly',
+      lastModified: new Date('2025-10-01'),
       priority: 0.3,
     },
   ]
 
-  // Landing page - High priority for SEO
   const landingPage = {
     url: `${baseUrl}/maquillaje-para-embarazadas`,
-    lastModified: new Date(),
-    changeFrequency: 'weekly',
-    priority: 1.0, // Highest priority - targeting #1 keyword
+    lastModified: new Date('2025-11-12'),
+    priority: 0.8,
   }
 
-  // Blog posts
   const blogPosts = BlogData.map((post) => {
-    // Special handling for the landing page
     if (post.slug === 'maquillaje-para-embarazadas') {
-      return null // Skip it here since we added it separately
+      return null
     }
 
     return {
       url: `${baseUrl}/blog/${post.slug}`,
-      lastModified: new Date(),
-      changeFrequency: 'weekly',
-      priority: 0.7,
+      lastModified: post.date ? new Date(post.date) : new Date('2025-10-02'),
+      priority: 0.6,
     }
-  }).filter(Boolean) // Remove null entries
+  }).filter(Boolean)
 
   return [
     ...staticPages,

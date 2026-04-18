@@ -1,0 +1,56 @@
+import React from 'react'
+
+import HeaderSection from '@/containers/kit/header/header'
+import GallerySection from '@/containers/portfolio/full-width-3-grid'
+import AboutSection from '@/containers/wedding/about'
+import PricingSection from '@/containers/elements/price/elementPrice3'
+import AccordionElementSection from '@/containers/elements/accordion'
+import BlogSection from '@/containers/wedding/blog'
+import PopularPosts from '@/containers/blog/posts'
+
+const localBusinessSchema = {
+    "@context": "https://schema.org",
+    "@type": "HealthAndBeautyBusiness",
+    "name": "Croko - Belly Painting Medellín",
+    "description": "Artista profesional de belly painting a domicilio en Medellín. Pinturas certificadas para body art, sesiones artísticas para embarazadas. Crea recuerdos inolvidables en familia.",
+    "url": "https://www.croko.co/belly-painting-medellin",
+    "image": "https://ik.imagekit.io/ge17f66b4ma/download__2__wAfXfpmcS.jpeg",
+    "logo": "https://www.croko.co/assets/images/logo/croko_logo.png",
+    "telephone": "+57-316-816-1717",
+    "priceRange": "$$",
+    "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Medellín",
+        "addressRegion": "Antioquia",
+        "addressCountry": "CO"
+    },
+    "areaServed": [
+        { "@type": "City", "name": "Medellín" },
+        { "@type": "City", "name": "Envigado" },
+        { "@type": "City", "name": "Bello" },
+        { "@type": "City", "name": "Itagüí" },
+        { "@type": "City", "name": "Sabaneta" }
+    ],
+    "sameAs": [
+        "https://www.instagram.com/croko_maquillaje_embarazada",
+        "https://www.facebook.com/crokolina"
+    ]
+}
+
+export default function BellyPaintingMedellin() {
+    return (
+        <>
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema).replace(/</g, '\\u003c') }}
+            />
+            <HeaderSection isKitPage={false} />
+            <GallerySection />
+            <PricingSection />
+            <AboutSection />
+            <BlogSection />
+            <PopularPosts />
+            <AccordionElementSection />
+        </>
+    )
+}

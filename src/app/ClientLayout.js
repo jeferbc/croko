@@ -72,7 +72,7 @@ export default function ClientLayout({ children }) {
       {children}
       <CookieConsent />
       <FooterSection />
-      <WhatsappRibbon kit={pathname?.includes('kit-pinta-barriguitas')} />
+      <WhatsappRibbon kit={pathname === '/'} />
       <div className="tap-top" style={goingUp ? { display: 'block' } : { display: 'none' }} onClick={tapToTop}>
         <div><i className="fa fa-angle-double-up"></i></div>
       </div>

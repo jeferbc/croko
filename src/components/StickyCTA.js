@@ -13,7 +13,7 @@ const StickyCTA = ({
     const { openModal } = usePurchaseModalContext();
     const [isVisible, setIsVisible] = useState(false);
     const pathname = usePathname();
-    const whatsappClass = pathname?.includes('kit-pinta-barriguitas') ? 'whatsapp-kit' : 'whatsapp-local';
+    const whatsappClass = pathname === '/' ? 'whatsapp-kit' : 'whatsapp-local';
 
     useEffect(() => {
         const handleScroll = () => {

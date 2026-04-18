@@ -13,7 +13,7 @@ export async function GET() {
       <g:id>CROKO-KPB-001</g:id>
       <g:title>Kit Pinta Barriguita - Crea Recuerdos Únicos en Familia con Pintura Corporal para Embarazadas</g:title>
       <g:description>Crea un recuerdo inolvidable de tu embarazo junto a tu familia. El Kit Pinta Barriguita incluye todo lo necesario: 15 colores de pinturas hipoalergénicas, pinceles profesionales, plantillas y videotutoriales paso a paso. +500 familias felices. Momento ideal: semanas 28-36. Envío gratis.</g:description>
-      <g:link>${domain}/kit-pinta-barriguitas</g:link>
+      <g:link>${domain}/</g:link>
       <g:image_link>https://ik.imagekit.io/ge17f66b4ma/Fotokitcarrusel%20(1)%20(1)_kduJxCzra.png</g:image_link>
       <g:availability>in_stock</g:availability>
       <g:quantity>50</g:quantity>

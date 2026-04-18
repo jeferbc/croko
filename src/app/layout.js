@@ -47,9 +47,9 @@ const workSans = Work_Sans({
 
 
 export const metadata = {
-  title: 'Belly Painting Embarazadas Medellín: Artista Profesional a Domicilio | Croko',
-  description: '¿Buscas pintar tu barriga en Medellín? Artista profesional va a tu casa con pinturas certificadas para body art. Crea recuerdos inolvidables con tu familia. Servicio a domicilio disponible.',
-  keywords: 'Barriguitas pintadas, belly painting Colombia, maquillaje embarazadas, maquillaje prenatal Medellin, pintar barriga embarazada, body paint embarazadas, maquillaje corporal prenatal, belly painting Medellín, maquillaje para embarazadas, artista belly painting',
+  title: 'Kit Pinta Barriguitas | Kit Pintura Barriga Embarazada | Envío Gratis Colombia',
+  description: 'Kit completo para pintar tu barriguita en casa. 15 colores hipoalergénicos, plantillas y videotutoriales. Envío gratis Colombia. +500 familias felices. Ideal para baby shower.',
+  keywords: 'kit pinta barriguitas, pintura barriga embarazada, kit belly painting, pinturas embarazadas, body paint embarazo, pintar barriguita, envío gratis Colombia, donde comprar pintura para pintar barriga embarazada, pinturas para pintar la barriga, pintura para embarazadas, pinturas para belly painting, pinturas para tripa embarazada',
   alternates: {
     canonical: 'https://www.croko.co',
   },
@@ -60,15 +60,19 @@ export const metadata = {
   openGraph: {
     url: 'https://www.croko.co',
     type: 'website',
-    title: 'Belly Painting Embarazadas Medellín: Artista Profesional a Domicilio | Croko',
-    description: 'Artista profesional va a tu casa en Medellin para pintar tu barriga con pinturas certificadas para body art. Crea recuerdos inolvidables con tu familia',
-    images: ['https://ik.imagekit.io/ge17f66b4ma/download__2__wAfXfpmcS.jpeg'],
+    title: 'Kit Pinta Barriguitas | Kit Pintura Barriga Embarazada | Envío Gratis Colombia',
+    description: 'Kit completo para pintar tu barriguita. Pinturas seguras + plantillas + tutorial. Envío gratis Colombia.',
+    images: [
+      {
+        url: 'https://ik.imagekit.io/ge17f66b4ma/Kit%20foto%20690x551_2rLNnbXrzh.png',
+      },
+    ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Belly Painting Embarazadas Medellín: Artista Profesional a Domicilio | Croko',
-    description: 'Artista profesional va a tu casa en Medellin para pintar tu barriga con pinturas certificadas. Crea recuerdos inolvidables',
-    images: ['https://ik.imagekit.io/ge17f66b4ma/download__2__wAfXfpmcS.jpeg'],
+    title: 'Kit Pinta Barriguitas | Kit Pintura Barriga Embarazada | Envío Gratis Colombia',
+    description: 'Kit completo para pintar tu barriguita. Pinturas seguras + plantillas. Envío gratis.',
+    images: ['https://ik.imagekit.io/ge17f66b4ma/Kit%20foto%20690x551_2rLNnbXrzh.png'],
   },
 };
 

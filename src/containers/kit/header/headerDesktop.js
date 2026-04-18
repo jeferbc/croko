@@ -107,7 +107,7 @@ const HeaderDesktop = ({ isKitPage }) => {
                                                     Obtener Kit - $190.000
                                                 </PurchaseButton>
                                             ) : (
-                                                <Link href='/kit-pinta-barriguitas' className="btn btn-default btn-white" style={ContactButtonStyles.a}>
+                                                <Link href='/' className="btn btn-default btn-white" style={ContactButtonStyles.a}>
                                                     Kit de Maquillaje
                                                 </Link>
                                             )}

@@ -291,7 +291,7 @@ const BellyPaintingCrossSell = () => {
                 {/* CTA Section */}
                 <Row>
                     <Col lg="10" className="offset-lg-1 text-center">
-                        <Link href="/kit-pinta-barriguitas" style={{ textDecoration: 'none' }}>
+                        <Link href="/" style={{ textDecoration: 'none' }}>
                             <Button
                                 size="lg"
                                 style={{
