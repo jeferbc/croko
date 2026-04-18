@@ -24,12 +24,6 @@ const Footer = (props) => {
                 <Col xl="6" sm="12">
                     <div className="m-l-auto center-para">
                         <p className="copyright-text text-center">2016 - {new Date().getFullYear()} Croko</p>
-                        <address className="text-center" style={{ color: '#888', fontSize: '12px', fontStyle: 'normal', marginBottom: '8px', lineHeight: '1.8' }}>
-                            <span itemProp="name">Croko</span> — Medellín, Antioquia, Colombia<br />
-                            <a href="tel:+573168161717" style={{ color: '#888', textDecoration: 'none' }} itemProp="telephone">+57 316 816 1717</a>
-                            {' · '}
-                            <a href="mailto:pintabarriguitas@croko.co" style={{ color: '#888', textDecoration: 'none' }} itemProp="email">pintabarriguitas@croko.co</a>
-                        </address>
                         <div className="legal-links text-center mt-2">
                             <Link href="/terminos-y-condiciones" style={{color: '#888', fontSize: '12px', textDecoration: 'none', marginRight: '15px'}}>
                                 Términos y Condiciones

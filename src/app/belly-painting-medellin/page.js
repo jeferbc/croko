@@ -51,6 +51,24 @@ export default function BellyPaintingMedellin() {
             <BlogSection />
             <PopularPosts />
             <AccordionElementSection />
+            <section aria-label="Información de contacto" style={{ padding: '40px 0', backgroundColor: '#faf7f2' }}>
+                <div className="container text-center">
+                    <h2 style={{ color: '#c0882f', fontSize: '1.5rem', fontWeight: 600, marginBottom: '12px' }}>
+                        Belly Painting a domicilio en Medellín
+                    </h2>
+                    <address style={{ fontStyle: 'normal', color: '#555', fontSize: '15px', lineHeight: '1.9' }}>
+                        <strong>Croko</strong> — Medellín, Antioquia, Colombia<br />
+                        Zonas de servicio: Medellín, Envigado, Bello, Itagüí, Sabaneta<br />
+                        <a href="tel:+573168161717" style={{ color: '#c0882f', fontWeight: 500, textDecoration: 'none' }}>
+                            +57 316 816 1717
+                        </a>
+                        {' · '}
+                        <a href="mailto:pintabarriguitas@croko.co" style={{ color: '#c0882f', fontWeight: 500, textDecoration: 'none' }}>
+                            pintabarriguitas@croko.co
+                        </a>
+                    </address>
+                </div>
+            </section>
         </>
     )
 }
