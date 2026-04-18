@@ -1,9 +1,25 @@
 import React from 'react'
 import BlogDetail from '@/containers/blog/blog-detail'
+import { ArticleSchema, BreadcrumbSchema } from '@/components/SchemaMarkup'
 import { BlogData } from '@/database/blog/blog_database'
 
-export default function QueRegalarBabyShowerPost() {
-    const post = BlogData.find(p => p.slug === 'que-regalar-baby-shower-guia-definitiva')
+const SLUG = 'que-regalar-baby-shower-guia-definitiva'
+const URL = `https://www.croko.co/blog/${SLUG}`
 
-    return <BlogDetail post={post} />
+export default function QueRegalarBabyShowerPost() {
+    const post = BlogData.find(p => p.slug === SLUG)
+
+    return (
+        <>
+            <ArticleSchema post={post} url={URL} />
+            <BreadcrumbSchema
+                items={[
+                    { name: 'Inicio', item: 'https://www.croko.co' },
+                    { name: 'Blog', item: 'https://www.croko.co/blog' },
+                    { name: post.title, item: URL }
+                ]}
+            />
+            <BlogDetail post={post} />
+        </>
+    )
 }

@@ -2,7 +2,9 @@ import React from 'react'
 
 export const ArticleSchema = ({ post, url }) => {
     const datePublished = post.date ? new Date(post.date).toISOString() : "2025-01-15T00:00:00+00:00"
-    const dateModified = new Date().toISOString()
+    const dateModified = post.dateModified
+        ? new Date(post.dateModified).toISOString()
+        : datePublished
 
     const schema = {
         "@context": "https://schema.org",
@@ -97,24 +99,21 @@ export const FAQPageSchema = () => {
     )
 }
 
-export const BreadcrumbSchema = () => {
+export const BreadcrumbSchema = ({ items } = {}) => {
+    const itemListElement = items || [
+        { name: 'Inicio', item: 'https://www.croko.co' },
+        { name: 'Maquillaje Para Embarazadas', item: 'https://www.croko.co/maquillaje-para-embarazadas' }
+    ]
+
     const schema = {
         "@context": "https://schema.org",
         "@type": "BreadcrumbList",
-        "itemListElement": [
-            {
-                "@type": "ListItem",
-                "position": 1,
-                "name": "Inicio",
-                "item": "https://www.croko.co"
-            },
-            {
-                "@type": "ListItem",
-                "position": 2,
-                "name": "Maquillaje Para Embarazadas",
-                "item": "https://www.croko.co/maquillaje-para-embarazadas"
-            }
-        ]
+        "itemListElement": itemListElement.map((entry, index) => ({
+            "@type": "ListItem",
+            "position": index + 1,
+            "name": entry.name,
+            "item": entry.item
+        }))
     }
 
     return (
