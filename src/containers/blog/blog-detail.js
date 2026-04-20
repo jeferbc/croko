@@ -134,33 +134,40 @@ const BlogDetail = ({ post }) => {
                                 <div className="social-share mb-3">
                                     <h6 style={{ color: '#c0882f', marginBottom: '15px' }}>Comparte este artículo:</h6>
                                     <div className="d-flex justify-content-center gap-3">
-                                        <a 
-                                            href={`https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(typeof window !== 'undefined' ? window.location.href : '')}`}
-                                            target="_blank"
-                                            rel="noopener noreferrer"
-                                            className="btn btn-outline-primary btn-sm rounded-circle"
-                                            style={{ width: '40px', height: '40px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}
-                                        >
-                                            <i className="fa fa-facebook"></i>
-                                        </a>
-                                        <a 
-                                            href={`https://wa.me/?text=${encodeURIComponent(post.title + ' ' + (typeof window !== 'undefined' ? window.location.href : ''))}`}
-                                            target="_blank"
-                                            rel="noopener noreferrer"
-                                            className="btn btn-outline-success btn-sm rounded-circle"
-                                            style={{ width: '40px', height: '40px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}
-                                        >
-                                            <i className="fa fa-whatsapp"></i>
-                                        </a>
-                                        <a 
-                                            href={`https://twitter.com/intent/tweet?text=${encodeURIComponent(post.title)}&url=${encodeURIComponent(typeof window !== 'undefined' ? window.location.href : '')}`}
-                                            target="_blank"
-                                            rel="noopener noreferrer"
-                                            className="btn btn-outline-info btn-sm rounded-circle"
-                                            style={{ width: '40px', height: '40px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}
-                                        >
-                                            <i className="fa fa-twitter"></i>
-                                        </a>
+                                        {(() => {
+                                            const shareUrl = `https://www.croko.co${post.slug === 'maquillaje-para-embarazadas' ? '' : '/blog'}/${post.slug}`
+                                            return (
+                                                <>
+                                                    <a
+                                                        href={`https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(shareUrl)}`}
+                                                        target="_blank"
+                                                        rel="noopener noreferrer"
+                                                        className="btn btn-outline-primary btn-sm rounded-circle"
+                                                        style={{ width: '40px', height: '40px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}
+                                                    >
+                                                        <i className="fa fa-facebook"></i>
+                                                    </a>
+                                                    <a
+                                                        href={`https://wa.me/?text=${encodeURIComponent(post.title + ' ' + shareUrl)}`}
+                                                        target="_blank"
+                                                        rel="noopener noreferrer"
+                                                        className="btn btn-outline-success btn-sm rounded-circle"
+                                                        style={{ width: '40px', height: '40px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}
+                                                    >
+                                                        <i className="fa fa-whatsapp"></i>
+                                                    </a>
+                                                    <a
+                                                        href={`https://twitter.com/intent/tweet?text=${encodeURIComponent(post.title)}&url=${encodeURIComponent(shareUrl)}`}
+                                                        target="_blank"
+                                                        rel="noopener noreferrer"
+                                                        className="btn btn-outline-info btn-sm rounded-circle"
+                                                        style={{ width: '40px', height: '40px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}
+                                                    >
+                                                        <i className="fa fa-twitter"></i>
+                                                    </a>
+                                                </>
+                                            )
+                                        })()}
                                     </div>
                                 </div>
                             </div>
