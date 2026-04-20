@@ -13,7 +13,7 @@ export default function PoliticaDePrivacidad() {
 
                             <div className="content">
                                 <p>
-                                    <strong>Última actualización:</strong> 5 de septiembre de 2025
+                                    <strong>Última actualización:</strong> 20 de abril de 2026
                                 </p>
 
                                 <p>
@@ -48,13 +48,16 @@ export default function PoliticaDePrivacidad() {
                                     No vendemos ni compartimos para marketing.
                                 </p>
 
-                                <h3 style={{ marginTop: '40px' }}>5. Cookies</h3>
+                                <h3 style={{ marginTop: '40px' }}>5. Cookies y tecnologías de terceros</h3>
                                 <p>
                                     Usamos cookies para funcionamiento y análisis. Puede desactivarlas en su navegador.{' '}
                                     Para más información detallada sobre nuestro uso de cookies, consulte nuestra{' '}
                                     <a href="/politica-cookies" style={{ color: 'var(--primary)', textDecoration: 'underline' }}>
                                         Política de Cookies
                                     </a>.
+                                </p>
+                                <p>
+                                    Terceros pueden instalar y leer cookies en su navegador, así como usar balizas web o tecnologías similares para recopilar información sobre su interacción con el sitio. Entre estos terceros se incluyen Google y Meta, que pueden recibir información sobre las transacciones y eventos que ocurren en www.croko.co, incluyendo datos necesarios para enviar solicitudes de reseña posteriores a la compra a través de programas como <strong>Google Customer Reviews</strong>. Usted puede gestionar o desactivar las cookies desde la configuración de su navegador en cualquier momento.
                                 </p>
 
                                 <h3 style={{ marginTop: '40px' }}>6. Seguridad</h3>
