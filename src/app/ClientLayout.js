@@ -1,4 +1,5 @@
 "use client"
+import '@/lib/findDOMNodePolyfill';
 import { useEffect, useState } from "react";
 import TagManager from 'react-gtm-module';
 import NProgress from 'nprogress';
