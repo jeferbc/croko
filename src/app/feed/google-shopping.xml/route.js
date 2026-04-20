@@ -20,6 +20,7 @@ export async function GET() {
       <g:price>190000 COP</g:price>
       <g:condition>new</g:condition>
       <g:brand>Croko</g:brand>
+      <g:mpn>CROKO-KPB-001</g:mpn>
       <g:identifier_exists>no</g:identifier_exists>
       <g:google_product_category>Arts &amp; Entertainment &gt; Hobbies &amp; Creative Arts &gt; Arts &amp; Crafts &gt; Art &amp; Craft Kits</g:google_product_category>
       <g:product_type>Kits de Arte &gt; Pintura Corporal &gt; Kit Pinta Barriguita</g:product_type>
