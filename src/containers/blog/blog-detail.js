@@ -58,11 +58,11 @@ const BlogDetail = ({ post }) => {
                                 <div className="post-meta d-flex justify-content-center align-items-center gap-3" style={{ color: '#666', fontSize: '14px' }}>
                                     <span className="post-date">
                                         <i className="fa fa-calendar me-2"></i>
-                                        {new Date(post.date).toLocaleDateString('es-CO', {
-                                            year: 'numeric',
-                                            month: 'long',
-                                            day: 'numeric'
-                                        })}
+                                        {(() => {
+                                            const months = ['enero', 'febrero', 'marzo', 'abril', 'mayo', 'junio', 'julio', 'agosto', 'septiembre', 'octubre', 'noviembre', 'diciembre']
+                                            const [y, m, d] = post.date.split('-').map(Number)
+                                            return `${d} de ${months[m - 1]} de ${y}`
+                                        })()}
                                     </span>
                                     <span>•</span>
                                     <span className="post-author">
