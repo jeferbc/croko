@@ -1,4 +1,5 @@
 import React from 'react'
+import Script from 'next/script'
 
 export const ArticleSchema = ({ post, url }) => {
     const datePublished = post.date ? new Date(post.date).toISOString() : "2025-01-15T00:00:00+00:00"
@@ -36,9 +37,10 @@ export const ArticleSchema = ({ post, url }) => {
     }
 
     return (
-        <script
+        <Script
             id="schema-article"
             type="application/ld+json"
+            strategy="beforeInteractive"
             dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
         />
     )
@@ -93,9 +95,10 @@ export const FAQPageSchema = () => {
     }
 
     return (
-        <script
+        <Script
             id="schema-faq"
             type="application/ld+json"
+            strategy="beforeInteractive"
             dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
         />
     )
@@ -119,9 +122,10 @@ export const BreadcrumbSchema = ({ items } = {}) => {
     }
 
     return (
-        <script
+        <Script
             id="schema-breadcrumb"
             type="application/ld+json"
+            strategy="beforeInteractive"
             dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
         />
     )
@@ -153,9 +157,10 @@ export const OrganizationSchema = () => {
     }
 
     return (
-        <script
+        <Script
             id="schema-organization"
             type="application/ld+json"
+            strategy="beforeInteractive"
             dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
         />
     )
