@@ -9,6 +9,7 @@ import CenterLogoHeader from '@/containers/common/center-logo-header';
 import FooterSection from '@/containers/wedding/footer';
 import WhatsappRibbon from '@/containers/elements/common/whatsapp';
 import { PurchaseModalProvider } from '@/components/PurchaseModal';
+import GoogleMerchantBadge from '@/components/GoogleMerchantBadge';
 import useGclidCapture from '@/hooks/useGclidCapture';
 
 export default function ClientLayout({ children }) {
@@ -77,6 +78,7 @@ export default function ClientLayout({ children }) {
       <div className="tap-top" style={goingUp ? { display: 'block' } : { display: 'none' }} onClick={tapToTop}>
         <div><i className="fa fa-angle-double-up"></i></div>
       </div>
+      <GoogleMerchantBadge />
     </PurchaseModalProvider>
   );
 }
