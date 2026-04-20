@@ -63,11 +63,29 @@ const useOrderTracking = (searchParams) => {
       setTimeout(firePurchaseEvent, 500);
     }
 
+    // Read customer email (collected in PurchaseModal, saved in localStorage)
+    let customerEmail = null;
+    try {
+      const saved = localStorage.getItem('croko_purchase_selections');
+      if (saved) {
+        customerEmail = JSON.parse(saved).email || null;
+      }
+    } catch (e) {
+      // ignore
+    }
+
+    // Handling 1-2d + transit 3-7d => 10d upper bound (safe estimate)
+    const estimated = new Date();
+    estimated.setDate(estimated.getDate() + 10);
+    const estimatedDeliveryDate = estimated.toISOString().slice(0, 10);
+
     // Set order data for display
     setOrderData({
       orderId: transactionId || null,
       transactionId: transactionId || null,
       amount: FIXED_PRICE,
+      customerEmail,
+      estimatedDeliveryDate,
       formattedAmount: new Intl.NumberFormat('es-CO', {
         style: 'currency',
         currency: 'COP',

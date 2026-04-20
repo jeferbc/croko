@@ -8,6 +8,7 @@ import SuccessBanner from '@/components/gracias/SuccessBanner';
 import WhatsAppSection from '@/components/gracias/WhatsAppSection';
 import OrderDetailsSection from '@/components/gracias/OrderDetailsSection';
 import LoadingState from '@/components/gracias/LoadingState';
+import GoogleCustomerReviewsOptIn from '@/components/gracias/GoogleCustomerReviewsOptIn';
 import '@/assets/scss/gracias.scss';
 
 // Content component that uses useSearchParams
@@ -33,6 +34,12 @@ function GraciasContent() {
       <OrderDetailsSection
         orderData={orderData}
         onWhatsAppClick={handleWhatsAppRedirect}
+      />
+
+      <GoogleCustomerReviewsOptIn
+        orderId={orderData.orderId}
+        email={orderData.customerEmail}
+        estimatedDeliveryDate={orderData.estimatedDeliveryDate}
       />
     </>
   );
