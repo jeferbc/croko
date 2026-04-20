@@ -22,7 +22,7 @@ export default function PoliticaDePrivacidad() {
 
                                 <h3 style={{ marginTop: '40px' }}>1. Información que recopilamos</h3>
                                 <p>
-                                    <strong>Personal:</strong> Nombre, correo, teléfono (+57 3168161717), dirección de envío.
+                                    <strong>Personal:</strong> Nombre, correo, teléfono (+57 316 816 1717), dirección de envío.
                                     <br />
                                     <strong>Automática:</strong> IP, navegador, páginas visitadas (vía cookies/píxeles).
                                     <br />
@@ -88,7 +88,7 @@ export default function PoliticaDePrivacidad() {
                                 </p>
 
                                 <p className="mt-4">
-                                    <strong>Contacte a crokolina@gmail.com o +57 3168161717.</strong>
+                                    <strong>Contacte a crokolina@gmail.com o +57 316 816 1717.</strong>
                                 </p>
                             </div>
                         </div>

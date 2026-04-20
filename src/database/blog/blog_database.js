@@ -55,7 +55,7 @@ module.exports = {
         
         <p><strong>Cinturón de Seguridad para Silla:</strong> Un cinturón práctico que asegura al bebé en la silla para comer o jugar con total tranquilidad, dando a los papás esa paz que tanto valoran.</p>
         
-        <p>¿Quieres hacer de tu baby shower un momento mágico? Visita www.croko.co, descubre nuestros productos y escríbenos al WhatsApp (+57 3168161717) para personalizar tu experiencia. Con Croko, cada detalle está lleno de amor. 🍼💕</p>
+        <p>¿Quieres hacer de tu baby shower un momento mágico? Visita www.croko.co, descubre nuestros productos y escríbenos al WhatsApp (+57 316 816 1717) para personalizar tu experiencia. Con Croko, cada detalle está lleno de amor. 🍼💕</p>
         
         <p><em>#BabyShowerColombia #CrokoMaquillaje #AmorDeMamá</em></p>
       `

@@ -11,12 +11,12 @@ import PopularPosts from '@/containers/blog/posts'
 const localBusinessSchema = {
     "@context": "https://schema.org",
     "@type": "HealthAndBeautyBusiness",
-    "name": "Croko - Belly Painting Medellín",
+    "name": "Croko",
     "description": "Artista profesional de belly painting a domicilio en Medellín. Pinturas certificadas para body art, sesiones artísticas para embarazadas. Crea recuerdos inolvidables en familia.",
     "url": "https://www.croko.co/belly-painting-medellin",
     "image": "https://ik.imagekit.io/ge17f66b4ma/download__2__wAfXfpmcS.jpeg",
     "logo": "https://www.croko.co/assets/images/logo/croko_logo.png",
-    "telephone": "+57-316-816-1717",
+    "telephone": "+573168161717",
     "priceRange": "$$",
     "address": {
         "@type": "PostalAddress",

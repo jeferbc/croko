@@ -51,7 +51,7 @@ export const metadata = {
   description: 'Kit completo para pintar tu barriguita en casa. 15 colores hipoalergénicos, plantillas y videotutoriales. Envío gratis Colombia. +500 familias felices. Ideal para baby shower.',
   keywords: 'kit pinta barriguitas, pintura barriga embarazada, kit belly painting, pinturas embarazadas, body paint embarazo, pintar barriguita, envío gratis Colombia, donde comprar pintura para pintar barriga embarazada, pinturas para pintar la barriga, pintura para embarazadas, pinturas para belly painting, pinturas para tripa embarazada',
   alternates: {
-    canonical: 'https://www.croko.co',
+    canonical: 'https://www.croko.co/',
   },
   robots: {
     index: true,

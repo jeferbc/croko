@@ -109,7 +109,7 @@ export default function PoliticaCookies() {
                                         8. Contacto
                                     </h2>
                                     <p>
-                                        Para preguntas sobre esta política o el uso de cookies, contacta a crokolina@gmail.com o +57 3168161717.
+                                        Para preguntas sobre esta política o el uso de cookies, contacta a crokolina@gmail.com o +57 316 816 1717.
                                     </p>
                                 </div>
                             </div>

@@ -94,7 +94,7 @@ export default function TerminosYCondiciones() {
                                 </p>
 
                                 <p className="mt-4">
-                                    <strong>Contacte a crokolina@gmail.com o +57 3168161717.</strong>
+                                    <strong>Contacte a crokolina@gmail.com o +57 316 816 1717.</strong>
                                 </p>
                             </div>
                         </div>

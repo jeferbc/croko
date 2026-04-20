@@ -65,7 +65,7 @@ module.exports = {
   ],
   KitAccordionData:[
     {
-        text: `¡Absolutamente! Nuestras pinturas hipoalergénicas son especialmente formuladas para pieles sensibles y 100% seguras durante el embarazo. Son dermatológicamente probadas, no tóxicas, de uso cosmético corporal, y se remueven fácilmente con agua y jabón. Están fabricadas con ingredientes vegetales, ceras y minerales de alta pureza, sin perfume. Más de 300 familias las han usado sin ningún problema.`,
+        text: `¡Absolutamente! Nuestras pinturas hipoalergénicas son especialmente formuladas para pieles sensibles y 100% seguras durante el embarazo. Son dermatológicamente probadas, no tóxicas, de uso cosmético corporal, y se remueven fácilmente con agua y jabón. Están fabricadas con ingredientes vegetales, ceras y minerales de alta pureza, sin perfume. Más de 500 familias las han usado sin ningún problema.`,
         title: '¿Son seguras las pinturas durante el embarazo?'
     },
     {

@@ -21,7 +21,7 @@ export const ArticleSchema = ({ post, url }) => {
         },
         "publisher": {
             "@type": "Organization",
-            "name": "Croko - Maquillaje Para Embarazadas",
+            "name": "Croko",
             "logo": {
                 "@type": "ImageObject",
                 "url": "https://www.croko.co/logo.png"
@@ -128,7 +128,7 @@ export const OrganizationSchema = () => {
     const schema = {
         "@context": "https://schema.org",
         "@type": "Organization",
-        "name": "Croko - Maquillaje Para Embarazadas",
+        "name": "Croko",
         "url": "https://www.croko.co",
         "logo": "https://www.croko.co/logo.png",
         "description": "Especialistas en belly painting y maquillaje artístico para embarazadas en Colombia. Kits DIY y servicios profesionales.",
@@ -139,7 +139,7 @@ export const OrganizationSchema = () => {
         },
         "contactPoint": {
             "@type": "ContactPoint",
-            "telephone": "+57-316-816-1717",
+            "telephone": "+573168161717",
             "contactType": "Customer Service",
             "areaServed": "CO",
             "availableLanguage": "Spanish"
