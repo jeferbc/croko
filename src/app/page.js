@@ -32,7 +32,7 @@ const organizationSchema = {
     },
     "contactPoint": {
         "@type": "ContactPoint",
-        "telephone": "+57-316-816-1717",
+        "telephone": "+573168161717",
         "contactType": "customer service",
         "areaServed": "CO",
         "availableLanguage": ["Spanish"]
@@ -52,7 +52,8 @@ const productSchema = {
         "https://ik.imagekit.io/ge17f66b4ma/Fotokitcarrusel%20(1)%20(1)_kduJxCzra.png"
     ],
     "brand": {
-        "@id": "https://www.croko.co/#organization"
+        "@type": "Brand",
+        "name": "Croko"
     },
     "sku": "CROKO-KPB-001",
     "offers": {
@@ -97,7 +98,8 @@ const productSchema = {
             "applicableCountry": "CO",
             "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
             "merchantReturnDays": 30,
-            "returnMethod": "https://schema.org/ReturnByMail"
+            "returnMethod": "https://schema.org/ReturnByMail",
+            "returnFees": "https://schema.org/ReturnFeesCustomerResponsibility"
         }
     },
     "aggregateRating": {
