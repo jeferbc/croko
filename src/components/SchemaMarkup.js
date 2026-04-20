@@ -40,7 +40,6 @@ export const ArticleSchema = ({ post, url }) => {
         <Script
             id="schema-article"
             type="application/ld+json"
-            strategy="beforeInteractive"
             dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
         />
     )
@@ -98,7 +97,6 @@ export const FAQPageSchema = () => {
         <Script
             id="schema-faq"
             type="application/ld+json"
-            strategy="beforeInteractive"
             dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
         />
     )
@@ -125,7 +123,6 @@ export const BreadcrumbSchema = ({ items } = {}) => {
         <Script
             id="schema-breadcrumb"
             type="application/ld+json"
-            strategy="beforeInteractive"
             dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
         />
     )
@@ -160,7 +157,6 @@ export const OrganizationSchema = () => {
         <Script
             id="schema-organization"
             type="application/ld+json"
-            strategy="beforeInteractive"
             dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
         />
     )
