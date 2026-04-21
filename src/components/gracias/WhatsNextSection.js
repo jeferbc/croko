@@ -7,11 +7,7 @@ const WhatsNextSection = () => {
       <ul className="list-unstyled">
         <li className="mb-2">
           <i className="fa fa-whatsapp text-success me-2"></i>
-          Te contactaremos por WhatsApp para ayudarte a elegir tus 3 diseños favoritos del catálogo
-        </li>
-        <li className="mb-2">
-          <i className="fa fa-map-marker text-success me-2"></i>
-          Coordinaremos los detalles de envío a tu dirección
+          Te contactaremos por WhatsApp para confirmar los detalles de entrega de tu pedido
         </li>
         <li className="mb-2">
           <i className="fa fa-truck text-success me-2"></i>

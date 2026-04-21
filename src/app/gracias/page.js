@@ -5,7 +5,6 @@ import { useSearchParams } from 'next/navigation';
 import useOrderTracking from '@/hooks/useOrderTracking';
 import useWhatsAppRedirect from '@/hooks/useWhatsAppRedirect';
 import SuccessBanner from '@/components/gracias/SuccessBanner';
-import WhatsAppSection from '@/components/gracias/WhatsAppSection';
 import OrderDetailsSection from '@/components/gracias/OrderDetailsSection';
 import LoadingState from '@/components/gracias/LoadingState';
 import GoogleCustomerReviewsOptIn from '@/components/gracias/GoogleCustomerReviewsOptIn';
@@ -25,11 +24,6 @@ function GraciasContent() {
   return (
     <>
       <SuccessBanner />
-
-      <WhatsAppSection
-        onComplete={() => handleWhatsAppRedirect(true)}
-        onManualClick={() => handleWhatsAppRedirect(false)}
-      />
 
       <OrderDetailsSection
         orderData={orderData}
