@@ -17,21 +17,31 @@ const CardGridWrapper = ({ className, image, blogDate, place, title, description
     <div className={className}>
       <div className="blog-agency">
         <div className="blog-contain">
-          <IKImage
-            src={extractPath(image)}
-            alt={title}
-            width={400}
-            height={290}
-            className="img-fluid"
-            loading="lazy"
-            transformation={[{
-              width: 400,
-              height: 290,
-              quality: 85,
-              format: 'auto'
-            }]}
-            style={{ width: '100%', height: '290px', objectFit: 'cover' }}
-          />
+          {image && image.includes('ik.imagekit.io') ? (
+            <IKImage
+              src={extractPath(image)}
+              alt={title}
+              width={400}
+              height={290}
+              className="img-fluid"
+              loading="lazy"
+              transformation={[{
+                width: 400,
+                height: 290,
+                quality: 85,
+                format: 'auto'
+              }]}
+              style={{ width: '100%', height: '290px', objectFit: 'cover' }}
+            />
+          ) : (
+            <img
+              src={image}
+              alt={title}
+              className="img-fluid"
+              loading="lazy"
+              style={{ width: '100%', height: '290px', objectFit: 'cover' }}
+            />
+          )}
           <div className="img-container" style={{ paddingTop: '5px' }}>
             <div>
               <div className="blog-info">

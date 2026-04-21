@@ -931,6 +931,186 @@ module.exports = {
 
         <p><em>#MaquillajeEmbarazadas #BellezaPrenatal #MaquillajeSeguro #EmbarazoSaludable</em></p>
       `
+    },
+    {
+      id: 'pinta-barriguitas-colombia',
+      title: 'Pinta Barriguitas en Colombia: una guía escrita por Carolina, con 11 años pintando embarazadas',
+      slug: 'pinta-barriguitas-colombia',
+      image: '/assets/images/blog/pinta-barriguitas-colombia.jpg',
+      description: 'Soy Carolina de Croko, llevo 11 años pintando barriguitas en Colombia. No repito diseños: cada barriga cuenta la historia única de su familia, con colibríes, arcoíris y símbolos propios. Te cuento cuándo hacerlo, pinturas seguras, precios y cómo vivir la experiencia en casa con el Kit Croko.',
+      date: '2026-04-20',
+      dateModified: '2026-04-20',
+      author: 'Carolina (Croko)',
+      content: `
+        <p><em>Por Carolina, de Croko. Última actualización: abril de 2026.</em></p>
+
+        <hr />
+
+        <p>Hola. Si llegaste aquí es probable que alguien cercano a ti esté esperando un bebé —quizás eres tú, quizás es tu pareja, tu hija, tu hermana, o una amiga a la que quieres regalarle algo que de verdad valga la pena—. Tómate un minuto para leerme con calma, porque lo que te voy a contar no se parece a las listas rápidas que encuentras en otros lados.</p>
+
+        <p>Soy <strong>Carolina</strong>, fundadora de Croko. Llevo <strong>once años</strong> pintando barriguitas de embarazadas en Colombia. Empecé en 2014, como estudiante de microbiología en la Universidad de Antioquia, y hoy tengo más de 800 sesiones presenciales a mis espaldas y más de 1.000 familias acompañadas a través del Kit Croko en todo el país. Esta es la guía que yo quisiera haber encontrado cuando alguien me pregunta <em>"¿cómo es eso de pintarse la barriguita?"</em>.</p>
+
+        <h3>¿Qué es pintar la barriguita?</h3>
+        <p><strong>Pinta barriguitas</strong> —también llamado <strong>belly painting</strong> o <strong>maquillaje prenatal</strong>— es convertir el vientre de una mujer embarazada en una obra de arte, usando pinturas cosméticas seguras. Eso dice el diccionario. Yo te lo diría distinto:</p>
+
+        <p>Es el día en que tu familia conoce al bebé por primera vez.</p>
+
+        <p>Tu pareja, tus papás, tus suegros, tus hermanas, los amigos que van a ser tíos y tías de corazón, todos han hablado de este bebé durante meses. Le han comprado cosas, han soñado, han imaginado. Pero hasta el mes 6 lo sienten como una idea. Cuando se sientan a pintar, mojan un pincel, pasan una línea de color, <strong>y el bebé empieza a saltar y a moverse debajo de su mano</strong>, algo cambia. Para ellos ese bebé deja de ser una noticia y se vuelve alguien. Alguien que ya está ahí, que escucha, que reacciona, que tiene personalidad propia.</p>
+
+        <p>Por eso esto no es "una actividad bonita de embarazo". Es un encuentro.</p>
+
+        <h3>¿En qué mes del embarazo se pinta la barriguita?</h3>
+        <p>La respuesta corta: <strong>entre la semana 24 y la semana 34</strong>. Es decir, del mes 6 al mes 8. Y ahora te cuento el porqué, porque hay una razón biológica y otra muy humana detrás de ese rango.</p>
+
+        <p>El bebé responde desde muy temprano, pero esa respuesta solo la siente la mamá que lo lleva adentro. Lo que cambia cerca de la semana 24 es que <strong>esa respuesta se vuelve visible para los demás</strong>. Cuando la abuelita pone la mano sobre el vientre y el bebé se mueve, ella también lo siente. Cuando un niño pinta con el pincel y el bebé salta, lo ve. Antes de la semana 24 ese intercambio es más íntimo; después se vuelve colectivo. Y pintar barriguitas es, sobre todo, una experiencia colectiva.</p>
+
+        <p>Por el otro lado, ¿por qué sugiero hacerlo antes de la semana 34? Por una razón completamente humana. En las últimas seis o siete semanas muchas mamás me dicen que se sienten inflamadas, pesadas, con la cara cambiada, y que no quieren salir en fotos. No todas —hay mujeres que se sienten hermosas hasta el último día, y si ese es el caso, adelante—. Pero prefiero pintar cuando la mamá está enamorada de su cuerpo, porque eso se nota en las fotos y, sobre todo, se siente en la sesión.</p>
+
+        <p>Si me preguntas por mi recomendación más linda, es esta: <strong>hazlo mínimo dos veces</strong>. Y esa recomendación tiene un sustento práctico —no es romántica—. En cada embarazo hay distintos grupos de personas que quieren acompañar a la mamá: sus amigas más cercanas, su familia materna, la familia paterna del bebé, y el núcleo más íntimo que son papá y mamá solos. Son cuatro celebraciones distintas, y cada una merece su propio momento. Por eso mismo el <strong>Kit Croko trae cuatro plantillas</strong>, pensadas exactamente para que la experiencia se pueda repetir con cada círculo. No es marketing: es la forma en que, después de años viendo cómo se organizan los baby showers en Colombia, entendí que una sola sesión se queda corta.</p>
+
+        <h3>Cómo es una sesión presencial conmigo</h3>
+        <p>Antes de contarte cómo es la sesión, aclaro lo importante: <strong>las sesiones presenciales las hago en Medellín y el Valle de Aburrá</strong>. Si estás en otra ciudad, hay dos caminos: adquirir el Kit Croko para vivir la experiencia en casa (hablo del kit más abajo), o pedir que yo viaje, lo cual implica cubrir viáticos además del valor de la sesión. He pintado así en Pereira, Cali y Bogotá.</p>
+
+        <p>Ya con eso claro, te cuento cómo se siente una sesión conmigo.</p>
+
+        <p>Dura alrededor de <strong>dos horas</strong>. La mamá está sentada en un sofá cómodo en su casa, o recostada en una silla, con ropa que se pueda poner y quitar fácil. Invitamos a las personas que ella y su pareja quieran: familia, amigos, los hijos mayores si los hay. Empezamos conversando sobre el diseño, no sobre pintura: <strong>antes de la sesión yo pido que me cuenten la historia del hogar</strong>. Quiénes son, qué los ha marcado, quiénes los acompañan hoy y quiénes ya no están, qué sueñan para este bebé. De esa conversación nace el diseño. Cada barriguita que pinto es única porque cada historia es única.</p>
+
+        <p>Durante la sesión, <strong>todos los asistentes pintan bajo mi guía</strong>. No es algo simbólico ni un rato de juego para que parezca que participan: pintan de verdad, partes del diseño que yo les voy indicando, con pinceles apropiados y con la técnica que les muestro en el momento. Al final <strong>yo paso sobre todo el trabajo y lo pulo</strong>, afino los detalles, nivelo colores, perfecciono las líneas, para que el resultado final sea una obra armónica y hermosa. La experiencia es compartida; el acabado profesional es mi responsabilidad.</p>
+
+        <p>Y hay un momento en cada sesión donde cambio el tono y les digo algo que para mí es la esencia de este oficio:</p>
+
+        <blockquote>Imagínense que el pincel es una varita mágica con la que le estamos dando buenos deseos al bebé que viene en camino.</blockquote>
+
+        <p>No pintamos para que la foto quede linda. Pintamos <strong>con intención</strong>. Con amor. Estamos augurándole un futuro hermoso a ese bebé. Le estamos diciendo, desde el vientre, que es un niño esperado, profundamente querido. Las voces que escuche ese día son las voces que lo van a acompañar toda la vida.</p>
+
+        <h3>Los diseños son historias, no dibujos</h3>
+        <p>Aquí es donde mi trabajo se separa del resto, y creo que es justo que lo sepas.</p>
+
+        <p><strong>Yo nunca repito un diseño.</strong> En once años no hay dos barriguitas iguales en mi portafolio, porque cada una lleva la carga histórica de una familia específica. Cuando yo pinto, no estoy decorando una barriga: estoy <strong>escribiendo visualmente la historia que esa familia le va a contar al bebé después de que nazca</strong>. El dibujo es un relato que los papás podrán explicarle cuando crezca —<em>"mira, este colibrí lo pintó tu abuela, y significa esto; este arcoíris lo pusimos como homenaje a tu hermanito, un angelito que te acompaña desde el cielo y que te ama"</em>—. El arte vive mucho después de la sesión, porque se transforma en una historia familiar.</p>
+
+        <p>Con los años he construido un <strong>lenguaje simbólico</strong> que cualquier familia puede adoptar si le hace sentido:</p>
+
+        <ul>
+          <li><strong>Los colibríes</strong> los pintamos para honrar a los seres queridos que ya partieron del plano terrenal y que, sin embargo, la familia quiere tener presentes ese día. En varias culturas latinoamericanas los colibríes son mensajeros entre mundos, portadores de recados desde el otro lado. Cuando una mamá me dice <em>"quisiera que mi papá estuviera aquí"</em>, aparece un colibrí.</li>
+          <li><strong>Los arcoíris</strong> los pintamos cuando en la familia hubo pérdidas antes de esta llegada —abortos espontáneos, muertes gestacionales, bebés que no alcanzaron a nacer—. Es la forma de incluir ese dolor en la alegría de hoy, sin esconderlo. Muchas mamás que vienen conmigo después de un duelo descubren en la sesión que se puede honrar la pérdida y celebrar al mismo tiempo.</li>
+          <li><strong>Los objetos alrededor del bebé</strong> cuentan quiénes son los papás y la familia. La guitarra si el papá es músico, los libros si la mamá es lectora, el balón, la planta favorita, el oficio del abuelo, una montaña concreta, un animal que la familia ama. Cada objeto es un pedacito del mundo al que ese bebé está llegando.</li>
+        </ul>
+
+        <p>Ese trabajo de interpretación simbólica es lo que hago cuando voy yo en persona. No es decoración: es una conversación pintada sobre la piel, y por eso cada sesión toma al menos dos horas.</p>
+
+        <h4>Las montañas: mi firma</h4>
+        <p>Dentro de cada diseño hay una constante. Nací en Medellín, entre montañas, y para mí las montañas son <strong>el abrazo de la naturaleza</strong>, esa sensación que uno solo entiende si ha crecido en este valle: la de estar cobijado, sostenido, protegido por algo más grande. Esa sensación, para mí, es idéntica a la del bebé dentro de su bolsita en el útero. Por eso mis fondos casi siempre llevan montañas y cielo azul profundo. Es mi manera de pintar el útero por fuera. Mis clientas me dicen que reconocen una barriguita mía de lejos, y sí: es por las montañas. Pero lo que pasa <em>dentro</em> de ese paisaje —los colibríes, los arcoíris, los objetos— eso lo construimos tú y yo antes de la sesión.</p>
+
+        <h3>Una palabra sobre las pinturas (aquí soy microbióloga)</h3>
+        <p>Aquí cambio un poco el tono, porque es el tema donde más desinformación hay, y mi formación me obliga a explicarte con cuidado.</p>
+
+        <p>En Colombia todavía circula la idea de que <em>"cualquier pintura no tóxica sirve"</em>. No es exacto. Para estar dos horas sobre la piel de una embarazada, se necesita una pintura pensada para ese uso específico.</p>
+
+        <p>La <strong>pintura acrílica</strong>, por ejemplo, aunque no sea peligrosa, no está formulada para estar sobre la piel durante una sesión larga. Al secarse se cuartea, se craquela, tira un poco la piel y se siente incómoda. El resultado visual tampoco queda bien: pierde viveza, pierde uniformidad. Es pintura pensada para lienzo, no para cuerpo.</p>
+
+        <p>Los <strong>pintacaritas de la calle</strong> suelen ser a base de aceites, con acabados opacos, poca variedad de colores y una textura que no es agradable sobre el vientre. No voy a decirte que son un peligro: no lo son en la mayoría de casos. Pero la experiencia no es la misma, y cuando hablamos de un momento que vas a recordar toda la vida, el acabado importa.</p>
+
+        <p>Lo que yo busco en una pintura —y lo que uso en mis sesiones y en el Kit Croko— es esto: <strong>cosméticas de grado profesional, a base de agua, hipoalergénicas, sin fragancias, con pigmentación rica y uniforme, y sin interruptores endocrinos</strong>. Los interruptores endocrinos son moléculas que imitan o bloquean hormonas del cuerpo —parabenos, ftalatos, ciertos filtros químicos—. Durante el embarazo, cuando el sistema hormonal está orquestando el desarrollo del bebé, no es momento de sumar exposiciones evitables a sustancias así. No hablo de apocalipsis. Hablo de elegir bien cuando se puede elegir bien.</p>
+
+        <p>Las pinturas que yo uso se retiran con <strong>solo agua</strong> —puede ser fría o tibia, no se necesita jabón especial—. En once años, más de 800 sesiones y más de 1.000 kits vendidos, nunca hemos tenido un caso de alergia. Aun así, en cada sesión recomiendo una pequeña prueba en el antebrazo 24 horas antes. Es lo correcto.</p>
+
+        <p>Un consejo práctico si estás comparando opciones: pregúntale a tu artista qué pintura usa. No es una pregunta incómoda. Es exactamente la pregunta que haría tu ginecóloga.</p>
+
+        <h3>El momento en que se juntan tres generaciones</h3>
+        <p>Después de once años, las sesiones que más me conmueven son las que reúnen a la abuelita, a la embarazada, y a los niños de la casa —sobrinos, hijos mayores, amiguitos a los que la familia considera suyos—.</p>
+
+        <p>Cuando eso ocurre, pasa algo que no se repite en ningún otro formato. La abuela empieza a contar su propio embarazo, sus antojos raros, las cosas que le decían las mujeres de su época, el nacimiento de la hija que ahora está embarazada frente a ella. Nos reímos todos. Y la mamá embarazada empieza a mirar a su propia mamá con otros ojos, porque acaba de entender algo sobre ser mamá que no sabía hasta ese momento. Después pintamos. Y cuando la abuela pinta y el bebé se mueve justo bajo su mano, muchas lloran. Los niños no quieren soltar el pincel, porque para ellos es literalmente un juego con un primito invisible que les responde. Los papás del bebé se miran como preguntándose qué es esto que están viviendo.</p>
+
+        <p>Eso es lo que hago. No es una foto. Es un hilo que cruza tres generaciones y que ese bebé va a escuchar contar toda su vida.</p>
+
+        <h3>Dos caminos: yo en persona, o tu familia en casa con el Kit Croko</h3>
+        <p>Tengo dos formas de acompañarte, y quiero explicarlas bien para que escojas la que de verdad encaja con tu momento.</p>
+
+        <h4>Sesión presencial conmigo (Medellín y Valle de Aburrá)</h4>
+        <p>Voy a tu casa con todo el material, hacemos la conversación previa donde construimos el diseño a partir de la historia de tu familia —los colibríes, los arcoíris, los objetos, los símbolos que tengan sentido para ustedes—, y dedico dos horas a la sesión con la gente que invites. El valor arranca desde <strong>$600.000 COP</strong>. Lo que hace que el valor suba o baje no es el diseño: es la <strong>ubicación</strong> —las zonas más lejanas del Valle de Aburrá implican un pequeño ajuste por desplazamiento, pero el trabajo creativo lo hacemos igual de cuidadoso en cada caso—.</p>
+
+        <p>Ese valor incluye todo: la conversación previa donde construimos el diseño a partir de la historia de tu familia, los materiales cosméticos de grado profesional, las dos horas de sesión a domicilio, y el trabajo de afinación final para que el resultado quede hermoso en fotografía. Quiero que sepas qué recibes y que decidas con tranquilidad.</p>
+
+        <p>Para agendar, escríbeme por WhatsApp. Las fechas alrededor del mes 6 y 7 se llenan rápido, te recomiendo reservar con 3 o 4 semanas de anticipación.</p>
+
+        <h4>Sesión en otra ciudad (con mi desplazamiento)</h4>
+        <p>También he ido a pintar a Pereira, Cali y Bogotá cuando una familia me cubre viáticos, o cuando una marca o un evento de maternidad me invita. Si te interesa esa opción, escríbeme y conversamos la logística. No es lo habitual, pero es posible.</p>
+
+        <h4>Kit Croko: la experiencia para todo el país</h4>
+        <p>Durante años me escribieron mamás de Bogotá, Cali, Barranquilla, Bucaramanga, Pereira, Cartagena, Pasto, Cúcuta, pidiéndome que fuera. No siempre podía, y me dolía que la distancia fuera la razón por la que una familia no viviera este momento. Así nació el <strong>Kit Croko</strong>: empecé a diseñarlo y a probarlo durante tres meses en 2021, con familias reales, en condiciones reales de casa sin mi presencia. Lo lancé oficialmente en <strong>diciembre de 2021</strong>, y hasta hoy es el primer kit pinta barriguitas creado en Colombia. Hasta donde sé, también es el único kit de pinta barriguitas en el mercado hispanohablante diseñado por una microbióloga.</p>
+
+        <p>Hoy el kit cuesta <strong>$190.000 COP con envío gratis a todo el país</strong> y trae:</p>
+
+        <ul>
+          <li><strong>Las mismas pinturas cosméticas profesionales que uso en mis sesiones en Medellín</strong>, con una paleta de <strong>15 colores</strong> para que puedan componer cualquier diseño.</li>
+          <li><strong>Cuatro plantillas</strong> del catálogo Croko, elegidas a partir de nuestros diseños más pedidos y diseñadas específicamente para que una familia sin experiencia artística pueda lograr un resultado hermoso. El catálogo completo es muy variado, y al tener cuatro plantillas pueden vivir cuatro sesiones distintas —una con amigas, una con la familia materna, una con la familia paterna del bebé, y una solo papá y mamá—.</li>
+          <li><strong>El nombre del bebé</strong>, listo para integrar al diseño.</li>
+          <li><strong>Pinceles profesionales</strong> y una <strong>guía en video paso a paso</strong> para que nadie se sienta perdido.</li>
+        </ul>
+
+        <p>Y una opción nueva que acabamos de agregar: si tu familia quiere una <strong>plantilla personalizada</strong> con la historia específica de ustedes —integrando los colibríes, los arcoíris, los objetos que les importan, igual que haría yo en persona— puedes pedirla como adicional al kit. Mantenemos la línea de diseño sencilla, porque las plantillas tienen un límite técnico de complejidad para que sigan siendo fáciles de pintar sin mí. Pero la historia sí la podemos poner ahí.</p>
+
+        <p>Quiero contarte exactamente <strong>para qué está pensado el kit</strong>, porque es un producto hecho con una lógica propia. El kit lo diseñé para familias que quieren vivir la experiencia en casa, con sus propias manos, en su propio espacio y su propio tiempo. En ese escenario, la persona que termina pintando muchas veces nunca antes ha cogido un pincel —puede ser el papá, la abuela, una amiga—, y el kit está armado precisamente para que <strong>el resultado sea hermoso sin necesidad de experiencia artística previa</strong>. Plantillas claras que guían cada línea, tutorial en video paso a paso, pinturas que perdonan errores. La prioridad es que nadie se frustre y que al final tengan una fotografía que de verdad quieran guardar para siempre. Más de 1.000 familias en Colombia lo han hecho así.</p>
+
+        <p>Dicho en una frase: si estás en Medellín y quieres el lenguaje simbólico construido a la medida, agenda conmigo. Si estás en otra ciudad, o quieres vivir la experiencia con más intimidad en tu casa con tu gente, pide el kit. <strong>Los dos caminos se pintan con intención. Ninguno es mejor que el otro.</strong></p>
+
+        <p>Pides el kit en <a href="https://www.croko.co">croko.co</a>.</p>
+
+        <h3>Preguntas que me hacen siempre</h3>
+
+        <p><strong>¿Es seguro pintar la barriguita durante el embarazo?</strong><br />
+        Sí, siempre que se usen pinturas cosméticas a base de agua, hipoalergénicas, sin interruptores endocrinos, formuladas para aplicación en piel. En once años y más de 800 sesiones no hemos tenido un caso de alergia. No recomiendo pintura acrílica ni pintacaritas de la calle, no tanto por peligro como por incomodidad y acabado pobre.</p>
+
+        <p><strong>¿A qué mes del embarazo se puede pintar la barriguita?</strong><br />
+        Idealmente entre la semana 24 (mes 6) y la semana 34 (mes 8). Antes, la respuesta del bebé no es visible aún para quienes acompañan. Después, muchas mamás se sienten menos cómodas con su cuerpo para la experiencia. Cada mujer decide su momento.</p>
+
+        <p><strong>¿Cuánto dura una sesión de pinta barriguitas?</strong><br />
+        Alrededor de dos horas. No es una carrera, es un ritual.</p>
+
+        <p><strong>¿Cuánto cuesta pintar la barriguita en Colombia?</strong><br />
+        La sesión profesional presencial conmigo en Medellín arranca desde $600.000 COP. El Kit Croko, para vivir la experiencia en casa en cualquier ciudad, cuesta $190.000 COP con envío incluido. En el país, los servicios profesionales suelen estar entre $400.000 y $800.000 COP.</p>
+
+        <p><strong>¿Duelen las pinturas? ¿Pican?</strong><br />
+        No. Las pinturas cosméticas profesionales se sienten frescas sobre la piel, casi como un masaje suave con pincel. La mayoría de los bebés se animan durante la sesión y empiezan a saltar por la estimulación —es parte de la magia—.</p>
+
+        <p><strong>¿Se puede hacer pinta barriguitas en casa, sin saber dibujar?</strong><br />
+        Sí. Para eso existe el Kit Croko, el primer kit pinta barriguitas creado en Colombia, lanzado en diciembre de 2021. Trae plantillas que guían el diseño y un tutorial en video, así que no hace falta experiencia artística previa.</p>
+
+        <p><strong>¿Cómo se quita la pintura después?</strong><br />
+        Con agua, sola. Puede ser fría o tibia. No se necesita jabón especial ni productos adicionales.</p>
+
+        <p><strong>¿Por qué regalar una sesión o un kit para un baby shower?</strong><br />
+        Porque es uno de los pocos regalos que se vive en el momento y que queda para siempre. Las fotos son un recuerdo, pero la experiencia compartida —la gente pintando junta, riéndose, llorando a veces— es algo que nadie más puede regalar. Y es una actividad que integra a todas las generaciones del evento.</p>
+
+        <p><strong>¿Por qué elegirte a ti?</strong><br />
+        No me gusta hablar de mí en esos términos. Prefiero contarte lo que hago y dejar que decidas. Llevo más de una década dedicada exclusivamente a pintar barriguitas. Soy microbióloga, lo que me hace especialmente cuidadosa con los materiales que pongo sobre tu piel. No repito diseños, porque cada familia tiene una historia distinta que contar. Y creé el primer Kit Pinta Barriguitas de Colombia por una razón sencilla: porque pintar barriguitas no es solo mi empresa, es algo que está metido en mi alma. Después de tantas sesiones entendí que esta experiencia es de una belleza que ninguna familia debería perderse solo por vivir lejos de Medellín. El kit nació de ahí. Nació porque me dolía que alguien se lo perdiera. Si eso es lo que estabas buscando, nos vamos a entender muy bien.</p>
+
+        <hr />
+
+        <h3>Para cerrar</h3>
+        <p>Si estás en Medellín y quieres agendar conmigo, escríbeme por WhatsApp. Conversemos primero, sin compromiso. No importa si ya tienes una idea clara del diseño o si no sabes por dónde empezar —a todas las ayudo a encontrar el diseño ideal, y para mí esa conversación previa es parte del trabajo, no un trámite—.</p>
+
+        <p>Si estás en otra ciudad, el Kit Croko te llega con envío gratis en pocos días. Lo encuentras en <a href="https://www.croko.co">croko.co</a>.</p>
+
+        <p>Y si estás leyendo esto porque quieres regalar la experiencia a alguien que amas: te agradezco profundamente. Los mejores baby showers que he presenciado empezaron porque una amiga, una tía, una suegra o un esposo decidió regalar el momento. Esas personas después se quedan en la memoria del bebé como las que iniciaron el recuerdo.</p>
+
+        <p>Gracias por leerme hasta aquí.</p>
+
+        <p>Con cariño,<br />
+        <strong>Carolina</strong><br />
+        <em>Croko — Pinta Barriguitas</em></p>
+
+        <hr />
+
+        <p><strong>Sobre la autora:</strong> Carolina es microbióloga industrial y ambiental egresada de la Universidad de Antioquia, y desde 2014 se dedica exclusivamente al pinta barriguitas en Colombia. Es fundadora de Croko y creadora del primer Kit Pinta Barriguitas creado en Colombia, lanzado en diciembre de 2021. Ha pintado más de 800 barriguitas de forma presencial en Medellín y ha acompañado a más de 1.000 familias a través del kit en todo el país. Vive en Medellín, donde ofrece sus sesiones a domicilio.</p>
+
+        <p><strong>Encuéntrame en:</strong></p>
+        <ul>
+          <li>Instagram: <a href="https://www.instagram.com/croko_maquillaje_embarazada/" target="_blank" rel="noopener noreferrer">@croko_maquillaje_embarazada</a></li>
+          <li>TikTok: <a href="https://www.tiktok.com/@crokolina" target="_blank" rel="noopener noreferrer">@crokolina</a></li>
+          <li>Sitios web: <a href="https://www.croko.co">croko.co</a> · <a href="https://www.maquillajeembarazadas.com">maquillajeembarazadas.com</a></li>
+        </ul>
+      `
     }
   ]
 }

@@ -73,20 +73,30 @@ const BlogDetail = ({ post }) => {
                             </header>
 
                             <div className="post-image mb-4">
-                                <IKImage
-                                    src={extractPath(post.image)}
-                                    alt={post.title}
-                                    width={1600}
-                                    height={1161}
-                                    className="img-fluid rounded"
-                                    loading="eager"
-                                    transformation={[{
-                                        width: isDesktop ? 800 : 400,
-                                        quality: 85,
-                                        format: 'auto'
-                                    }]}
-                                    style={{ width: '100%', height: 'auto', maxHeight: '400px', objectFit: 'cover' }}
-                                />
+                                {post.image && post.image.includes('ik.imagekit.io') ? (
+                                    <IKImage
+                                        src={extractPath(post.image)}
+                                        alt={post.title}
+                                        width={1600}
+                                        height={1161}
+                                        className="img-fluid rounded"
+                                        loading="eager"
+                                        transformation={[{
+                                            width: isDesktop ? 1200 : 600,
+                                            quality: 85,
+                                            format: 'auto'
+                                        }]}
+                                        style={{ width: '100%', height: 'auto', objectFit: 'contain' }}
+                                    />
+                                ) : (
+                                    <img
+                                        src={post.image}
+                                        alt={post.title}
+                                        className="img-fluid rounded"
+                                        loading="eager"
+                                        style={{ width: '100%', height: 'auto', objectFit: 'contain' }}
+                                    />
+                                )}
                             </div>
 
                             <div className="post-description mb-4">
