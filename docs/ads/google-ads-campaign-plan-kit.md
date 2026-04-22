@@ -154,7 +154,52 @@ Keywords (exact + phrase, cubre variantes de espaciado):
 **Expected:** ~20–50 impresiones/día, CTR 15–30%, conv rate 5–10× el del Product Direct
 **Monitoreo:** Search Terms Report semanal — añadir negatives si aparece `gratis`, `diy`, `pdf`, `tutorial`
 
-### Ad Group 1C — Baby Shower Activity (activar mes 2 solo si 1A/1B validan)
+### Ad Group 1D — Gift Intent (nuevo — v2.1, lanzar Día 1 por ventana Día de la Madre)
+
+Razón: Día de la Madre Colombia 2026 es el **10 de mayo** — 18 días desde la creación de esta campaña. Gift-intent searches ("¿qué regalar a una embarazada?", "regalo baby shower") peakean Abr 20 – May 10. Esperar 48–72h de launch deja a Google todavía aprendiendo durante el pico. Decisión: lanzar Día 1 con guardrails estrictos, no en Phase 2 como indicaba v2.0.
+
+**Keywords (phrase + exact únicamente, NO broad):**
+
+```
+"que regalar a una embarazada"
+[que regalar a una embarazada]
+"regalo para embarazada"
+"regalos para embarazadas"
+"regalo original embarazada"
+"que regalar en un baby shower"
+[que regalar en un baby shower]
+"regalo baby shower"
+"regalo baby shower original"
+"regalo baby shower diferente"
+"regalos para baby shower"
+"regalo futura mama"
+```
+
+**Max CPC:** $1.500 COP (cap más apretado que Product Direct porque gift intent es menos cualificado)
+
+**Landing URL con UTM:** `https://www.croko.co/?utm_source=google&utm_medium=cpc&utm_campaign=kit-co-search&utm_content=gift-intent`
+
+**Negatives específicos (añadir Día 1, además de la shared negative list):**
+
+```
+gratis, barato, diy, casero, economico, manualidad, tutorial,
+ropa, pañales, biberon, cuna, coche, juguete, chupete, body,
+digital, pdf, plantilla gratis, descargar,
+hombre, papa, papá, padre, cumpleaños, aniversario, boda,
+primer, segundo, tercero
+```
+
+**Monitoreo agresivo Semana 1:**
+- Search Terms Report cada 24h, pausar queries no-kit inmediatamente
+- Check diario de spend-share vs conversion-share
+
+**Kill criteria Día 7:**
+- CPA > 2× CPA de Product Direct → pausar keywords peores (no el grupo entero)
+- CTR < 3% → reescribir RSA
+- CPC promedio > $2.000 → bajar bid a $1.200
+- Spend > 40% del campaign con < 10% de las conversiones → pausar grupo entero
+
+### Ad Group 1C — Baby Shower Activity (diferido a Phase 2, Agosto pre-Amor y Amistad)
 
 ```
 "actividades baby shower originales"
@@ -165,10 +210,12 @@ Keywords (exact + phrase, cubre variantes de espaciado):
 
 ### Ad Groups que NO corren en Fase 1
 
-- ❌ **Gift Intent** ("regalo baby shower", "que regalar embarazada") — CPC alto, intent más ancho, no rentable con $300k/mes
+- ❌ **Baby Shower Activity** — planning intent, no purchase intent; peakea para Amor y Amistad en septiembre, no para Día de la Madre
 - ❌ **Performance Max** — indexación débil + budget insuficiente
 - ❌ **Demand Gen** — requiere volumen y autoridad de dominio
 - ❌ **Dynamic Search Ads** — requiere páginas indexadas
+
+> **Cambio v2.1:** Gift Intent **sí** corre en Fase 1 (ver Ad Group 1D) por la ventana Día de la Madre. Decisión revertida respecto a v2.0 por timing.
 
 ### Negative keywords globales (crear shared list)
 
@@ -361,12 +408,14 @@ Del audit SEO (`docs/seo/audit-kit-pinta-barriguitas-2026-03-31.md`) y `kit-pint
 
 ### Roadmap de escalamiento realista
 
-1. **Abril (resto):** $300k como piloto de 3 semanas → ángulo Día de la Madre
-2. **Mayo-Junio:** decidir con [scorecard día 21](./google-ads-day21-scorecard.md):
+1. **Abr 22 – May 10 (ventana Día de la Madre, v2.1):** $18.000 COP/día = ~$340k para la ventana. Front-load del budget mensual para capturar gift-intent peak.
+2. **May 11–31:** bajar a $5.000 COP/día = ~$100k para rebalancear (pos-Día de la Madre es bajo intent hasta junio).
+3. **Junio:** $300k/mes como baseline (-50% del año por valle de nacimientos DANE).
+4. **Julio-Agosto:** decidir con [scorecard día 21](./google-ads-day21-scorecard.md) (ejecutar ~May 13):
    - Si CPA < $60k → subir a $750k/mes
    - Si CPA $60-100k → mantener $450k mientras optimizas
    - Si CPA > $100k → mantener $300k y atacar landing/creative antes que budget
-3. **Agosto:** independiente del CPA, topear $900k ese mes y el siguiente para el pico Amor y Amistad
+5. **Agosto-Sep:** independiente del CPA, topear $900k ese mes y el siguiente para el pico Amor y Amistad. Reactivar Ad Group 1C Baby Shower Activity.
 
 ---
 
@@ -406,13 +455,18 @@ Del audit SEO (`docs/seo/audit-kit-pinta-barriguitas-2026-03-31.md`) y `kit-pint
   - ☑ En el mercado → Productos para bebés y niños
   - ☑ En el mercado → Regalos y ocasiones especiales
 - [ ] Saltar generador AI de keywords ("Saltar" en pantalla Generación de palabras clave y recursos)
-- [ ] Ad Group 1A "Product Direct" con keywords no-brand
-- [ ] Ad Group 1B "Brand" con keywords de marca-categoría (max CPC $800–1.200)
-- [ ] 1 RSA con 15 headlines + 4 descriptions + versión Día de la Madre
+- [ ] Ad Group 1A "Product Direct" con keywords no-brand (max CPC $2.000)
+- [ ] Ad Group 1B "Brand" con keywords de marca-categoría (max CPC $1.200)
+- [ ] Ad Group 1D "Gift Intent" con keywords de regalo (max CPC $1.500) — con UTM `utm_content=gift-intent`
+- [ ] 1 RSA por ad group (3 RSAs totales):
+  - 1A: Product Direct RSA (15 headlines evergreen + 4 descriptions + estacional Día de la Madre)
+  - 1B: Brand RSA (headlines que confirmen marca + precio + USP)
+  - 1D: Gift Intent RSA (headlines angulados a regalo; pinear "Regalo Baby Shower Único" en pos 1)
 - [ ] Todos los extensions: sitelinks, callouts, structured snippets, call, image, logo
-- [ ] Negative keyword shared list
-- [ ] Bidding: **Maximizar clics** con CPC máx $2.000 COP (Product Direct) / $1.200 COP (Brand)
-- [ ] Daily budget: $10.000 COP
+- [ ] Negative keyword shared list (global)
+- [ ] Negatives específicos de 1D Gift Intent (gratis, diy, ropa, pañales, hombre, papa, etc.)
+- [ ] Bidding: **Maximizar clics** con CPC máx por ad group
+- [ ] **Daily budget: $18.000 COP durante ventana Día de la Madre (Abr 22 – May 10)** → bajar a $10.000 COP el 11 de mayo, $5.000 COP May 11–31 para rebalancear el mes
 - [ ] Attribution: Data-driven, 30-day click / 1-day view
 
 ### Notas de la creación de campaña (walkthrough 2026-04-22)
@@ -468,5 +522,5 @@ Del audit SEO (`docs/seo/audit-kit-pinta-barriguitas-2026-03-31.md`) y `kit-pint
 
 **Documento versión:** 2.1
 **Creado:** 2026-04-10 (v2.0)
-**Actualizado:** 2026-04-22 (v2.1 — walkthrough de creación de campaña: URL al root, bidding = Maximizar clics, ad group Brand añadido, ajustes de audiencia para Colombia/Search)
+**Actualizado:** 2026-04-22 (v2.1 — walkthrough de creación de campaña: URL al root, bidding = Maximizar clics, ad groups Brand y Gift Intent añadidos, ajustes de audiencia para Colombia/Search, budget front-loaded para ventana Día de la Madre)
 **Próxima revisión:** después del día 21 post-launch (ajustar con data real)
