@@ -86,7 +86,7 @@ const BlogDetail = ({ post }) => {
                                             quality: 85,
                                             format: 'auto'
                                         }]}
-                                        style={{ width: '100%', height: 'auto', objectFit: 'contain' }}
+                                        style={{ width: '100%', height: 'auto', maxHeight: '800px', objectFit: 'contain' }}
                                     />
                                 ) : (
                                     <img
@@ -94,7 +94,7 @@ const BlogDetail = ({ post }) => {
                                         alt={post.title}
                                         className="img-fluid rounded"
                                         loading="eager"
-                                        style={{ width: '100%', height: 'auto', objectFit: 'contain' }}
+                                        style={{ width: '100%', height: 'auto', maxHeight: '800px', objectFit: 'contain' }}
                                     />
                                 )}
                             </div>
