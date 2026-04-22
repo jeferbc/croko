@@ -1,10 +1,11 @@
 # Google Ads Campaign Plan — Kit Pinta Barriguitas
 
-**Versión:** 2.0 (budget-adjusted para 300k COP)
-**Fecha:** 2026-04-10
-**Landing:** https://www.croko.co/kit-pinta-barriguitas
+**Versión:** 2.1 (campaign creation walkthrough: 2026-04-22)
+**Fecha:** 2026-04-10 (v2.0), actualizado 2026-04-22 (v2.1)
+**Landing:** https://www.croko.co/ (kit moved to root)
 **Checkout:** https://checkout.wompi.co/l/tIZLKf
 **Scorecard de decisión:** [google-ads-day21-scorecard.md](./google-ads-day21-scorecard.md)
+**Conversion setup:** [google-ads-conversions-setup.md](./google-ads-conversions-setup.md)
 
 ---
 
@@ -99,22 +100,24 @@ Paso 5: conversión atribuida al anuncio original, Google aprende
 
 ### Campaña única: "Kit Pinta Barriguitas - CO - Search"
 
+**Objetivo:** Clientes potenciales (Leads) — objetivo cosmético; lo que manda es la conversión primaria + estrategia de puja
 **Tipo:** Search
-**Bidding:** Manual CPC (max $2.000 COP) → Max Conversions cuando alcances 15+ conv/mes
+**Bidding:** **Maximizar clics con CPC máx $2.000 COP** (NO Manual CPC, NO Smart Bidding) → migrar a Maximizar conversiones cuando alcances 15+ conv/mes
 **Daily budget:** $10.000 COP
-**Geo:** Medellín + Cali + Bogotá, radio 25 km, "People in or regularly in your targeted locations"
-**Idioma:** Español
-**Device bid adjustments:** Mobile +20%, Desktop -20% (mientras no se arregle el CTA desktop roto)
+**Geo:** Medellín + Cali + Bogotá, **radio 25 km** (usar "Búsqueda avanzada → Radio", NO "ciudad" polygon — captura metro: Envigado, Itagüí, Soacha, Chía, Palmira)
+**Opciones de ubicación:** "Personas presentes o habitualmente" (NO "interesadas en")
+**Idioma:** Español (NO añadir inglés aunque Google lo sugiera)
+**Redes:** ❌ **Search Partners OFF** · ❌ **Display OFF** (CRÍTICO — Display consume 40–60% del budget en banners no planeados)
+**AI Max:** ❌ OFF (Personalización de texto OFF, Expansión de URL final OFF)
+**Device bid adjustments:** Mobile +20%, Desktop -20%
 **Schedule:** Lun-Dom 06:00-23:00, pausar 23:00-06:00
 **Attribution:** Data-driven, 30-day click / 1-day view
 
-### Ad Group 1A — Product Direct (100% del budget mes 1)
+### Ad Group 1A — Product Direct (intent genérico, no-brand)
 
 Keywords (exact + phrase match, NO broad):
 
 ```
-[kit pinta barriguitas]
-"kit pinta barriguitas"
 [kit pintura barriga embarazada]
 "pintar barriga embarazada"
 "pintura para barriga de embarazada"
@@ -126,7 +129,32 @@ Keywords (exact + phrase match, NO broad):
 "belly art embarazo"
 ```
 
-### Ad Group 1B — Baby Shower Activity (activar mes 2 solo si 1A valida)
+**Max CPC:** $2.000 COP
+
+### Ad Group 1B — Brand (nuevo — v2.1)
+
+Razón: "Kit Pinta Barriguitas" aparece en SERP pero el resultado orgánico está dominado por TikTok/Instagram (sin ruta directa a Obtener Kit) y por Shopping carousel con competidores. Necesitamos defender el término marca-categoría con un anuncio que dirija al modal de compra.
+
+Keywords (exact + phrase, cubre variantes de espaciado):
+
+```
+[kit pinta barriguitas]
+[kit pintabarriguitas]
+[kit pinta-barriguitas]
+[pinta barriguitas]
+[pintabarriguitas]
+[pinta barriguitas croko]
+[kit croko]
+[croko pinta barriguitas]
+"kit pinta barriguitas"
+"pinta barriguitas"
+```
+
+**Max CPC:** $800–1.200 COP (brand debe ser barato por QS 9–10 — si no, algo está mal)
+**Expected:** ~20–50 impresiones/día, CTR 15–30%, conv rate 5–10× el del Product Direct
+**Monitoreo:** Search Terms Report semanal — añadir negatives si aparece `gratis`, `diy`, `pdf`, `tutorial`
+
+### Ad Group 1C — Baby Shower Activity (activar mes 2 solo si 1A/1B validan)
 
 ```
 "actividades baby shower originales"
@@ -206,7 +234,7 @@ trabajo, empleo, curso, instituto, academia, profesional
 
 ### URLs
 
-- **Final URL:** `https://www.croko.co/kit-pinta-barriguitas`
+- **Final URL:** `https://www.croko.co/` (kit moved to root — v2.1)
 - **Display path:** `/kit/pinta-barriguitas`
 
 ---
@@ -364,16 +392,37 @@ Del audit SEO (`docs/seo/audit-kit-pinta-barriguitas-2026-03-31.md`) y `kit-pint
 ### Bloque C — Google Ads (día 3-4)
 
 - [ ] Crear campaña Search "Kit Pinta Barriguitas - CO - Search"
-- [ ] Geo: Medellín, Cali, Bogotá radio 25 km, "People in"
-- [ ] Idioma: Español
+- [ ] Objetivo: **Clientes potenciales (Leads)**
+- [ ] Conversión primaria inicial: **Click Whatsapp Conversion KIT** (única Primary viva hoy)
+- [ ] Geo: Medellín, Cali, Bogotá **radio 25 km** (Búsqueda avanzada → Radio, NO "ciudad")
+- [ ] Opciones de ubicación: "Personas presentes o habitualmente"
+- [ ] Idioma: Español únicamente (rechazar sugerencia de añadir inglés)
+- [ ] ❌ Search Partners OFF
+- [ ] ❌ Display OFF
+- [ ] ❌ AI Max OFF (toggle, Personalización de texto, Expansión URL — todos OFF)
+- [ ] UE anuncios políticos: No
 - [ ] Schedule: Lun-Dom 06:00-23:00
-- [ ] Ad Group 1A con keywords de Product Direct
+- [ ] Segmentos de audiencia (modo **Observación**, NO Segmentación):
+  - ☑ En el mercado → Productos para bebés y niños
+  - ☑ En el mercado → Regalos y ocasiones especiales
+- [ ] Saltar generador AI de keywords ("Saltar" en pantalla Generación de palabras clave y recursos)
+- [ ] Ad Group 1A "Product Direct" con keywords no-brand
+- [ ] Ad Group 1B "Brand" con keywords de marca-categoría (max CPC $800–1.200)
 - [ ] 1 RSA con 15 headlines + 4 descriptions + versión Día de la Madre
 - [ ] Todos los extensions: sitelinks, callouts, structured snippets, call, image, logo
 - [ ] Negative keyword shared list
-- [ ] Manual CPC max bid: $2.000 COP
+- [ ] Bidding: **Maximizar clics** con CPC máx $2.000 COP (Product Direct) / $1.200 COP (Brand)
 - [ ] Daily budget: $10.000 COP
 - [ ] Attribution: Data-driven, 30-day click / 1-day view
+
+### Notas de la creación de campaña (walkthrough 2026-04-22)
+
+**Audiencias que NO están disponibles y por qué:**
+- ❌ **Eventos vitales → Próximamente padres** — Life Events solo están disponibles en YouTube/Gmail/Display, NO en Search
+- ❌ **Ingresos del hogar** — Google Ads no ofrece brackets de ingresos en Colombia (solo US/UK/AU/JP/NZ/IN y pocos más). Workaround: mostrar precio $190.000 en ad copy como filtro natural + expandir después con Estado de propiedad de vivienda / Educación si hace falta
+- ❌ **Targeting por barrio (Estrato 5-6)** — Google Ads no puede targetear por estrato socioeconómico; el mecanismo correcto es bid adjustments por segmento de observación después de 14 días de datos
+
+**Objetivo Leads vs Sales:** decisión de usar Leads porque la única conversión primaria viva es WhatsApp lead. Cuando Phase 3 (n8n offline import) esté online, marcar `purchase` como primaria y re-evaluar el objetivo (aunque el label es cosmético mientras se use Maximizar clics).
 
 ### Bloque D — Monitoreo (semanas 1-3)
 
@@ -417,6 +466,7 @@ Del audit SEO (`docs/seo/audit-kit-pinta-barriguitas-2026-03-31.md`) y `kit-pint
 
 ---
 
-**Documento versión:** 2.0
-**Creado:** 2026-04-10
+**Documento versión:** 2.1
+**Creado:** 2026-04-10 (v2.0)
+**Actualizado:** 2026-04-22 (v2.1 — walkthrough de creación de campaña: URL al root, bidding = Maximizar clics, ad group Brand añadido, ajustes de audiencia para Colombia/Search)
 **Próxima revisión:** después del día 21 post-launch (ajustar con data real)
