@@ -39,7 +39,8 @@ const organizationSchema = {
     },
     "sameAs": [
         "https://www.instagram.com/croko_maquillaje_embarazada",
-        "https://www.facebook.com/crokolina"
+        "https://www.facebook.com/crokolina",
+        "https://www.youtube.com/@Crokolina"
     ]
 }
 

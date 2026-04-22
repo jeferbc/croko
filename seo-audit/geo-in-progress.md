@@ -10,11 +10,11 @@
 - [x] **Secondary: `aggregateRating` without third-party source** — removed from Product schema (commit `7a661407`)
 - [~] **#2 (remaining) Static `<h2>` safety block — DEPRECATED.** The audit assumed `dynamic()` without `ssr: true` meant the FAQ was JS-only. That assumption is false for Next.js App Router (`dynamic()` defaults to `ssr: true`). Live verification on 2026-04-22: `curl -s https://www.croko.co` returns `x-nextjs-prerender: 1` and the accordion body text (`seguras` ×2, `Absolutamente` ×2, `hipoalergénicas` ×2, `500 familias` ×2, `¿Son seguras las pinturas durante el embarazo?` ×2) is all present in SSR HTML. `PopularPosts` is also SSR-rendered. No invisibility problem exists. A dedicated static H2 safety block would add marginal structural benefit only; not worth the page real estate. **Action: none. Do not re-flag in future audits.**
 - [ ] #3 Fix blog H3 → H2 headings + add TL;DR blocks + strip emojis from H1 + render visible dates
-- [ ] #4 Add YouTube channel to Organization `sameAs` (not in `src/app/page.js`)
+- [x] **#4 YouTube channel added to `sameAs`** — `https://www.youtube.com/@Crokolina` (verified 200) added to Organization `sameAs` in `src/app/page.js:43`, HealthAndBeautyBusiness `sameAs` in `src/app/belly-painting-medellin/page.js:37`, and the secondary Organization schema in `src/components/SchemaMarkup.js:153`. Facebook URL also added to `SchemaMarkup.js` where it was missing.
 - [ ] #5 Publish 3 missing blog posts (safety, DIY steps, price comparison)
 - [ ] Optional: add `/llms-full.txt` variant
 
-**Completion: 3 / 5 actionable items (60%)** — item #2(remaining) deprecated, not counted.
+**Completion: 4 / 5 actionable items (80%)** — item #2(remaining) deprecated, not counted.
 
 | Dimension | Weight | Score | Weighted |
 |---|---|---|---|

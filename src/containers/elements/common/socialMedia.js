@@ -32,6 +32,17 @@ const SocialMedia = (props) => (
     </li>
     <li>
       <a
+        className={`copyright-text ${props.kit ? 'youtube-kit-lead' : 'youtube-local-lead'}`}
+        href="https://www.youtube.com/@Crokolina"
+        target='_blank'
+        rel="noopener noreferrer"
+        aria-label="Síguenos en YouTube"
+      >
+          <i style={styles.i} aria-hidden="true" className="fa fa-youtube-play gradient-text"></i>
+      </a>
+    </li>
+    <li>
+      <a
         className={`copyright-text ${props.kit ? 'whatsapp-kit' : 'whatsapp-local'}`}
         href="https://wa.me/573168161717?text=Hola, estoy interesado en maquillaje prenatal en Medellín."
         target='_blank'

@@ -9,9 +9,15 @@
 - [x] **#2 Remove `priority` fields** — all `priority` keys removed. Next.js sitemap now emits only `<loc>` and `<lastmod>`, matching Google's guidance.
 - [x] **#3 Fix hardcoded lastmod dates** — homepage `2026-04-22`, `/belly-painting-medellin` `2026-04-20`, legal pages on their actual commit dates, `/blog` now **derived dynamically** from the latest `BlogData` post date via `reduce()` (currently `2026-04-20` via `pinta-barriguitas-colombia`).
 - [x] **#5 (remaining) /feed is `public/feed/google-shopping.xml`** — a static Google Merchant product feed, not an HTML route. `noindex` meta tags don't apply to XML feeds; Google handles shopping feeds via Merchant Center. No action needed.
-- [ ] #4 Confirm `/maquillaje-para-embarazadas` canonical strategy — `/blog/maquillaje-para-embarazadas` is already filtered out in the blog-post loop (`src/app/sitemap.js` `.filter(post.slug !== 'maquillaje-para-embarazadas')`). Still need to verify the blog route itself doesn't render if someone hits `/blog/maquillaje-para-embarazadas` directly (separate from sitemap concern).
+- [x] **#4 /maquillaje-para-embarazadas canonical strategy verified (2026-04-22)** — no duplicate content risk. Live checks:
+  - `/maquillaje-para-embarazadas` returns HTTP 200 with self-canonical `<link rel="canonical" href="https://www.croko.co/maquillaje-para-embarazadas"/>`
+  - `/blog/maquillaje-para-embarazadas` returns HTTP 404 (no Next.js route exists — `src/app/blog/` has 7 specific slug folders; this one intentionally absent)
+  - `src/database/blog/database.js:4` adds `maquillaje-para-embarazadas` to `hiddenSlugs`, excluding it from blog listing (`/blog`) and homepage carousel
+  - `src/database/blog/database.js:9-11` hardcodes `readUrl` to `/maquillaje-para-embarazadas` (root) when the slug IS referenced elsewhere
+  - `src/app/sitemap.js` filters the blog version out of blog-posts array
+  - `src/containers/blog/blog-detail.js:137-148` has matching special-case handling for shareUrl
 
-**Completion: 5 / 6 (83%)**
+**Completion: 6 / 6 (100%) — sitemap audit COMPLETE.**
 
 ---
 
