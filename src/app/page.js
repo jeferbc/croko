@@ -47,6 +47,7 @@ const productSchema = {
     "@context": "https://schema.org",
     "@type": "Product",
     "name": "Kit Pinta Barriguitas - Kit de Pintura para Barriga de Embarazada",
+    "alternateName": ["Kit Pintabarriguitas", "Kit Pinta Barriguita"],
     "description": "Crea un recuerdo inolvidable de tu embarazo junto a tu familia. Kit completo con 15 colores de pinturas hipoalergénicas, pinceles profesionales, plantillas y videotutoriales. +500 familias felices. Ideal para baby showers y sesiones fotográficas de maternidad.",
     "image": [
         "https://ik.imagekit.io/ge17f66b4ma/Fotokitcarrusel%20(1)%20(1)_kduJxCzra.png"
@@ -101,12 +102,6 @@ const productSchema = {
             "returnMethod": "https://schema.org/ReturnByMail",
             "returnFees": "https://schema.org/ReturnFeesCustomerResponsibility"
         }
-    },
-    "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "4.8",
-        "bestRating": "5",
-        "reviewCount": "200"
     }
 }
 
