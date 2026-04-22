@@ -15,63 +15,69 @@ const CardGridWrapper = ({ className, image, blogDate, place, title, description
 
   return (
     <div className={className}>
-      <div className="blog-agency">
-        <div className="blog-contain">
-          {image && image.includes('ik.imagekit.io') ? (
-            <IKImage
-              src={extractPath(image)}
-              alt={title}
-              width={400}
-              height={290}
-              className="img-fluid"
-              loading="lazy"
-              transformation={[{
-                width: 400,
-                height: 290,
-                quality: 85,
-                format: 'auto'
-              }]}
-              style={{ width: '100%', height: '290px', objectFit: 'cover' }}
-            />
-          ) : (
-            <img
-              src={image}
-              alt={title}
-              className="img-fluid"
-              loading="lazy"
-              style={{ width: '100%', height: '290px', objectFit: 'cover' }}
-            />
-          )}
-          <div className="img-container" style={{ paddingTop: '5px' }}>
-            <div>
-              <div className="blog-info">
-                <div className="m-b-5">
-                  <div className="center-text">
-                    {blogDate && (
-                      <>
-                        <i aria-hidden="true" className="fa fa-clock-o m-r-10"></i>
-                        <h6 className="m-r-25 font-blog">{blogDate}</h6>{" "}
-                      </>
-                    )}
-                    {place && (
-                      <>
-                        <i aria-hidden="true" className="fa fa-map-marker m-r-10"></i>
-                        <h6 className="font-blog">{place}</h6>{" "}
-                      </>
-                    )}
+      <Link
+        href={readUrl}
+        className="blog-card-link"
+        style={{ display: 'block', textDecoration: 'none', color: 'inherit' }}
+      >
+        <div className="blog-agency">
+          <div className="blog-contain">
+            {image && image.includes('ik.imagekit.io') ? (
+              <IKImage
+                src={extractPath(image)}
+                alt={title}
+                width={400}
+                height={290}
+                className="img-fluid"
+                loading="lazy"
+                transformation={[{
+                  width: 400,
+                  height: 290,
+                  quality: 85,
+                  format: 'auto'
+                }]}
+                style={{ width: '100%', height: '290px', objectFit: 'cover' }}
+              />
+            ) : (
+              <img
+                src={image}
+                alt={title}
+                className="img-fluid"
+                loading="lazy"
+                style={{ width: '100%', height: '290px', objectFit: 'cover' }}
+              />
+            )}
+            <div className="img-container" style={{ paddingTop: '5px' }}>
+              <div>
+                <div className="blog-info">
+                  <div className="m-b-5">
+                    <div className="center-text">
+                      {blogDate && (
+                        <>
+                          <i aria-hidden="true" className="fa fa-clock-o m-r-10"></i>
+                          <h6 className="m-r-25 font-blog">{blogDate}</h6>{" "}
+                        </>
+                      )}
+                      {place && (
+                        <>
+                          <i aria-hidden="true" className="fa fa-map-marker m-r-10"></i>
+                          <h6 className="font-blog">{place}</h6>{" "}
+                        </>
+                      )}
+                    </div>
                   </div>
-                </div>
-                <h5 className="blog-head" style={{ fontWeight: 'bold', marginBottom: '15px' }}>{title}</h5>
-                {description.length > MAX_LENGTH ? <p className="para2">{`${description.substring(0, MAX_LENGTH)} .....`}</p> : <p className="para2">{description}</p>}
+                  <h5 className="blog-head" style={{ fontWeight: 'bold', marginBottom: '15px' }}>{title}</h5>
+                  {description.length > MAX_LENGTH ? <p className="para2">{`${description.substring(0, MAX_LENGTH)} .....`}</p> : <p className="para2">{description}</p>}
 
-                <div className="btn-bottom m-t-20">
-                  <Link href={readUrl}>Leer más</Link>
+                  <div className="btn-bottom m-t-20">
+                    <span style={{ color: 'var(--primary)' }}>Leer más</span>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
+      </Link>
     </div>
   );
 };
