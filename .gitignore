@@ -17,3 +17,7 @@ yarn-error.log*
 
 # IDE
 .idea/
+
+# Local data (PII — customer orders, email lists)
+orders.csv
+scripts/
