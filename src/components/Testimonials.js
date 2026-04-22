@@ -47,7 +47,7 @@ const Testimonials = () => {
 
     return (
         <section className="testimonials-section wedding py-5" style={{ backgroundColor: '#fff8f0' }}>
-            <Container>
+            <Container id="testimonials">
                 {/* Section Header */}
                 <SectionTitle title="Lo que dicen nuestras familias" />
 
