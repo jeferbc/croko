@@ -3,7 +3,7 @@ import React, { useState, useEffect } from 'react';
 import HeaderDesktop from './headerDesktop';
 import HeaderMobile from './headerMobile';
 
-const Header = ({ isKitPage = false }) => {
+const Header = ({ isKitPage = false, customTitle }) => {
   const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
@@ -24,7 +24,7 @@ const Header = ({ isKitPage = false }) => {
     };
   }, []);
 
-  return isMobile ? <HeaderMobile isKitPage={isKitPage} /> : <HeaderDesktop isKitPage={isKitPage} />;
+  return isMobile ? <HeaderMobile isKitPage={isKitPage} customTitle={customTitle} /> : <HeaderDesktop isKitPage={isKitPage} customTitle={customTitle} />;
 };
 
 export default Header;

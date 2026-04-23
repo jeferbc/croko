@@ -89,7 +89,7 @@ export default function BellyPaintingMedellin() {
                 type="application/ld+json"
                 dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema).replace(/</g, '\\u003c') }}
             />
-            <HeaderSection isKitPage={false} />
+            <HeaderSection isKitPage={false} customTitle="Belly Painting Medellín" />
             <GallerySection />
             <PricingSection />
             <AboutSection />

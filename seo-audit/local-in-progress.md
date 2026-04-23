@@ -16,12 +16,12 @@
 
 ### Medium / Low
 - [ ] #6 Add GBP review link to post-service WhatsApp follow-up (blocked on GBP claim)
-- [ ] #7 Confirm H1 tag on service page contains local keyword
+- [x] **#7 H1 on service page now contains local keyword** — added `customTitle` prop to `Header` / `HeaderDesktop` / `HeaderMobile`; passed `customTitle="Belly Painting Medellín"` from `src/app/belly-painting-medellin/page.js`. H1 was previously `Maquillaje Prenatal` (no local keyword).
 - [ ] #8 Submit to Páginas Amarillas Colombia and Guialocal.com
 - [ ] #9 Add FAQPage schema block to service page
 - [ ] #10 Add neighborhood-level copy (barrios/comunas)
 
-**Completion: 4 / 10 (40%)**
+**Completion: 5 / 10 (50%)**
 
 ---
 

@@ -4,9 +4,34 @@ import CardWrapper from "@/containers/blog/card/grid-wrapper";
 import { BlogsData } from "@/database/blog/database";
 import SectionTitle from "@/components/SectionTitle";
 
+const collectionPageSchema = {
+  "@context": "https://schema.org",
+  "@type": "CollectionPage",
+  "@id": "https://www.croko.co/blog#collectionpage",
+  "url": "https://www.croko.co/blog",
+  "name": "Blog Croko",
+  "description": "Artículos sobre belly painting, baby showers, embarazo y maternidad.",
+  "inLanguage": "es-CO",
+  "isPartOf": { "@id": "https://www.croko.co/#website" },
+  "publisher": { "@id": "https://www.croko.co/#organization" },
+  "mainEntity": {
+    "@type": "ItemList",
+    "itemListElement": BlogsData.map((post, index) => ({
+      "@type": "ListItem",
+      "position": index + 1,
+      "url": `https://www.croko.co${post.readUrl}`,
+      "name": post.title
+    }))
+  }
+};
+
 const BlogIndex = () => {
   return (
     <section className="wedding blog blog-sec section-b-space">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(collectionPageSchema).replace(/</g, '\\u003c') }}
+      />
       <Container>
         <Row>
           <Col md="8" className="offset-md-2">

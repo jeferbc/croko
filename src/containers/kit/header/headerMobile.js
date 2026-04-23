@@ -4,7 +4,7 @@ import {Container,Row,Col} from 'reactstrap'
 import Link from 'next/link'
 import PurchaseButton from '@/components/PurchaseModal/PurchaseButton'
 
-const HeaderMobile = ({ isKitPage }) => {
+const HeaderMobile = ({ isKitPage, customTitle }) => {
     return (
         <section className="wedding header" id="header">
             <div className="wedding-content">
@@ -38,7 +38,7 @@ const HeaderMobile = ({ isKitPage }) => {
                             <div className="d-flex flex-column justify-content-center align-items-center gap-2" style={{ marginTop: '60px' }}>
                                         <div className="mt-3 text-center">
                                             <h1 className={isKitPage ? "custom-title bold" : "custom-title bold text-uppercase"} style={isKitPage ? { letterSpacing: '0' } : {}}>
-                                                {isKitPage ? 'Crea recuerdos únicos en familia con tu bebé' : 'Maquillaje Prenatal'}
+                                                {customTitle || (isKitPage ? 'Crea recuerdos únicos en familia con tu bebé' : 'Maquillaje Prenatal')}
                                             </h1>
                                         </div>
                                 <h4 className="header-sub-text text-center mt-3">

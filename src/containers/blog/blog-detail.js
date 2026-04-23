@@ -56,14 +56,14 @@ const BlogDetail = ({ post }) => {
                                     {post.title}
                                 </h1>
                                 <div className="post-meta d-flex justify-content-center align-items-center gap-3" style={{ color: '#666', fontSize: '14px' }}>
-                                    <span className="post-date">
+                                    <time className="post-date" dateTime={post.date}>
                                         <i className="fa fa-calendar me-2"></i>
                                         {(() => {
                                             const months = ['enero', 'febrero', 'marzo', 'abril', 'mayo', 'junio', 'julio', 'agosto', 'septiembre', 'octubre', 'noviembre', 'diciembre']
                                             const [y, m, d] = post.date.split('-').map(Number)
                                             return `${d} de ${months[m - 1]} de ${y}`
                                         })()}
-                                    </span>
+                                    </time>
                                     <span>•</span>
                                     <span className="post-author">
                                         <i className="fa fa-user me-2"></i>
@@ -117,13 +117,18 @@ const BlogDetail = ({ post }) => {
                                 dangerouslySetInnerHTML={{ __html: post.content }}
                             />
                             <style jsx>{`
-                                .post-content :global(h3) {
-                                    margin-top: 25px;
-                                    margin-bottom: 12px;
+                                .post-content :global(h2) {
+                                    margin-top: 30px;
+                                    margin-bottom: 14px;
+                                    font-size: 1.6rem;
+                                    font-weight: 600;
+                                    color: var(--primary);
                                 }
-                                .post-content :global(h4) {
-                                    margin-top: 20px;
+                                .post-content :global(h3) {
+                                    margin-top: 22px;
                                     margin-bottom: 10px;
+                                    font-size: 1.25rem;
+                                    font-weight: 600;
                                 }
                                 .post-content :global(p) {
                                     margin-bottom: 12px;

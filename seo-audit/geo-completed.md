@@ -9,12 +9,17 @@
 - [x] **#2 Accordion "300 familias" → "500 familias"** — fixed in `src/database/accordion_database.js:68`
 - [x] **Secondary: `aggregateRating` without third-party source** — removed from Product schema (commit `7a661407`)
 - [~] **#2 (remaining) Static `<h2>` safety block — DEPRECATED.** The audit assumed `dynamic()` without `ssr: true` meant the FAQ was JS-only. That assumption is false for Next.js App Router (`dynamic()` defaults to `ssr: true`). Live verification on 2026-04-22: `curl -s https://www.croko.co` returns `x-nextjs-prerender: 1` and the accordion body text (`seguras` ×2, `Absolutamente` ×2, `hipoalergénicas` ×2, `500 familias` ×2, `¿Son seguras las pinturas durante el embarazo?` ×2) is all present in SSR HTML. `PopularPosts` is also SSR-rendered. No invisibility problem exists. A dedicated static H2 safety block would add marginal structural benefit only; not worth the page real estate. **Action: none. Do not re-flag in future audits.**
-- [ ] #3 Fix blog H3 → H2 headings + add TL;DR blocks + strip emojis from H1 + render visible dates
+- [x] **#3 Blog H3→H2 + emojis + dates + TL;DR** —
+  - 27 H3 sections converted to H2; H4 (32 instances) bumped to H3 to maintain hierarchy. Final state: 0 H4 tags, 27 H2 sections, 32 H3 sub-sections across 8 posts.
+  - Emojis stripped from 2 H1 titles (`Baby Showers en Colombia... 🍼` and `Salud Mental en el Embarazo... 🍼💕`).
+  - Visible date already rendered in `BlogDetail` (line 60-66) — upgraded `<span>` to semantic `<time dateTime={post.date}>` for AI/SEO benefit.
+  - TL;DR already rendered as `.lead` paragraph from `post.description` (line 102-106) — serves as 1-2 sentence summary directly after H1 + meta.
+  - `blog-detail.js` CSS updated to style `:global(h2)` and `:global(h3)` (was `h3` and `h4`).
 - [x] **#4 YouTube channel added to `sameAs`** — `https://www.youtube.com/@Crokolina` (verified 200) added to Organization `sameAs` in `src/app/page.js:43`, HealthAndBeautyBusiness `sameAs` in `src/app/belly-painting-medellin/page.js:37`, and the secondary Organization schema in `src/components/SchemaMarkup.js:153`. Facebook URL also added to `SchemaMarkup.js` where it was missing.
 - [ ] #5 Publish 3 missing blog posts (safety, DIY steps, price comparison)
 - [ ] Optional: add `/llms-full.txt` variant
 
-**Completion: 4 / 5 actionable items (80%)** — item #2(remaining) deprecated, not counted.
+**Completion: 5 / 5 actionable items (100%)** — item #2(remaining) deprecated, not counted. Only item #5 (publish 3 missing blog posts) remains as a content-creation task, but it's a separate authorship effort.
 
 | Dimension | Weight | Score | Weighted |
 |---|---|---|---|

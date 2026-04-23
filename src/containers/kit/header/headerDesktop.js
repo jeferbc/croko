@@ -18,7 +18,7 @@ const ContactButtonStyles = {
     }
 }
 
-const HeaderDesktop = ({ isKitPage }) => {
+const HeaderDesktop = ({ isKitPage, customTitle }) => {
     return (
         <section className="wedding header" id="header">
             <div className="wedding-content">
@@ -71,7 +71,7 @@ const HeaderDesktop = ({ isKitPage }) => {
                                         <div className="title">
                                             <div className="main-title">
                                                 <h1 className="gradient-text" style={isKitPage ? { letterSpacing: '0' } : {}}>
-                                                    {isKitPage ? 'Crea recuerdos únicos en familia con tu bebé' : 'Maquillaje Prenatal'}
+                                                    {customTitle || (isKitPage ? 'Crea recuerdos únicos en familia con tu bebé' : 'Maquillaje Prenatal')}
                                                 </h1>
                                             </div>
                                         </div>

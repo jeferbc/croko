@@ -5,7 +5,7 @@
 
 ## Progress Snapshot (2026-04-22)
 - [x] **Critical #1** — aggregateRating (200 reviews) removed from Product schema (commit `7a661407`). Brand `alternateName` added.
-- [ ] #2 No schema on `/blog` index
+- [x] **#2 `CollectionPage` schema added on `/blog`** — `src/app/blog/page.js` now emits a `CollectionPage` JSON-LD with `@id`, `inLanguage: es-CO`, `isPartOf: { @id: #website }`, `publisher: { @id: #organization }`, and a `mainEntity: ItemList` of all blog posts (built dynamically from `BlogsData`).
 - [x] **#3 `BreadcrumbList` added on `/belly-painting-medellin`** — 2-level breadcrumb (Inicio → Belly Painting Medellín) emitted as a separate JSON-LD block in `src/app/belly-painting-medellin/page.js`.
 - [x] **#4 LocalBusiness `@id`, `geo`, `openingHoursSpecification` added** — `@id: https://www.croko.co/belly-painting-medellin#localbusiness`, `geo` (Medellín centroid 6.24450, -75.57390), `openingHoursSpecification` (Mon-Fri 09:00-18:00, Sat 09:00-14:00 — **placeholder, verify against actual business hours**), plus `email: pintabarriguitas@croko.co`.
 - [x] **#5 Publisher logo URL fixed** — `src/components/SchemaMarkup.js` `ArticleSchema` now uses `https://www.croko.co/assets/images/logo/croko_logo.png` (matches the Organization logo on homepage), as a full `ImageObject` with width 462, height 255. Same fix applied to `OrganizationSchema` block in the same file.
@@ -15,7 +15,7 @@
 - [ ] #9 `priceValidUntil` missing in Offer
 - [x] **#10 `WebSite` schema added sitewide** — `WebSite` JSON-LD with `@id: https://www.croko.co/#website`, `inLanguage: es-CO`, `alternateName: Kit Pinta Barriguitas`, and `publisher: { @id: https://www.croko.co/#organization }` injected in `<head>` of `src/app/layout.js` (loads on every page). **`SearchAction` intentionally omitted** — site has no search functionality, and per Google's spec, `SearchAction` requires a real search URL pattern. Adding it without a working endpoint is invalid markup and ineligible for the Sitelinks Search Box rich result.
 
-**Completion: 7 / 10 (70%)**
+**Completion: 8 / 10 (80%)** — only #8 (FAQPage info-only, no action) and #9 (`priceValidUntil`) remain.
 
 ---
 
