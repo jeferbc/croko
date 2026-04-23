@@ -8,14 +8,14 @@
 - [ ] #2 No schema on `/blog` index
 - [x] **#3 `BreadcrumbList` added on `/belly-painting-medellin`** — 2-level breadcrumb (Inicio → Belly Painting Medellín) emitted as a separate JSON-LD block in `src/app/belly-painting-medellin/page.js`.
 - [x] **#4 LocalBusiness `@id`, `geo`, `openingHoursSpecification` added** — `@id: https://www.croko.co/belly-painting-medellin#localbusiness`, `geo` (Medellín centroid 6.24450, -75.57390), `openingHoursSpecification` (Mon-Fri 09:00-18:00, Sat 09:00-14:00 — **placeholder, verify against actual business hours**), plus `email: pintabarriguitas@croko.co`.
-- [ ] #5 Publisher logo URL inconsistency in Article vs Organization
-- [ ] #6 `Article` → `BlogPosting`
-- [ ] #7 `inLanguage` missing on Article
+- [x] **#5 Publisher logo URL fixed** — `src/components/SchemaMarkup.js` `ArticleSchema` now uses `https://www.croko.co/assets/images/logo/croko_logo.png` (matches the Organization logo on homepage), as a full `ImageObject` with width 462, height 255. Same fix applied to `OrganizationSchema` block in the same file.
+- [x] **#6 `Article` → `BlogPosting`** — `ArticleSchema` `@type` upgraded to `BlogPosting` (more specific subtype). Affects all 7 blog post pages and `/maquillaje-para-embarazadas` since they share the same component.
+- [x] **#7 `inLanguage: "es-CO"` added** — added to the `ArticleSchema` block. Reinforces regional Spanish locale on every blog post.
 - [ ] #8 FAQPage on commercial site (info only, no action needed)
 - [ ] #9 `priceValidUntil` missing in Offer
 - [x] **#10 `WebSite` schema added sitewide** — `WebSite` JSON-LD with `@id: https://www.croko.co/#website`, `inLanguage: es-CO`, `alternateName: Kit Pinta Barriguitas`, and `publisher: { @id: https://www.croko.co/#organization }` injected in `<head>` of `src/app/layout.js` (loads on every page). **`SearchAction` intentionally omitted** — site has no search functionality, and per Google's spec, `SearchAction` requires a real search URL pattern. Adding it without a working endpoint is invalid markup and ineligible for the Sitelinks Search Box rich result.
 
-**Completion: 4 / 10 (40%)**
+**Completion: 7 / 10 (70%)**
 
 ---
 

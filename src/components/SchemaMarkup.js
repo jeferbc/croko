@@ -9,12 +9,13 @@ export const ArticleSchema = ({ post, url }) => {
 
     const schema = {
         "@context": "https://schema.org",
-        "@type": "Article",
+        "@type": "BlogPosting",
         "headline": post.title,
         "description": post.description,
         "image": post.image,
         "datePublished": datePublished,
         "dateModified": dateModified,
+        "inLanguage": "es-CO",
         "author": {
             "@type": "Person",
             "name": post.author || "Carolina Rincón",
@@ -22,10 +23,13 @@ export const ArticleSchema = ({ post, url }) => {
         },
         "publisher": {
             "@type": "Organization",
+            "@id": "https://www.croko.co/#organization",
             "name": "Croko",
             "logo": {
                 "@type": "ImageObject",
-                "url": "https://www.croko.co/logo.png"
+                "url": "https://www.croko.co/assets/images/logo/croko_logo.png",
+                "width": 462,
+                "height": 255
             }
         },
         "mainEntityOfPage": {
@@ -132,9 +136,15 @@ export const OrganizationSchema = () => {
     const schema = {
         "@context": "https://schema.org",
         "@type": "Organization",
+        "@id": "https://www.croko.co/#organization",
         "name": "Croko",
         "url": "https://www.croko.co",
-        "logo": "https://www.croko.co/logo.png",
+        "logo": {
+            "@type": "ImageObject",
+            "url": "https://www.croko.co/assets/images/logo/croko_logo.png",
+            "width": 462,
+            "height": 255
+        },
         "description": "Especialistas en belly painting y maquillaje artístico para embarazadas en Colombia. Kits DIY y servicios profesionales.",
         "address": {
             "@type": "PostalAddress",
