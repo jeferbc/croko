@@ -13,9 +13,9 @@
 - [ ] #7 `inLanguage` missing on Article
 - [ ] #8 FAQPage on commercial site (info only, no action needed)
 - [ ] #9 `priceValidUntil` missing in Offer
-- [ ] #10 `WebSite` schema missing sitewide
+- [x] **#10 `WebSite` schema added sitewide** — `WebSite` JSON-LD with `@id: https://www.croko.co/#website`, `inLanguage: es-CO`, `alternateName: Kit Pinta Barriguitas`, and `publisher: { @id: https://www.croko.co/#organization }` injected in `<head>` of `src/app/layout.js` (loads on every page). **`SearchAction` intentionally omitted** — site has no search functionality, and per Google's spec, `SearchAction` requires a real search URL pattern. Adding it without a working endpoint is invalid markup and ineligible for the Sitelinks Search Box rich result.
 
-**Completion: 3 / 10 (30%)**
+**Completion: 4 / 10 (40%)**
 
 ---
 

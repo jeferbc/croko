@@ -45,6 +45,17 @@ const workSans = Work_Sans({
   variable: '--font-work-sans'
 });
 
+const websiteSchema = {
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "@id": "https://www.croko.co/#website",
+  "url": "https://www.croko.co/",
+  "name": "Croko",
+  "alternateName": "Kit Pinta Barriguitas",
+  "description": "Kits para pintar barrigas de embarazadas — Colombia",
+  "inLanguage": "es-CO",
+  "publisher": { "@id": "https://www.croko.co/#organization" }
+};
 
 export const metadata = {
   title: 'Kit Pinta Barriguitas | Pintura Barriga Embarazada | Croko',
@@ -84,6 +95,11 @@ export default function RootLayout({ children }) {
         <meta name="generator" content="mdx-docs" />
         <link rel="icon" href="/assets/images/logo/favicon.png" type="image/x-icon" />
         <link rel="shortcut icon" href="/assets/images/logo/favicon.png" type="image/x-icon" />
+
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchema).replace(/</g, '\\u003c') }}
+        />
 
         {/* Preconnect to external domains for better performance */}
         <link rel="preconnect" href="https://ik.imagekit.io" />
