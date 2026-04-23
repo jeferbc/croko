@@ -11,12 +11,14 @@ import PopularPosts from '@/containers/blog/posts'
 const localBusinessSchema = {
     "@context": "https://schema.org",
     "@type": "HealthAndBeautyBusiness",
+    "@id": "https://www.croko.co/belly-painting-medellin#localbusiness",
     "name": "Croko",
     "description": "Artista profesional de belly painting a domicilio en Medellín. Pinturas certificadas para body art, sesiones artísticas para embarazadas. Crea recuerdos inolvidables en familia.",
     "url": "https://www.croko.co/belly-painting-medellin",
     "image": "https://ik.imagekit.io/ge17f66b4ma/download__2__wAfXfpmcS.jpeg",
     "logo": "https://www.croko.co/assets/images/logo/croko_logo.png",
     "telephone": "+573168161717",
+    "email": "pintabarriguitas@croko.co",
     "priceRange": "$$",
     "address": {
         "@type": "PostalAddress",
@@ -24,6 +26,25 @@ const localBusinessSchema = {
         "addressRegion": "Antioquia",
         "addressCountry": "CO"
     },
+    "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 6.24450,
+        "longitude": -75.57390
+    },
+    "openingHoursSpecification": [
+        {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+            "opens": "09:00",
+            "closes": "18:00"
+        },
+        {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": ["Saturday"],
+            "opens": "09:00",
+            "closes": "14:00"
+        }
+    ],
     "areaServed": [
         { "@type": "City", "name": "Medellín" },
         { "@type": "City", "name": "Envigado" },
@@ -38,12 +59,35 @@ const localBusinessSchema = {
     ]
 }
 
+const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+        {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Inicio",
+            "item": "https://www.croko.co"
+        },
+        {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Belly Painting Medellín",
+            "item": "https://www.croko.co/belly-painting-medellin"
+        }
+    ]
+}
+
 export default function BellyPaintingMedellin() {
     return (
         <>
             <script
                 type="application/ld+json"
                 dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema).replace(/</g, '\\u003c') }}
+            />
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema).replace(/</g, '\\u003c') }}
             />
             <HeaderSection isKitPage={false} />
             <GallerySection />

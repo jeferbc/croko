@@ -11,8 +11,8 @@
 
 ### High
 - [x] **#3 Standardize business name** — variants `"Croko - Maquillaje Para Embarazadas"` and `"Croko - Belly Painting Medellín"` no longer present in `src/`. `alternateName` now used in Product schema.
-- [ ] #4 Standardize telephone to E.164 (`+573168161717`) across all schema blocks
-- [ ] #5 Add missing schema properties to `HealthAndBeautyBusiness` (`@id`, `email`, `geo`, `openingHoursSpecification`)
+- [x] **#4 Telephone standardized to E.164** — `+573168161717` already used in all schema blocks (Organization, HealthAndBeautyBusiness, secondary Organization in `SchemaMarkup.js`); confirmed via grep.
+- [x] **#5 HealthAndBeautyBusiness `@id`, `email`, `geo`, `openingHoursSpecification` added** — `@id: https://www.croko.co/belly-painting-medellin#localbusiness`, `email: pintabarriguitas@croko.co`, `geo` (6.24450, -75.57390), `openingHoursSpecification` array (Mon-Fri 09:00-18:00, Sat 09:00-14:00 — **placeholder hours, verify actual operating schedule**). Also added separate `BreadcrumbList` schema block.
 
 ### Medium / Low
 - [ ] #6 Add GBP review link to post-service WhatsApp follow-up (blocked on GBP claim)
@@ -21,7 +21,7 @@
 - [ ] #9 Add FAQPage schema block to service page
 - [ ] #10 Add neighborhood-level copy (barrios/comunas)
 
-**Completion: 2 / 10 (20%)**
+**Completion: 4 / 10 (40%)**
 
 ---
 

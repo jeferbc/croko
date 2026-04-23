@@ -6,8 +6,8 @@
 ## Progress Snapshot (2026-04-22)
 - [x] **Critical #1** — aggregateRating (200 reviews) removed from Product schema (commit `7a661407`). Brand `alternateName` added.
 - [ ] #2 No schema on `/blog` index
-- [ ] #3 `BreadcrumbList` missing on `/belly-painting-medellin`
-- [ ] #4 LocalBusiness missing `@id`, `geo`, `openingHoursSpecification`
+- [x] **#3 `BreadcrumbList` added on `/belly-painting-medellin`** — 2-level breadcrumb (Inicio → Belly Painting Medellín) emitted as a separate JSON-LD block in `src/app/belly-painting-medellin/page.js`.
+- [x] **#4 LocalBusiness `@id`, `geo`, `openingHoursSpecification` added** — `@id: https://www.croko.co/belly-painting-medellin#localbusiness`, `geo` (Medellín centroid 6.24450, -75.57390), `openingHoursSpecification` (Mon-Fri 09:00-18:00, Sat 09:00-14:00 — **placeholder, verify against actual business hours**), plus `email: pintabarriguitas@croko.co`.
 - [ ] #5 Publisher logo URL inconsistency in Article vs Organization
 - [ ] #6 `Article` → `BlogPosting`
 - [ ] #7 `inLanguage` missing on Article
@@ -15,7 +15,7 @@
 - [ ] #9 `priceValidUntil` missing in Offer
 - [ ] #10 `WebSite` schema missing sitewide
 
-**Completion: 1 / 10 (10%)**
+**Completion: 3 / 10 (30%)**
 
 ---
 
