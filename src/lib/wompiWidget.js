@@ -71,6 +71,8 @@ export const openWompiCheckout = async ({
     reference: orderId,
     publicKey,
     signature: { integrity: signature },
+    collectShipping: 'true',
+    collectCustomerLegalId: 'true',
     customerData: {
       email,
       fullName,
