@@ -1,7 +1,7 @@
 # Purchase Conversion — Server-Side n8n Architecture
 
-**Estado:** Redesign del approach. Reemplaza el path web (`/gracias` page conversion) por dos paths server-side a través de n8n.
-**Fecha:** 2026-04-24
+**Estado:** En progreso. Steps 1-2 completados (2026-04-25). Esperando aprobación Standard Access de Google Ads API.
+**Fecha:** 2026-04-24 (creado), 2026-04-25 (actualizado)
 **Decisión:** No usar page-based conversion en `/gracias`. Toda conversión de Google Ads se envía server-side desde n8n.
 
 ---
@@ -117,3 +117,59 @@ Drop the page conversion. Two server-side paths a través de n8n es la arquitect
 | n8n form | Carolina llena el form post-venta WhatsApp | email/phone hash (Enhanced Conversions for Leads) | Ventas cerradas manualmente |
 
 Una sola conversion action en Google Ads (`Purchase Croko (server)`), dedup por `order_id`, cero dependencia del browser para señal de revenue.
+
+---
+
+## Credenciales y IDs (obtenidos 2026-04-25)
+
+### Google Ads — Croko Advertiser Account
+| Campo | Valor |
+|---|---|
+| Customer ID | `292-030-5625` |
+| Conversion Action Name | `Purchase Croko (server)` |
+| Conversion Action ID | `7588384523` |
+| Conversion Action Resource Name | `customers/2920305625/conversionActions/7588384523` |
+| Category | Compras (Purchase), Acción principal |
+| Value | 190,000 COP |
+| Count | Una conversión (One) |
+| Attribution | Basada en datos (Data-driven) |
+| Enhanced Conversions for Leads | Activado |
+| Conversion window (click) | 90 días |
+| Conversion window (view) | 3 días |
+
+### Google Ads — MCC (Manager Account)
+| Campo | Valor |
+|---|---|
+| MCC Name | jeff |
+| MCC ID (Login Customer ID) | `589-413-5062` |
+| Developer Token | `S2qpI22RmiGI05B4i_UrDQ` |
+| Access Level | Cuenta de prueba (Test) — Standard access solicitado 2026-04-25, pendiente aprobación (~3 business days) |
+| API Contact | jeffe.bernal@gmail.com |
+
+### GA4
+| Campo | Valor |
+|---|---|
+| Property ID | `G-LZ78QWW6PM` (GA4 property 280278139, "croko") |
+| Measurement Protocol API Secret | **PENDIENTE** — obtener en Step 3 |
+
+### Pendiente
+- [ ] Aprobación Standard Access del developer token (solicitado 2026-04-25)
+- [ ] GA4 Measurement Protocol API Secret (Step 3)
+- [ ] OAuth2 Client ID + Secret desde Google Cloud Console (para n8n)
+
+---
+
+## Progreso del build
+
+| Step | Descripción | Estado | Fecha |
+|---|---|---|---|
+| 1 | Crear conversion action `Purchase Croko (server)` | **Completado** | 2026-04-25 |
+| 2 | Obtener credenciales Google Ads API (developer token) | **Completado** (pending Standard access) | 2026-04-25 |
+| 3 | Obtener API secret de GA4 MP | Pendiente | — |
+| 4 | Construir sub-workflow compartido en n8n | Pendiente | — |
+| 5 | Construir trigger n8n form (Carolina) | Pendiente | — |
+| 6 | Capturar gclid en landing + pasar a Wompi metadata | Pendiente | — |
+| 7 | Construir trigger Wompi webhook | Pendiente | — |
+| 8 | Remover bloque gtag en useOrderTracking.js | Pendiente | — |
+| 9 | Cambiar goal de campaña a Purchase Croko (server) | Pendiente | — |
+| 10 | Esperar 7-14 días antes de escalar | Pendiente | — |
