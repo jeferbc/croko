@@ -34,7 +34,10 @@ const PurchaseModalInner = () => {
   const {
     isOpen,
     currentStep,
+    totalSteps,
     selections,
+    isPaying,
+    paymentError,
     closeModal,
     setGender,
     toggleImage,
@@ -60,7 +63,7 @@ const PurchaseModalInner = () => {
   };
 
   const handleNext = () => {
-    if (currentStep === 3) {
+    if (currentStep === totalSteps) {
       proceedToCheckout();
     } else {
       nextStep();
@@ -68,8 +71,8 @@ const PurchaseModalInner = () => {
   };
 
   const getNextButtonText = () => {
-    if (currentStep === 3) {
-      return 'Continuar al pago';
+    if (currentStep === totalSteps) {
+      return isPaying ? 'Abriendo pago...' : 'Pagar con Wompi';
     }
     return 'Siguiente';
   };
@@ -85,7 +88,7 @@ const PurchaseModalInner = () => {
     >
       <ModalHeader toggle={closeModal}>
         <div className="modal-header-content">
-          <StepIndicator currentStep={currentStep} totalSteps={3} />
+          <StepIndicator currentStep={currentStep} totalSteps={totalSteps} />
           <h5 className="step-title">{getStepTitle()}</h5>
         </div>
       </ModalHeader>
@@ -112,13 +115,15 @@ const PurchaseModalInner = () => {
             onEmailChange={setEmail}
             gender={selections.gender}
             selectedImages={selections.selectedImages}
+            isPaying={isPaying}
+            paymentError={paymentError}
           />
         )}
       </ModalBody>
 
       <ModalFooter>
         {currentStep > 1 && (
-          <Button color="secondary" outline onClick={prevStep}>
+          <Button color="secondary" outline onClick={prevStep} disabled={isPaying}>
             Atrás
           </Button>
         )}
@@ -126,7 +131,7 @@ const PurchaseModalInner = () => {
           color="primary"
           onClick={handleNext}
           disabled={!canProceed()}
-          className={`btn-next ${currentStep === 3 ? 'btn-checkout-kit' : ''}`}
+          className={`btn-next ${currentStep === totalSteps ? 'btn-checkout-kit' : ''}`}
         >
           {getNextButtonText()}
         </Button>

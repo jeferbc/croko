@@ -2,11 +2,13 @@
 import { useState, useCallback, useEffect } from 'react';
 import { getImageNames } from '@/data/designImages';
 import { getAttribution } from '@/lib/adsTracking';
+import { openWompiCheckout } from '@/lib/wompiWidget';
 
 const STORAGE_KEY = 'croko_purchase_selections';
-const WOMPI_CHECKOUT_URL = 'https://checkout.wompi.co/l/BER6fQ';
 const N8N_WEBHOOK_URL = process.env.NEXT_PUBLIC_N8N_WEBHOOK_URL;
 const N8N_WEBHOOK_KEY = process.env.NEXT_PUBLIC_N8N_WEBHOOK_KEY;
+const WOMPI_AMOUNT_CENTS = Number(process.env.NEXT_PUBLIC_WOMPI_AMOUNT_CENTS || 19000000);
+const TOTAL_STEPS = 3;
 
 const initialSelections = {
   gender: null,
@@ -15,10 +17,19 @@ const initialSelections = {
   email: ''
 };
 
+const generateOrderId = () => {
+  const suffix = Math.random().toString(36).slice(2, 8);
+  return `CROKO-${Date.now()}-${suffix}`;
+};
+
 export const usePurchaseModal = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [currentStep, setCurrentStep] = useState(1);
   const [selections, setSelections] = useState(initialSelections);
+  const [orderId, setOrderId] = useState(null);
+  const [isPaying, setIsPaying] = useState(false);
+  const [paymentError, setPaymentError] = useState(null);
+  const [webhookSent, setWebhookSent] = useState(false);
 
   // Load saved selections from localStorage on mount
   useEffect(() => {
@@ -57,11 +68,15 @@ export const usePurchaseModal = () => {
   const openModal = useCallback(() => {
     setIsOpen(true);
     setCurrentStep(1);
+    setOrderId(generateOrderId());
+    setPaymentError(null);
+    setWebhookSent(false);
   }, []);
 
   const closeModal = useCallback(() => {
     setIsOpen(false);
     setCurrentStep(1);
+    setPaymentError(null);
   }, []);
 
   const setGender = useCallback((gender) => {
@@ -108,14 +123,18 @@ export const usePurchaseModal = () => {
       case 2:
         return selections.selectedImages.length === 4;
       case 3:
-        return selections.babyName.trim().length > 0 && isValidEmail(selections.email);
+        return (
+          !isPaying &&
+          selections.babyName.trim().length > 0 &&
+          isValidEmail(selections.email)
+        );
       default:
         return false;
     }
-  }, [currentStep, selections]);
+  }, [currentStep, selections, isPaying]);
 
   const nextStep = useCallback(() => {
-    if (canProceed() && currentStep < 3) {
+    if (canProceed() && currentStep < TOTAL_STEPS) {
       setCurrentStep(currentStep + 1);
     }
   }, [canProceed, currentStep]);
@@ -126,7 +145,7 @@ export const usePurchaseModal = () => {
     }
   }, [currentStep]);
 
-  const submitToWebhook = useCallback(async (data) => {
+  const submitToWebhook = useCallback(async (data, orderIdToUse) => {
     try {
       const imageNames = getImageNames(data.selectedImages);
       const timestamp = new Date().toLocaleString('es-CO', { timeZone: 'America/Bogota' });
@@ -139,16 +158,13 @@ export const usePurchaseModal = () => {
         nombre_bebe: data.babyName,
         fecha: timestamp,
         ids_disenos: data.selectedImages.join(', '),
+        order_id: orderIdToUse,
         gclid: attribution?.gclid || null,
-        gbraid: attribution?.gbraid || null,
-        wbraid: attribution?.wbraid || null,
+        fbclid: attribution?.fbclid || null,
         utm_source: attribution?.utm_source || null,
-        utm_medium: attribution?.utm_medium || null,
         utm_campaign: attribution?.utm_campaign || null,
-        utm_content: attribution?.utm_content || null,
-        utm_term: attribution?.utm_term || null,
-        landing_page: attribution?.landing_page || null,
-        first_seen_at: attribution?.first_seen_at || null
+        fbp: attribution?.fbp || null,
+        fbc: attribution?.fbc || null
       };
 
       await fetch(N8N_WEBHOOK_URL, {
@@ -168,32 +184,72 @@ export const usePurchaseModal = () => {
   }, []);
 
   const proceedToCheckout = useCallback(async () => {
-    if (!canProceed()) return;
+    if (isPaying) return;
+
+    const currentOrderId = orderId || generateOrderId();
+    if (!orderId) setOrderId(currentOrderId);
+
+    setPaymentError(null);
+    setIsPaying(true);
 
     // Save final selections
     saveSelections(selections);
 
-    // Submit to n8n webhook (don't wait for response to avoid blocking)
-    submitToWebhook(selections);
+    // Fire begin_checkout webhook once per order
+    if (!webhookSent) {
+      submitToWebhook(selections, currentOrderId);
+      setWebhookSent(true);
+    }
 
-    // Redirect to Wompi checkout
-    window.open(WOMPI_CHECKOUT_URL, '_blank');
-
-    // Close modal
-    closeModal();
-  }, [canProceed, selections, saveSelections, submitToWebhook, closeModal]);
+    try {
+      await openWompiCheckout({
+        orderId: currentOrderId,
+        amountInCents: WOMPI_AMOUNT_CENTS,
+        currency: 'COP',
+        email: selections.email,
+        fullName: selections.babyName,
+        onResult: (result) => {
+          setIsPaying(false);
+          const tx = result?.transaction;
+          if (tx?.status === 'APPROVED') {
+            closeModal();
+            const params = new URLSearchParams({
+              id: tx.id || '',
+              reference: tx.reference || currentOrderId,
+              status: tx.status,
+            });
+            window.location.href = `/gracias?${params.toString()}`;
+          } else if (tx?.status) {
+            setPaymentError(`Pago ${tx.status.toLowerCase()}. Puedes intentarlo de nuevo.`);
+          }
+          // If user closed widget without a transaction, stay on step 4 silently.
+        },
+      });
+    } catch (err) {
+      console.error('wompi widget error:', err);
+      setIsPaying(false);
+      setPaymentError('No se pudo abrir el pago. Intenta nuevamente.');
+    }
+  }, [isPaying, orderId, selections, webhookSent, saveSelections, submitToWebhook, closeModal]);
 
   const resetSelections = useCallback(() => {
     setSelections(initialSelections);
     localStorage.removeItem(STORAGE_KEY);
     setCurrentStep(1);
+    setOrderId(null);
+    setWebhookSent(false);
+    setPaymentError(null);
   }, []);
 
   return {
     // State
     isOpen,
     currentStep,
+    totalSteps: TOTAL_STEPS,
     selections,
+    orderId,
+    isPaying,
+    paymentError,
 
     // Actions
     openModal,

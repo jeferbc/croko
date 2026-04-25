@@ -17,6 +17,12 @@ const TTL_DAYS = 90;
 
 const isBrowser = () => typeof window !== 'undefined';
 
+const getCookie = (name) => {
+  if (!isBrowser()) return null;
+  const m = document.cookie.match(new RegExp('(^| )' + name + '=([^;]+)'));
+  return m ? decodeURIComponent(m[2]) : null;
+};
+
 export const captureAttribution = () => {
   if (!isBrowser()) return null;
   try {
@@ -24,12 +30,20 @@ export const captureAttribution = () => {
     const gclid = params.get('gclid');
     const gbraid = params.get('gbraid');
     const wbraid = params.get('wbraid');
-    const hasNewClickId = Boolean(gclid || gbraid || wbraid);
+    const fbclid = params.get('fbclid');
+    const hasNewClickId = Boolean(gclid || gbraid || wbraid || fbclid);
 
     const existing = getAttribution();
+    const fbp = getCookie('_fbp');
+    const fbc = getCookie('_fbc');
 
     if (!hasNewClickId && existing) {
-      const updated = { ...existing, last_seen_at: Date.now() };
+      const updated = {
+        ...existing,
+        fbp: fbp || existing.fbp || null,
+        fbc: fbc || existing.fbc || null,
+        last_seen_at: Date.now(),
+      };
       window.localStorage.setItem(STORAGE_KEY, JSON.stringify(updated));
       return updated;
     }
@@ -38,6 +52,7 @@ export const captureAttribution = () => {
       gclid: gclid || existing?.gclid || null,
       gbraid: gbraid || existing?.gbraid || null,
       wbraid: wbraid || existing?.wbraid || null,
+      fbclid: fbclid || existing?.fbclid || null,
       utm_source: params.get('utm_source') || existing?.utm_source || null,
       utm_medium: params.get('utm_medium') || existing?.utm_medium || null,
       utm_campaign: params.get('utm_campaign') || existing?.utm_campaign || null,
@@ -46,6 +61,8 @@ export const captureAttribution = () => {
       landing_page: hasNewClickId
         ? window.location.pathname
         : existing?.landing_page || window.location.pathname,
+      fbp: fbp || existing?.fbp || null,
+      fbc: fbc || existing?.fbc || null,
       first_seen_at: existing?.first_seen_at || Date.now(),
       last_seen_at: Date.now(),
     };
