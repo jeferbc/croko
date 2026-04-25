@@ -1,6 +1,17 @@
 import { getImageNames } from '@/data/designImages';
 
-const BabyNameStep = ({ babyName, onNameChange, email, onEmailChange, gender, selectedImages }) => {
+const FIXED_PRICE_LABEL = '$190.000';
+
+const BabyNameStep = ({
+  babyName,
+  onNameChange,
+  email,
+  onEmailChange,
+  gender,
+  selectedImages,
+  isPaying,
+  paymentError,
+}) => {
   const imageNames = getImageNames(selectedImages);
 
   return (
@@ -18,6 +29,7 @@ const BabyNameStep = ({ babyName, onNameChange, email, onEmailChange, gender, se
           placeholder="Ej: Sofía"
           maxLength={30}
           autoComplete="off"
+          disabled={isPaying}
         />
         <div className="char-count">{babyName.length}/30</div>
         <small className="form-text">
@@ -37,24 +49,41 @@ const BabyNameStep = ({ babyName, onNameChange, email, onEmailChange, gender, se
           onChange={(e) => onEmailChange(e.target.value)}
           placeholder="tu@email.com"
           autoComplete="email"
+          disabled={isPaying}
         />
       </div>
 
       <div className="selections-summary">
         <h6>Resumen de tu selección</h6>
-        <div className="summary-item">
-          <span className="label">Género:</span>
-          <span className="value">{gender === 'boy' ? 'Niño' : 'Niña'}</span>
-        </div>
-        <div className="summary-item">
-          <span className="label">Diseños:</span>
-          <span className="value">{imageNames.join(', ')}</span>
-        </div>
-        <div className="summary-total">
-          <span className="label">Total a pagar:</span>
-          <span className="total-value">$190.000</span>
-        </div>
+        <table className="summary-table">
+          <tbody>
+            <tr>
+              <th scope="row">Género</th>
+              <td>{gender === 'boy' ? 'Niño' : 'Niña'}</td>
+            </tr>
+            <tr>
+              <th scope="row">Diseños</th>
+              <td>{imageNames.join(', ')}</td>
+            </tr>
+            <tr className="summary-total-row">
+              <th scope="row">Total a pagar</th>
+              <td className="total-value">{FIXED_PRICE_LABEL}</td>
+            </tr>
+          </tbody>
+        </table>
       </div>
+
+      {isPaying && (
+        <div className="payment-status" role="status" aria-live="polite">
+          Abriendo pasarela de pago...
+        </div>
+      )}
+
+      {paymentError && (
+        <div className="payment-error" role="alert">
+          {paymentError}
+        </div>
+      )}
     </div>
   );
 };

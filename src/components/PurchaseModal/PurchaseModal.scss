@@ -348,7 +348,7 @@ $girl-pink: #E91E8C;
   }
 }
 
-// Baby Name Step
+// Baby Name Step (also hosts order summary + payment status/error before Wompi widget)
 .baby-name-step {
   max-width: 400px;
   margin: 0 auto;
@@ -442,5 +442,79 @@ $girl-pink: #E91E8C;
         white-space: normal;
       }
     }
+  }
+}
+
+// Summary table + payment status/error (rendered inside .baby-name-step)
+.baby-name-step {
+  .summary-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.9rem;
+    color: #555;
+
+    th,
+    td {
+      padding: 0.35rem 0;
+      vertical-align: top;
+      text-align: left;
+    }
+
+    th {
+      font-weight: 500;
+      color: #555;
+      width: 40%;
+      white-space: nowrap;
+      padding-right: 1rem;
+    }
+
+    td {
+      color: $primary-gold;
+      font-weight: 600;
+      word-break: break-word;
+    }
+
+    .summary-total-row {
+      th,
+      td {
+        border-top: 1px dashed rgba(192, 136, 47, 0.3);
+        padding-top: 0.75rem;
+        padding-bottom: 0;
+      }
+
+      th {
+        font-weight: 600;
+        color: #333;
+        font-size: 1rem;
+      }
+
+      td.total-value {
+        font-size: 1.25rem;
+        font-weight: 700;
+        color: $primary-gold;
+      }
+    }
+  }
+
+  .payment-status {
+    background: rgba(192, 136, 47, 0.08);
+    border: 1px solid rgba(192, 136, 47, 0.3);
+    color: $primary-gold;
+    padding: 0.6rem 0.9rem;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    text-align: center;
+    margin-bottom: 0.75rem;
+  }
+
+  .payment-error {
+    background: #fdecea;
+    border: 1px solid #f5c2c0;
+    color: #b3261e;
+    padding: 0.6rem 0.9rem;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    text-align: center;
+    margin-bottom: 0.75rem;
   }
 }
