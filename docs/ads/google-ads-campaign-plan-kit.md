@@ -520,7 +520,105 @@ Del audit SEO (`docs/seo/audit-kit-pinta-barriguitas-2026-03-31.md`) y `kit-pint
 
 ---
 
-**Documento versión:** 2.1
+## 13. Plan de monitoreo post-launch (Apr 22 – May 25)
+
+Launch date: **2026-04-22**. Día de la Madre CO: **2026-05-10** (+18 días).
+
+### Cadencia de revisión
+
+| Frecuencia | Qué revisar | Tiempo estimado |
+|---|---|---|
+| **Diaria (primeros 7 días)** | Gasto vs budget, clicks, impresiones, CTR, anuncios rechazados, palabras clave "Baja calidad" | 5 min |
+| **Cada 2 días (día 8–18)** | Search Terms Report, negativos nuevos, CPC promedio, conversiones GA4 | 15 min |
+| **Semanal** | Performance por ad group, ajuste de keywords, experimentos de copy | 30 min |
+| **Post-Día de la Madre (May 11+)** | Audit completo, decisión de pausar/reducir Gift Intent | 45 min |
+
+### Checkpoints específicos con fechas absolutas
+
+**2026-04-23 (día 1 – mañana siguiente):**
+- [ ] Verificar que los 3 ad groups están **Habilitados** (no "Limited by policy")
+- [ ] Confirmar que el CPC cap campaign-level quedó en $2.000
+- [ ] Revisar anuncios rechazados en Ads → Estado de la política
+- [ ] Google Ads dashboard: ¿hay impresiones? Si hay 0 después de 24h = problema de approval/budget
+
+**2026-04-24 (día 2):**
+- [ ] **Primer Search Terms Report** — Palabras clave → Términos de búsqueda
+- [ ] Añadir como negativos cualquier término obvio de desperdicio (regalo mamá cumpleaños, pintura para pared, etc.)
+- [ ] Verificar que "Kit Pinta Barriguitas" aparece en el STR del ad group Brand
+
+**2026-04-25 (día 3):**
+- [ ] Revisar CTR por ad group:
+  - Product Direct: objetivo ≥ 3%
+  - Brand: objetivo ≥ 8%
+  - Gift Intent: objetivo ≥ 4%
+- [ ] Si un ad group está < 50% del objetivo → revisar copy del RSA
+
+**2026-04-29 (día 7):**
+- [ ] **Revisión de 7 días** — primera decisión de kill-criteria para Gift Intent:
+  - Si CTR < 4% O CPA > $30k CON ≥ 50 clicks → pausar ad group
+- [ ] Search Terms Report completo → limpiar negativos
+- [ ] ¿GA4 Key Events marcados? Si sí → importar a Google Ads como conversión secundaria
+
+**2026-05-01 (día 9):**
+- [ ] Review mid-campaign: gasto acumulado vs. plan ($21k × 9 = $189k COP esperado)
+- [ ] Si gasto < 70% del plan → subir budget a $25k/día hasta May 10
+- [ ] Si gasto > 130% → bajar CPC cap a $1.700
+
+**2026-05-07 (día 15 – 3 días antes de Día de la Madre):**
+- [ ] **Última ventana de optimización**: ya no añadir keywords nuevas
+- [ ] Asegurar que hay stock de kits para envío rápido
+- [ ] Verificar que el banner estacional de croko.co está activo
+
+**2026-05-10 (Día de la Madre):**
+- [ ] Monitorear durante el día: clicks, conversiones, WhatsApp leads
+- [ ] No tocar la campaña (deja correr)
+
+**2026-05-11 (día siguiente – decisión post-peak):**
+- [ ] **Pausar ad group Gift Intent** (ya no es temporada)
+- [ ] Bajar budget campaign de $21k → $10k/día
+- [ ] O pausar toda la campaña si el ROI no justifica y volver a activar con budget pequeño
+
+**2026-05-13 (día 21 – retrospectiva completa):**
+- [ ] Completar `docs/ads/google-ads-day21-scorecard.md`
+- [ ] Decisiones: ¿qué ad groups continuar? ¿Smart Bidding switch? ¿Phase 2 Baby Shower Activity?
+
+### Métricas objetivo mensual (primeros 30 días)
+
+| Métrica | Objetivo | Alerta si |
+|---|---|---|
+| Clicks totales | 400–600 | < 200 |
+| CTR promedio | ≥ 4% | < 2% |
+| CPC promedio | $150–$300 | > $500 |
+| WhatsApp leads | ≥ 20 | < 5 |
+| Checkout started (GA4) | ≥ 10 | < 3 |
+| Ventas atribuidas | ≥ 3 | 0 después de 14 días |
+
+### Alertas automáticas a configurar en Google Ads
+
+Herramientas → Reglas y alertas → Crear alerta:
+- **Gasto diario > $25.000 COP** → email
+- **Anuncios rechazados** → email inmediato
+- **CTR de ad group < 1% (con ≥ 100 imps)** → email semanal
+- **Palabra clave con Calidad baja** → email semanal
+
+### Dashboards a mirar semanalmente
+
+- Google Ads → Vista general (campaign level)
+- GA4 → Adquisición → Google Ads → por `utm_content` (separa los 3 ad groups)
+- Frappe CRM → leads con origen "google-cpc" en último período
+
+### Señales de éxito para escalar (Phase 2)
+
+Si al día 21 se cumplen **todas**:
+- ≥ 3 ventas atribuidas a Google Ads
+- CPA < $50.000 COP por venta
+- ROAS ≥ 2.0x
+
+→ Activar **Phase 2** (Amor y Amistad, Aug 2026) con budget 2x.
+
+---
+
+**Documento versión:** 2.2
 **Creado:** 2026-04-10 (v2.0)
-**Actualizado:** 2026-04-22 (v2.1 — walkthrough de creación de campaña: URL al root, bidding = Maximizar clics, ad groups Brand y Gift Intent añadidos, ajustes de audiencia para Colombia/Search, budget front-loaded para ventana Día de la Madre)
-**Próxima revisión:** después del día 21 post-launch (ajustar con data real)
+**Actualizado:** 2026-04-22 (v2.2 — añadida sección 13: plan de monitoreo con checkpoints fechados, métricas objetivo, alertas)
+**Próxima revisión:** 2026-04-29 (día 7 post-launch)
