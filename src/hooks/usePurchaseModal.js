@@ -159,10 +159,18 @@ export const usePurchaseModal = () => {
         fecha: timestamp,
         ids_disenos: data.selectedImages.join(', '),
         order_id: orderIdToUse,
+        value_cents: WOMPI_AMOUNT_CENTS,
+        currency: 'COP',
         gclid: attribution?.gclid || null,
+        gbraid: attribution?.gbraid || null,
+        wbraid: attribution?.wbraid || null,
         fbclid: attribution?.fbclid || null,
         utm_source: attribution?.utm_source || null,
+        utm_medium: attribution?.utm_medium || null,
         utm_campaign: attribution?.utm_campaign || null,
+        utm_content: attribution?.utm_content || null,
+        utm_term: attribution?.utm_term || null,
+        landing_page: attribution?.landing_page || null,
         fbp: attribution?.fbp || null,
         fbc: attribution?.fbc || null
       };
