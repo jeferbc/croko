@@ -1,5 +1,9 @@
 import { BlogData } from '@/database/blog/blog_database'
 
+const SSR_FIX_DATE = new Date('2026-04-18')
+
+const bumpToSsrFix = (date) => (date < SSR_FIX_DATE ? SSR_FIX_DATE : date)
+
 export default function sitemap() {
   const baseUrl = 'https://www.croko.co'
 
@@ -32,25 +36,19 @@ export default function sitemap() {
 
   const landingPage = {
     url: `${baseUrl}/maquillaje-para-embarazadas`,
-    lastModified: new Date('2025-11-12'),
+    lastModified: SSR_FIX_DATE,
   }
 
   const blogPosts = BlogData
     .filter((post) => post.slug !== 'maquillaje-para-embarazadas')
     .map((post) => ({
       url: `${baseUrl}/blog/${post.slug}`,
-      lastModified: post.date ? new Date(post.date) : new Date('2025-10-02'),
+      lastModified: bumpToSsrFix(post.date ? new Date(post.date) : SSR_FIX_DATE),
     }))
-
-  const latestBlogDate = BlogData.reduce((latest, post) => {
-    if (!post.date) return latest
-    const postDate = new Date(post.date)
-    return postDate > latest ? postDate : latest
-  }, new Date('2025-10-02'))
 
   const blogIndex = {
     url: `${baseUrl}/blog`,
-    lastModified: latestBlogDate,
+    lastModified: SSR_FIX_DATE,
   }
 
   return [
