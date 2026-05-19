@@ -36,9 +36,22 @@ The user arrives at `https://www.maquillajeembarazadas.com/kit-pinta-barriguitas
 
 **User clicks "Obtener Kit" or "Comprar"**
 
-All buttons link to: `https://checkout.wompi.co/l/YRIafg`
+The button opens the multi-step `PurchaseModal` on the same page (no new tab) to collect baby gender, 4 designs, baby name, and email. After step 3 the user clicks **"Pagar con Wompi"**, which triggers `usePurchaseModal.proceedToCheckout()` → `openWompiCheckout()` (`src/lib/wompiWidget.js`). That function picks one of two paths depending on the user's browser environment.
 
-The link opens in a new tab (`target="_blank"`).
+### Two payment paths (added 2026-05-19)
+
+`src/lib/inAppBrowser.js` classifies the UA at click time:
+
+| Environment | Path | How Wompi opens |
+|---|---|---|
+| Real browser (Chrome, Safari, Brave, Edge) | **Widget JS** | `new WidgetCheckout(config).open(cb)` — overlay over Croko, no navigation |
+| In-app webview (Instagram, Facebook, TikTok, Messenger, Snapchat, Twitter, Pinterest, LinkedIn, Line, generic Android `; wv)`) | **Web Checkout redirect** | `window.location.href = checkout.wompi.co/p/?...` — full-page navigation to Wompi's hosted page |
+
+The redirect path exists because in-app webviews silently block the popup/iframe the JS widget needs (`window.open` reports success but no overlay renders, the callback never fires, and the button hangs on "Abriendo pasarela de pago…" forever). The full-page redirect is immune to that block.
+
+Both paths use the same `reference = order_id`, the same SHA-256 integrity signature, and fire the begin_checkout webhook to n8n **before** opening Wompi — so attribution (`gclid`, UTMs, `fbp`/`fbc`) is preserved on both. Same signal lands in `transaction.updated` whichever path the user takes.
+
+For full architecture, debugging via `/api/diag` logs, and detection details see [`docs/ads/WOMPI_INAPP_BROWSER_FALLBACK.md`](./ads/WOMPI_INAPP_BROWSER_FALLBACK.md).
 
 ---
 
@@ -273,5 +286,7 @@ Landing Page Visitors
 
 ---
 
-**Document Version:** 1.0
-**Last Updated:** January 2026
+**Document Version:** 1.1
+**Last Updated:** 2026-05-19
+
+> **Note:** Some sections of this document (pricing, domain, payment-link checkout flow) describe an earlier iteration of the funnel. The current implementation uses an on-site multi-step modal that opens the Wompi widget (or redirects to Wompi Web Checkout for in-app browsers) — see Step 2 above and [`docs/ads/WOMPI_INAPP_BROWSER_FALLBACK.md`](./ads/WOMPI_INAPP_BROWSER_FALLBACK.md). Server-side conversion tracking is documented in [`docs/ads/PURCHASE_CONVERSION_N8N_ARCHITECTURE.md`](./ads/PURCHASE_CONVERSION_N8N_ARCHITECTURE.md).
