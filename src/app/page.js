@@ -5,6 +5,7 @@ import ProductSection from '@/containers/wedding/product'
 import HeaderSection from '@/containers/kit/header/header'
 import Testimonials from '@/components/Testimonials'
 import StickyCTA from '@/components/StickyCTA'
+import MedellinServiceBlock from '@/components/MedellinServiceBlock'
 
 const ProductVideos = dynamic(() => import('@/containers/wedding/productVideos'))
 const AccordionElementSection = dynamic(() => import('@/containers/elements/accordion'))
@@ -172,6 +173,7 @@ export default function Home() {
             <ProductSection />
             <Testimonials />
             <ProductVideos />
+            <MedellinServiceBlock />
             <PopularPosts />
             <AccordionElementSection kit="true" />
             <StickyCTA />

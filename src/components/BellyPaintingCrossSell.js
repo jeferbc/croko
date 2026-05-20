@@ -327,6 +327,17 @@ const BellyPaintingCrossSell = () => {
                             <i className="fa fa-shipping-fast me-2" style={{ color: '#c0882f' }}></i>
                             Envío a toda Colombia • Compra 100% segura
                         </p>
+
+                        <p style={{
+                            marginTop: '12px',
+                            color: '#555',
+                            fontSize: '0.95rem'
+                        }}>
+                            ¿Estás en Medellín?{' '}
+                            <Link href="/belly-painting-medellin" style={{ color: '#c0882f', fontWeight: 600, textDecoration: 'none' }}>
+                                Reserva tu sesión presencial de belly painting →
+                            </Link>
+                        </p>
                     </Col>
                 </Row>
             </Container>

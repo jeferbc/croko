@@ -589,7 +589,7 @@ module.exports = {
 
         <p>Después de años trabajando con futuras mamás, he aprendido que los mejores regalos no son necesariamente los más caros, sino los que crean momentos especiales y recuerdos duraderos.</p>
 
-        <p>El belly painting cambió mi vida porque me permitió ser parte de momentos súper íntimos y significativos de las familias. Y si puedo ayudar a más personas a vivir esas experiencias a través de mis kits, sesiones o consejos, me siento completamente realizada.</p>
+        <p>El belly painting cambió mi vida porque me permitió ser parte de momentos súper íntimos y significativos de las familias. Y si puedo ayudar a más personas a vivir esas experiencias a través de mis kits, <a href="/belly-painting-medellin">sesiones presenciales en Medellín</a> o consejos, me siento completamente realizada.</p>
 
         <p><strong>¿Quieres saber más sobre alguna de estas opciones? Escríbeme y te ayudo a elegir el regalo perfecto para esa futura mamá especial.</strong></p>
 
@@ -902,7 +902,7 @@ module.exports = {
 
         <p>Haz de tu embarazo un lienzo de recuerdos inolvidables. Descubre esta experiencia en <a href="https://www.croko.co">croko.co</a> o contáctanos por WhatsApp.</p>
 
-        <p><strong>Visita nuestro servicio profesional en Medellín o compra nuestro Kit DIY para toda Colombia.</strong></p>
+        <p><strong>Visita nuestro <a href="/belly-painting-medellin">servicio profesional de belly painting en Medellín</a> o compra nuestro Kit DIY para toda Colombia.</strong></p>
 
         <h2>Preguntas Frecuentes Sobre Maquillaje en el Embarazo</h2>
 

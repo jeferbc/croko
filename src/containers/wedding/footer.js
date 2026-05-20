@@ -24,6 +24,11 @@ const Footer = (props) => {
                 <Col xl="6" sm="12">
                     <div className="m-l-auto center-para">
                         <p className="copyright-text text-center">2016 - {new Date().getFullYear()} Croko</p>
+                        <div className="service-links text-center mt-2">
+                            <Link href="/belly-painting-medellin" style={{color: '#888', fontSize: '12px', textDecoration: 'none'}}>
+                                Belly painting a domicilio en Medellín
+                            </Link>
+                        </div>
                         <div className="legal-links text-center mt-2">
                             <Link href="/terminos-y-condiciones" style={{color: '#888', fontSize: '12px', textDecoration: 'none', marginRight: '15px'}}>
                                 Términos y Condiciones
