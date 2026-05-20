@@ -1,21 +1,170 @@
 # Croko.co Indexation Status
 
-**Last updated:** May 11, 2026
+**Last updated:** May 20, 2026
 **Property:** croko.co (domain property)
 **Primary domain:** www.croko.co
 
 ---
 
-## Current State (May 11)
+## Current State (May 20)
 
 | Metric | Value |
 |--------|-------|
-| Pages indexed | **≥1** (`/` confirmed indexed; kit-pinta-barriguitas consolidated to root via 308) |
-| Pages affected by "Rastreada: actualmente sin indexar" | **12** |
-| Validation cycle (started 21/4) | 8 pendientes, **4 con error** (re-checked 27/4, still not indexed) |
-| Sitemap status | **Correcto** — 15 páginas descubiertas (resubmitted 11/5) |
+| Pages indexed | **1** (`/` only) |
+| Pages NOT indexed | **19** (across 4 reasons) |
+| Total pages known to Google | **20** |
+| Sitemap status | **Correcto** — 15 páginas descubiertas (last resubmit 11/5) |
 | Migration status | In progress — GSC COA banner still shown |
 | Old domain (maquillajeembarazadas.com) | De-indexed |
+
+### Breakdown of the 19 not-indexed (4 reasons)
+
+| Reason | Pages | Fuente | Validación | Notes |
+|---|---|---|---|---|
+| Rastreada: actualmente sin indexar | **12** | Sistemas de Google | **Error** | 3 ERROR + 9 PENDIENTE (cycle started 21/4, errors detected 27/4) |
+| Descubierta: actualmente sin indexar | **4** | Sistemas de Google | Correcto | New since May 11 — sitemap discovery is working, crawl-budget is the bottleneck |
+| Página con redirección | **2** | Sitio web | No iniciada | `/kit` + `/kit-pinta-barriguitas` — expected (308 → `/`), ignore |
+| Error de redirección | **1** | Sitio web | No iniciada | `croko.co/belly-painting-medellin` (non-www) — **stale**, redirect now resolves cleanly |
+
+### Trend since May 11
+
+- Indexed: 1 → **1** (flat)
+- Sin indexar: 12 → **19** (+7 — Google is *discovering* more URLs, but not indexing them)
+- Rastreada: 12 → **12** (flat — May 11 sitemap bump produced re-crawls but **no reclassification**)
+- New buckets: 4 Descubierta + 1 Error de redirección appeared
+
+### Rastreada: actualmente sin indexar — ERROR vs PENDIENTE split
+
+The April 21 validation cycle detected errors on April 27. URLs in the **ERROR** bucket are ones Google already re-validated during the cycle and confirmed still unindexed (harder cases). URLs in **PENDIENTE** are still queued for re-check.
+
+**ERROR (3) — Google looked again, still rejected:**
+| URL | Last crawled |
+|---|---|
+| `/blog/que-regalar-embarazada-ideas-significativas` | 11 may 2026 |
+| `/blog` | 8 may 2026 |
+| `/maquillaje-para-embarazadas` | 28 abr 2026 |
+
+**PENDIENTE (9) — not yet re-validated:**
+| URL | Last crawled | Priority |
+|---|---|---|
+| `/belly-painting-medellin` | 20 abr 2026 | High — also orphan (see URL Inspection below) |
+| `/blog/que-regalar-baby-shower-guia-definitiva` | 20 abr 2026 | High |
+| `/politica-cookies` | 17 abr 2026 | Ignore |
+| `/blog/salud-mental-embarazo-croko-tranquilamente` | 8 abr 2026 | Medium |
+| `/blog/actividades-baby-shower-emotivas-inolvidables` | 4 abr 2026 | Medium |
+| `/blog/kit-maquillaje-prenatal-hermanitos` | 3 mar 2026 | Medium |
+| `/blog/baby-showers-colombia-actividades-regalos-croko` | 3 mar 2026 | Medium |
+| `http://croko.co/` | 7 feb 2026 | Ignore — non-https variant, will never index |
+| `https://croko.co/` | 7 feb 2026 | Ignore — non-www variant, will never index |
+
+**Real priority list = 3 ERROR + 6 PENDIENTE = 9 URLs** worth manual "Solicitar indexación".
+
+### Descubierta: actualmente sin indexar (4) — new since May 11
+
+All 4 are legitimate sitemap entries Google found but hasn't crawled (`N/D` last crawl). Validation: **Correcto** (no errors detected 7/2). Crawl-budget signal — consistent with low-authority diagnosis.
+
+| URL | Priority |
+|---|---|
+| `/blog/pinta-barriguitas-colombia` | Medium |
+| `/politica-de-privacidad` | Low |
+| `/politica-devoluciones` | Low |
+| `/terminos-y-condiciones` | Low |
+
+### Error de redirección (1) — STALE
+
+**URL flagged:** `https://croko.co/belly-painting-medellin` (non-www HTTPS), first detected 20/4/26, last crawled 19/4/26.
+
+**Live test (May 20):**
+```
+https://croko.co/belly-painting-medellin  →  301  →  https://www.croko.co/belly-painting-medellin  →  200
+```
+Clean single 301 with prerendered page. **Redirect is working today.** Error label is from page-launch day (April 18 deploy → April 19–20 crawl).
+
+Minor secondary finding: `http://croko.co/...` produces a 2-hop chain (`308` HTTPS upgrade → `301` apex→www). Modern Googlebot starts from HTTPS so unlikely to be the cause, but worth flattening eventually.
+
+**Action:** Click **"VALIDAR CORRECCIÓN"** on this row in GSC.
+
+---
+
+## URL Inspection findings — `/belly-painting-medellin` (May 20)
+
+Ran URL Inspection on `https://www.croko.co/belly-painting-medellin`. Verdict: **La URL no está en Google → Rastreada: actualmente sin indexar.**
+
+| Field | Value | Read |
+|---|---|---|
+| Sitemap reference | "No se ha detectado ningún sitemap de referencia" | ⚠️ **stale** — URL IS in live sitemap, last crawl was 20/4 (before May 11 resubmit) |
+| Página de referencia | "No se ha detectado ninguna" | ⚠️ **real — orphan confirmed in code** |
+| ¿Se permite el rastreo? | Sí | ✅ |
+| Obtención de página | Correcto | ✅ |
+| ¿Se permite la indexación? | Sí | ✅ |
+| Canonical declarada / Google-selected | Match (`/belly-painting-medellin`) | ✅ |
+| Último rastreo | 20 abr 14:26 (30 days ago) | ⚠️ stale |
+| Crawler | Robot de Google para smartphones | — |
+
+### Orphan confirmed via grep
+
+`grep -rn "belly-painting-medellin" src/` finds **only self-references** — no `<Link>` or `<a href>` from any other page. The only matches are:
+
+| File | Match |
+|---|---|
+| `src/app/belly-painting-medellin/page.js:14` | self in JSON-LD `@id` |
+| `src/app/belly-painting-medellin/page.js:17` | self in schema `url` |
+| `src/app/belly-painting-medellin/page.js:76` | self in breadcrumb item |
+| `src/app/belly-painting-medellin/layout.js:6` | self as canonical |
+| `src/app/belly-painting-medellin/layout.js:13` | self in OG `url` |
+| `src/app/sitemap.js:16` | sitemap entry |
+
+**Everything technical passes. The only structural problem on this route is the orphan status.** This is the single most actionable finding in the May 20 audit.
+
+---
+
+## Action plan (May 20 → May 27 checkpoint)
+
+### Today (May 20) — manual in GSC
+
+1. **Click "VALIDAR CORRECCIÓN"** on the Error de redirección row (free win, redirect chain is clean).
+2. **URL Inspection → Solicitar indexación** for the 9 priority URLs, in this order (GSC throttles ~10/day):
+   1. `/blog` (highest — index page for the whole blog cluster)
+   2. `/maquillaje-para-embarazadas`
+   3. `/belly-painting-medellin`
+   4. `/blog/que-regalar-embarazada-ideas-significativas`
+   5. `/blog/que-regalar-baby-shower-guia-definitiva`
+   6. `/blog/salud-mental-embarazo-croko-tranquilamente`
+   7. `/blog/actividades-baby-shower-emotivas-inolvidables`
+   8. `/blog/kit-maquillaje-prenatal-hermanitos`
+   9. `/blog/baby-showers-colombia-actividades-regalos-croko`
+
+Requesting indexing does **not** override authority/quality judgment — it queues a fresh crawl. Borderline URLs will benefit; the rest depend on the structural levers below.
+
+### This week — code change
+
+3. **Fix `/belly-painting-medellin` orphan** by adding internal links from:
+   - Home `/` body (Medellín/local presencial block above the FAQ)
+   - Footer NAP `<address>` (wrap existing Medellín text in a link)
+   - `/blog/baby-showers-colombia-actividades-regalos-croko` (contextual in-body)
+   - `/blog/que-regalar-baby-shower-guia-definitiva` (contextual in-body)
+
+### Medium-term (1–3 months)
+
+4. **`/sobre-nosotros`** — biggest remaining E-E-A-T gap. Named profile, photo, training, years of experience, Medellín origin, Instagram link. Wire as `author.url` in `SchemaMarkup.js`.
+5. **Backlinks** — main bottleneck:
+   - Update Google Business Profile URL to croko.co
+   - Update Instagram/TikTok bios to croko.co
+   - Update Wompi checkout redirect URL
+   - Create/claim profiles on Colombian business directories
+   - Outreach to anyone linking to old domain
+6. Resolve DNS warnings on old domain entries in Vercel
+7. Mobile LCP optimization (~11s → <4s) — separate performance track
+
+### Next checkpoint
+
+**May 27, 2026** — one week after manual indexing batch. Expect to see:
+- "Última lectura" advanced on most of the 9 priority URLs
+- Some movement out of "Rastreada: actualmente sin indexar" (best case: 12 → 6–8)
+- 4 Descubierta URLs: at least 1–2 should have been crawled
+- Error de redirección: should drop to 0 after Validar Corrección completes
+
+If movement is < expected, the next lever is the internal-linking fix (step 3) and committing to `/sobre-nosotros` (step 4).
 
 ### URLs currently in "Rastreada: actualmente sin indexar" (12)
 
@@ -50,6 +199,7 @@ The site peaked at **9 indexed pages** (Jan 27-29) before crashing to **1 indexe
 | Feb 3 - Mar 2 | 1 | 11 | ~3 |
 | Mar 3 - Mar 9 | 1 | 12 | ~5 |
 | Apr 18 - May 11 | ≥1 | 12 (post-SSR fix) | TBD |
+| **May 20** | **1** | **19** (12 Rastreada + 4 Descubierta + 2 Redirect + 1 Error redirect) | TBD |
 
 ## Critical Issues (from GSC, as of March 12)
 
@@ -170,16 +320,11 @@ No non-critical issues reported.
 
 ## Remaining Actions
 
-### Short-term (next 1–2 weeks)
+### Short-term (next 1–2 weeks) — **superseded by May 20 action plan above**
 
-- [ ] **Wait for sitemap re-fetch + re-crawl cycle** (May 11 + 3–14 days)
-  - Watch GSC → Sitemaps → "Última lectura" advance past 11 may
-  - Watch "Rastreada: actualmente sin indexar" count drop from 12
-- [ ] **If no movement after May 25**, request indexing manually for:
-  - `/blog`
-  - `/maquillaje-para-embarazadas`
-  - `/belly-painting-medellin`
-- [ ] **Add internal links to `/belly-painting-medellin`** — currently orphan in GSC ("Página de referencia: No se ha detectado ninguna"). Needs body links from `/`, footer, and at least one blog post mentioning Medellín service.
+- [x] **Wait for sitemap re-fetch + re-crawl cycle** (May 11 + 3–14 days) — completed May 20 assessment: re-crawls happened, **no reclassification**
+- [ ] **Trigger pulled May 20**: request indexing manually for 9 priority URLs (full list in action plan above)
+- [ ] **Add internal links to `/belly-painting-medellin`** — orphan **confirmed in code** via grep on May 20. Zero `<Link>` or `<a href>` outside self-references. Add body links from `/`, footer NAP `<address>`, and 2 Medellín-relevant blog posts.
 - [ ] **Live-test `/blog` in URL Inspection** to confirm SSR HTML reaches Googlebot
 
 ### Medium-term (1–3 months)
@@ -217,6 +362,6 @@ No non-critical issues reported.
 | Internal linking for /belly-painting-medellin | Gives orphan route a discovery path | 1-2 weeks |
 | Build backlinks | Domain authority grows | 1-3 months |
 
-**Current bottleneck (May 11):** Waiting for Google's re-crawl cycle to honor the new sitemap lastmod. If 12 stuck URLs don't move by May 25, the remaining levers are internal linking, authority (backlinks), and content E-E-A-T (`/sobre-nosotros`).
+**Current bottleneck (May 20):** Domain authority. The May 11 sitemap-lastmod fix produced fresh re-crawls of stuck URLs but **zero reclassification** — Google is crawling fine and explicitly declining to index. Sitemap freshness alone is not enough. Remaining levers are: (a) manual indexing requests (today's batch — borderline URLs only), (b) internal linking — `/belly-painting-medellin` orphan fix is high leverage, (c) `/sobre-nosotros` for E-E-A-T, (d) backlinks for authority.
 
-**Next checkpoint:** May 18, 2026 — check GSC "Última lectura" advanced past 11 may, and check if any of the 8 bumped URLs moved out of "Rastreada: actualmente sin indexar". If "Última lectura" hasn't advanced after 7 days, force re-fetch by removing+re-adding the sitemap in GSC.
+**Next checkpoint:** May 27, 2026 — one week after manual indexing batch. Watch for: (1) Rastreada count dropping from 12, (2) Descubierta URLs getting their first crawl, (3) Error de redirección dropping to 0 after Validar Corrección. See "Action plan" section for the full breakdown.
