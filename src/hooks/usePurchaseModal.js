@@ -1,10 +1,15 @@
 'use client';
-import { useState, useCallback, useEffect } from 'react';
+import { useState, useCallback, useEffect, useRef } from 'react';
 import { getImageNames } from '@/data/designImages';
 import { getAttribution } from '@/lib/adsTracking';
 import { openWompiCheckout } from '@/lib/wompiWidget';
+import {
+  readCartState,
+  writeCartState,
+  clearCartState,
+  getFlatSelections
+} from '@/lib/cartState';
 
-const STORAGE_KEY = 'croko_purchase_selections';
 const N8N_WEBHOOK_URL = process.env.NEXT_PUBLIC_N8N_WEBHOOK_URL;
 const N8N_WEBHOOK_KEY = process.env.NEXT_PUBLIC_N8N_WEBHOOK_KEY;
 const WOMPI_AMOUNT_CENTS = Number(process.env.NEXT_PUBLIC_WOMPI_AMOUNT_CENTS || 19000000);
@@ -30,47 +35,80 @@ export const usePurchaseModal = () => {
   const [isPaying, setIsPaying] = useState(false);
   const [paymentError, setPaymentError] = useState(null);
   const [webhookSent, setWebhookSent] = useState(false);
+  // Track the most recent orderId synchronously for persistence callbacks
+  // that fire before setOrderId's render completes.
+  const orderIdRef = useRef(null);
 
-  // Load saved selections from localStorage on mount
+  // Load saved selections from localStorage on mount (cross-session "remember me")
   useEffect(() => {
-    try {
-      const saved = localStorage.getItem(STORAGE_KEY);
-      if (saved) {
-        const parsed = JSON.parse(saved);
-        // Check if data is not expired (7 days)
-        const sevenDays = 7 * 24 * 60 * 60 * 1000;
-        if (parsed.timestamp && Date.now() - parsed.timestamp < sevenDays) {
-          setSelections({
-            gender: parsed.gender || null,
-            selectedImages: parsed.selectedImages || [],
-            babyName: parsed.babyName || '',
-            email: parsed.email || ''
-          });
-        }
+    const state = readCartState();
+    if (state) {
+      setSelections({ ...initialSelections, ...state.data });
+      if (state.cart_uuid) {
+        setOrderId(state.cart_uuid);
+        orderIdRef.current = state.cart_uuid;
       }
-    } catch (e) {
-      console.error('Error loading purchase selections:', e);
     }
   }, []);
 
-  // Save selections to localStorage whenever they change
-  const saveSelections = useCallback((newSelections) => {
-    try {
-      localStorage.setItem(STORAGE_KEY, JSON.stringify({
-        ...newSelections,
-        timestamp: Date.now()
-      }));
-    } catch (e) {
-      console.error('Error saving purchase selections:', e);
+  // Persist the current step + selections under the active cart_uuid.
+  // Generates a cart_uuid lazily if none exists yet, so partial fills from
+  // entry points that bypass openModal still get a stable identifier.
+  const persist = useCallback((nextSelections, nextStep) => {
+    let cartUuid = orderIdRef.current;
+    if (!cartUuid) {
+      cartUuid = generateOrderId();
+      orderIdRef.current = cartUuid;
+      setOrderId(cartUuid);
     }
-  }, []);
+    writeCartState({
+      cartUuid,
+      step: typeof nextStep === 'number' ? nextStep : currentStep,
+      data: nextSelections
+    });
+  }, [currentStep]);
 
   const openModal = useCallback(() => {
     setIsOpen(true);
     setCurrentStep(1);
-    setOrderId(generateOrderId());
+    // Only generate a fresh cart_uuid if we don't already have one from a
+    // restored session — overwriting would break the link between the email
+    // ?cart= param and the buyer's in-progress selections.
+    if (!orderIdRef.current) {
+      const newId = generateOrderId();
+      orderIdRef.current = newId;
+      setOrderId(newId);
+    }
     setPaymentError(null);
     setWebhookSent(false);
+  }, []);
+
+  // Recovery entry point: called when landing has ?cart=<uuid> in the URL.
+  // If the localStorage cart_uuid matches, jump straight to the last step
+  // with everything pre-filled. If it doesn't match (or is empty), open the
+  // modal blank at step 1 — silent fallback, no user-facing error.
+  const openFromRecovery = useCallback((paramCartUuid) => {
+    const state = readCartState();
+    const match =
+      state &&
+      typeof paramCartUuid === 'string' &&
+      state.cart_uuid === paramCartUuid;
+
+    if (match) {
+      setSelections({ ...initialSelections, ...state.data });
+      orderIdRef.current = state.cart_uuid;
+      setOrderId(state.cart_uuid);
+      setCurrentStep(TOTAL_STEPS);
+    } else {
+      setSelections(initialSelections);
+      const newId = generateOrderId();
+      orderIdRef.current = newId;
+      setOrderId(newId);
+      setCurrentStep(1);
+    }
+    setPaymentError(null);
+    setWebhookSent(false);
+    setIsOpen(true);
   }, []);
 
   const closeModal = useCallback(() => {
@@ -82,8 +120,8 @@ export const usePurchaseModal = () => {
   const setGender = useCallback((gender) => {
     const newSelections = { ...selections, gender, selectedImages: [] };
     setSelections(newSelections);
-    saveSelections(newSelections);
-  }, [selections, saveSelections]);
+    persist(newSelections, currentStep);
+  }, [selections, persist, currentStep]);
 
   const toggleImage = useCallback((imageId) => {
     let newImages;
@@ -96,20 +134,20 @@ export const usePurchaseModal = () => {
     }
     const newSelections = { ...selections, selectedImages: newImages };
     setSelections(newSelections);
-    saveSelections(newSelections);
-  }, [selections, saveSelections]);
+    persist(newSelections, currentStep);
+  }, [selections, persist, currentStep]);
 
   const setBabyName = useCallback((name) => {
     const newSelections = { ...selections, babyName: name };
     setSelections(newSelections);
-    saveSelections(newSelections);
-  }, [selections, saveSelections]);
+    persist(newSelections, currentStep);
+  }, [selections, persist, currentStep]);
 
   const setEmail = useCallback((email) => {
     const newSelections = { ...selections, email };
     setSelections(newSelections);
-    saveSelections(newSelections);
-  }, [selections, saveSelections]);
+    persist(newSelections, currentStep);
+  }, [selections, persist, currentStep]);
 
   const isValidEmail = (email) => {
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
@@ -135,15 +173,19 @@ export const usePurchaseModal = () => {
 
   const nextStep = useCallback(() => {
     if (canProceed() && currentStep < TOTAL_STEPS) {
-      setCurrentStep(currentStep + 1);
+      const next = currentStep + 1;
+      setCurrentStep(next);
+      persist(selections, next);
     }
-  }, [canProceed, currentStep]);
+  }, [canProceed, currentStep, persist, selections]);
 
   const prevStep = useCallback(() => {
     if (currentStep > 1) {
-      setCurrentStep(currentStep - 1);
+      const next = currentStep - 1;
+      setCurrentStep(next);
+      persist(selections, next);
     }
-  }, [currentStep]);
+  }, [currentStep, persist, selections]);
 
   const submitToWebhook = useCallback(async (data, orderIdToUse) => {
     try {
@@ -194,14 +236,18 @@ export const usePurchaseModal = () => {
   const proceedToCheckout = useCallback(async () => {
     if (isPaying) return;
 
-    const currentOrderId = orderId || generateOrderId();
-    if (!orderId) setOrderId(currentOrderId);
+    let currentOrderId = orderIdRef.current || orderId;
+    if (!currentOrderId) {
+      currentOrderId = generateOrderId();
+      orderIdRef.current = currentOrderId;
+      setOrderId(currentOrderId);
+    }
 
     setPaymentError(null);
     setIsPaying(true);
 
-    // Save final selections
-    saveSelections(selections);
+    // Snapshot final selections + step at the moment of handoff to Wompi
+    persist(selections, TOTAL_STEPS);
 
     // Fire begin_checkout webhook once per order
     if (!webhookSent) {
@@ -238,12 +284,13 @@ export const usePurchaseModal = () => {
       setIsPaying(false);
       setPaymentError('No se pudo abrir el pago. Intenta nuevamente.');
     }
-  }, [isPaying, orderId, selections, webhookSent, saveSelections, submitToWebhook, closeModal]);
+  }, [isPaying, orderId, selections, webhookSent, persist, submitToWebhook, closeModal]);
 
   const resetSelections = useCallback(() => {
     setSelections(initialSelections);
-    localStorage.removeItem(STORAGE_KEY);
+    clearCartState();
     setCurrentStep(1);
+    orderIdRef.current = null;
     setOrderId(null);
     setWebhookSent(false);
     setPaymentError(null);
@@ -261,6 +308,7 @@ export const usePurchaseModal = () => {
 
     // Actions
     openModal,
+    openFromRecovery,
     closeModal,
     setGender,
     toggleImage,
@@ -274,17 +322,8 @@ export const usePurchaseModal = () => {
   };
 };
 
-// Helper to get selections from localStorage (for WhatsApp message)
-export const getPurchaseSelections = () => {
-  try {
-    const saved = localStorage.getItem(STORAGE_KEY);
-    if (saved) {
-      return JSON.parse(saved);
-    }
-  } catch (e) {
-    console.error('Error reading purchase selections:', e);
-  }
-  return null;
-};
+// Helper to get selections from localStorage (for WhatsApp message / order
+// tracking). Returns a flat object compatible with the pre-refactor shape.
+export const getPurchaseSelections = () => getFlatSelections();
 
 export default usePurchaseModal;
