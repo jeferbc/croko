@@ -1,5 +1,6 @@
 'use client';
-import { createContext, useContext } from 'react';
+import { createContext, useContext, useEffect, useRef } from 'react';
+import { usePathname } from 'next/navigation';
 import { Modal, ModalHeader, ModalBody, ModalFooter, Button } from 'reactstrap';
 import { usePurchaseModal } from '@/hooks/usePurchaseModal';
 import StepIndicator from './StepIndicator';
@@ -19,12 +20,46 @@ export const usePurchaseModalContext = () => {
   return context;
 };
 
+// Reads ?cart=<uuid> from the URL on landing pages and rehydrates the
+// abandoned-cart modal. Lives inside the provider so it can dispatch through
+// context. Runs at most once per page load, only on the home route — the
+// only place the recovery email's "Termina tu compra" link should land.
+const CartRecoveryEffect = () => {
+  const { openFromRecovery } = usePurchaseModalContext();
+  const pathname = usePathname();
+  const handled = useRef(false);
+
+  useEffect(() => {
+    if (handled.current) return;
+    if (pathname !== '/') return;
+    if (typeof window === 'undefined') return;
+
+    const params = new URLSearchParams(window.location.search);
+    const cartUuid = params.get('cart');
+    if (!cartUuid) return;
+
+    handled.current = true;
+    openFromRecovery(cartUuid);
+
+    // Strip the param from the URL so a reload doesn't re-trigger and the
+    // address bar stays clean while the buyer interacts with the modal.
+    params.delete('cart');
+    const qs = params.toString();
+    const cleanUrl =
+      window.location.pathname + (qs ? `?${qs}` : '') + window.location.hash;
+    window.history.replaceState({}, '', cleanUrl);
+  }, [pathname, openFromRecovery]);
+
+  return null;
+};
+
 export const PurchaseModalProvider = ({ children }) => {
   const modalState = usePurchaseModal();
 
   return (
     <PurchaseModalContext.Provider value={modalState}>
       {children}
+      <CartRecoveryEffect />
       <PurchaseModalInner />
     </PurchaseModalContext.Provider>
   );

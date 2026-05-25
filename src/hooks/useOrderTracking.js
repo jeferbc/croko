@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import { getAttribution } from '@/lib/adsTracking';
+import { getFlatSelections, clearCartState } from '@/lib/cartState';
 
 // Fixed product price
 const FIXED_PRICE = 190000; // $190,000 COP
@@ -51,15 +52,20 @@ const useOrderTracking = (searchParams) => {
       setTimeout(firePurchaseEvent, 500);
     }
 
-    // Read customer email (collected in PurchaseModal, saved in localStorage)
+    // Read customer email (collected in PurchaseModal, saved in localStorage).
+    // After reading, clear the cart-recovery state — the buyer paid, so we
+    // don't need to keep the abandoned-cart envelope hanging around.
     let customerEmail = null;
     try {
-      const saved = localStorage.getItem('croko_purchase_selections');
-      if (saved) {
-        customerEmail = JSON.parse(saved).email || null;
+      const flat = getFlatSelections();
+      if (flat) {
+        customerEmail = flat.email || null;
       }
     } catch (e) {
       // ignore
+    }
+    if (transactionId) {
+      clearCartState();
     }
 
     // Handling 1-2d + transit 3-7d => 10d upper bound (safe estimate)
