@@ -252,6 +252,30 @@ export const usePurchaseModal = () => {
     // Fire begin_checkout webhook once per order
     if (!webhookSent) {
       submitToWebhook(selections, currentOrderId);
+      // GA4/GTM begin_checkout signal — lets Google/Meta optimize toward
+      // checkout intent (the real purchase closes off-platform on WhatsApp,
+      // so this on-site event is the trackable proxy). Never block checkout.
+      try {
+        const attribution = getAttribution();
+        window.dataLayer = window.dataLayer || [];
+        window.dataLayer.push({ ecommerce: null });
+        window.dataLayer.push({
+          event: 'begin_checkout',
+          ecommerce: {
+            currency: 'COP',
+            value: WOMPI_AMOUNT_CENTS / 100,
+            items: [{
+              item_id: 'kit_pinta_barriguita',
+              item_name: 'Kit Pinta Barriguita – Todo Incluido',
+              price: WOMPI_AMOUNT_CENTS / 100,
+              quantity: 1,
+            }],
+          },
+          attribution: attribution || undefined,
+        });
+      } catch (e) {
+        // tracking must never block the checkout handoff
+      }
       setWebhookSent(true);
     }
 
