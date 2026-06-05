@@ -11,6 +11,7 @@ import WhatsappRibbon from '@/containers/elements/common/whatsapp';
 import { PurchaseModalProvider } from '@/components/PurchaseModal';
 import GoogleMerchantBadge from '@/components/GoogleMerchantBadge';
 import useGclidCapture from '@/hooks/useGclidCapture';
+import useWhatsAppClickTracking from '@/hooks/useWhatsAppClickTracking';
 
 export default function ClientLayout({ children }) {
   const [loader, setLoader] = useState(true);
@@ -18,6 +19,7 @@ export default function ClientLayout({ children }) {
   const pathname = usePathname();
 
   useGclidCapture();
+  useWhatsAppClickTracking();
 
   useEffect(() => {
     // Page Loader - Reduced to 200ms for better performance

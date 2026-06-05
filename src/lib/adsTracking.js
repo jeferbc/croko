@@ -92,6 +92,24 @@ export const getAttribution = () => {
   }
 };
 
+// Push a `whatsapp_click` event to the dataLayer so GTM/GA4/Google Ads can
+// treat WhatsApp intent as a conversion. The real purchase closes off-platform
+// in chat, so this on-site click is the trackable proxy. `source` labels which
+// CTA was clicked (ribbon, sticky, header, footer, link…). Never throws.
+export const trackWhatsAppClick = (source) => {
+  if (!isBrowser()) return;
+  try {
+    window.dataLayer = window.dataLayer || [];
+    window.dataLayer.push({
+      event: 'whatsapp_click',
+      whatsapp_source: source || 'unknown',
+      attribution: getAttribution() || undefined,
+    });
+  } catch (e) {
+    // tracking must never break the click
+  }
+};
+
 export const appendAttributionToMessage = (message) => {
   const attribution = getAttribution();
   if (!attribution) return message;
