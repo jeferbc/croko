@@ -3,11 +3,18 @@
 import { detectInAppBrowser } from './inAppBrowser';
 import { logDiag } from './diag';
 
-const WIDGET_SRC = 'https://checkout.wompi.co/widget.js';
+// Croko routes ALL buyers through Wompi's hosted Web Checkout via a full-page
+// redirect. The embedded JS widget (popup/iframe) was retired because it
+// silently fails to open for a whole class of environments — in-app webviews
+// (Instagram/FB/TikTok), ad-blockers/proxies that block widget.js, slow
+// networks — leaving the buyer on a frozen "Abriendo pasarela…" button with no
+// error and no callback. A top-level navigation cannot be blocked, so it works
+// everywhere. See docs/ads/WOMPI_INAPP_BROWSER_FALLBACK.md for the full
+// history. The return trip lands on /gracias?id=<tx>&env=<env>, where
+// useOrderTracking resolves the real status via Wompi's API and gates the
+// purchase event on APPROVED.
 const WEB_CHECKOUT_URL = 'https://checkout.wompi.co/p/';
-const SCRIPT_TIMEOUT_MS = 12000;
 const SIGNATURE_TIMEOUT_MS = 10000;
-let loaderPromise = null;
 
 const withTimeout = (promise, ms, label) =>
   Promise.race([
@@ -16,42 +23,6 @@ const withTimeout = (promise, ms, label) =>
       setTimeout(() => reject(new Error(`wompi: ${label} timed out (${ms}ms)`)), ms)
     ),
   ]);
-
-const loadWidgetScript = () => {
-  if (typeof window === 'undefined') {
-    return Promise.reject(new Error('wompi: window undefined'));
-  }
-  if (window.WidgetCheckout) return Promise.resolve(window.WidgetCheckout);
-  if (loaderPromise) return loaderPromise;
-
-  loaderPromise = new Promise((resolve, reject) => {
-    const existing = document.querySelector(`script[src="${WIDGET_SRC}"]`);
-    const onLoad = () => {
-      if (window.WidgetCheckout) resolve(window.WidgetCheckout);
-      else reject(new Error('wompi: WidgetCheckout not exposed after load'));
-    };
-    const onError = () => reject(new Error('wompi: failed to load widget.js'));
-
-    if (existing) {
-      existing.addEventListener('load', onLoad, { once: true });
-      existing.addEventListener('error', onError, { once: true });
-      return;
-    }
-    const script = document.createElement('script');
-    script.src = WIDGET_SRC;
-    script.async = true;
-    script.addEventListener('load', onLoad, { once: true });
-    script.addEventListener('error', onError, { once: true });
-    document.head.appendChild(script);
-  }).catch((err) => {
-    // Reset so a retry can re-attempt the load instead of reusing a
-    // permanently-rejected promise.
-    loaderPromise = null;
-    throw err;
-  });
-
-  return loaderPromise;
-};
 
 const fetchSignature = async ({ reference, amountInCents, currency }) => {
   const controller = new AbortController();
@@ -79,7 +50,8 @@ const fetchSignature = async ({ reference, amountInCents, currency }) => {
 
 // Full-page redirect to Wompi's hosted Web Checkout. This is a top-level
 // navigation (no popup, no cross-origin iframe), so it works inside Instagram /
-// Facebook / TikTok in-app webviews where the JS widget silently fails.
+// Facebook / TikTok in-app webviews where the JS widget silently fails — and in
+// every normal browser too.
 const redirectToWebCheckout = ({
   orderId,
   amountInCents,
@@ -116,11 +88,12 @@ export const openWompiCheckout = async ({
   currency = 'COP',
   email,
   fullName,
-  onResult,
 }) => {
   const publicKey = process.env.NEXT_PUBLIC_WOMPI_PUBLIC_KEY;
   if (!publicKey) throw new Error('wompi: NEXT_PUBLIC_WOMPI_PUBLIC_KEY missing');
 
+  // isInApp is no longer a branch (everyone redirects) but we still log it so
+  // the diag stream keeps showing the environment mix of paying users.
   const { isInApp, app } = detectInAppBrowser();
   logDiag('wompi_checkout_start', { orderId, isInApp, app });
 
@@ -134,83 +107,22 @@ export const openWompiCheckout = async ({
     );
     logDiag('wompi_signature_ok', { orderId, ms: Date.now() - t0 });
   } catch (err) {
+    // The only legitimate dead-end: without a valid signature Wompi rejects the
+    // transaction anyway. Fails loudly in ≤10s so the button shows an error
+    // instead of hanging.
     logDiag('wompi_signature_fail', { orderId, error: err?.message });
     throw err;
   }
 
-  // In-app webviews: skip the popup/iframe widget entirely and hand off via
-  // a full-page redirect. The page navigates away, so onResult never fires
-  // here — the return trip lands on /gracias and useOrderTracking takes over.
-  if (isInApp) {
-    redirectToWebCheckout({
-      orderId,
-      amountInCents,
-      currency,
-      email,
-      fullName,
-      signature,
-      publicKey,
-    });
-    return;
-  }
-
-  let WidgetCheckout;
-  const tScript = Date.now();
-  try {
-    WidgetCheckout = await withTimeout(
-      loadWidgetScript(),
-      SCRIPT_TIMEOUT_MS,
-      'widget.js load'
-    );
-    logDiag('wompi_script_ok', { orderId, ms: Date.now() - tScript });
-  } catch (err) {
-    logDiag('wompi_script_fail', { orderId, error: err?.message });
-    // Script blocked but signature is valid → degrade gracefully to the
-    // hosted redirect instead of dead-ending the user.
-    redirectToWebCheckout({
-      orderId,
-      amountInCents,
-      currency,
-      email,
-      fullName,
-      signature,
-      publicKey,
-    });
-    return;
-  }
-
-  // Wompi's WAF rejects http://localhost redirect URLs. Skip redirectUrl in dev;
-  // the JS callback still fires with the transaction result.
-  const isLocalhost = /^(localhost|127\.0\.0\.1)$/i.test(window.location.hostname);
-  const config = {
-    currency,
+  // Single path for everyone: hand off via a top-level navigation. The page
+  // navigates away here; the outcome is read on return at /gracias.
+  redirectToWebCheckout({
+    orderId,
     amountInCents,
-    reference: orderId,
+    currency,
+    email,
+    fullName,
+    signature,
     publicKey,
-    signature: { integrity: signature },
-    collectShipping: 'true',
-    collectCustomerLegalId: 'true',
-    customerData: {
-      email,
-      fullName,
-    },
-  };
-  if (!isLocalhost) {
-    config.redirectUrl = `${window.location.origin}/gracias`;
-  }
-
-  try {
-    const checkout = new WidgetCheckout(config);
-    logDiag('wompi_widget_open_called', { orderId });
-    checkout.open((result) => {
-      logDiag('wompi_widget_result', {
-        orderId,
-        status: result?.transaction?.status || 'none',
-      });
-      if (typeof onResult === 'function') onResult(result);
-    });
-  } catch (err) {
-    logDiag('wompi_widget_open_throw', { orderId, error: err?.message });
-    throw err;
-  }
+  });
 };
