@@ -81,6 +81,7 @@ const BlogDetail = ({ post }) => {
                                         height={1161}
                                         className="img-fluid rounded"
                                         loading="eager"
+                                        fetchPriority="high"
                                         transformation={[{
                                             width: isDesktop ? 1200 : 600,
                                             quality: 85,
@@ -94,6 +95,7 @@ const BlogDetail = ({ post }) => {
                                         alt={post.title}
                                         className="img-fluid rounded"
                                         loading="eager"
+                                        fetchPriority="high"
                                         style={{ width: '100%', height: 'auto', maxHeight: '800px', objectFit: 'contain' }}
                                     />
                                 )}

@@ -11,10 +11,12 @@ export default function sitemap() {
     {
       url: baseUrl,
       lastModified: new Date('2026-04-22'),
+      images: ['https://ik.imagekit.io/ge17f66b4ma/Fotokitcarrusel%20(1)%20(1)_kduJxCzra.png'],
     },
     {
       url: `${baseUrl}/belly-painting-medellin`,
       lastModified: new Date('2026-04-20'),
+      images: ['https://ik.imagekit.io/ge17f66b4ma/download__2__wAfXfpmcS.jpeg'],
     },
     {
       url: `${baseUrl}/carolina-rincon`,
@@ -48,6 +50,9 @@ export default function sitemap() {
     .map((post) => ({
       url: `${baseUrl}/blog/${post.slug}`,
       lastModified: bumpToSsrFix(new Date(post.dateModified || post.date || SSR_FIX_DATE)),
+      images: post.image
+        ? [post.image.startsWith('http') ? post.image : `${baseUrl}${post.image}`]
+        : undefined,
     }))
 
   const blogIndex = {
