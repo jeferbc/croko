@@ -67,7 +67,7 @@ const BlogDetail = ({ post }) => {
                                     <span>•</span>
                                     <span className="post-author">
                                         <i className="fa fa-user me-2"></i>
-                                        Por {post.author}
+                                        Por <a href="/carolina-rincon" style={{ color: '#c0882f', textDecoration: 'underline' }}>{post.author}</a>
                                     </span>
                                 </div>
                             </header>
@@ -144,7 +144,20 @@ const BlogDetail = ({ post }) => {
                             )}
 
                             <div className="blog-divider" style={{ height: '1px', backgroundColor: '#e0e0e0', margin: '40px 0' }}></div>
-                            
+
+                            <aside className="author-box" style={{ backgroundColor: '#fff8f0', borderRadius: '8px', padding: '25px', marginBottom: '40px' }}>
+                                <h6 style={{ color: '#c0882f', marginBottom: '12px' }}>Sobre la autora</h6>
+                                <p style={{ marginBottom: '10px' }}>
+                                    <strong>Carolina Rincón</strong> es microbióloga de la Universidad de Antioquia y
+                                    fundadora de Croko (Medellín, 2014). Lleva más de 11 años pintando barriguitas:
+                                    más de 800 sesiones presenciales y más de 1.000 familias acompañadas en Colombia
+                                    con el Kit Croko, el primer kit pinta barriguitas creado en el país.
+                                </p>
+                                <a href="/carolina-rincon" style={{ color: '#c0882f', fontWeight: 600 }}>
+                                    Conoce más sobre Carolina →
+                                </a>
+                            </aside>
+
                             <div className="post-footer text-center">
                                 <div className="social-share mb-3">
                                     <h6 style={{ color: '#c0882f', marginBottom: '15px' }}>Comparte este artículo:</h6>

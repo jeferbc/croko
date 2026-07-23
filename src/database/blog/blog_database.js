@@ -1,76 +1,16 @@
 module.exports = {
   BlogData: [
     {
-      id: 'baby-showers-colombia-actividades-regalos-croko',
-      title: 'Baby Showers en Colombia: Actividades que Enamoran, Regalos y el Toque Croko',
-      slug: 'baby-showers-colombia-actividades-regalos-croko',
-      image: 'https://ik.imagekit.io/ge17f66b4ma/Baby%20Shower_4d2F8xU7b.webp?updatedAt=1757785105715',
-      description: 'Descubre cómo se viven los baby showers en Colombia con actividades llenas de amor, regalos especiales y productos Croko.',
-      date: '2025-10-02',
-      dateModified: '2025-10-02',
-      author: 'Carolina Rincón',
-      content: `
-        <p>Un baby shower en Colombia es mucho más que una reunión; es un abrazo colectivo, un momento lleno de risas, sueños y amor por ese bebito que está por llegar. En Croko, sabemos lo especial que es esta celebración, y queremos compartir contigo cómo se vive un baby shower en nuestro país, qué juegos hacen que todos se conecten, qué regalos hacen suspirar a las futuras mamás, y cómo nosotros ponemos un pedacito de magia en cada instante. Si estás planeando una fiesta o simplemente quieres soñar con la tuya, ¡acompáñanos en este viaje lleno de emoción!</p>
-        
-        <h2>Actividades que Hacen Brillar los Baby Showers</h2>
-        <p>En cada rincón de Colombia, desde Pasto hasta Cartagena, los baby showers son una explosión de alegría. Aquí van las actividades más frecuentes que llenan de sonrisas estos momentos:</p>
-        
-        <p><strong>Pintar la Barriguita:</strong> Esta es la actividad que nos roba el corazón. Las familias se reúnen para pintar diseños llenos de amor en la barriga de la mamá, creando un recuerdo que quedará para siempre. Es un momento tan íntimo y especial que une a todos en la celebración.</p>
-        
-        <p><strong>Adivinar el Tamaño de la Barriga:</strong> Todos toman un trozo de lana o cinta y tratan de adivinar cuánto mide la pancita de la futura mamá. Entre risas y abrazos, gana quien se acerque más. Es una forma sencilla y hermosa de celebrar el milagro que crece.</p>
-        
-        <p><strong>Alimentar el bebé con los Ojos Vendados:</strong> ¡Prepárate para las carcajadas! Los invitados, con una venda en los ojos, intentan alimentar con compota a otro participante. Algunos terminan poniendo la comida en los ojos, y eso hace que todos se diviertan como nunca.</p>
-        
-        <p><strong>Bingo de Regalos:</strong> Mientras la mamá abre sus regalitos, los invitados marcan en cartones los obsequios que aparecen, como bodies o teteros. El primero en completar una fila grita "¡Bingo!" y se lleva un detalle. Es una actividad que mantiene a todos atentos y felices.</p>
-        
-        <p><strong>Prohibido Decir "Bebé":</strong> Cada invitado lleva una pinza en la ropa. Si alguien dice "bebé", otro le quita la pinza. Al final, quien tenga más pinzas es el ganador. ¡Es un reto divertido que pone a todos a pensar!</p>
-        
-        <p>Estas actividades son el alma de los baby showers colombianos, porque no solo divierten, sino que crean lazos y recuerdos que atesorarás por años.</p>
-        
-        <h2>Regalos que Tocan el Alma</h2>
-        <p>Los regalos en un baby shower deben ser como pequeños alicientes para la mamá y el bebé. En Colombia, hay clásicos que nunca faltan y que siempre sacan suspiros:</p>
-        
-        <p><strong>Maquillaje para pintar la barriguita:</strong> Son pinturas corporales, para que la mamá mes a mes celebre el embarazo con arte, haciendo tiernos dibujos en su barriguita.</p>
-        
-        <p><strong>Pañales:</strong> ¡El regalo estrella! Los pañales de todas las tallas son un básico, porque las mamás saben que nunca sobran.</p>
-        
-        <p><strong>Ropita para el Bebé:</strong> Bodies, pijamas, gorritos y medias chiquitas con diseños adorables, como ositos o frases tiernas, son un éxito asegurado.</p>
-        
-        <p><strong>Teteros y Chupos:</strong> Biberones y chupetes prácticos y de buena calidad son regalos que toda mamá agradece.</p>
-        
-        <p><strong>Juguetes Suaves:</strong> Peluches, sonajeros o mantitas con texturas son perfectos para estimular al bebé y darle amor.</p>
-        
-        <p><strong>Productos de Cuidado:</strong> Cremas, shampoos suaves y toallitas húmedas son detalles útiles que facilitan la rutina de los papás.</p>
-        
-        <p>Estos regalos son una forma de decir "estamos contigo" en esta nueva aventura, y en Croko queremos que cada obsequio también cuente una historia de amor.</p>
-        
-        <h2>Croko: Donde la Magia se Hace Real</h2>
-        <p>Creemos que un baby shower es más que una fiesta; es un momento para celebrar la vida, la familia y los sueños. Por eso, diseñamos productos que no solo son prácticos, sino que llevan consigo un pedacito de nuestro corazón. Aquí está lo que tenemos para ti:</p>
-        
-        <p><strong>Kit Croko Maquillaje Embarazadas:</strong> Un kit de pinturas y todo lo necesario para pintar la barriguita de la futura mamá con amor y creatividad. Incluye 2 plantillas (puedes personalizarlas o elegir del catálogo), pinturas seguras para la piel, pinceles, un pañito y gel. Es perfecto para crear recuerdos inolvidables en tu baby shower.</p>
-        
-        <p><strong>Kit de Seguridad de Bebé:</strong> Porque cuidar al pequeño es lo primero, este kit trae tapitas para enchufes, correas para asegurar cajones y protectores para las esquinas de mesas y muebles. Todo para que tu bebé explore sin riesgos.</p>
-        
-        <p><strong>Baberos de Silicona:</strong> Ideales para cuando el bebé empieza a comer. Son cómodos, fáciles de limpiar y vienen en colores que enamoran, haciendo que cada comida sea más divertida.</p>
-        
-        <p><strong>Cinturón de Seguridad para Silla:</strong> Un cinturón práctico que asegura al bebé en la silla para comer o jugar con total tranquilidad, dando a los papás esa paz que tanto valoran.</p>
-        
-        <p>¿Quieres hacer de tu baby shower un momento mágico? Visita www.croko.co, descubre nuestros productos y escríbenos al WhatsApp (+57 316 816 1717) para personalizar tu experiencia. Con Croko, cada detalle está lleno de amor. 🍼💕</p>
-        
-        <p><em>#BabyShowerColombia #CrokoMaquillaje #AmorDeMamá</em></p>
-      `
-    },
-    {
       id: 'kit-maquillaje-prenatal-hermanitos',
       title: 'Más Allá de la Piel: Cómo el Kit Maquillaje Prenatal Une a Hermanitos y Bebé en Camino',
       slug: 'kit-maquillaje-prenatal-hermanitos',
       image: 'https://ik.imagekit.io/ge17f66b4ma/Hermanitos_pintando%20(1)_zSIvHSy0K.webp?updatedAt=1757785105897',
       description: 'Descubre cómo el Kit Maquillaje Prenatal fortalece vínculos familiares y prepara a los hermanitos para la llegada del nuevo bebé.',
       date: '2024-10-01',
-      dateModified: '2024-10-01',
+      dateModified: '2026-07-23',
       author: 'Carolina Rincón',
       content: `
-        <p>La dulce espera de un bebé es un viaje transformador, lleno de amor, anticipación y, a veces, una pizca de incertidumbre, especialmente para los más pequeños de la casa. En Croko Maquillaje Embarazadas, hemos sido testigos de la magia que ocurre cuando el arte prenatal se convierte en una experiencia compartida. Y por eso, hemos creado el Kit Maquillaje Prenatal en Casa, una herramienta innovadora diseñada no solo para embellecer tu barriguita, sino para fortalecer el vínculo familiar y preparar el corazón de tus hijos mayores para la llegada de su nuevo hermanito o hermanita.</p>
+        <p>La dulce espera de un bebé es un viaje transformador, lleno de amor, anticipación y, a veces, una pizca de incertidumbre, especialmente para los más pequeños de la casa. En Croko Maquillaje Embarazadas, hemos sido testigos de la magia que ocurre cuando el arte prenatal se convierte en una experiencia compartida. Y por eso, hemos creado el <a href="/">Kit Maquillaje Prenatal en Casa</a>, una herramienta innovadora diseñada no solo para embellecer tu barriguita, sino para fortalecer el vínculo familiar y preparar el corazón de tus hijos mayores para la llegada de su nuevo hermanito o hermanita.</p>
         
         <h2>El Desafío de los Celos y la Oportunidad de la Unión</h2>
         <p>Es completamente natural que los hermanitos mayores experimenten una mezcla de emoción, curiosidad y, a veces, un poco de inquietud o incluso celos ante la inminente llegada de un nuevo miembro. Su mundo está a punto de cambiar, y necesitan sentirse parte de este hermoso proceso, no desplazados por él. Aquí es donde el arte prenatal entra en juego como un poderoso conector.</p>
@@ -103,7 +43,7 @@ module.exports = {
         
         <p>¡Te invito a transformar la espera de tu bebé en una obra de arte familiar y un lazo indestructible!</p>
         
-        <p>Ingresa en www.croko.co para adquirir tu Kit Maquillaje Prenatal en Casa y comienza a pintar el futuro con amor, color y mucha conexión.</p>
+        <p>Ingresa en <a href="/">www.croko.co</a> para adquirir tu Kit Maquillaje Prenatal en Casa y comienza a pintar el futuro con amor, color y mucha conexión.</p>
       `
     },
     {
@@ -113,10 +53,10 @@ module.exports = {
       image: 'https://ik.imagekit.io/ge17f66b4ma/Salud_mental_embarazo_utI36TAF_d.webp?updatedAt=1757785105686',
       description: 'Un abrazo emocional para mamás: navegando la salud mental durante el embarazo y posparto con amor y apoyo profesional.',
       date: '2024-10-25',
-      dateModified: '2024-10-25',
+      dateModified: '2026-07-23',
       author: 'Carolina Rincón',
       content: `
-        <p>El embarazo es un viaje lleno de colores: momentos de ilusión, sueños que crecen con cada latido, pero también días de dudas, miedos y emociones que suben y bajan como una marea. En Croko, sabemos que ser mamá es abrazar todas esas emociones, y queremos hablar contigo sobre la salud mental en el embarazo, la depresión posparto, y por qué tus sentimientos son tan importantes en esta etapa. Desde nuestra experiencia celebrando la maternidad, y con el apoyo de Tranquilamente, plataforma de psicología en línea, nuestra misión es acompañarte para que este camino sea más ligero y lleno de amor.</p>
+        <p>El embarazo es un viaje lleno de colores: momentos de ilusión, sueños que crecen con cada latido, pero también días de dudas, miedos y emociones que suben y bajan como una marea. En Croko, sabemos que ser mamá es abrazar todas esas emociones, y queremos hablar contigo sobre la salud mental en el embarazo, la depresión posparto, y por qué tus sentimientos son tan importantes en esta etapa. Desde nuestra experiencia celebrando la maternidad, y con el apoyo de Tranquilamente —plataforma de psicología en línea cofundada por Carolina, fundadora de Croko—, nuestra misión es acompañarte para que este camino sea más ligero y lleno de amor.</p>
         
         <h2>Las Emociones en el Embarazo: Una montaña Rusa Hormonal</h2>
         <p>Cuando estás embarazada, tu cuerpo y tu corazón están en constante transformación. Las hormonas, como el estrógeno y la progesterona, bailan sin parar, trayendo días en los que todo brilla y otros en los que una lágrima aparece sin avisar. ¿Te has sentido súper feliz por la mañana y ansiosa por la noche? Eso es normal. Estos cambios de ánimo hormonales son parte del proceso, pero también son una señal de que tu cuerpo está trabajando con fuerza para crear vida.</p>
@@ -129,31 +69,33 @@ module.exports = {
         <p>La depresión posparto no define tu amor como mamá. Es un momento difícil que, con el cuidado adecuado, puede transformarse en un nuevo comienzo. Hablar con alguien de confianza, buscar ayuda profesional, o simplemente decir "no estoy bien" es un acto de valentía que te acerca a la luz.</p>
         
         <h2>La Importancia de Cuidar tus Emociones</h2>
-        <p>Tus emociones durante el embarazo no solo te afectan a ti; también tocan a tu bebé. Estudios muestran que un estado mental equilibrado puede favorecer el desarrollo emocional de tu pequeño, mientras que el estrés prolongado puede hacer el camino más pesado. Pero no te preocupes: no se trata de ser perfecta, sino de darte permiso para sentir, pedir ayuda y celebrar los pequeños momentos.</p>
+        <p>Tus emociones durante el embarazo no solo te afectan a ti; también tocan a tu bebé. Según la Organización Mundial de la Salud, alrededor del 10% de las embarazadas y el 13% de las mujeres que acaban de dar a luz experimentan algún trastorno mental, principalmente depresión; por eso cuidar tu estado emocional es parte del cuidado prenatal, no un lujo. Pero no te preocupes: no se trata de ser perfecta, sino de darte permiso para sentir, pedir ayuda y celebrar los pequeños momentos.</p>
         
-        <p>Actividades como pintar la barriguita, soñar con el futuro, o compartir risas en un baby shower pueden ser pequeños oasis de alegría. Estos instantes te recuerdan que eres fuerte, que estás creando vida, y que no estás sola.</p>
+        <p>Actividades como <a href="/blog/pinta-barriguitas-colombia">pintar la barriguita</a>, soñar con el futuro, o compartir risas en un baby shower pueden ser pequeños oasis de alegría. Estos instantes te recuerdan que eres fuerte, que estás creando vida, y que no estás sola.</p>
         
         <h2>Croko y Tranquilamente: Un Abrazo para tu Corazón</h2>
         <p>En Croko, creemos que cada mamá merece celebrar su viaje con amor y creatividad. Por eso, nos apasiona crear momentos que te conecten con tu bebé, llenando tu corazón de colores. Pero sabemos que a veces necesitas más que un momento; necesitas un espacio para sanar, entenderte y crecer.</p>
         
-        <p>Aquí es donde entra Tranquilamente, nuestra otra pasión. En Tranquilamente.co, ofrecemos un espacio seguro para que las mamás hablen, sientan y encuentren herramientas para navegar el embarazo y el posparto. Ya sea que estés lidiando con cambios de ánimo, ansiedad, o simplemente quieras prepararte para ser mamá, estamos aquí para escucharte y acompañarte.</p>
+        <p>Aquí es donde entra Tranquilamente, la plataforma de psicología en línea que Carolina cofundó junto a profesionales de la salud mental (y que por transparencia te contamos: es un proyecto hermano de Croko). En Tranquilamente.co, ofrecemos un espacio seguro para que las mamás hablen, sientan y encuentren herramientas para navegar el embarazo y el posparto. Ya sea que estés lidiando con cambios de ánimo, ansiedad, o simplemente quieras prepararte para ser mamá, estamos aquí para escucharte y acompañarte.</p>
         
         <h2>Un Mensaje para Ti, Mamá</h2>
         <p>Si hoy sientes que las emociones te abruman, recuerda: no estás sola. Cada lágrima, cada sonrisa, es parte de tu historia como mamá. Busca a una amiga, escribe lo que sientes, o da el paso de hablar con un profesional. Tu salud mental es tan importante como la de tu bebé, y cuidarte es el mayor regalo que puedes darte.</p>
         
         <p>En Croko, seguiremos celebrando cada latido de tu viaje. Y en Tranquilamente, estaremos esperándote con los brazos abiertos para que encuentres la paz que mereces. Visita www.Tranquilamente.co si sientes que necesitas un espacio para ti, y déjanos ser parte de tu arcoíris.</p>
         
+        <p><em>Esta información es de carácter general y no reemplaza la consulta con un profesional de la salud. Si sientes tristeza profunda o ansiedad persistente durante el embarazo o el posparto, consulta a tu médico o a un psicólogo licenciado.</em></p>
+
         <p><em>#SaludMentalMaternal #EmbarazoColombia #CrokoMaquillaje #Tranquilamente</em></p>
       `
     },
     {
       id: 'actividades-baby-shower-emotivas-inolvidables',
-      title: '5 Ideas para Actividades en Baby Shower que Todos Recordarán para Siempre',
+      title: 'Baby Shower en Colombia: Actividades Emotivas y Regalos que Enamoran',
       slug: 'actividades-baby-shower-emotivas-inolvidables',
       image: 'https://ik.imagekit.io/ge17f66b4ma/regalar%20a%20una%20embarazada_ZjRm7PCTc.png',
-      description: 'Descubre 5 actividades emotivas para baby shower que van más allá del entretenimiento y crean momentos inolvidables para toda la familia.',
+      description: 'Guía completa de baby showers en Colombia: 5 actividades emotivas, juegos clásicos y regalos que enamoran, desde la experiencia de Carolina de Croko.',
       date: '2025-11-14',
-      dateModified: '2025-11-14',
+      dateModified: '2026-07-23',
       author: 'Carolina Rincón',
       content: `
         <p>Cuando pensamos en actividades para baby shower, es fácil quedarse en lo superficial: juegos que entretienen por un momento y se olvidan al día siguiente. Pero ¿qué tal si pudiéramos crear experiencias que realmente toquen el corazón y generen conexiones profundas entre la familia?</p>
@@ -162,7 +104,7 @@ module.exports = {
 
         <p>Te voy a compartir 5 actividades que van mucho más allá del entretenimiento. Son experiencias que transforman un evento social en un momento sagrado de preparación familiar para recibir nueva vida. Actividades donde cada participante se va sintiendo que fue parte de algo realmente especial.</p>
 
-        <h2>✨ Las 5 Actividades Más Emotivas</h2>
+        <h2>Las 5 Actividades Más Emotivas</h2>
         <ul>
           <li>5 actividades probadas que emocionan genuinamente</li>
           <li>Para diferentes presupuestos</li>
@@ -171,7 +113,7 @@ module.exports = {
           <li>Con materiales específicos que realmente funcionan</li>
         </ul>
 
-        <h2>🏆 Actividad #1: Taller de Belly Painting Familiar - La Más Emotiva</h2>
+        <h2>Actividad #1: Taller de Belly Painting Familiar - La Más Emotiva</h2>
         <h3>La Actividad Que Garantiza Lágrimas de Felicidad</h3>
 
         <p>Esta es la actividad que más impacto emocional genera. A través de los videos y testimonios que recibo, he visto reacciones increíbles cuando las familias participan juntas en pintar la barriguita de la futura mamá.</p>
@@ -190,7 +132,7 @@ module.exports = {
 
         <p><strong>Materiales necesarios:</strong></p>
         <ul>
-          <li>Kit completo de belly painting con pinturas seguras para embarazadas</li>
+          <li><a href="/">Kit completo de belly painting</a> con pinturas seguras para embarazadas</li>
           <li>2 plantillas diferentes para dar opciones (incluidas en mi kit)</li>
           <li>5 pinceles de varios tamaños</li>
           <li>Toallitas húmedas para preparar la piel y limpiar pinceles durante el proceso</li>
@@ -209,7 +151,7 @@ module.exports = {
 
         <p><em>Testimonio real: "Carolina, no puedo creer lo mágico que fue usar tu kit en mi baby shower. Cuando mi mamá, mi suegra y mi hermana empezaron a pintar con esa intención que nos enseñaste, y yo les decía que cada pincelada era una bendición para el bebé... todas terminamos llorando de emoción. Mi hija de 6 años dijo que el bebé se movía porque estaba feliz. Las fotos quedaron hermosas, pero el momento fue inolvidable." - Ana María, clienta de Medellín</em></p>
 
-        <h2>💌 Actividad #2: Estación de Cartas al Bebé</h2>
+        <h2>Actividad #2: Estación de Cartas al Bebé</h2>
         <h3>Creando un Tesoro Emocional para el Futuro</h3>
 
         <p>Esta actividad la he visto implementar en varios baby showers donde se ha usado mi kit, y siempre funciona como complemento perfecto.</p>
@@ -239,7 +181,7 @@ module.exports = {
           <li>Recuerdos especiales con los papás</li>
         </ul>
 
-        <h2>📸 Actividad #3: Sesión de Fotos Generacionales</h2>
+        <h2>Actividad #3: Sesión de Fotos Generacionales</h2>
         <h3>Capturando la Historia Familiar</h3>
 
         <p>He visto fotos increíbles que me envían después de usar esta idea en combinación con el belly painting.</p>
@@ -257,7 +199,7 @@ module.exports = {
           <li>Círculo familiar alrededor de la futura mamá</li>
         </ul>
 
-        <h2>🎨 Actividad #4: Libro de Predicciones Ilustrado</h2>
+        <h2>Actividad #4: Libro de Predicciones Ilustrado</h2>
         <h3>Adivinando Cómo Será el Nuevo Integrante</h3>
 
         <p>Una versión más creativa de las predicciones tradicionales, donde cada invitada decora su página.</p>
@@ -280,7 +222,7 @@ module.exports = {
           <li>Plantilla con preguntas</li>
         </ul>
 
-        <h2>👶 Actividad #5: Taller "Futuros Hermanos Mayores"</h2>
+        <h2>Actividad #5: Taller "Futuros Hermanos Mayores"</h2>
         <h3>Preparando Emocionalmente a los Niños</h3>
 
         <p>Para familias que tienen hermanos mayores, esta actividad es fundamental. Los niños a menudo experimentan una mezcla de emociones cuando saben que llega un hermanito: emoción, pero también ansiedad, celos o confusión sobre cómo va a cambiar su vida familiar.</p>
@@ -306,7 +248,7 @@ module.exports = {
           <li>Muñeco realista para práctica</li>
         </ul>
 
-        <h2>💰 Adaptando las Actividades a Tu Presupuesto</h2>
+        <h2>Adaptando las Actividades a Tu Presupuesto</h2>
 
         <p><strong>Presupuesto Básico:</strong></p>
         <ul>
@@ -334,7 +276,7 @@ module.exports = {
         </ul>
         <p><em>Resultado: Experiencia completamente premium e inolvidable</em></p>
 
-        <h2>❌ 3 Errores Comunes que Debes Evitar</h2>
+        <h2>3 Errores Comunes que Debes Evitar</h2>
 
         <p><strong>Error #1: Demasiadas Actividades</strong></p>
         <ul>
@@ -354,7 +296,7 @@ module.exports = {
           <li>Solución: Designar un fotógrafo oficial</li>
         </ul>
 
-        <h2>💝 Lo que He Aprendido de Mis Clientas</h2>
+        <h2>Lo que He Aprendido de Mis Clientas</h2>
 
         <p>A través de los testimonios y fotos que recibo, he observado algunos patrones hermosos:</p>
 
@@ -367,7 +309,37 @@ module.exports = {
         <p><strong>Impacto a Largo Plazo:</strong></p>
         <p>Meses después del baby shower, las familias me escriben contándome que las fotos del belly painting son las que más miran, las que tienen enmarcadas, las que les recuerdan ese momento tan especial de espera y conexión familiar.</p>
 
-        <h2>🎁 Todo lo que Necesitas</h2>
+        <h2>Los Juegos Clásicos que Nunca Fallan en Colombia</h2>
+
+        <p>Además de las 5 actividades emotivas, en los baby showers colombianos hay juegos tradicionales que siempre funcionan y complementan perfecto la parte emotiva:</p>
+
+        <p><strong>Adivinar el tamaño de la barriga:</strong> Todos toman un trozo de lana o cinta y tratan de adivinar cuánto mide la pancita de la futura mamá. Gana quien se acerque más.</p>
+
+        <p><strong>Alimentar al bebé con los ojos vendados:</strong> Los invitados, con una venda en los ojos, intentan alimentar con compota a otro participante. Risas garantizadas.</p>
+
+        <p><strong>Bingo de regalos:</strong> Mientras la mamá abre sus regalos, los invitados marcan en cartones los obsequios que aparecen. El primero en completar una fila grita "¡Bingo!".</p>
+
+        <p><strong>Prohibido decir "bebé":</strong> Cada invitado lleva una pinza en la ropa. Si alguien dice "bebé", otro le quita la pinza. Al final, quien tenga más pinzas gana.</p>
+
+        <h2>Regalos que Tocan el Alma</h2>
+
+        <p>Los regalos en un baby shower colombiano tienen sus clásicos que nunca faltan:</p>
+
+        <p><strong>Maquillaje para pintar la barriguita:</strong> Pinturas corporales seguras para que la mamá celebre el embarazo con arte, mes a mes. Es el regalo que se convierte en actividad durante la misma fiesta: el <a href="/">Kit Croko</a> trae pinturas hipoalergénicas, plantillas y videotutoriales.</p>
+
+        <p><strong>Pañales:</strong> El regalo estrella. De todas las tallas, porque nunca sobran.</p>
+
+        <p><strong>Ropita para el bebé:</strong> Bodies, pijamas, gorritos y medias con diseños adorables.</p>
+
+        <p><strong>Teteros y chupos:</strong> Prácticos y de buena calidad, siempre se agradecen.</p>
+
+        <p><strong>Juguetes suaves:</strong> Peluches, sonajeros o mantitas con texturas para estimular al bebé.</p>
+
+        <p><strong>Productos de cuidado:</strong> Cremas, shampoos suaves y toallitas húmedas que facilitan la rutina.</p>
+
+        <p>Si quieres profundizar en este tema, escribí una guía completa sobre <a href="/blog/que-regalar-embarazada-ideas-significativas">qué regalarle a una embarazada</a> con las ideas que he visto funcionar en cientos de familias.</p>
+
+        <h2>Todo lo que Necesitas</h2>
 
         <p><strong>Para Empezar:</strong></p>
         <ul>
@@ -381,7 +353,7 @@ module.exports = {
           <li>Instagram: @croko_maquillaje_embarazada</li>
         </ul>
 
-        <p>La diferencia entre un baby shower común y uno que marca vidas está en crear momentos de conexión real. El belly painting familiar, especialmente cuando se hace con intención y amor, se convierte en una experiencia que las familias recordarán para siempre.</p>
+        <p>La diferencia entre un baby shower común y uno que marca vidas está en crear momentos de conexión real. El belly painting familiar, especialmente cuando se hace con intención y amor, se convierte en una experiencia que las familias recordarán para siempre. Si quieres saber todo sobre esta tradición —cuándo hacerla, qué pinturas son seguras y cuánto cuesta— lee mi <a href="/blog/pinta-barriguitas-colombia">guía completa de pinta barriguitas en Colombia</a>.</p>
 
         <p><strong>¿Lista para crear recuerdos que duren toda la vida?</strong></p>
       `
@@ -391,9 +363,9 @@ module.exports = {
       title: 'Qué Regalarle a una Embarazada: 5 Ideas Que Realmente Tocan el Corazón',
       slug: 'que-regalar-embarazada-ideas-significativas',
       image: 'https://ik.imagekit.io/ge17f66b4ma/download__8___1___2__B1r-Fxbpk.jpeg?updatedAt=1642474362194',
-      description: 'Descubre los mejores regalos para embarazadas que realmente crean recuerdos duraderos. Ideas probadas desde la experiencia de una artista de belly painting.',
+      description: 'Los mejores regalos para embarazadas y baby showers: ideas que crean recuerdos duraderos, desde la experiencia de una artista de belly painting.',
       date: '2025-12-05',
-      dateModified: '2025-12-05',
+      dateModified: '2026-07-23',
       author: 'Carolina Rincón',
       content: `
         <p>Como artista especializada en belly painting, he tenido la oportunidad de acompañar a cientos de familias colombianas en uno de los momentos más especiales de sus vidas. Y créeme, he visto de todo: regalos que terminan olvidados en un cajón y otros que crean recuerdos que duran para siempre.</p>
@@ -422,7 +394,7 @@ module.exports = {
 
         <h3>Opciones para diferentes presupuestos</h3>
 
-        <p><strong>Kit para hacer en casa:</strong> Si quieres dar la experiencia pero el presupuesto es limitado, un kit con materiales seguros, plantillas y tutoriales funciona perfecto. He visto resultados hermosos hechos por familias en sus casas.</p>
+        <p><strong>Kit para hacer en casa:</strong> Si quieres dar la experiencia pero el presupuesto es limitado, el <a href="/">Kit Croko</a> con materiales seguros, plantillas y tutoriales funciona perfecto. He visto resultados hermosos hechos por familias en sus casas.</p>
 
         <p><strong>Sesión profesional:</strong> Cuando el presupuesto lo permite, una sesión profesional en casa es espectacular. Yo me encargo de todo: llevo los materiales, creo el diseño, tomo las fotos. La familia solo se dedica a disfrutar.</p>
 
@@ -585,6 +557,20 @@ module.exports = {
 
         <p>Con esa información, puedo recomendar exactamente qué va a funcionar mejor para esa familia específica.</p>
 
+        <h2>¿Vas Como Invitada a un Baby Shower?</h2>
+
+        <p>Si no eres de la familia cercana sino una invitada buscando acertar, la lógica es la misma pero con matices. Estos son los tres tipos de regalo que he visto funcionar siempre:</p>
+
+        <p><strong>Regalos que se convierten en actividad:</strong> En lugar de algo que se abre y se guarda, regala algo que genere un momento durante la fiesta: un kit de belly painting familiar, materiales para decorar marcos de fotos o un set para crear cápsulas del tiempo.</p>
+
+        <p><strong>Regalos para la mamá, no para el bebé:</strong> Productos de cuidado personal durante el embarazo, experiencias de relajación, o elementos para documentar esta etapa. La hacen sentir vista como persona, no solo como "la que va a tener un bebé".</p>
+
+        <p><strong>Regalos que crean tradiciones:</strong> Objetos que pueden heredarse, actividades que la familia puede repetir, formas de incluir a la familia extendida.</p>
+
+        <p>Y según el tipo de evento: para baby showers íntimos funciona un kit de belly painting en el que todos participen; para fiestas grandes, regalos que generen conversación o un aporte a un regalo grupal; para segundos bebés (que ya tienen todo lo básico), actividades que incluyan a los hermanos mayores; y cuando no conoces bien a la familia, certificados para que ellos elijan la experiencia.</p>
+
+        <p>Si estás organizando la fiesta completa, también te puede servir mi guía de <a href="/blog/actividades-baby-shower-emotivas-inolvidables">actividades y regalos para baby shower en Colombia</a>.</p>
+
         <h2>Conclusión</h2>
 
         <p>Después de años trabajando con futuras mamás, he aprendido que los mejores regalos no son necesariamente los más caros, sino los que crean momentos especiales y recuerdos duraderos.</p>
@@ -594,172 +580,6 @@ module.exports = {
         <p><strong>¿Quieres saber más sobre alguna de estas opciones? Escríbeme y te ayudo a elegir el regalo perfecto para esa futura mamá especial.</strong></p>
 
         <p><strong>Contacto:</strong></p>
-        <ul>
-          <li>WhatsApp: +57 316 816 1717</li>
-          <li>Instagram: @croko_maquillaje_embarazada</li>
-        </ul>
-      `
-    },
-    {
-      id: 'que-regalar-baby-shower-guia-definitiva',
-      title: 'Qué Regalar en un Baby Shower: La Guía Definitiva para No Fallar',
-      slug: 'que-regalar-baby-shower-guia-definitiva',
-      image: 'https://ik.imagekit.io/ge17f66b4ma/embarazo_WEJtKEmY6.jpg?updatedAt=1759435396906',
-      description: 'Descubre cómo elegir el regalo perfecto para un baby shower que realmente marque la diferencia y cree momentos especiales.',
-      date: '2026-01-18',
-      dateModified: '2026-01-18',
-      author: 'Carolina Rincón',
-      content: `
-        <p>Llegar a un baby shower con el regalo perfecto no debería ser un dolor de cabeza. Sin embargo, muchas veces nos encontramos dando vueltas en centros comerciales sin saber qué elegir, o peor aún, llegando con el mismo regalo que otras tres personas.</p>
-
-        <p>La clave está en entender qué tipo de regalo realmente marca la diferencia. No se trata solo de ser útil o bonito, sino de crear un momento especial durante la celebración misma.</p>
-
-        <h2>El Error Más Común al Elegir Regalos</h2>
-
-        <p>La mayoría de personas piensa en regalos para después del nacimiento: ropa, pañales, juguetes, artículos de bebé. Estos regalos son prácticos, pero tienen un problema: no aportan nada especial al momento del baby shower.</p>
-
-        <p>Mientras que muchos regalos están pensados para después del nacimiento, los que realmente marcan la diferencia son los que transforman el baby shower en una experiencia especial. En lugar de solo abrir y guardar, estos regalos se convierten en actividades que toda la reunión disfruta.</p>
-
-        <h2>Los 3 Tipos de Regalos que Realmente Funcionan</h2>
-
-        <h3>Tipo 1: Regalos que Se Convierten en Actividad</h3>
-
-        <p>En lugar de regalar algo que simplemente se abre y se guarda, busca regalos que generen una actividad durante el baby shower.</p>
-
-        <p><strong>Ejemplos que funcionan:</strong></p>
-        <ul>
-          <li>Kit de belly painting familiar</li>
-          <li>Materiales para decorar marcos de fotos</li>
-          <li>Elementos para sesión de fotos temática</li>
-          <li>Set para crear cápsulas del tiempo</li>
-        </ul>
-
-        <p><strong>Por qué funcionan:</strong> Transforman el momento de abrir el regalo en una experiencia grupal donde todos participan.</p>
-
-        <h3>Tipo 2: Regalos para la Mamá (No para el Bebé)</h3>
-
-        <p>Muchas veces nos enfocamos tanto en el bebé que olvidamos a la persona que está viviendo el embarazo.</p>
-
-        <p><strong>Ejemplos que funcionan:</strong></p>
-        <ul>
-          <li>Productos para cuidado personal durante embarazo</li>
-          <li>Experiencias de relajación</li>
-          <li>Elementos para documentar el embarazo</li>
-          <li>Regalos que celebren su cuerpo cambiante</li>
-        </ul>
-
-        <p><strong>Por qué funcionan:</strong> La hacen sentir vista y valorada como persona, no solo como "la que va a tener un bebé".</p>
-
-        <h3>Tipo 3: Regalos que Crean Tradiciones</h3>
-
-        <p>Los regalos más memorables son los que pueden convertirse en tradiciones familiares.</p>
-
-        <p><strong>Ejemplos que funcionan:</strong></p>
-        <ul>
-          <li>Elementos para rituales de bendición familiar</li>
-          <li>Actividades que la familia puede repetir</li>
-          <li>Formas de incluir a la familia extendida</li>
-          <li>Objetos que pueden heredarse entre generaciones</li>
-        </ul>
-
-        <p><strong>Por qué funcionan:</strong> Trascienden el momento y se vuelven parte de la historia familiar.</p>
-
-        <h2>Guía de Regalos por Situación</h2>
-
-        <h3>Para Baby Showers Íntimos</h3>
-
-        <p><strong>El ambiente:</strong> Familiar, relajado, todos se conocen bien</p>
-
-        <p><strong>Opciones específicas:</strong></p>
-        <ul>
-          <li>Kit de belly painting para que todos participen</li>
-          <li>Libro de memorias para que cada persona escriba algo</li>
-          <li>Experiencia profesional como regalo grupal</li>
-          <li>Elementos para sesión de fotos generacional</li>
-        </ul>
-
-        <h3>Para Baby Showers Grandes</h3>
-
-        <p><strong>El ambiente:</strong> Festivo, dinámico, mezcla de personas</p>
-
-        <p><strong>Opciones específicas:</strong></p>
-        <ul>
-          <li>Materiales para múltiples actividades simultáneas</li>
-          <li>Elementos para que las invitadas creen recuerdos individuales</li>
-          <li>Regalos que generen conversación</li>
-          <li>Certificados para experiencias posteriores</li>
-        </ul>
-
-        <h3>Para Segundos Bebés o Más</h3>
-
-        <p><strong>El desafío:</strong> Ya tienen todo lo básico</p>
-
-        <p><strong>Opciones específicas:</strong></p>
-        <ul>
-          <li>Actividades que incluyan a los hermanos mayores</li>
-          <li>Elementos para comparar embarazos</li>
-          <li>Regalos personalizados con el nombre del bebé</li>
-          <li>Experiencias familiares adaptadas al tamaño actual de la familia</li>
-        </ul>
-
-        <h3>Cuando No Conoces Bien a la Familia</h3>
-
-        <p><strong>El desafío:</strong> No sabes sus gustos específicos</p>
-
-        <p><strong>Opciones específicas:</strong></p>
-        <ul>
-          <li>Certificados para que ellos elijan la experiencia</li>
-          <li>Elementos neutrales que funcionen para cualquier estilo</li>
-          <li>Regalos con múltiples opciones de uso</li>
-        </ul>
-
-        <h2>Errores que Debes Evitar</h2>
-
-        <h3>Error 1: Regalar Solo Pensando en el Bebé</h3>
-
-        <p>El baby shower celebra el embarazo, no al bebé que ya nació. Enfócate en esta etapa específica.</p>
-
-        <h3>Error 2: Comprar lo Mismo que Todos</h3>
-
-        <p>Ropa de bebé y artículos básicos son seguros pero poco memorables. Busca algo diferente.</p>
-
-        <h3>Error 3: No Considerar el Formato del Evento</h3>
-
-        <p>Un regalo perfecto para una celebración íntima puede ser inadecuado en una fiesta grande.</p>
-
-        <h3>Error 4: Olvidar a los Hermanos Mayores</h3>
-
-        <p>Si hay niños en la familia, es crucial incluir algo especial para ellos.</p>
-
-        <h2>Cuándo Regalar Experiencias vs. Objetos</h2>
-
-        <h3>Regala Experiencias Cuando:</h3>
-
-        <ul>
-          <li>La familia disfruta de actividades grupales</li>
-          <li>Es un baby shower donde habrá tiempo para actividades</li>
-          <li>Quieres crear un momento especial durante la celebración</li>
-          <li>Buscas algo completamente único</li>
-        </ul>
-
-        <h3>Regala Objetos Cuando:</h3>
-
-        <ul>
-          <li>Es un evento muy formal o estructurado</li>
-          <li>El tiempo es limitado</li>
-          <li>La embarazada prefiere cosas más tradicionales</li>
-          <li>Es una contribución a un regalo grupal más grande</li>
-        </ul>
-
-        <h2>La Diferencia Entre Regalar y Crear Momentos</h2>
-
-        <p>Al final, el mejor regalo para un baby shower no es el más caro ni el más práctico. Es el que logra crear un momento especial que la familia recordará cuando mire hacia atrás a su embarazo.</p>
-
-        <p>Cuando eliges regalar una experiencia en lugar de un objeto, estás reconociendo que este tiempo es único e irrepetible. Estás celebrando no solo la llegada del bebé, sino el proceso completo de convertirse en familia.</p>
-
-        <p>La próxima vez que te inviten a un baby shower, pregúntate: <strong>¿qué puedo regalar que haga de este día algo realmente especial?</strong></p>
-
-        <p><strong>Para más ideas específicas:</strong></p>
         <ul>
           <li>WhatsApp: +57 316 816 1717</li>
           <li>Instagram: @croko_maquillaje_embarazada</li>
@@ -939,7 +759,7 @@ module.exports = {
       image: '/assets/images/blog/pinta-barriguitas-colombia.jpg',
       description: 'Soy Carolina de Croko, llevo 11 años pintando barriguitas en Colombia. No repito diseños: cada barriga cuenta la historia única de su familia, con colibríes, arcoíris y símbolos propios. Te cuento cuándo hacerlo, pinturas seguras, precios y cómo vivir la experiencia en casa con el Kit Croko.',
       date: '2026-04-20',
-      dateModified: '2026-04-20',
+      dateModified: '2026-07-23',
       author: 'Carolina (Croko)',
       content: `
         <p><em>Por Carolina, de Croko. Última actualización: abril de 2026.</em></p>
@@ -951,7 +771,7 @@ module.exports = {
         <p>Soy <strong>Carolina</strong>, fundadora de Croko. Llevo <strong>once años</strong> pintando barriguitas de embarazadas en Colombia. Empecé en 2014, como estudiante de microbiología en la Universidad de Antioquia, y hoy tengo más de 800 sesiones presenciales a mis espaldas y más de 1.000 familias acompañadas a través del Kit Croko en todo el país. Esta es la guía que yo quisiera haber encontrado cuando alguien me pregunta <em>"¿cómo es eso de pintarse la barriguita?"</em>.</p>
 
         <h2>¿Qué es pintar la barriguita?</h2>
-        <p><strong>Pinta barriguitas</strong> —también llamado <strong>belly painting</strong> o <strong>maquillaje prenatal</strong>— es convertir el vientre de una mujer embarazada en una obra de arte, usando pinturas cosméticas seguras. Eso dice el diccionario. Yo te lo diría distinto:</p>
+        <p><strong>Pinta barriguitas</strong> —también llamado <strong>belly painting</strong> o <strong><a href="/maquillaje-para-embarazadas">maquillaje prenatal</a></strong>— es convertir el vientre de una mujer embarazada en una obra de arte, usando pinturas cosméticas seguras. Eso dice el diccionario. Yo te lo diría distinto:</p>
 
         <p>Es el día en que tu familia conoce al bebé por primera vez.</p>
 
@@ -969,7 +789,7 @@ module.exports = {
         <p>Si me preguntas por mi recomendación más linda, es esta: <strong>hazlo mínimo dos veces</strong>. Y esa recomendación tiene un sustento práctico —no es romántica—. En cada embarazo hay distintos grupos de personas que quieren acompañar a la mamá: sus amigas más cercanas, su familia materna, la familia paterna del bebé, y el núcleo más íntimo que son papá y mamá solos. Son cuatro celebraciones distintas, y cada una merece su propio momento. Por eso mismo el <strong>Kit Croko trae cuatro plantillas</strong>, pensadas exactamente para que la experiencia se pueda repetir con cada círculo. No es marketing: es la forma en que, después de años viendo cómo se organizan los baby showers en Colombia, entendí que una sola sesión se queda corta.</p>
 
         <h2>Cómo es una sesión presencial conmigo</h2>
-        <p>Antes de contarte cómo es la sesión, aclaro lo importante: <strong>las sesiones presenciales las hago en Medellín y el Valle de Aburrá</strong>. Si estás en otra ciudad, hay dos caminos: adquirir el Kit Croko para vivir la experiencia en casa (hablo del kit más abajo), o pedir que yo viaje, lo cual implica cubrir viáticos además del valor de la sesión. He pintado así en Pereira, Cali y Bogotá.</p>
+        <p>Antes de contarte cómo es la sesión, aclaro lo importante: <strong><a href="/belly-painting-medellin">las sesiones presenciales las hago en Medellín y el Valle de Aburrá</a></strong>. Si estás en otra ciudad, hay dos caminos: adquirir el Kit Croko para vivir la experiencia en casa (hablo del kit más abajo), o pedir que yo viaje, lo cual implica cubrir viáticos además del valor de la sesión. He pintado así en Pereira, Cali y Bogotá.</p>
 
         <p>Ya con eso claro, te cuento cómo se siente una sesión conmigo.</p>
 
@@ -1108,7 +928,7 @@ module.exports = {
         <ul>
           <li>Instagram: <a href="https://www.instagram.com/croko_maquillaje_embarazada/" target="_blank" rel="noopener noreferrer">@croko_maquillaje_embarazada</a></li>
           <li>TikTok: <a href="https://www.tiktok.com/@crokolina" target="_blank" rel="noopener noreferrer">@crokolina</a></li>
-          <li>Sitios web: <a href="https://www.croko.co">croko.co</a> · <a href="https://www.maquillajeembarazadas.com">maquillajeembarazadas.com</a></li>
+          <li>Sitio web: <a href="https://www.croko.co">croko.co</a></li>
         </ul>
       `
     }

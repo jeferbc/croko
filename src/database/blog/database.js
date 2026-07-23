@@ -1,10 +1,11 @@
 const { BlogData } = require('./blog_database');
 
-// Posts to hide from carousel (for Meta appeal - health-related content)
-const hiddenSlugs = ['salud-mental-embarazo-croko-tranquilamente', 'maquillaje-para-embarazadas'];
+// Hidden from the homepage carousel only (Meta ads appeal - health-related content).
+// They must stay listed on /blog so they keep internal links and remain indexable.
+const carouselHiddenSlugs = ['salud-mental-embarazo-croko-tranquilamente', 'maquillaje-para-embarazadas'];
 
 // Transform the blog data for the grid component
-export const BlogsData = BlogData.filter(blog => !hiddenSlugs.includes(blog.slug)).map(blog => {
+const toCard = (blog) => {
   // Special handling for landing pages that are not under /blog/
   const readUrl = blog.slug === 'maquillaje-para-embarazadas'
     ? `/maquillaje-para-embarazadas`
@@ -21,4 +22,10 @@ export const BlogsData = BlogData.filter(blog => !hiddenSlugs.includes(blog.slug
     readUrl: readUrl,
     author: blog.author
   };
-});
+};
+
+// Full list for the /blog index page
+export const BlogIndexData = BlogData.map(toCard);
+
+// Filtered list for the homepage carousel
+export const BlogsData = BlogData.filter(blog => !carouselHiddenSlugs.includes(blog.slug)).map(toCard);

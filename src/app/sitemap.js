@@ -17,6 +17,10 @@ export default function sitemap() {
       lastModified: new Date('2026-04-20'),
     },
     {
+      url: `${baseUrl}/carolina-rincon`,
+      lastModified: new Date('2026-07-23'),
+    },
+    {
       url: `${baseUrl}/politica-devoluciones`,
       lastModified: new Date('2026-04-01'),
     },
@@ -43,7 +47,7 @@ export default function sitemap() {
     .filter((post) => post.slug !== 'maquillaje-para-embarazadas')
     .map((post) => ({
       url: `${baseUrl}/blog/${post.slug}`,
-      lastModified: bumpToSsrFix(post.date ? new Date(post.date) : SSR_FIX_DATE),
+      lastModified: bumpToSsrFix(new Date(post.dateModified || post.date || SSR_FIX_DATE)),
     }))
 
   const blogIndex = {

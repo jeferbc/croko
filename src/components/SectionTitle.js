@@ -13,7 +13,7 @@ import Image from 'next/image';
  * @param {Object} props.style - Additional inline styles (optional)
  * @param {boolean} props.showImage - Show decorative image (default: true)
  */
-const SectionTitle = ({ title, className = '', style = {}, showImage = true }) => {
+const SectionTitle = ({ title, className = '', style = {}, showImage = true, as: Tag = 'h2' }) => {
     const defaultStyle = { marginBottom: '30px', ...style };
 
     return (
@@ -39,7 +39,7 @@ const SectionTitle = ({ title, className = '', style = {}, showImage = true }) =
                 </>
             )}
             <div className="main-title">
-                <h2 className="gradient-text">{title}</h2>
+                <Tag className="gradient-text">{title}</Tag>
             </div>
         </div>
     );

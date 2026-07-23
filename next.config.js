@@ -58,6 +58,17 @@ module.exports = (phase) => {
           destination: '/',
           permanent: true,
         },
+        // Consolidated blog posts (cannibalization fix): weaker post 301s into the stronger one
+        {
+          source: '/blog/que-regalar-baby-shower-guia-definitiva',
+          destination: '/blog/que-regalar-embarazada-ideas-significativas',
+          permanent: true,
+        },
+        {
+          source: '/blog/baby-showers-colombia-actividades-regalos-croko',
+          destination: '/blog/actividades-baby-shower-emotivas-inolvidables',
+          permanent: true,
+        },
         // Domain migration: redirect old domain to new domain
         {
           source: '/:path*',

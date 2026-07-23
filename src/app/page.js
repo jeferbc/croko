@@ -59,6 +59,32 @@ const productSchema = {
         "name": "Croko"
     },
     "sku": "CROKO-KPB-001",
+    "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "5",
+        "bestRating": "5",
+        "reviewCount": "3"
+    },
+    "review": [
+        {
+            "@type": "Review",
+            "author": { "@type": "Person", "name": "María González" },
+            "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
+            "reviewBody": "Fue la experiencia más linda de mi embarazo. Mi esposo y mi hija participaron pintando juntos. Las pinturas son muy seguras y el resultado quedó hermoso. ¡Lo recomiendo 100%!"
+        },
+        {
+            "@type": "Review",
+            "author": { "@type": "Person", "name": "Laura Martínez" },
+            "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
+            "reviewBody": "Me lo regalaron en mi baby shower y fue el mejor regalo que recibí. Todos participamos y nos divertimos muchísimo. Las plantillas son muy fáciles de usar, incluso sin experiencia."
+        },
+        {
+            "@type": "Review",
+            "author": { "@type": "Person", "name": "Carolina Rodríguez" },
+            "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
+            "reviewBody": "Al principio tenía miedo porque pensé que no me iba a quedar bien, pero las instrucciones son súper claras. Quedé enamorada del resultado y tengo fotos hermosas para recordar."
+        }
+    ],
     "offers": {
         "@type": "Offer",
         "price": 190000,
