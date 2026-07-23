@@ -335,7 +335,7 @@ const BellyPaintingCrossSell = () => {
                         }}>
                             ¿Estás en Medellín?{' '}
                             <Link href="/belly-painting-medellin" style={{ color: '#c0882f', fontWeight: 600, textDecoration: 'none' }}>
-                                Reserva tu sesión presencial de belly painting →
+                                Reserva tu sesión presencial de belly painting
                             </Link>
                         </p>
                     </Col>

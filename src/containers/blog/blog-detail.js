@@ -156,7 +156,7 @@ const BlogDetail = ({ post }) => {
                                     con el Kit Croko, el primer kit pinta barriguitas creado en el país.
                                 </p>
                                 <a href="/carolina-rincon" style={{ color: '#c0882f', fontWeight: 600 }}>
-                                    Conoce más sobre Carolina →
+                                    Conoce más sobre Carolina
                                 </a>
                             </aside>
 
