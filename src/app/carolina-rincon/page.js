@@ -64,17 +64,17 @@ export default function CarolinaRinconPage() {
             <Container>
                 <Row>
                     <Col lg="8" className="offset-lg-2">
-                        <article style={{ marginTop: '150px', marginBottom: '60px', fontSize: '16px', lineHeight: '1.7', color: '#333' }}>
+                        <article style={{ marginTop: '150px', marginBottom: '60px', maxWidth: '760px', marginLeft: 'auto', marginRight: 'auto', fontSize: '16px', lineHeight: '1.7', color: '#333' }}>
                             <h1 className="gradient-text" style={{ color: '#c0882f', fontSize: '2.5rem', fontWeight: 'bold', marginBottom: '20px' }}>
                                 Carolina Rincón
                             </h1>
-                            <p className="lead" style={{ fontSize: '1.2rem', color: '#555' }}>
+                            <p className="lead" style={{ fontSize: '1.2rem', color: '#555', lineHeight: '1.6', marginBottom: '10px' }}>
                                 Microbióloga, artista de belly painting y fundadora de Croko.
                                 Pionera del pinta barriguitas en Colombia.
                             </p>
 
-                            <h2 style={{ color: '#c0882f', marginTop: '30px' }}>Quién soy</h2>
-                            <p>
+                            <h2 style={{ color: '#c0882f', fontSize: '1.6rem', fontWeight: 600, marginTop: '35px', marginBottom: '14px' }}>Quién soy</h2>
+                            <p style={{ marginBottom: '14px' }}>
                                 Soy microbióloga industrial y ambiental egresada de la <strong>Universidad de
                                 Antioquia</strong>, y desde <strong>2014</strong> me dedico exclusivamente a pintar
                                 barriguitas de embarazadas en Colombia. Empecé siendo estudiante, y lo que comenzó
@@ -83,21 +83,21 @@ export default function CarolinaRinconPage() {
                                 y he acompañado a más de <strong>1.000 familias</strong> en todo el país a través del
                                 Kit Croko.
                             </p>
-                            <p>
+                            <p style={{ marginBottom: '14px' }}>
                                 Mi formación como microbióloga define cómo trabajo: uso únicamente pinturas
                                 cosméticas de grado profesional, a base de agua, hipoalergénicas y sin interruptores
                                 endocrinos. En más de una década de sesiones nunca hemos tenido un caso de alergia.
                             </p>
 
-                            <h2 style={{ color: '#c0882f', marginTop: '30px' }}>Croko y el primer kit de Colombia</h2>
-                            <p>
+                            <h2 style={{ color: '#c0882f', fontSize: '1.6rem', fontWeight: 600, marginTop: '35px', marginBottom: '14px' }}>Croko y el primer kit de Colombia</h2>
+                            <p style={{ marginBottom: '14px' }}>
                                 Fundé <Link href="/">Croko</Link> para que pintar la barriguita dejara de ser un lujo
                                 de pocas ciudades. En <strong>diciembre de 2021</strong> lancé el{' '}
                                 <Link href="/">Kit Pinta Barriguitas</Link>, el primero creado en Colombia, con las
                                 mismas pinturas profesionales que uso en mis sesiones, plantillas guiadas y
                                 videotutoriales para que cualquier familia viva la experiencia en casa.
                             </p>
-                            <p>
+                            <p style={{ marginBottom: '14px' }}>
                                 Si estás en Medellín, también ofrezco{' '}
                                 <Link href="/belly-painting-medellin">sesiones presenciales a domicilio</Link>. Y si
                                 quieres conocer a fondo este arte, escribí una{' '}
@@ -108,8 +108,8 @@ export default function CarolinaRinconPage() {
                                 cómo se vive una sesión.
                             </p>
 
-                            <h2 style={{ color: '#c0882f', marginTop: '30px' }}>Encuéntrame en</h2>
-                            <ul>
+                            <h2 style={{ color: '#c0882f', fontSize: '1.6rem', fontWeight: 600, marginTop: '35px', marginBottom: '14px' }}>Encuéntrame en</h2>
+                            <ul style={{ paddingLeft: '20px', display: 'grid', gap: '8px' }}>
                                 <li>
                                     Instagram:{' '}
                                     <a href="https://www.instagram.com/croko_maquillaje_embarazada/" target="_blank" rel="noopener noreferrer">
