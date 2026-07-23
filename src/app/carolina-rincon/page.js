@@ -78,7 +78,7 @@ export default function CarolinaRinconPage() {
                                 Soy microbióloga industrial y ambiental egresada de la <strong>Universidad de
                                 Antioquia</strong>, y desde <strong>2014</strong> me dedico exclusivamente a pintar
                                 barriguitas de embarazadas en Colombia. Empecé siendo estudiante, y lo que comenzó
-                                como un oficio se convirtió en mi propósito: he pintado más de{' '}
+                                como un hobby se convirtió en mi propósito: he pintado más de{' '}
                                 <strong>800 barriguitas de forma presencial</strong> en Medellín y el Valle de Aburrá,
                                 y he acompañado a más de <strong>1.000 familias</strong> en todo el país a través del
                                 Kit Croko.
