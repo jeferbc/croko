@@ -1,7 +1,7 @@
 import React from "react";
 import { Container, Row, Col } from "reactstrap";
 import CardWrapper from "@/containers/blog/card/grid-wrapper";
-import { BlogsData } from "@/database/blog/database";
+import { BlogIndexData } from "@/database/blog/database";
 import SectionTitle from "@/components/SectionTitle";
 
 const collectionPageSchema = {
@@ -16,7 +16,7 @@ const collectionPageSchema = {
   "publisher": { "@id": "https://www.croko.co/#organization" },
   "mainEntity": {
     "@type": "ItemList",
-    "itemListElement": BlogsData.map((post, index) => ({
+    "itemListElement": BlogIndexData.map((post, index) => ({
       "@type": "ListItem",
       "position": index + 1,
       "url": `https://www.croko.co${post.readUrl}`,
@@ -35,14 +35,14 @@ const BlogIndex = () => {
       <Container>
         <Row>
           <Col md="8" className="offset-md-2">
-            <SectionTitle title="Blog" showImage={false} />
+            <SectionTitle title="Blog" as="h1" showImage={false} />
           </Col>
         </Row>
       </Container>
       <Container style={{ marginTop: '50px' }}>
         <Row>
-          {BlogsData.length > 0 ? (
-            BlogsData.map((item, index) => (
+          {BlogIndexData.length > 0 ? (
+            BlogIndexData.map((item, index) => (
               <CardWrapper
                 key={`blog-${index}`}
                 className="col-lg-4 col-md-6 col-sm-12 mb-4"
