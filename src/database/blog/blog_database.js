@@ -48,42 +48,77 @@ module.exports = {
     },
     {
       id: 'salud-mental-embarazo-croko-tranquilamente',
-      title: 'Salud Mental en el Embarazo: Un Abrazo para Mamás con Croko y Tranquilamente',
+      title: 'Salud Mental en el Embarazo y el Posparto: Guía para Mamás',
       slug: 'salud-mental-embarazo-croko-tranquilamente',
       image: 'https://ik.imagekit.io/ge17f66b4ma/Salud_mental_embarazo_utI36TAF_d.webp?updatedAt=1757785105686',
-      description: 'Un abrazo emocional para mamás: navegando la salud mental durante el embarazo y posparto con amor y apoyo profesional.',
+      description: 'Guía de salud mental en el embarazo y el posparto: baby blues vs depresión posparto, señales de alarma y cuándo buscar ayuda. Con revisión de psicología clínica.',
       date: '2024-10-25',
-      dateModified: '2026-07-23',
+      dateModified: '2026-07-24',
       author: 'Carolina Rincón',
+      reviewedBy: '[NOMBRE PSICÓLOGA — REEMPLAZAR ANTES DE PUBLICAR]',
       content: `
-        <p>El embarazo es un viaje lleno de colores: momentos de ilusión, sueños que crecen con cada latido, pero también días de dudas, miedos y emociones que suben y bajan como una marea. En Croko, sabemos que ser mamá es abrazar todas esas emociones, y queremos hablar contigo sobre la salud mental en el embarazo, la depresión posparto, y por qué tus sentimientos son tan importantes en esta etapa. Desde nuestra experiencia celebrando la maternidad, y con el apoyo de Tranquilamente —plataforma de psicología en línea cofundada por Carolina, fundadora de Croko—, nuestra misión es acompañarte para que este camino sea más ligero y lleno de amor.</p>
-        
-        <h2>Las Emociones en el Embarazo: Una montaña Rusa Hormonal</h2>
-        <p>Cuando estás embarazada, tu cuerpo y tu corazón están en constante transformación. Las hormonas, como el estrógeno y la progesterona, bailan sin parar, trayendo días en los que todo brilla y otros en los que una lágrima aparece sin avisar. ¿Te has sentido súper feliz por la mañana y ansiosa por la noche? Eso es normal. Estos cambios de ánimo hormonales son parte del proceso, pero también son una señal de que tu cuerpo está trabajando con fuerza para crear vida.</p>
-        
-        <p>No obstante, tus emociones no son solo "cosas de hormonas". Son la voz de tu corazón, contándote lo que necesitas: un abrazo, una conversación, o un momento para ti. Escucharlas es clave, porque cuidar tu salud mental durante el embarazo fortalece tu vínculo con tu bebé y te prepara para lo que viene.</p>
-        
-        <h2>La Depresión Posparto: Cuando la Tormenta Llega</h2>
-        <p>Después del parto, muchas mamás esperan sentir solo alegría, pero a veces llega una nube inesperada: la depresión posparto. Puede manifestarse como tristeza profunda, sensación de no ser suficiente, o incluso dificultad para conectar con tu bebé. En Colombia, como en el mundo, afecta a muchas mujeres, y no es algo de lo que debas avergonzarte. Es una señal de que necesitas apoyo, no de que algo está mal contigo.</p>
-        
-        <p>La depresión posparto no define tu amor como mamá. Es un momento difícil que, con el cuidado adecuado, puede transformarse en un nuevo comienzo. Hablar con alguien de confianza, buscar ayuda profesional, o simplemente decir "no estoy bien" es un acto de valentía que te acerca a la luz.</p>
-        
-        <h2>La Importancia de Cuidar tus Emociones</h2>
-        <p>Tus emociones durante el embarazo no solo te afectan a ti; también tocan a tu bebé. Según la Organización Mundial de la Salud, alrededor del 10% de las embarazadas y el 13% de las mujeres que acaban de dar a luz experimentan algún trastorno mental, principalmente depresión; por eso cuidar tu estado emocional es parte del cuidado prenatal, no un lujo. Pero no te preocupes: no se trata de ser perfecta, sino de darte permiso para sentir, pedir ayuda y celebrar los pequeños momentos.</p>
-        
-        <p>Actividades como <a href="/blog/pinta-barriguitas-colombia">pintar la barriguita</a>, soñar con el futuro, o compartir risas en un baby shower pueden ser pequeños oasis de alegría. Estos instantes te recuerdan que eres fuerte, que estás creando vida, y que no estás sola.</p>
-        
+        <p><em>Revisado clínicamente por <strong>[NOMBRE PSICÓLOGA — REEMPLAZAR]</strong>, psicóloga clínica de Tranquilamente (T.P. [NÚMERO — REEMPLAZAR]). Última actualización: julio de 2026.</em></p>
+
+        <p>El embarazo es un viaje lleno de colores: momentos de ilusión, sueños que crecen con cada latido, pero también días de dudas, miedos y emociones que suben y bajan como una marea. En Croko acompañamos celebraciones de maternidad todos los días, y sabemos que detrás de cada barriguita hay una mamá que también necesita ser cuidada. Por eso escribimos esta guía junto al equipo de <strong>Tranquilamente</strong>, la plataforma de psicología en línea cofundada por Carolina, fundadora de Croko: para hablarte con datos y con cariño de la salud mental en el embarazo y el posparto.</p>
+
+        <h2>Las Emociones en el Embarazo: Qué es Normal</h2>
+        <p>Cuando estás embarazada, tu cuerpo y tu corazón están en constante transformación. Las hormonas, como el estrógeno y la progesterona, cambian de forma drástica, trayendo días en los que todo brilla y otros en los que una lágrima aparece sin avisar. ¿Te has sentido súper feliz por la mañana y ansiosa por la noche? Dentro de ciertos límites, eso es esperable: los cambios de ánimo hormonales son parte del proceso.</p>
+
+        <p>Pero tus emociones no son solo "cosas de hormonas". Según la <a href="https://www.who.int/es/news-room/fact-sheets/detail/mental-health-of-women-during-pregnancy-and-after-childbirth" target="_blank" rel="noopener noreferrer">Organización Mundial de la Salud</a>, alrededor del 10% de las embarazadas y el 13% de las mujeres que acaban de dar a luz experimentan algún trastorno mental, principalmente depresión — y en países de ingresos medios como Colombia las cifras tienden a ser más altas. Es decir: si te está costando, no eres la excepción rara. Eres una de muchas, y hay ayuda que funciona.</p>
+
+        <h2>La Ansiedad en el Embarazo También Cuenta</h2>
+        <p>Se habla mucho de la depresión posparto, pero la ansiedad durante el embarazo es igual de frecuente: los trastornos de depresión y ansiedad afectan a entre el 15% y el 20% de las mujeres durante el embarazo y el posparto. Preocupación constante por la salud del bebé, dificultad para dormir aunque haya cansancio, tensión que no cede: esas son sus caras más comunes.</p>
+
+        <p>La buena noticia, respaldada por guías clínicas como las del <a href="https://www.acog.org/womens-health/faqs/ansiedad-y-embarazo" target="_blank" rel="noopener noreferrer">Colegio Americano de Obstetras y Ginecólogos (ACOG)</a>: la ansiedad en el embarazo es tratable. La psicoterapia —especialmente la terapia cognitivo-conductual— es una opción de primera línea, y cuando hace falta medicación, existen opciones seguras durante el embarazo y la lactancia que tu médico puede considerar. Tratarla no es solo por ti: recibir tratamiento se asocia con menor probabilidad de parto prematuro y de bajo peso al nacer.</p>
+
+        <h2>Baby Blues vs. Depresión Posparto: No Son lo Mismo</h2>
+        <p>En los primeros días después del parto, la mayoría de las mamás —alrededor de 8 de cada 10— experimentan el llamado <strong>baby blues</strong>: llanto fácil, irritabilidad, cambios de humor repentinos. Suele aparecer entre las 48 y 72 horas después del parto y <strong>se resuelve solo en un máximo de dos semanas</strong>. Es transitorio y no requiere tratamiento, solo descanso, red de apoyo y paciencia amorosa.</p>
+
+        <p>La <strong>depresión posparto</strong> es otra cosa: es más profunda, dura más de dos semanas y interfiere con tu vida diaria. Puede manifestarse como tristeza persistente, sensación de no ser suficiente, culpa constante o incluso dificultad para conectar con tu bebé. En Colombia, la Encuesta Nacional de Demografía y Salud encontró una prevalencia de depresión posparto del <a href="https://www.elsevier.es/es-revista-revista-colombiana-psiquiatria-379-articulo-prevalencia-tamiz-positivo-depresion-postparto-S0034745016300026" target="_blank" rel="noopener noreferrer">12,9% —mayor en zonas urbanas (15,1%) que rurales—</a>, y estudios en los primeros tres meses posparto reportan cifras cercanas al 19%.</p>
+
+        <p>La depresión posparto no define tu amor como mamá. Es una condición de salud —como lo sería una anemia— que con el cuidado adecuado se trata y se supera. Decir "no estoy bien" es un acto de valentía, no de debilidad.</p>
+
+        <h2>Señales de Alarma: Cuándo Buscar Ayuda Profesional</h2>
+        <p>Consulta con un psicólogo o con tu médico si reconoces una o varias de estas señales:</p>
+        <ul>
+          <li>La tristeza, la ansiedad o la irritabilidad <strong>duran más de dos semanas</strong> o aumentan con los días.</li>
+          <li>Sientes <strong>culpa constante</strong>, incapacidad o fracaso como mamá.</li>
+          <li>Te cuesta cuidar de ti misma o del bebé, o <strong>el vínculo con tu bebé se siente distante</strong>.</li>
+          <li>No logras descansar aunque tengas la oportunidad.</li>
+          <li>Te aíslas o pierdes interés por lo que antes disfrutabas.</li>
+          <li>Tienes pensamientos de hacerte daño o de hacerle daño al bebé — en este caso, <strong>busca ayuda de inmediato</strong> (en Colombia, la Línea 106 ofrece apoyo en salud mental, gratuita y disponible 24/7 en varias regiones).</li>
+        </ul>
+
+        <h2>Lo que Sí Funciona</h2>
+        <p>No hay un único tratamiento para todas, pero la evidencia es clara en tres cosas. Primero, la <strong>psicoterapia funciona</strong>: la terapia cognitivo-conductual y los programas de autoayuda guiada son tratamientos de primera línea para la ansiedad y la depresión perinatal. Segundo, cuando se necesita, <strong>existen medicamentos eficaces y seguros</strong> durante el embarazo y la lactancia — la decisión se toma con tu médico, no en internet. Y tercero, la <strong>red de apoyo importa</strong>: las mamás que cuentan con pareja, familia o amigas involucradas atraviesan mejor esta etapa.</p>
+
+        <p>A eso se suman los pequeños rituales que protegen el ánimo día a día: escribirle una carta corta al bebé, caminar veinte minutos sin pantalla, o compartir momentos de conexión como <a href="/blog/pinta-barriguitas-colombia">pintar la barriguita en familia</a> — que convierte la espera en un acto colectivo de bienvenida. Ninguno de estos rituales reemplaza la terapia; son complementos que suman bienestar.</p>
+
         <h2>Croko y Tranquilamente: Un Abrazo para tu Corazón</h2>
-        <p>En Croko, creemos que cada mamá merece celebrar su viaje con amor y creatividad. Por eso, nos apasiona crear momentos que te conecten con tu bebé, llenando tu corazón de colores. Pero sabemos que a veces necesitas más que un momento; necesitas un espacio para sanar, entenderte y crecer.</p>
-        
-        <p>Aquí es donde entra Tranquilamente, la plataforma de psicología en línea que Carolina cofundó junto a profesionales de la salud mental (y que por transparencia te contamos: es un proyecto hermano de Croko). En Tranquilamente.co, ofrecemos un espacio seguro para que las mamás hablen, sientan y encuentren herramientas para navegar el embarazo y el posparto. Ya sea que estés lidiando con cambios de ánimo, ansiedad, o simplemente quieras prepararte para ser mamá, estamos aquí para escucharte y acompañarte.</p>
-        
-        <h2>Un Mensaje para Ti, Mamá</h2>
-        <p>Si hoy sientes que las emociones te abruman, recuerda: no estás sola. Cada lágrima, cada sonrisa, es parte de tu historia como mamá. Busca a una amiga, escribe lo que sientes, o da el paso de hablar con un profesional. Tu salud mental es tan importante como la de tu bebé, y cuidarte es el mayor regalo que puedes darte.</p>
-        
-        <p>En Croko, seguiremos celebrando cada latido de tu viaje. Y en Tranquilamente, estaremos esperándote con los brazos abiertos para que encuentres la paz que mereces. Visita www.Tranquilamente.co si sientes que necesitas un espacio para ti, y déjanos ser parte de tu arcoíris.</p>
-        
-        <p><em>Esta información es de carácter general y no reemplaza la consulta con un profesional de la salud. Si sientes tristeza profunda o ansiedad persistente durante el embarazo o el posparto, consulta a tu médico o a un psicólogo licenciado.</em></p>
+        <p>En Croko creemos que cada mamá merece celebrar su viaje con amor y creatividad. Pero sabemos que a veces necesitas más que un momento bonito: necesitas un espacio para sanar, entenderte y crecer.</p>
+
+        <p>Aquí es donde entra Tranquilamente, la plataforma de psicología en línea que Carolina cofundó junto a profesionales de la salud mental (y que por transparencia te contamos: es un proyecto hermano de Croko). En <a href="https://www.tranquilamente.co" target="_blank" rel="noopener noreferrer">Tranquilamente.co</a> puedes hablar con psicólogas licenciadas desde tu casa, ya sea que estés lidiando con ansiedad, cambios de ánimo, o simplemente quieras prepararte emocionalmente para ser mamá.</p>
+
+        <h2>Preguntas Frecuentes</h2>
+
+        <p><strong>¿Es normal sentir ansiedad durante el embarazo?</strong><br />
+        Sí, hasta cierto punto. La preocupación ocasional es parte de la espera. Pero si la ansiedad es constante, te quita el sueño o interfiere con tu día a día, ya no es "normal del embarazo": entre el 15% y el 20% de las mujeres experimentan un trastorno de ansiedad o depresión en el periodo perinatal, y es tratable con psicoterapia.</p>
+
+        <p><strong>¿Cuál es la diferencia entre baby blues y depresión posparto?</strong><br />
+        El baby blues afecta a cerca de 8 de cada 10 mamás, aparece a las 48–72 horas del parto y desaparece solo en máximo dos semanas. La depresión posparto dura más de dos semanas, es más profunda e interfiere con la vida diaria y el vínculo con el bebé; requiere acompañamiento profesional.</p>
+
+        <p><strong>¿Cuándo debo buscar ayuda profesional?</strong><br />
+        Si los síntomas duran más de dos semanas, empeoran, o sientes culpa constante, dificultad para vincularte con tu bebé o pensamientos de hacerte daño. En ese último caso busca ayuda de inmediato (Línea 106 en Colombia).</p>
+
+        <p><strong>¿La depresión posparto se cura?</strong><br />
+        Sí. Con psicoterapia (la terapia cognitivo-conductual es tratamiento de primera línea) y, cuando el médico lo indica, medicación segura para el embarazo y la lactancia, la gran mayoría de las mamás se recuperan.</p>
+
+        <p><strong>¿El estrés de la mamá afecta al bebé?</strong><br />
+        El estrés crónico y sostenido se ha asociado con mayor riesgo de parto prematuro y bajo peso al nacer. Esto no es para culparte —el estrés ocasional es inevitable— sino para recordarte que cuidar tu salud mental también es cuidado prenatal, y que tratarte reduce esos riesgos.</p>
+
+        <hr />
+
+        <p><em>Esta información es de carácter general y no reemplaza la consulta con un profesional de la salud. Si sientes tristeza profunda o ansiedad persistente durante el embarazo o el posparto, consulta a tu médico o a un psicólogo licenciado. Fuentes principales: Organización Mundial de la Salud; Encuesta Nacional de Demografía y Salud (Colombia); Colegio Americano de Obstetras y Ginecólogos (ACOG).</em></p>
 
         <p><em>#SaludMentalMaternal #EmbarazoColombia #CrokoMaquillaje #Tranquilamente</em></p>
       `

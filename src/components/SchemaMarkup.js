@@ -46,6 +46,14 @@ export const ArticleSchema = ({ post, url }) => {
             "@type": "WebPage",
             "@id": url || "https://www.croko.co/maquillaje-para-embarazadas"
         },
+        ...(post.reviewedBy && {
+            "reviewedBy": {
+                "@type": "Person",
+                "name": post.reviewedBy,
+                "jobTitle": "Psicóloga clínica",
+                "worksFor": { "@type": "Organization", "name": "Tranquilamente", "url": "https://www.tranquilamente.co" }
+            }
+        }),
         "articleSection": "Belleza y Embarazo",
         "keywords": ["maquillaje para embarazadas", "maquillaje seguro embarazo", "cosméticos embarazo", "productos belleza prenatal", "maquillaje hipoalergénico"]
     }
