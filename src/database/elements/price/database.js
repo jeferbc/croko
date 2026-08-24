@@ -6,7 +6,7 @@ module.exports = {
             feature2: 'Vamos a tu casa a pintar tu barriguita',
             feature3: 'Experiencia familiar',
             feature4: '',
-            price: '650.000',
+            price: '450.000',
         },
         {
             title: "Integrado",
@@ -14,7 +14,7 @@ module.exports = {
             feature2: 'Vamos a tu casa a pintar tu barriguita',
             feature3: 'Fotografía profesional (3 fotos impresas)',
             feature4: 'Experiencia familiar',
-            price: '900.000',
+            price: '700.000',
         },
     ],
 }
